@@ -43,5 +43,5 @@ MP4 delivery uses Cloudflare R2 instead of GitHub Pages. R2 keeps the video file
 Current R2 media base:
 
 ```txt
-https://pub-2e4a0ec6a0c64d63bd6368712c15b6b9.r2.dev/media/
+https://source-media.oosu.dev/media/
 ```
