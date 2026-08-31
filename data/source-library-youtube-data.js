@@ -7862,7 +7862,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   {
     "id": "438",
     "title": "Abstract View Of Glittery Black And Red Liquid",
-    "clip": "438_abstract-view-of-glittery-black-and-red-liquid.mp4",
+    "clip": "438_abstract-view-of-glittery-black-and-red-liquid-cropped.mp4",
     "thumb": "438_abstract-view-of-glittery-black-and-red-liquid.jpg",
     "source": "local:macbookpro/037-abstract-view-of-glittery-black-and-red-liquid.ts",
     "ranges": [
@@ -7910,7 +7910,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   {
     "id": "440",
     "title": "Pink And Red Waves Of Color Mixing",
-    "clip": "440_pink-and-red-waves-of-color-mixing.mp4",
+    "clip": "440_pink-and-red-waves-of-color-mixing-cropped.mp4",
     "thumb": "440_pink-and-red-waves-of-color-mixing.jpg",
     "source": "local:macbookpro/039-pink-and-red-waves-of-color-mixing.ts",
     "ranges": [
@@ -8235,29 +8235,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       "experimental"
     ]
   },
-  {
-    "id": "454",
-    "title": "Somber Concentration Sterile Medical Professional",
-    "clip": "454_somber-concentration-sterile-medical-professional.mp4",
-    "thumb": "454_somber-concentration-sterile-medical-professional.jpg",
-    "source": "local:macbookpro/053-somber-concentration-sterile-medical-professional.ts",
-    "ranges": [
-      [
-        0,
-        14.36
-      ]
-    ],
-    "theme": "06",
-    "category": "Experimental / Material / Object",
-    "keywords": [
-      "somber",
-      "concentration",
-      "sterile",
-      "medical",
-      "professional",
-      "experimental"
-    ]
-  },
+
   {
     "id": "455",
     "title": "Transition Glitch Quick Blue",
@@ -8283,7 +8261,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   {
     "id": "456",
     "title": "Dirtbikes In Smoke In Front Of Headlights At Night",
-    "clip": "456_dirtbikes-in-smoke-in-front-of-headlights-at-night.mp4",
+    "clip": "456_dirtbikes-in-smoke-in-front-of-headlights-at-night-cropped.mp4",
     "thumb": "456_dirtbikes-in-smoke-in-front-of-headlights-at-night.jpg",
     "source": "local:macbookpro/055-dirtbikes-in-smoke-in-front-of-headlights-at-night.ts",
     "ranges": [
@@ -8468,7 +8446,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   {
     "id": "464",
     "title": "Seen From Under The Stream The Man Squats On The Rocks And Drinks Water",
-    "clip": "464_seen-from-under-the-stream-the-man-squats-on-the-rocks-and-drinks-water.mp4",
+    "clip": "464_seen-from-under-the-stream-the-man-squats-on-the-rocks-and-drinks-water-cropped.mp4",
     "thumb": "464_seen-from-under-the-stream-the-man-squats-on-the-rocks-and-drinks-water.jpg",
     "source": "local:macbookpro/063-seen-from-under-the-stream-the-man-squats-on-the-rocks-and-drinks-water.ts",
     "ranges": [
@@ -8581,51 +8559,8 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       "experimental"
     ]
   },
-  {
-    "id": "469",
-    "title": "Blue Eyes Clinical Unsettling Grim",
-    "clip": "469_blue-eyes-clinical-unsettling-grim.mp4",
-    "thumb": "469_blue-eyes-clinical-unsettling-grim.jpg",
-    "source": "local:macbookpro/068-blue-eyes-clinical-unsettling-grim.ts",
-    "ranges": [
-      [
-        0,
-        8.08
-      ]
-    ],
-    "theme": "06",
-    "category": "Experimental / Material / Object",
-    "keywords": [
-      "blue",
-      "eyes",
-      "clinical",
-      "unsettling",
-      "grim",
-      "experimental"
-    ]
-  },
-  {
-    "id": "470",
-    "title": "Blue Light Somber Clinical",
-    "clip": "470_blue-light-somber-clinical.mp4",
-    "thumb": "470_blue-light-somber-clinical.jpg",
-    "source": "local:macbookpro/069-blue-light-somber-clinical.ts",
-    "ranges": [
-      [
-        0,
-        36.04
-      ]
-    ],
-    "theme": "06",
-    "category": "Experimental / Material / Object",
-    "keywords": [
-      "blue",
-      "light",
-      "somber",
-      "clinical",
-      "experimental"
-    ]
-  },
+
+
   {
     "id": "471",
     "title": "Man Working In A Recording Studio And Looking At A Screen",
