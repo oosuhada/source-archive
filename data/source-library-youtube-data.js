@@ -21452,7 +21452,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Abstract",
+    "category": "Object",
     "keywords": [
       "photo",
       "collage",
@@ -21782,7 +21782,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Nature / Land",
+    "category": "Object",
     "keywords": [
       "backyard",
       "yard",
@@ -21812,7 +21812,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Sport / Physical",
+    "category": "People / Culture",
     "keywords": [
       "retro",
       "cycling",
@@ -21842,7 +21842,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "People / Culture",
+    "category": "Object",
     "keywords": [
       "christmas",
       "holiday",
@@ -22022,7 +22022,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Business",
+    "category": "Object",
     "keywords": [
       "bank",
       "robbery",
@@ -22052,7 +22052,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "People / Culture",
+    "category": "Object",
     "keywords": [
       "christmas",
       "home",
@@ -22112,7 +22112,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "People / Culture",
+    "category": "Object",
     "keywords": [
       "oil",
       "painting",
@@ -22142,7 +22142,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Abstract",
+    "category": "People / Culture",
     "keywords": [
       "plastic",
       "dance",
@@ -22232,7 +22232,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Business",
+    "category": "Object",
     "keywords": [
       "money",
       "counting",
@@ -22322,7 +22322,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Nature / Land",
+    "category": "Object",
     "keywords": [
       "wind",
       "turbines",
