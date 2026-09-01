@@ -187,7 +187,6 @@
       });
     }
     function bindTilePreviews(root){
-      if(!matchMedia('(hover:hover) and (pointer:fine)').matches)return;
       let active=null;
       const stop=tile=>{if(!tile)return;const preview=tile.querySelector('.tile-preview');if(!preview)return;delete tile.dataset.previewWanted;preview.pause();tile.classList.remove('previewing');try{preview.currentTime=0}catch{}if(active===tile)active=null};
       root.querySelectorAll('.tile[data-preview]:not([data-bound])').forEach(tile=>{
