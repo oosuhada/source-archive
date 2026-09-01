@@ -425,7 +425,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "26",
-    "title": "Office 2",
+    "title": "Office",
     "clip": "26_office.mp4",
     "thumb": "26_office.jpg",
     "source": "youtube:__O1eATrXI0",
@@ -557,7 +557,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "30",
-    "title": "Sunset",
+    "title": "Sunset 2",
     "clip": "30_sunset.mp4",
     "thumb": "30_sunset.jpg",
     "source": "youtube:ptlfUip2qqA",
@@ -1642,7 +1642,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "66",
-    "title": "Scrolling",
+    "title": "Scrolling 2",
     "clip": "66_scrolling.mp4",
     "thumb": "66_scrolling.jpg",
     "source": "youtube:kMFYc_ESQw0",
@@ -2440,7 +2440,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "92",
-    "title": "Sunset 2",
+    "title": "Sunset",
     "clip": "92_sunset-2.mp4",
     "thumb": "92_sunset-2.jpg",
     "source": "youtube:Xocr00KRisI",
@@ -3927,7 +3927,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "139",
-    "title": "Scrolling 2",
+    "title": "Scrolling",
     "clip": "139_scrolling-2.mp4",
     "thumb": "139_scrolling-2.jpg",
     "source": "youtube:1d-vk39ADvk",
@@ -6395,7 +6395,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "222",
-    "title": "Office",
+    "title": "Office 2",
     "clip": "222_office-ii.mp4",
     "thumb": "222_office-ii.jpg",
     "source": "youtube:ZsbxCdWN-7Q",
