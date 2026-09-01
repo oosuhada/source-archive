@@ -1,0 +1,11 @@
+{
+  "name": "source-archive",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-web-assets.mjs",
+    "validate": "node scripts/validate-archive.mjs",
+    "validate:network": "node scripts/validate-archive.mjs --network",
+    "check": "npm run build && git diff --exit-code -- data/search-index.json data/build-meta.js sw.js && npm run validate"
+  }
+}

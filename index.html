@@ -10,6 +10,7 @@
   </style>
   <style>
     .search-toggle,.search-close{flex:0 0 auto;width:34px;height:28px;display:grid;place-items:center;border:0;background:#0b0b0b;color:rgba(255,255,255,.62);cursor:pointer;padding:0}.search-toggle{margin-left:12px;position:relative;z-index:2;box-shadow:-14px 0 18px #0b0b0b}.search-toggle:hover,.search-toggle:focus-visible,.search-close:hover,.search-close:focus-visible{color:#fff;outline:none}.search-toggle svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.5}.search-shell{display:flex;align-items:center;width:100%;gap:10px}.search-mark{flex:0 0 auto;width:15px;height:15px;fill:none;stroke:rgba(255,255,255,.48);stroke-width:1.5}.archive-search{min-width:0;flex:1;border:0;outline:0;background:transparent;color:#fff;font:500 11px/1.2 ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;letter-spacing:.08em}.archive-search::placeholder{color:rgba(255,255,255,.28)}.search-empty{grid-column:1/-1;min-height:35vh;display:grid;place-items:center;color:rgba(255,255,255,.34);font:500 11px/1 ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;letter-spacing:.12em;text-transform:uppercase}
+    .gallery-sentinel{grid-column:1/-1;height:1px}.performance-dashboard{position:fixed;z-index:99;right:12px;bottom:12px;white-space:pre;padding:10px 12px;border:1px solid rgba(255,255,255,.18);background:rgba(0,0,0,.82);color:#a8ffbd;font:10px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace;pointer-events:none;backdrop-filter:blur(10px)}
   </style>
 </head>
 <body>
@@ -34,6 +35,8 @@
     <div class="progress"><i id="bar"></i></div>
   </section>
   <div id="error" class="error">MEDIA ERROR</div>
+  <script src="data/build-meta.js"></script>
+  <script src="performance-dashboard.js"></script>
   <script src="data/source-library-data.js"></script>
   <script src="data/source-library-youtube-data.js"></script>
   <script>
@@ -42,7 +45,12 @@
       r2:'https://source-media.oosu.dev/media/',
       b2:'https://source-media-b2.oosu.dev/media/'
     };
+    const previewRoots={
+      r2:'https://source-media.oosu.dev/previews/',
+      b2:'https://source-media-b2.oosu.dev/previews/'
+    };
     const videoUrl=item=>`${videoRoots[item.media]||videoRoots.r2}${item.clip}`;
+    const previewUrl=item=>item.preview?`${previewRoots[item.previewMedia||item.media]||previewRoots.r2}${item.preview}`:'';
     const items=window.SOURCE_LIBRARY||[];
     const params=new URLSearchParams(location.search);
     const selected=params.get('clip');
@@ -68,6 +76,8 @@
     let searchMode=params.has('q');
     let searchQuery=params.get('q')||'';
     let orderedItems=[];
+    let searchResultIds=null,searchRequestId=0,searchReady=false,renderLimit=72,resultKey='',galleryObserver=null;
+    const metric=(group,values)=>dispatchEvent(new CustomEvent('source-archive:metric',{detail:{group,values}}));
     function seededShuffle(list,seed=20260829){
       const out=[...list];let s=seed>>>0;
       const random=()=>{s=(s+0x6D2B79F5)>>>0;let t=s;t=Math.imul(t^(t>>>15),t|1);t^=t+Math.imul(t^(t>>>7),t|61);return((t^(t>>>14))>>>0)/4294967296};
@@ -97,55 +107,12 @@
       stable.forEach(item=>{if(publicIdSwaps.has(item.id))item.publicId=publicIdSwaps.get(item.id)});
       orderedItems=[...items].sort((a,b)=>Number(a.publicId)-Number(b.publicId));
     }
-    const genericKeywords='archive video film footage cinematic motion visual scene aesthetic'.split(' ');
-    const categoryKeywords={
-      Food:'food drink beverage dining cuisine cooking restaurant cafe coffee tea matcha wine fruit meal kitchen hospitality',
-      Nature:'nature landscape outdoor forest mountain alpine weather sky cloud sunrise sunset snow autumn desert field plant animal wildlife environment',
-      Experimental:'experimental abstract texture material object analog macro light shadow bokeh art visual pattern cinematic atmosphere',
-      Cosmos:'space cosmos astronomy galaxy moon earth stars universe celestial orbit planet blackhole spacecraft',
-      Water:'water ocean sea beach wave coast rain waterfall drop underwater reef blue marine shoreline',
-      Business:'business work office technology tech corporate startup ai chatgpt presentation computer screen digital productivity professional',
-      Apple:'apple iphone mac macbook airpods watch homepod pencil intelligence creator studio card product technology device hardware design ecosystem',
-      People:'people culture human family lifestyle relationship community emotion portrait art music dance creator everyday life',
-      Travel:'travel city architecture tourism destination airport airplane hotel train street urban building journey',
-      Sport:'sport fitness gym exercise workout training running boxing athlete wellness physical movement strength cardio'
-    };
-    const keywordRules=[
-      [/museum|gallery|painter|painting/i,'museum gallery art artwork exhibition culture architecture design artist painting japanese tokyo'],
-      [/film|video|cinematic|videographer/i,'filmmaking filmmaker camera cinematography director production shooting creator lens'],
-      [/cat|dog/i,'animal pet companion cute domestic wildlife mammal'],
-      [/coffee|espresso|tea|matcha/i,'coffee tea cafe beverage drink brewing cup ritual caffeine'],
-      [/food|cooking|restaurant|buffet|plating|salad|burger|baguette|orange|grape|wine/i,'food cuisine culinary restaurant dining ingredient chef hospitality'],
-      [/moon|galaxy|earth|black hole|spaceship|life/i,'space astronomy cosmos celestial moon stars galaxy universe orbit'],
-      [/gym|workout|exercise|lifting|rope|fitness|boxing|running|marathon|ball|wellness/i,'sport fitness exercise gym training athlete physical strength cardio health'],
-      [/family|baby|father|son|bonding|birthday|party|people|walking|dreamer|morning/i,'people family lifestyle relationship emotion together human everyday portrait'],
-      [/airport|departure|airplane|jet|train|japan|sydney|egypt|pakistan|montreal|eiffel|hotel|skyscraper|bustling/i,'travel city destination tourism urban architecture journey transport street'],
-      [/water|ocean|coast|beach|wave|rain|waterfall|drop|current/i,'water ocean sea wave rain coast beach marine liquid blue'],
-      [/forest|alpine|blossom|cliff|pine|misty|field|sunrise|sunset|snow|autumn|desert|cloud|aurora/i,'nature landscape outdoors weather season sky environment mountain'],
-      [/office|business|corporate|startup|chatgpt|scrolling|ideas|presentation/i,'business work technology office digital professional corporate productivity screen'],
-      [/apple|iphone|macbook|mac students|mac mini|airpods|homepod|pencil|creator studio/i,'apple iphone mac macbook airpods watch homepod pencil intelligence creator studio product hardware device ecosystem cupertino'],
-      [/vinyl|old tv|time|eye|ink|lava|bokeh|shadow|glow|hourglass|abstract|toothbrush/i,'experimental object analog texture abstract material macro visual art'],
-      [/cell|virus|bacteria/i,'science biology microscopic microscope organism cellular laboratory research'],
-      [/mars|saturn|jupiter|asteroid|astronaut|solar|star|space/i,'space astronomy cosmos planet solar system stars universe nasa celestial'],
-      [/actor|dancer|ballerina|concert|model|headphone/i,'people performance music stage dance fashion entertainment artist'],
-      [/superhero|cape/i,'people child kid childhood superhero hero imagination play family outdoor'],
-      [/\bvr\b|iphone|airpods|apple|mac students/i,'technology tech apple device hardware smartphone phone mobile computer mac audio headphones vr virtual reality product design'],
-      [/capybara/i,'nature animal wildlife mammal capybara family cute']
-    ];
-    function keywordsFor(item){
-      const title=item.title.toLowerCase();
-      const category=categoryFor(item);
-      const customKeywords=Array.isArray(item.keywords)?item.keywords.flatMap(keyword=>String(keyword).toLowerCase().split(/[^a-z0-9]+/).filter(Boolean)):[];
-      const words=[...genericKeywords,...(categoryKeywords[category]||'').split(' '),...title.split(/[^a-z0-9]+/).filter(Boolean),...customKeywords];
-      keywordRules.forEach(([rule,terms])=>{if(rule.test(title))words.push(...terms.split(' '))});
-      return [...new Set(words.filter(Boolean))];
-    }
     function searchScore(item,query){
       const normalized=query.trim().toLowerCase();if(!normalized)return 1;
       const tokens=normalized.split(/\s+/).filter(Boolean);
       const title=item.title.toLowerCase();
       const category=categoryFor(item).toLowerCase();
-      const keywords=keywordsFor(item);
+      const keywords=(item.keywords||[]).flatMap(keyword=>String(keyword).toLowerCase().split(/[^a-z0-9]+/).filter(Boolean));
       let total=0;
       for(const token of tokens){
         let score=0;
@@ -153,8 +120,6 @@
         if(title===token)score=Math.max(score,120);
         else if(title.startsWith(token))score=Math.max(score,90);
         else if(title.includes(token))score=Math.max(score,70);
-        if(token==='museum'&&title.includes('gallery'))score=Math.max(score,82);
-        if(token==='gallery'&&title.includes('museum'))score=Math.max(score,82);
         if(category===token)score=Math.max(score,55);else if(category.includes(token))score=Math.max(score,34);
         for(const keyword of keywords){if(keyword===token)score=Math.max(score,48);else if(keyword.startsWith(token))score=Math.max(score,34);else if(keyword.includes(token))score=Math.max(score,18)}
         if(!score)return 0;total+=score;
@@ -166,7 +131,7 @@
       if(searchMode){
         filters.innerHTML=`<div class="search-shell">${searchIcon.replace('<svg','<svg class="search-mark"')}<input id="archiveSearch" class="archive-search" type="search" autocomplete="off" spellcheck="false" placeholder="SEARCH ARCHIVE" value="${searchQuery.replace(/&/g,'&amp;').replace(/"/g,'&quot;')}"><button class="search-close" type="button" aria-label="Close search">×</button></div>`;
         const input=filters.querySelector('#archiveSearch');
-        input.addEventListener('input',()=>{searchQuery=input.value;const url=new URL(location.href);url.searchParams.set('q',searchQuery);url.searchParams.delete('filter');history.replaceState(null,'',url);renderGallery()});
+        input.addEventListener('input',()=>{searchQuery=input.value;const url=new URL(location.href);url.searchParams.set('q',searchQuery);url.searchParams.delete('filter');history.replaceState(null,'',url);requestSearch()});
         input.addEventListener('keydown',event=>{if(event.key==='Escape')closeSearch()});
         filters.querySelector('.search-close').addEventListener('click',closeSearch);
         requestAnimationFrame(()=>input.focus({preventScroll:true}));
@@ -182,47 +147,55 @@
         const url=new URL(location.href);if(activeFilter==='ALL')url.searchParams.delete('filter');else url.searchParams.set('filter',activeFilter);history.replaceState(null,'',url);
         renderTopbar();renderGallery();scrollTo(0,0);
       }));
-      filters.querySelector('.search-toggle').addEventListener('click',()=>{searchMode=true;searchQuery='';const url=new URL(location.href);url.searchParams.delete('filter');url.searchParams.set('q','');history.replaceState(null,'',url);renderTopbar();renderGallery()});
+      filters.querySelector('.search-toggle').addEventListener('click',()=>{searchMode=true;searchQuery='';searchResultIds=[];const url=new URL(location.href);url.searchParams.delete('filter');url.searchParams.set('q','');history.replaceState(null,'',url);renderTopbar();renderGallery()});
     }
     function closeSearch(){
       searchMode=false;searchQuery='';const url=new URL(location.href);url.searchParams.delete('q');if(activeFilter!=='ALL')url.searchParams.set('filter',activeFilter);history.replaceState(null,'',url);renderTopbar();renderGallery();
     }
+    const searchWorker='Worker' in window?new Worker(`search-worker.js?v=${encodeURIComponent(window.SOURCE_ARCHIVE_BUILD?.version||'dev')}`):null;
+    function requestSearch(){
+      if(!searchQuery.trim()){searchResultIds=[];renderGallery();return}
+      searchResultIds=null;renderGallery();
+      if(searchWorker&&searchReady){searchWorker.postMessage({type:'search',query:searchQuery,requestId:++searchRequestId});return}
+      if(!searchWorker){const started=performance.now();searchResultIds=orderedItems.map(item=>({item,score:searchScore(item,searchQuery)})).filter(result=>result.score>0).sort((a,b)=>b.score-a.score).map(result=>result.item.id);metric('search',{last:performance.now()-started,results:searchResultIds.length});renderGallery()}
+    }
+    if(searchWorker){
+      searchWorker.addEventListener('message',({data})=>{
+        if(data.type==='ready'){searchReady=true;if(searchMode&&searchQuery.trim())requestSearch();return}
+        if(data.type==='results'&&data.requestId===searchRequestId){searchResultIds=data.ids;metric('search',{last:data.duration,results:data.ids.length});renderGallery()}
+        if(data.type==='error'){console.warn('Search worker:',data.message)}
+      });
+    }
+    function bindTilePreviews(root){
+      if(!matchMedia('(hover:hover) and (pointer:fine)').matches)return;
+      let active=null;
+      const stop=tile=>{if(!tile)return;const preview=tile.querySelector('.tile-preview');if(!preview)return;preview.pause();tile.classList.remove('previewing');try{preview.currentTime=0}catch{}if(active===tile)active=null};
+      root.querySelectorAll('.tile[data-preview]:not([data-bound])').forEach(tile=>{
+        tile.dataset.bound='1';const preview=tile.querySelector('.tile-preview');if(!preview)return;
+        preview.addEventListener('playing',()=>{tile.classList.add('previewing');metric('media',{firstFrame:performance.now()-Number(tile.dataset.hoverAt||performance.now())})},{once:true});
+        tile.addEventListener('mouseenter',()=>{if(!tile.dataset.preview)return;if(active&&active!==tile)stop(active);active=tile;tile.dataset.hoverAt=performance.now();if(!preview.src)preview.src=tile.dataset.preview;try{preview.currentTime=0}catch{}preview.play().catch(()=>{})});
+        tile.addEventListener('mouseleave',()=>stop(tile));
+      });
+    }
     function renderGallery(){
       let visible;
       if(searchMode&&searchQuery.trim()){
-        visible=orderedItems.map(item=>({item,score:searchScore(item,searchQuery)})).filter(result=>result.score>0).sort((a,b)=>b.score-a.score||Number(a.item.publicId)-Number(b.item.publicId)).map(result=>result.item);
+        if(searchResultIds===null){gallery.innerHTML='<div class="search-empty">SEARCHING</div>';return}
+        const byId=new Map(orderedItems.map(item=>[item.id,item]));visible=searchResultIds.map(id=>byId.get(id)).filter(Boolean);
       }else visible=activeFilter==='ALL'||searchMode?orderedItems:orderedItems.filter(item=>categoryFor(item)===activeFilter);
       const contextQuery=searchMode?`&q=${encodeURIComponent(searchQuery)}`:activeFilter==='ALL'?'':`&filter=${encodeURIComponent(activeFilter)}`;
-      gallery.innerHTML=visible.length?visible.map(item=>`<a class="tile" href="?clip=${item.publicId}${contextQuery}" aria-label="${item.publicId} ${item.title}" data-preview="${videoUrl(item)}"><img src="${thumbRoot}${item.thumb}" alt=""><video class="tile-preview" muted playsinline loop preload="none"></video><span class="n">${item.publicId}</span><span class="tile-title">${item.title}</span></a>`).join(''):'<div class="search-empty">NO MATCHES</div>';
-      if(matchMedia('(hover:hover) and (pointer:fine)').matches){
-        let active=null;
-        const stop=tile=>{
-          if(!tile)return;
-          const preview=tile.querySelector('.tile-preview');
-          preview.pause();
-          tile.classList.remove('previewing');
-          try{preview.currentTime=0}catch{}
-          if(active===tile)active=null;
-        };
-        gallery.querySelectorAll('.tile').forEach(tile=>{
-          const preview=tile.querySelector('.tile-preview');
-          preview.addEventListener('playing',()=>tile.classList.add('previewing'));
-          tile.addEventListener('mouseenter',()=>{
-            if(active&&active!==tile)stop(active);
-            active=tile;
-            if(!preview.src)preview.src=tile.dataset.preview;
-            try{preview.currentTime=0}catch{}
-            preview.play().catch(()=>{});
-          });
-          tile.addEventListener('mouseleave',()=>stop(tile));
-        });
-      }
+      const key=`${activeFilter}|${searchQuery}|${visible.map(item=>item.id).join(',')}`;if(key!==resultKey){resultKey=key;renderLimit=72}
+      const shown=visible.slice(0,renderLimit);
+      gallery.innerHTML=shown.length?shown.map(item=>{const preview=previewUrl(item);return `<a class="tile" href="?clip=${item.publicId}${contextQuery}" aria-label="${item.publicId} ${item.title}"${preview?` data-preview="${preview}"`:''}><img src="${thumbRoot}${item.thumb}" alt="" loading="lazy" decoding="async" fetchpriority="low" width="16" height="9">${preview?'<video class="tile-preview" muted playsinline loop preload="none"></video>':''}<span class="n">${item.publicId}</span><span class="tile-title">${item.title}</span></a>`}).join(''):'<div class="search-empty">NO MATCHES</div>';
+      if(shown.length<visible.length){gallery.insertAdjacentHTML('beforeend','<i class="gallery-sentinel" aria-hidden="true"></i>');galleryObserver?.disconnect();galleryObserver=new IntersectionObserver(entries=>{if(entries.some(entry=>entry.isIntersecting)){renderLimit+=72;renderGallery()}},{rootMargin:'800px'});galleryObserver.observe(gallery.querySelector('.gallery-sentinel'))}
+      bindTilePreviews(gallery);
     }
     async function prepareGallery(){
       try{
-        const [response,overridesResponse]=await Promise.all([
+        const [response,overridesResponse,previewsResponse]=await Promise.all([
           fetch('data/youtube-archive-manifest.json',{cache:'no-store'}),
-          fetch('data/youtube-archive-manifest-overrides.json',{cache:'no-store'})
+          fetch('data/youtube-archive-manifest-overrides.json',{cache:'no-store'}),
+          fetch(`data/preview-manifest.json?v=${encodeURIComponent(window.SOURCE_ARCHIVE_BUILD?.version||'dev')}`)
         ]);
         if(response.ok){
           const manifest=await response.json();
@@ -238,11 +211,13 @@
             if(Array.isArray(meta.keywords))item.keywords=meta.keywords;
           });
         }
+        if(previewsResponse.ok){const previews=await previewsResponse.json();const previewById=new Map(previews.map(entry=>[entry.id,entry]));items.forEach(item=>{const entry=previewById.get(item.id);if(entry){item.preview=entry.file;item.previewMedia=entry.media}})}
       }catch{}
       if(!filterDefs.includes(activeFilter))activeFilter='ALL';
       renderTopbar();renderGallery();
     }
     assignPublicIds();
+    searchWorker?.postMessage({type:'init',version:window.SOURCE_ARCHIVE_BUILD?.version,publicIds:Object.fromEntries(items.map(item=>[item.id,item.publicId]))});
     if(!selected){prepareGallery()}else{
       const item=items.find(x=>x.publicId===selected);
       if(!item){location.replace('./')}else{
@@ -262,7 +237,7 @@
         video.setAttribute('webkit-playsinline','');
         video.preload='auto';
         video.src=videoUrl(item);
-        let duration=1,target=0,ready=false,primed=false,seekTimer=0,seekRaf=0,lastSeekAt=0,pendingSeek=false;
+        let duration=1,target=0,ready=false,primed=false,seekTimer=0,seekRaf=0,lastSeekAt=0,pendingSeek=false,seekStartedAt=0,mediaStartedAt=performance.now();
         const clamp=v=>Math.max(0,Math.min(1,v));
         const seekInterval=95;
         const performSeek=()=>{
@@ -274,6 +249,7 @@
           if(wait>0){clearTimeout(seekTimer);seekTimer=setTimeout(scheduleSeek,wait);return}
           lastSeekAt=performance.now();pendingSeek=false;
           try{
+            seekStartedAt=performance.now();
             if(typeof video.fastSeek==='function')video.fastSeek(target);
             else video.currentTime=target;
           }catch{pendingSeek=true;clearTimeout(seekTimer);seekTimer=setTimeout(scheduleSeek,160)}
@@ -309,14 +285,15 @@
           detail.style.minHeight=`${scrollHeight}vh`;
           video.pause();ready=true;scrollTo(0,0);update();
         });
-        video.addEventListener('seeked',()=>{if(pendingSeek||Math.abs(video.currentTime-target)>.08)scheduleSeek()});
-        video.addEventListener('canplay',scheduleSeek);
+        video.addEventListener('seeked',()=>{if(seekStartedAt)metric('media',{seek:performance.now()-seekStartedAt});if(pendingSeek||Math.abs(video.currentTime-target)>.08)scheduleSeek()});
+        video.addEventListener('canplay',()=>{metric('media',{firstFrame:performance.now()-mediaStartedAt});scheduleSeek()},{once:true});
         video.addEventListener('error',()=>error.classList.add('show'));
         addEventListener('scroll',update,{passive:true});addEventListener('resize',update);
         ['touchstart','pointerdown','wheel'].forEach(type=>addEventListener(type,primeVideo,{once:true,passive:true}));
         video.load();
       }
     }
+    if('serviceWorker' in navigator&&location.protocol==='https:')navigator.serviceWorker.register(`sw.js?v=${encodeURIComponent(window.SOURCE_ARCHIVE_BUILD?.version||'dev')}`).catch(()=>{});
   </script>
 </body>
 </html>

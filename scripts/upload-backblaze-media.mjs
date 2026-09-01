@@ -9,6 +9,7 @@ const bucket = process.argv[3];
 const b2Cli = process.env.B2_CLI;
 const concurrency = Number(process.env.UPLOAD_CONCURRENCY || 4);
 const includeIds = new Set((process.env.INCLUDE_IDS || "").split(",").filter(Boolean));
+const remotePrefix = (process.env.REMOTE_PREFIX || "media").replace(/^\/+|\/+$/g, "");
 
 if (!sourceDir || !bucket || !b2Cli) {
   console.error("Usage: B2_CLI=/path/to/b2 node upload-backblaze-media.mjs <media-dir> <bucket>");
@@ -26,7 +27,7 @@ const failures = [];
 
 function upload(name) {
   const localPath = join(sourceDir, name);
-  const remotePath = `media/${basename(name)}`;
+  const remotePath = `${remotePrefix}/${basename(name)}`;
   const args = [
     "file",
     "upload",
@@ -73,4 +74,4 @@ if (failures.length) {
   process.exit(1);
 }
 
-console.log(JSON.stringify({ uploaded: files.length, bucket, prefix: "media/" }));
+console.log(JSON.stringify({ uploaded: files.length, bucket, prefix: `${remotePrefix}/` }));
