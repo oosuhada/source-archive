@@ -8,6 +8,7 @@ const sourceDir = process.argv[2];
 const bucket = process.argv[3];
 const b2Cli = process.env.B2_CLI;
 const concurrency = Number(process.env.UPLOAD_CONCURRENCY || 4);
+const includeIds = new Set((process.env.INCLUDE_IDS || "").split(",").filter(Boolean));
 
 if (!sourceDir || !bucket || !b2Cli) {
   console.error("Usage: B2_CLI=/path/to/b2 node upload-backblaze-media.mjs <media-dir> <bucket>");
@@ -16,6 +17,7 @@ if (!sourceDir || !bucket || !b2Cli) {
 
 const files = (await readdir(sourceDir))
   .filter((name) => name.toLowerCase().endsWith(".mp4"))
+  .filter((name) => !includeIds.size || includeIds.has(name.match(/^\d+/)?.[0]))
   .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
 
 let nextIndex = 0;

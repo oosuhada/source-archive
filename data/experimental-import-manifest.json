@@ -6749,9 +6749,10 @@
     "keyframeMaxGap": 0.5,
     "outputBytes": 28604437,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/450_photogrammetry-point-cloud-lofi-market.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/450_photogrammetry-point-cloud-lofi-market.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "451",
@@ -6789,9 +6790,10 @@
     "keyframeMaxGap": 0.5,
     "outputBytes": 67732791,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/451_ball-video-jockey-88-bpm-electric.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/451_ball-video-jockey-88-bpm-electric.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "452",
@@ -6832,9 +6834,10 @@
     "keyframeMaxGap": 0.5,
     "outputBytes": 4378145,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/452_geometric-shapes-pastel-colors-abstract-art-soft-shadows.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/452_geometric-shapes-pastel-colors-abstract-art-soft-shadows.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "453",
@@ -6871,9 +6874,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 1518262,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/453_man-standing-in-a-red-room.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/453_man-standing-in-a-red-room.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "455",
@@ -6910,9 +6914,10 @@
     "keyframeMaxGap": 0.5,
     "outputBytes": 437201,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/455_transition-glitch-quick-blue.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/455_transition-glitch-quick-blue.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "456",
@@ -6950,9 +6955,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 4075583,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/456_dirtbikes-in-smoke-in-front-of-headlights-at-night-cropped.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/456_dirtbikes-in-smoke-in-front-of-headlights-at-night-cropped.mp4",
     "cdnHttpStatus": 200,
     "rangeHttpStatus": 206,
+    "media": "b2",
     "supersedesOutputFile": "456_dirtbikes-in-smoke-in-front-of-headlights-at-night.mp4",
     "cropApplied": "1920:816:0:132"
   },
@@ -6992,9 +6998,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 9815197,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/457_colorful-lines-moving-and-flashing.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/457_colorful-lines-moving-and-flashing.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "458",
@@ -7031,9 +7038,10 @@
     "keyframeMaxGap": 0.5,
     "outputBytes": 17616656,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/458_disintegrate-vfx-street-photogrammetry.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/458_disintegrate-vfx-street-photogrammetry.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "459",
@@ -7070,9 +7078,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 7409889,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/459_fluid-splashing-paint-pink.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/459_fluid-splashing-paint-pink.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "460",
@@ -7111,9 +7120,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 31639900,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/460_covid-19-flashing-on-a-cracked-and-broken-screen.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/460_covid-19-flashing-on-a-cracked-and-broken-screen.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "461",
@@ -7154,9 +7164,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 2624955,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/461_black-background-hand-movement-instructional-video-communication-skills.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/461_black-background-hand-movement-instructional-video-communication-skills.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "462",
@@ -7194,9 +7205,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 1644970,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/462_musical-notes-on-stand-rack-focus.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/462_musical-notes-on-stand-rack-focus.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "463",
@@ -7233,9 +7245,10 @@
     "keyframeMaxGap": 0.501,
     "outputBytes": 18198471,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/463_danger-flashing-on-a-cracked-screen.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/463_danger-flashing-on-a-cracked-screen.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "464",
@@ -7277,9 +7290,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 30413873,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/464_seen-from-under-the-stream-the-man-squats-on-the-rocks-and-drinks-water-cropped.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/464_seen-from-under-the-stream-the-man-squats-on-the-rocks-and-drinks-water-cropped.mp4",
     "cdnHttpStatus": 200,
     "rangeHttpStatus": 206,
+    "media": "b2",
     "supersedesOutputFile": "464_seen-from-under-the-stream-the-man-squats-on-the-rocks-and-drinks-water.mp4",
     "cropApplied": "1920:800:0:140"
   },
@@ -7320,9 +7334,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 23972773,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/465_the-word-play-flashing-on-a-broken-screen.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/465_the-word-play-flashing-on-a-broken-screen.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "466",
@@ -7359,9 +7374,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 6586554,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/466_phantom-fog-clouds-lightning.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/466_phantom-fog-clouds-lightning.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "467",
@@ -7397,9 +7413,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 12751949,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/467_distorted-shapes-flashing.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/467_distorted-shapes-flashing.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "468",
@@ -7436,9 +7453,10 @@
     "keyframeMaxGap": 0.5,
     "outputBytes": 252704,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/468_blue-flash-light-transition.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/468_blue-flash-light-transition.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "471",
@@ -7478,9 +7496,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 2677471,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/471_man-working-in-a-recording-studio-and-looking-at-a-screen.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/471_man-working-in-a-recording-studio-and-looking-at-a-screen.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "472",
@@ -7518,9 +7537,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 9248667,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/472_ice-and-bubbles-in-whiskey-glass.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/472_ice-and-bubbles-in-whiskey-glass.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "473",
@@ -7560,9 +7580,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 6903015,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/473_glittery-neon-blue-and-pink-liquids-swirling.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/473_glittery-neon-blue-and-pink-liquids-swirling.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "474",
@@ -7603,8 +7624,9 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 63517637,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/474_red-orange-and-white-patches-with-gold-sparkles.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/474_red-orange-and-white-patches-with-gold-sparkles.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   }
 ]
