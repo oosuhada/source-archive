@@ -8720,7 +8720,7 @@
     "videoCodec": "h264",
     "audioStreamsOriginal": 0,
     "kind": "footage",
-    "category": "People / Culture",
+    "category": "Object",
     "theme": "06",
     "keywords": [
       "drummer",
@@ -9034,7 +9034,7 @@
   },
   {
     "id": "634",
-    "title": "Running Legs",
+    "title": "Legs",
     "originalFile": "240-legs-in-motion-6198902-6198913-6198917-6198895-6198907-6198912.mp4",
     "originalPage": null,
     "slug": "legs-in-motion-6198902-6198913-6198917-6198895-6198907-6198912",
@@ -9047,7 +9047,7 @@
     "videoCodec": "h264",
     "audioStreamsOriginal": 0,
     "kind": "footage",
-    "category": "Sport / Physical",
+    "category": "Experimental / Material / Object",
     "theme": "06",
     "keywords": [
       "legs",

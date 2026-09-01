@@ -189,12 +189,18 @@
     function bindTilePreviews(root){
       if(!matchMedia('(hover:hover) and (pointer:fine)').matches)return;
       let active=null;
-      const stop=tile=>{if(!tile)return;const preview=tile.querySelector('.tile-preview');if(!preview)return;preview.pause();tile.classList.remove('previewing');try{preview.currentTime=0}catch{}if(active===tile)active=null};
+      const stop=tile=>{if(!tile)return;const preview=tile.querySelector('.tile-preview');if(!preview)return;delete tile.dataset.previewWanted;preview.pause();tile.classList.remove('previewing');try{preview.currentTime=0}catch{}if(active===tile)active=null};
       root.querySelectorAll('.tile[data-preview]:not([data-bound])').forEach(tile=>{
         tile.dataset.bound='1';const preview=tile.querySelector('.tile-preview');if(!preview)return;
-        preview.addEventListener('playing',()=>{tile.classList.add('previewing');metric('media',{firstFrame:performance.now()-Number(tile.dataset.hoverAt||performance.now())})},{once:true});
-        tile.addEventListener('mouseenter',()=>{if(!tile.dataset.preview)return;if(active&&active!==tile)stop(active);active=tile;tile.dataset.hoverAt=performance.now();if(!preview.src)preview.src=tile.dataset.preview;try{preview.currentTime=0}catch{}preview.play().catch(()=>{})});
+        // A tile can be hovered repeatedly. Keeping this listener active is
+        // essential: the class is removed on leave and must be restored on
+        // every subsequent successful playback, not only the first one.
+        preview.addEventListener('playing',()=>{tile.classList.add('previewing');metric('media',{firstFrame:performance.now()-Number(tile.dataset.hoverAt||performance.now())})});
+        const start=()=>{if(!tile.dataset.preview||active===tile)return;if(active&&active!==tile)stop(active);active=tile;tile.dataset.previewWanted='1';tile.dataset.hoverAt=performance.now();preview.muted=true;preview.defaultMuted=true;preview.playsInline=true;preview.preload='auto';if(!preview.src)preview.src=tile.dataset.preview;try{preview.currentTime=0}catch{}const play=()=>{if(active===tile&&tile.dataset.previewWanted==='1')preview.play().catch(()=>{})};play();if(preview.readyState<3)preview.addEventListener('canplay',play,{once:true})};
+        tile.addEventListener('pointerenter',start);
+        tile.addEventListener('mouseenter',start);
         tile.addEventListener('mouseleave',()=>stop(tile));
+        tile.addEventListener('pointerleave',()=>stop(tile));
       });
     }
     function bindImageRecovery(root){
