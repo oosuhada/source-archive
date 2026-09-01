@@ -105,7 +105,9 @@
         ['274','229'],['107','274']
       ]);
       stable.forEach(item=>{if(publicIdSwaps.has(item.id))item.publicId=publicIdSwaps.get(item.id)});
-      orderedItems=orderTitleVariants([...items].sort((a,b)=>Number(a.publicId)-Number(b.publicId)));
+      // The gallery is a numbered archive: its physical order always follows
+      // public IDs. Title-family ordering is applied only to search results.
+      orderedItems=[...items].sort((a,b)=>Number(a.publicId)-Number(b.publicId));
     }
     function titleFamily(item){
       const match=item.title.trim().match(/^(.*?)(?:\s+(\d+))?$/);
