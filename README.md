@@ -1,44 +1,51 @@
 # Source Archive
 
-A static source archive for reviewing, filtering, and scroll-scrubbing curated visual reference clips.
+Source Archive is a performance-focused video reference library and technical portfolio. It demonstrates how a static GitHub Pages interface can search hundreds of clips instantly and scrub large MP4 files smoothly through CDN-backed HTTP byte-range delivery.
 
 ## Live site
 
-https://oosuhada.github.io/source-archive/
+[oosuhada.github.io/source-archive](https://oosuhada.github.io/source-archive/)
 
-## Structure
+## What this project demonstrates
 
-```txt
-index.html
-styles/
-data/
-assets/thumbs/
+- Multi-origin media storage with Cloudflare R2 and Backblaze B2
+- Cloudflare CDN delivery with HTTP `Range` requests for responsive random seeking
+- Scroll position mapped to `video.currentTime` for frame-oriented video exploration
+- Seek-friendly H.264 MP4 encoding with frequent keyframes and Fast Start metadata
+- Thumbnail-first rendering and lightweight client-side metadata search
+- A serverless static architecture: GitHub Pages hosts only the UI, metadata, and thumbnails
+
+## Architecture
+
+```mermaid
+flowchart LR
+    U[Browser] --> P[GitHub Pages]
+    P --> M[Metadata and thumbnails]
+    U --> C[Cloudflare CDN]
+    C --> R[Cloudflare R2]
+    C --> B[Backblaze B2]
+    C -->|HTTP Range responses| U
 ```
 
-- `index.html` — the archive interface
-- `styles/` — archive and detail-page styling
-- `data/` — archive metadata and manifest files
-- `assets/thumbs/` — JPEG thumbnails referenced by the archive
+The browser loads the small static catalog first. Full-resolution video is requested only when needed, while byte-range delivery lets the player seek without downloading an entire file.
 
-The repository keeps the interface, metadata, and thumbnails in GitHub Pages. MP4 files are served from Cloudflare R2 or Backblaze B2 through Cloudflare CDN for fast range requests and stable video scrubbing.
+## Performance design
 
-## Current archive size
+### Scroll-driven video
 
-- 648 archive items
-- 648 MP4 clips: 449 in Cloudflare R2 and 199 in Backblaze B2
-- 648 JPEG thumbnails
+Detail pages translate scroll progress into media time. Source files are prepared as H.264 MP4 with no audio, `yuv420p`, Fast Start, and closely spaced keyframes so nonlinear seeking stays responsive.
 
-## Usage
+### Fast discovery
 
-Open the live site, choose a category filter, then select a clip. Clip detail pages scrub through CDN-hosted video using page scroll.
+Archive cards initially use compact JPEG thumbnails. Search and category filtering run against local JavaScript metadata, avoiding a database round trip and keeping results immediate.
 
-## GitHub Pages note
+### Search-friendly metadata
 
-The empty `.nojekyll` file tells GitHub Pages to bypass Jekyll processing and serve this repository as a plain static site. It is intentionally kept so assets and routes are published exactly as committed.
+Visible titles are intentionally concise—one or two English words where possible, and no more than three for newly imported clips. Search uses richer hidden metadata: concepts, subjects, visual properties, category terms, and useful synonyms. Import manifests preserve original source titles for traceability.
 
-## Performance note
+### Storage and delivery
 
-MP4 delivery uses object storage instead of GitHub Pages. Cloudflare R2 and Backblaze B2 keep video files outside the GitHub Pages build, support byte-range requests, and let the archive page stay small while scroll-scrubbing video.
+MP4 assets are excluded from Git and distributed across two object-storage origins. Cloudflare provides the public delivery layer, stable caching, and range-aware playback while GitHub Pages remains a lean application host.
 
 Current media bases:
 
@@ -46,3 +53,33 @@ Current media bases:
 https://source-media.oosu.dev/media/
 https://source-media-b2.oosu.dev/media/
 ```
+
+## Current archive
+
+- 644 searchable video items
+- 427 MP4 files in Cloudflare R2
+- 217 MP4 files in Backblaze B2
+- 644 locally indexed JPEG thumbnails
+
+## Repository structure
+
+```txt
+index.html                              Archive application and playback logic
+styles/                                 Archive and detail-page styling
+data/source-library-data.js             Core catalog metadata
+data/source-library-youtube-data.js     Imported catalog metadata
+data/experimental-import-manifest*.json Source and encoding provenance
+data/search-metadata-audit.json         Generated title and keyword audit
+assets/thumbs/                          Search and card thumbnails
+scripts/                                Repeatable metadata/import utilities
+```
+
+The repository contains the application, metadata, thumbnails, and reproducible tooling. Original and processed MP4 files are never committed to GitHub.
+
+## Search model
+
+Search combines each item's display title, category, and keyword vocabulary. Exact token matches rank above prefixes and partial matches, so a concise card title can remain visually clean while queries such as `flower`, `floral`, `blossom`, or `petals` still find the same relevant clip.
+
+## Deployment
+
+The site is deployed as a plain static GitHub Pages project. The `.nojekyll` marker keeps assets and routes untouched. Video origins must return `video/mp4`, support `206 Partial Content`, and expose stable immutable URLs for efficient CDN caching.
