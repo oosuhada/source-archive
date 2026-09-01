@@ -51,20 +51,19 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "08",
-    "category": "Experimental / Material / Object",
+    "category": "Object",
     "keywords": [
           "old",
           "tv",
-          "experimental",
-          "material",
+          "television",
+          "retro",
+          "vintage",
+          "screen",
+          "monitor",
           "object",
-          "abstract",
-          "texture",
-          "visual",
-          "motion",
-          "surface",
-          "art",
-          "macro"
+          "electronics",
+          "crt",
+          "broadcast"
     ]
   },
   {
