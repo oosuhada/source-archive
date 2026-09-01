@@ -3,7 +3,7 @@ window.SOURCE_LIBRARY = [
   {id:"02",title:"Forest",clip:"02_forest.mp4",thumb:"02_forest.jpg",source:"305660_medium.mp4",ranges:[[0.5,11.8]],category:"Nature / Land"},
   {id:"03",title:"Glow",clip:"03_civic-light.mp4",thumb:"03_civic-light.jpg",source:"apYbsj7qFTU.mp4",ranges:[[39,89.2]],category:"Experimental / Material / Object"},
   {id:"04",title:"Alpine",clip:"04_alpine.mp4",thumb:"04_alpine.jpg",source:"318885_medium.mp4",ranges:[[4,55]],category:"Nature / Land"},
-  {id:"05",title:"Blossom",clip:"05_blossom.mp4",thumb:"05_blossom.jpg",source:"268528_medium.mp4",ranges:[[1.5,23.5]],category:"Nature / Land"},
+  {id:"05",title:"Blossom",clip:"05_blossom.mp4",thumb:"05_blossom.jpg",source:"268528_medium.mp4",ranges:[[1.5,23.5]],category:"Nature / Land",keywords:["flower","flowers","blossom","bloom","blooms","floral","petal","petals","botanical","garden","spring","nature"]},
   {id:"06",title:"Bokeh",clip:"06_abstract-orbit.mp4",thumb:"06_abstract-orbit.jpg",source:"mMD63t-W0Os.mp4",ranges:[[26.8,59.7]],category:"Experimental / Material / Object"},
   {id:"07",title:"Time",clip:"07_watch.mp4",thumb:"07_watch.jpg",source:"16639006_1920_1080_25fps.mp4",ranges:[[2,20]],edit:"forward-only / 0.5x duration",category:"Experimental / Material / Object"},
   {id:"08",title:"Current",clip:"08_reef.mp4",thumb:"08_reef.jpg",source:"12892259_3840_2160_60fps.mp4",ranges:[[0.4,10.9]],edit:"0.5x duration / 2x scroll-time density",scrollHeightVh:720,category:"Water"},

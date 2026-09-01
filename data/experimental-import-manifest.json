@@ -20,7 +20,27 @@
       "super",
       "hot",
       "vhs",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding",
+      "film",
+      "analog",
+      "analogue",
+      "8mm",
+      "retro",
+      "vintage",
+      "archive",
+      "grain",
+      "nostalgia",
+      "cinematic"
     ],
     "outputDuration": 66.709,
     "outputWidth": 1920,
@@ -35,11 +55,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/275_super-hot-vhs.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Super Hot VHS"
   },
   {
     "id": "276",
-    "title": "Burnin' Beat",
+    "title": "Burnin Beat",
     "originalFile": "02-burnin-beat.ts",
     "originalPage": "https://artlist.io/video-templates/burnin-beat/1000233",
     "slug": "burnin-beat",
@@ -57,7 +78,29 @@
     "keywords": [
       "burnin",
       "beat",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding",
+      "fire",
+      "flame",
+      "flames",
+      "burning",
+      "heat",
+      "spark",
+      "sparks",
+      "glow",
+      "fireworks",
+      "pyrotechnics",
+      "explosion",
+      "night"
     ],
     "outputDuration": 19.417,
     "outputWidth": 1920,
@@ -72,7 +115,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/276_burnin-beat.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Burnin' Beat"
   },
   {
     "id": "277",
@@ -94,7 +138,24 @@
     "keywords": [
       "bubble",
       "trouble",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding",
+      "bubbles",
+      "soap",
+      "foam",
+      "iridescent",
+      "surface",
+      "macro",
+      "colorful"
     ],
     "outputDuration": 26.72,
     "outputWidth": 1920,
@@ -109,7 +170,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/277_bubble-trouble.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Bubble Trouble"
   },
   {
     "id": "278",
@@ -131,7 +193,17 @@
     "keywords": [
       "nostalgic",
       "future",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 80.625,
     "outputWidth": 1920,
@@ -146,7 +218,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/278_nostalgic-future.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Nostalgic Future"
   },
   {
     "id": "279",
@@ -166,9 +239,20 @@
     "category": "Template",
     "theme": "06",
     "keywords": [
+      "3d",
       "kinetic",
       "punk",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 40.375,
     "outputWidth": 1920,
@@ -183,11 +267,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/279_3d-kinetic-punk.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "3D Kinetic Punk"
   },
   {
     "id": "280",
-    "title": "Liquid Glass Typography Posters",
+    "title": "Liquid Glass Typography",
     "originalFile": "06-liquid-glass-typography-posters.ts",
     "originalPage": "https://artlist.io/video-templates/liquid-glass-typography-posters/1001157",
     "slug": "liquid-glass-typography-posters",
@@ -207,7 +292,27 @@
       "glass",
       "typography",
       "posters",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding",
+      "fluid",
+      "ink",
+      "oil",
+      "paint",
+      "flow",
+      "swirl",
+      "mixing",
+      "viscous",
+      "pigment",
+      "macro",
+      "texture"
     ],
     "outputDuration": 33.534,
     "outputWidth": 1920,
@@ -222,7 +327,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/280_liquid-glass-typography-posters.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Liquid Glass Typography Posters"
   },
   {
     "id": "281",
@@ -245,7 +351,27 @@
       "real",
       "film",
       "transitions",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding",
+      "analog",
+      "analogue",
+      "8mm",
+      "vhs",
+      "retro",
+      "vintage",
+      "archive",
+      "grain",
+      "nostalgia",
+      "cinematic"
     ],
     "outputDuration": 20.121,
     "outputWidth": 1920,
@@ -260,11 +386,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/281_real-film-transitions.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Real Film Transitions"
   },
   {
     "id": "282",
-    "title": "Y2Keys",
+    "title": "Y2keys",
     "originalFile": "08-y2keys.ts",
     "originalPage": "https://artlist.io/video-templates/y2keys/1001216",
     "slug": "y2keys",
@@ -281,7 +408,17 @@
     "theme": "06",
     "keywords": [
       "y2keys",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 49.542,
     "outputWidth": 1920,
@@ -296,7 +433,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/282_y2keys.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Y2Keys"
   },
   {
     "id": "283",
@@ -318,7 +456,25 @@
     "keywords": [
       "digital",
       "breach",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding",
+      "glitch",
+      "distortion",
+      "screen",
+      "signal",
+      "noise",
+      "error",
+      "technology",
+      "cyber"
     ],
     "outputDuration": 48.048,
     "outputWidth": 1920,
@@ -333,11 +489,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/283_digital-breach.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Digital Breach"
   },
   {
     "id": "284",
-    "title": "Stamp On",
+    "title": "Stamp",
     "originalFile": "10-stamp-on.ts",
     "originalPage": "https://artlist.io/video-templates/stamp-on/1000480",
     "slug": "stamp-on",
@@ -354,7 +511,17 @@
     "theme": "06",
     "keywords": [
       "stamp",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 61.56,
     "outputWidth": 1920,
@@ -369,7 +536,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/284_stamp-on.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Stamp On"
   },
   {
     "id": "285",
@@ -391,7 +559,26 @@
     "keywords": [
       "film",
       "titles",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding",
+      "analog",
+      "analogue",
+      "8mm",
+      "vhs",
+      "retro",
+      "vintage",
+      "archive",
+      "grain",
+      "nostalgia",
+      "cinematic"
     ],
     "outputDuration": 110.067,
     "outputWidth": 1920,
@@ -409,7 +596,8 @@
     "rangeHttpStatus": 206,
     "supersedesOutputFile": "285_film-titles.mp4",
     "cropApplied": "1920:912:0:80",
-    "media": "b2"
+    "media": "b2",
+    "originalTitle": "Film Titles"
   },
   {
     "id": "286",
@@ -432,7 +620,26 @@
       "retro",
       "screen",
       "titles",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding",
+      "film",
+      "analog",
+      "analogue",
+      "8mm",
+      "vhs",
+      "vintage",
+      "archive",
+      "grain",
+      "nostalgia",
+      "cinematic"
     ],
     "outputDuration": 20.084,
     "outputWidth": 1920,
@@ -447,11 +654,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/286_retro-screen-titles.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Retro Screen Titles"
   },
   {
     "id": "287",
-    "title": "Classic 3D Collection",
+    "title": "Classic 3D",
     "originalFile": "13-classic-3d-collection.ts",
     "originalPage": "https://artlist.io/video-templates/classic-3d-collection/129071",
     "slug": "classic-3d-collection",
@@ -468,8 +676,19 @@
     "theme": "06",
     "keywords": [
       "classic",
+      "3d",
       "collection",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 48.667,
     "outputWidth": 1920,
@@ -484,11 +703,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/287_classic-3d-collection.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Classic 3D Collection"
   },
   {
     "id": "288",
-    "title": "Playful By Nature",
+    "title": "Playful Nature",
     "originalFile": "14-playful-by-nature.ts",
     "originalPage": "https://artlist.io/video-templates/playful-by-nature/1001211",
     "slug": "playful-by-nature",
@@ -506,7 +726,17 @@
     "keywords": [
       "playful",
       "nature",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 45.584,
     "outputWidth": 1920,
@@ -521,7 +751,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/288_playful-by-nature.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Playful By Nature"
   },
   {
     "id": "289",
@@ -544,7 +775,17 @@
       "semi",
       "brutalism",
       "posters",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 20.7,
     "outputWidth": 1920,
@@ -559,7 +800,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/289_semi-brutalism-posters.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Semi Brutalism Posters"
   },
   {
     "id": "290",
@@ -581,7 +823,17 @@
     "keywords": [
       "ultimate",
       "typewriter",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 57.875,
     "outputWidth": 1920,
@@ -596,7 +848,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/290_ultimate-typewriter.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Ultimate Typewriter"
   },
   {
     "id": "291",
@@ -619,7 +872,16 @@
       "abstract",
       "golden",
       "typography",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 12.012,
     "outputWidth": 1920,
@@ -634,7 +896,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/291_abstract-golden-typography.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Abstract Golden Typography"
   },
   {
     "id": "292",
@@ -657,7 +920,17 @@
       "mystic",
       "growth",
       "stories",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 32.234,
     "outputWidth": 1920,
@@ -672,7 +945,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/292_mystic-growth-stories.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Mystic Growth Stories"
   },
   {
     "id": "293",
@@ -694,7 +968,16 @@
     "keywords": [
       "cinematic",
       "titles",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 32.567,
     "outputWidth": 1920,
@@ -709,7 +992,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/293_cinematic-titles.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Cinematic Titles"
   },
   {
     "id": "294",
@@ -731,7 +1015,27 @@
     "keywords": [
       "ink",
       "flow",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding",
+      "liquid",
+      "fluid",
+      "oil",
+      "paint",
+      "swirl",
+      "mixing",
+      "viscous",
+      "pigment",
+      "macro",
+      "texture"
     ],
     "outputDuration": 37.042,
     "outputWidth": 1920,
@@ -746,7 +1050,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/294_ink-flow.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Ink Flow"
   },
   {
     "id": "295",
@@ -766,9 +1071,20 @@
     "category": "Template",
     "theme": "06",
     "keywords": [
+      "en",
       "route",
       "intro",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 37.459,
     "outputWidth": 1920,
@@ -783,11 +1099,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/295_en-route-intro.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "En Route Intro"
   },
   {
     "id": "296",
-    "title": "Retro Snap 2000",
+    "title": "Retro Snap",
     "originalFile": "22-retro-snap-2000.ts",
     "originalPage": "https://artlist.io/video-templates/retro-snap-2000/1000740",
     "slug": "retro-snap-2000",
@@ -805,7 +1122,28 @@
     "keywords": [
       "retro",
       "snap",
-      "experimental"
+      "2000",
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding",
+      "film",
+      "analog",
+      "analogue",
+      "8mm",
+      "vhs",
+      "vintage",
+      "archive",
+      "grain",
+      "nostalgia",
+      "cinematic"
     ],
     "outputDuration": 34.584,
     "outputWidth": 1920,
@@ -820,11 +1158,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/296_retro-snap-2000.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Retro Snap 2000"
   },
   {
     "id": "297",
-    "title": "Retro Futuristic 3D Desktop",
+    "title": "Retro Futuristic 3D",
     "originalFile": "23-retro-futuristic-3d-desktop.ts",
     "originalPage": "https://artlist.io/video-templates/retro-futuristic-3d-desktop/1001450",
     "slug": "retro-futuristic-3d-desktop",
@@ -842,8 +1181,29 @@
     "keywords": [
       "retro",
       "futuristic",
+      "3d",
       "desktop",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding",
+      "film",
+      "analog",
+      "analogue",
+      "8mm",
+      "vhs",
+      "vintage",
+      "archive",
+      "grain",
+      "nostalgia",
+      "cinematic"
     ],
     "outputDuration": 23.417,
     "outputWidth": 1920,
@@ -858,7 +1218,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/297_retro-futuristic-3d-desktop.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Retro Futuristic 3D Desktop"
   },
   {
     "id": "298",
@@ -881,7 +1242,28 @@
       "spray",
       "paint",
       "title",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding",
+      "liquid",
+      "fluid",
+      "ink",
+      "oil",
+      "flow",
+      "swirl",
+      "mixing",
+      "viscous",
+      "pigment",
+      "macro",
+      "texture"
     ],
     "outputDuration": 28,
     "outputWidth": 1920,
@@ -896,11 +1278,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/298_spray-paint-title.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Spray Paint Title"
   },
   {
     "id": "299",
-    "title": "Gothic Chrome Animated Letters",
+    "title": "Gothic Chrome Animated",
     "originalFile": "25-gothic-chrome-animated-letters.ts",
     "originalPage": "https://artlist.io/video-templates/gothic-chrome-animated-letters/1001922",
     "slug": "gothic-chrome-animated-letters",
@@ -920,7 +1303,26 @@
       "chrome",
       "animated",
       "letters",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding",
+      "architecture",
+      "ancient",
+      "history",
+      "heritage",
+      "archaeology",
+      "landmark",
+      "travel",
+      "monument",
+      "historic"
     ],
     "outputDuration": 32.584,
     "outputWidth": 1920,
@@ -935,11 +1337,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/299_gothic-chrome-animated-letters.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Gothic Chrome Animated Letters"
   },
   {
     "id": "300",
-    "title": "All The Right Keys",
+    "title": "All Right Keys",
     "originalFile": "26-all-the-right-keys.ts",
     "originalPage": "https://artlist.io/video-templates/all-the-right-keys/1001260",
     "slug": "all-the-right-keys",
@@ -956,10 +1359,19 @@
     "theme": "06",
     "keywords": [
       "all",
-      "the",
       "right",
       "keys",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 35.68,
     "outputWidth": 1920,
@@ -974,7 +1386,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/300_all-the-right-keys.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "All The Right Keys"
   },
   {
     "id": "301",
@@ -997,7 +1410,23 @@
       "glass",
       "bubble",
       "titles",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding",
+      "bubbles",
+      "soap",
+      "foam",
+      "iridescent",
+      "surface",
+      "macro",
+      "colorful"
     ],
     "outputDuration": 50.067,
     "outputWidth": 1920,
@@ -1012,7 +1441,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/301_glass-bubble-titles.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Glass Bubble Titles"
   },
   {
     "id": "302",
@@ -1033,7 +1463,17 @@
     "theme": "06",
     "keywords": [
       "bags",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 30.084,
     "outputWidth": 1920,
@@ -1048,7 +1488,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/302_bags-bags-bags.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Bags Bags Bags"
   },
   {
     "id": "303",
@@ -1070,7 +1511,26 @@
     "keywords": [
       "film",
       "titles",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding",
+      "analog",
+      "analogue",
+      "8mm",
+      "vhs",
+      "retro",
+      "vintage",
+      "archive",
+      "grain",
+      "nostalgia",
+      "cinematic"
     ],
     "outputDuration": 36.084,
     "outputWidth": 1920,
@@ -1085,11 +1545,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/303_film-titles-2.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Film Titles"
   },
   {
     "id": "304",
-    "title": "Unique Cinematic Titles Pack",
+    "title": "Unique Cinematic Titles",
     "originalFile": "30-unique-cinematic-titles-pack.ts",
     "originalPage": "https://artlist.io/video-templates/unique-cinematic-titles-pack/1001283",
     "slug": "unique-cinematic-titles-pack",
@@ -1109,7 +1570,16 @@
       "cinematic",
       "titles",
       "pack",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 54.267,
     "outputWidth": 1920,
@@ -1124,11 +1594,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/304_unique-cinematic-titles-pack.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Unique Cinematic Titles Pack"
   },
   {
     "id": "305",
-    "title": "Liquid Typography Scenes",
+    "title": "Liquid Typography",
     "originalFile": "31-liquid-typography-scenes.ts",
     "originalPage": "https://artlist.io/video-templates/liquid-typography-scenes/1000691",
     "slug": "liquid-typography-scenes",
@@ -1147,7 +1618,27 @@
       "liquid",
       "typography",
       "scenes",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding",
+      "fluid",
+      "ink",
+      "oil",
+      "paint",
+      "flow",
+      "swirl",
+      "mixing",
+      "viscous",
+      "pigment",
+      "macro",
+      "texture"
     ],
     "outputDuration": 64.967,
     "outputWidth": 1920,
@@ -1162,7 +1653,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/305_liquid-typography-scenes.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Liquid Typography Scenes"
   },
   {
     "id": "306",
@@ -1184,7 +1676,16 @@
     "keywords": [
       "exploding",
       "typography",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 46.534,
     "outputWidth": 1920,
@@ -1199,7 +1700,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/306_exploding-typography.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Exploding Typography"
   },
   {
     "id": "307",
@@ -1222,7 +1724,17 @@
       "duotone",
       "event",
       "opener",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 24.066,
     "outputWidth": 1920,
@@ -1237,11 +1749,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/307_duotone-event-opener.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Duotone Event Opener"
   },
   {
     "id": "308",
-    "title": "3D Soap Bubbles Pack",
+    "title": "3D Soap Bubbles",
     "originalFile": "34-3d-soap-bubbles-pack.ts",
     "originalPage": "https://artlist.io/video-templates/3d-soap-bubbles-pack/1001020",
     "slug": "3d-soap-bubbles-pack",
@@ -1257,10 +1770,27 @@
     "category": "Template",
     "theme": "06",
     "keywords": [
+      "3d",
       "soap",
       "bubbles",
       "pack",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding",
+      "bubble",
+      "foam",
+      "iridescent",
+      "surface",
+      "macro",
+      "colorful"
     ],
     "outputDuration": 29.667,
     "outputWidth": 1920,
@@ -1275,7 +1805,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/308_3d-soap-bubbles-pack.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "3D Soap Bubbles Pack"
   },
   {
     "id": "309",
@@ -1295,9 +1826,20 @@
     "category": "Template",
     "theme": "06",
     "keywords": [
+      "3d",
       "christmas",
       "toys",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 19.042,
     "outputWidth": 1920,
@@ -1312,7 +1854,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/309_3d-christmas-toys.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "3D Christmas Toys"
   },
   {
     "id": "310",
@@ -1335,7 +1878,16 @@
       "cast",
       "kinetic",
       "typography",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 24.892,
     "outputWidth": 1920,
@@ -1350,11 +1902,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/310_cast-kinetic-typography.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Cast Kinetic Typography"
   },
   {
     "id": "311",
-    "title": "Sticker Tag Title & Logo Loop",
+    "title": "Sticker Tag Title",
     "originalFile": "37-sticker-tag-title-logo-loop.ts",
     "originalPage": "https://artlist.io/video-templates/sticker-tag-title--logo-loop/123038",
     "slug": "sticker-tag-title-logo-loop",
@@ -1375,7 +1928,17 @@
       "title",
       "logo",
       "loop",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 27.917,
     "outputWidth": 1920,
@@ -1390,7 +1953,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/311_sticker-tag-title-logo-loop.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Sticker Tag Title & Logo Loop"
   },
   {
     "id": "312",
@@ -1413,7 +1977,17 @@
       "play",
       "time",
       "intro",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 26.209,
     "outputWidth": 1920,
@@ -1428,7 +2002,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/312_play-time-intro.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Play Time Intro"
   },
   {
     "id": "313",
@@ -1451,7 +2026,17 @@
       "crystal",
       "palace",
       "slides",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 42.084,
     "outputWidth": 1920,
@@ -1466,7 +2051,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/313_crystal-palace-slides.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Crystal Palace Slides"
   },
   {
     "id": "314",
@@ -1488,7 +2074,16 @@
     "keywords": [
       "stickers",
       "titles",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 33.134,
     "outputWidth": 1920,
@@ -1503,11 +2098,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/314_stickers-titles.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Stickers Titles"
   },
   {
     "id": "315",
-    "title": "Extract Glitch - Transitions & Title",
+    "title": "Extract Glitch Transitions",
     "originalFile": "41-extract-glitch-transitions-title.ts",
     "originalPage": "https://artlist.io/video-templates/extract-glitch---transitions--title/122051",
     "slug": "extract-glitch-transitions-title",
@@ -1527,7 +2123,25 @@
       "glitch",
       "transitions",
       "title",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding",
+      "distortion",
+      "digital",
+      "screen",
+      "signal",
+      "noise",
+      "error",
+      "technology",
+      "cyber"
     ],
     "outputDuration": 45.625,
     "outputWidth": 1920,
@@ -1542,11 +2156,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/315_extract-glitch-transitions-title.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Extract Glitch - Transitions & Title"
   },
   {
     "id": "316",
-    "title": "The Cool Kinetic Titles",
+    "title": "Cool Kinetic Titles",
     "originalFile": "42-the-cool-kinetic-titles.ts",
     "originalPage": "https://artlist.io/video-templates/the-cool-kinetic-titles/127109",
     "slug": "the-cool-kinetic-titles",
@@ -1562,11 +2177,19 @@
     "category": "Template",
     "theme": "06",
     "keywords": [
-      "the",
       "cool",
       "kinetic",
       "titles",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 39.125,
     "outputWidth": 1920,
@@ -1581,7 +2204,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/316_the-cool-kinetic-titles.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "The Cool Kinetic Titles"
   },
   {
     "id": "317",
@@ -1604,7 +2228,17 @@
       "main",
       "squeeze",
       "intro",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 40.042,
     "outputWidth": 1920,
@@ -1619,11 +2253,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/317_main-squeeze-intro.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Main Squeeze Intro"
   },
   {
     "id": "318",
-    "title": "Epic Streaming Title Screens",
+    "title": "Epic Streaming Title",
     "originalFile": "44-epic-streaming-title-screens.ts",
     "originalPage": "https://artlist.io/video-templates/epic-streaming-title-screens/1001452",
     "slug": "epic-streaming-title-screens",
@@ -1643,7 +2278,17 @@
       "streaming",
       "title",
       "screens",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 33.625,
     "outputWidth": 1920,
@@ -1658,7 +2303,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/318_epic-streaming-title-screens.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Epic Streaming Title Screens"
   },
   {
     "id": "319",
@@ -1681,7 +2327,17 @@
       "short",
       "brand",
       "opener",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 13.08,
     "outputWidth": 1920,
@@ -1696,7 +2352,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/319_short-brand-opener.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Short Brand Opener"
   },
   {
     "id": "320",
@@ -1718,7 +2375,16 @@
     "keywords": [
       "paper",
       "typography",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 42.143,
     "outputWidth": 1920,
@@ -1733,7 +2399,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/320_paper-typography.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Paper Typography"
   },
   {
     "id": "321",
@@ -1755,7 +2422,15 @@
     "keywords": [
       "creative",
       "titles",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "design",
+      "animation",
+      "editing",
+      "branding"
     ],
     "outputDuration": 32.084,
     "outputWidth": 1920,
@@ -1770,7 +2445,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/321_creative-titles.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Creative Titles"
   },
   {
     "id": "322",
@@ -1792,7 +2468,17 @@
     "keywords": [
       "face",
       "collage",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 36.08,
     "outputWidth": 1920,
@@ -1807,7 +2493,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/322_face-collage.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Face Collage"
   },
   {
     "id": "323",
@@ -1827,9 +2514,20 @@
     "category": "Template",
     "theme": "06",
     "keywords": [
+      "ai",
       "conversation",
       "kit",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 41.909,
     "outputWidth": 1920,
@@ -1844,7 +2542,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/323_ai-conversation-kit.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "AI Conversation Kit"
   },
   {
     "id": "324",
@@ -1866,7 +2565,17 @@
     "keywords": [
       "infographic",
       "poster",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 50.251,
     "outputWidth": 1920,
@@ -1881,11 +2590,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/324_infographic-poster.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Infographic Poster"
   },
   {
     "id": "325",
-    "title": "In Control Kinetic Typography",
+    "title": "Control Kinetic Typography",
     "originalFile": "51-in-control-kinetic-typography.ts",
     "originalPage": "https://artlist.io/video-templates/in-control-kinetic-typography/105163",
     "slug": "in-control-kinetic-typography",
@@ -1904,7 +2614,16 @@
       "control",
       "kinetic",
       "typography",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 44.962,
     "outputWidth": 1920,
@@ -1919,7 +2638,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/325_in-control-kinetic-typography.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "In Control Kinetic Typography"
   },
   {
     "id": "326",
@@ -1942,7 +2662,17 @@
       "clean",
       "unique",
       "slideshow",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 30.12,
     "outputWidth": 1920,
@@ -1957,7 +2687,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/326_clean-unique-slideshow.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Clean Unique Slideshow"
   },
   {
     "id": "327",
@@ -1979,7 +2710,17 @@
     "keywords": [
       "marketing",
       "promo",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 28.034,
     "outputWidth": 1920,
@@ -1994,11 +2735,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/327_marketing-promo.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Marketing Promo"
   },
   {
     "id": "328",
-    "title": "Freeze Frame Collage Grunge",
+    "title": "Freeze Frame Collage",
     "originalFile": "54-freeze-frame-collage-grunge.ts",
     "originalPage": "https://artlist.io/video-templates/freeze-frame-collage-grunge/128055",
     "slug": "freeze-frame-collage-grunge",
@@ -2018,7 +2760,17 @@
       "frame",
       "collage",
       "grunge",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 29.88,
     "outputWidth": 1920,
@@ -2033,7 +2785,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/328_freeze-frame-collage-grunge.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Freeze Frame Collage Grunge"
   },
   {
     "id": "329",
@@ -2055,7 +2808,17 @@
     "keywords": [
       "poptype",
       "slides",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 23.6,
     "outputWidth": 1920,
@@ -2070,11 +2833,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/329_poptype-slides.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Poptype Slides"
   },
   {
     "id": "330",
-    "title": "Film Leaks And Burn Transitions",
+    "title": "Film Leaks Burn",
     "originalFile": "56-film-leaks-and-burn-transitions.ts",
     "originalPage": "https://artlist.io/video-templates/film-leaks-and-burn-transitions/130610",
     "slug": "film-leaks-and-burn-transitions",
@@ -2092,10 +2856,41 @@
     "keywords": [
       "film",
       "leaks",
-      "and",
       "burn",
       "transitions",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding",
+      "fire",
+      "flame",
+      "flames",
+      "burning",
+      "heat",
+      "spark",
+      "sparks",
+      "glow",
+      "fireworks",
+      "pyrotechnics",
+      "explosion",
+      "night",
+      "analog",
+      "analogue",
+      "8mm",
+      "vhs",
+      "retro",
+      "vintage",
+      "archive",
+      "grain",
+      "nostalgia",
+      "cinematic"
     ],
     "outputDuration": 26.2,
     "outputWidth": 1920,
@@ -2110,7 +2905,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/330_film-leaks-and-burn-transitions.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Film Leaks And Burn Transitions"
   },
   {
     "id": "331",
@@ -2132,7 +2928,16 @@
     "keywords": [
       "future",
       "titles",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 60.24,
     "outputWidth": 1920,
@@ -2147,11 +2952,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/331_future-titles.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Future Titles"
   },
   {
     "id": "332",
-    "title": "Animated Stickers Pack",
+    "title": "Animated Stickers",
     "originalFile": "58-animated-stickers-pack.ts",
     "originalPage": "https://artlist.io/video-templates/animated-stickers-pack/113457",
     "slug": "animated-stickers-pack",
@@ -2170,7 +2976,17 @@
       "animated",
       "stickers",
       "pack",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 20.054,
     "outputWidth": 1920,
@@ -2185,11 +3001,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/332_animated-stickers-pack.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Animated Stickers Pack"
   },
   {
     "id": "333",
-    "title": "Change Your Mind Modular Titles",
+    "title": "Change Your Mind",
     "originalFile": "59-change-your-mind-modular-titles.ts",
     "originalPage": "https://artlist.io/video-templates/change-your-mind-modular-titles/133598",
     "slug": "change-your-mind-modular-titles",
@@ -2210,7 +3027,16 @@
       "mind",
       "modular",
       "titles",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 46.084,
     "outputWidth": 1920,
@@ -2225,11 +3051,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/333_change-your-mind-modular-titles.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Change Your Mind Modular Titles"
   },
   {
     "id": "334",
-    "title": "Send To Print",
+    "title": "Send Print",
     "originalFile": "60-send-to-print.ts",
     "originalPage": "https://artlist.io/video-templates/send-to-print/1000477",
     "slug": "send-to-print",
@@ -2247,7 +3074,17 @@
     "keywords": [
       "send",
       "print",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 49,
     "outputWidth": 1920,
@@ -2262,11 +3099,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/334_send-to-print.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Send To Print"
   },
   {
     "id": "335",
-    "title": "Top Secret Classified Files Opener",
+    "title": "Top Secret Classified",
     "originalFile": "61-top-secret-classified-files-opener.ts",
     "originalPage": "https://artlist.io/video-templates/top-secret-classified-files-opener/1001077",
     "slug": "top-secret-classified-files-opener",
@@ -2287,7 +3125,17 @@
       "classified",
       "files",
       "opener",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 18.067,
     "outputWidth": 1920,
@@ -2302,7 +3150,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/335_top-secret-classified-files-opener.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Top Secret Classified Files Opener"
   },
   {
     "id": "336",
@@ -2323,7 +3172,19 @@
     "theme": "06",
     "keywords": [
       "tear",
-      "experimental"
+      "it",
+      "up",
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 32.36,
     "outputWidth": 1920,
@@ -2338,7 +3199,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/336_tear-it-up.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Tear It Up"
   },
   {
     "id": "337",
@@ -2360,7 +3222,17 @@
     "keywords": [
       "shredding",
       "news",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 27.68,
     "outputWidth": 1920,
@@ -2375,11 +3247,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/337_shredding-news.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Shredding News"
   },
   {
     "id": "338",
-    "title": "Real Gritty Gesture Textures Titles",
+    "title": "Real Gritty Gesture",
     "originalFile": "64-real-gritty-gesture-textures-titles.ts",
     "originalPage": "https://artlist.io/video-templates/real-gritty-gesture-textures-titles/129082",
     "slug": "real-gritty-gesture-textures-titles",
@@ -2400,7 +3273,16 @@
       "gesture",
       "textures",
       "titles",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 44.584,
     "outputWidth": 1920,
@@ -2415,7 +3297,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/338_real-gritty-gesture-textures-titles.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Real Gritty Gesture Textures Titles"
   },
   {
     "id": "339",
@@ -2437,7 +3320,17 @@
     "keywords": [
       "minimal",
       "typo",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 25.059,
     "outputWidth": 1920,
@@ -2452,11 +3345,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/339_minimal-typo.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Minimal Typo"
   },
   {
     "id": "340",
-    "title": "Change Things Graphics Package",
+    "title": "Change Things Graphics",
     "originalFile": "66-change-things-graphics-package.ts",
     "originalPage": "https://artlist.io/video-templates/change-things-graphics-package/133807",
     "slug": "change-things-graphics-package",
@@ -2476,7 +3370,16 @@
       "things",
       "graphics",
       "package",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 48.667,
     "outputWidth": 1920,
@@ -2491,11 +3394,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/340_change-things-graphics-package.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Change Things Graphics Package"
   },
   {
     "id": "341",
-    "title": "Take 2 Overlays FX Titles Pack",
+    "title": "Take Overlays Fx",
     "originalFile": "67-take-2-overlays-fx-titles-pack.ts",
     "originalPage": "https://artlist.io/video-templates/take-2-overlays-fx-titles-pack/116673",
     "slug": "take-2-overlays-fx-titles-pack",
@@ -2512,10 +3416,21 @@
     "theme": "06",
     "keywords": [
       "take",
+      "2",
       "overlays",
+      "fx",
       "titles",
       "pack",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 18.084,
     "outputWidth": 1920,
@@ -2530,11 +3445,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/341_take-2-overlays-fx-titles-pack.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Take 2 Overlays FX Titles Pack"
   },
   {
     "id": "342",
-    "title": "Get Gritty Title Transitions",
+    "title": "Get Gritty Title",
     "originalFile": "68-get-gritty-title-transitions.ts",
     "originalPage": "https://artlist.io/video-templates/get-gritty-title-transitions/132729",
     "slug": "get-gritty-title-transitions",
@@ -2554,7 +3470,17 @@
       "gritty",
       "title",
       "transitions",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 62,
     "outputWidth": 1920,
@@ -2569,11 +3495,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/342_get-gritty-title-transitions.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Get Gritty Title Transitions"
   },
   {
     "id": "343",
-    "title": "Vintage Vortex 3D Pack",
+    "title": "Vintage Vortex 3D",
     "originalFile": "69-vintage-vortex-3d-pack.ts",
     "originalPage": "https://artlist.io/video-templates/vintage-vortex-3d-pack/1001213",
     "slug": "vintage-vortex-3d-pack",
@@ -2591,8 +3518,19 @@
     "keywords": [
       "vintage",
       "vortex",
+      "3d",
       "pack",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 31.167,
     "outputWidth": 1920,
@@ -2607,11 +3545,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/343_vintage-vortex-3d-pack.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Vintage Vortex 3D Pack"
   },
   {
     "id": "344",
-    "title": "AI Promo - SaaS Product",
+    "title": "AI Promo Saas",
     "originalFile": "70-ai-promo-saas-product.ts",
     "originalPage": "https://artlist.io/video-templates/ai-promo---saas-product/1001060",
     "slug": "ai-promo-saas-product",
@@ -2627,10 +3566,21 @@
     "category": "Template",
     "theme": "06",
     "keywords": [
+      "ai",
       "promo",
       "saas",
       "product",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 24.567,
     "outputWidth": 1920,
@@ -2645,11 +3595,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/344_ai-promo-saas-product.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "AI Promo - SaaS Product"
   },
   {
     "id": "345",
-    "title": "Film Burn Pulse - Cinematic Intro",
+    "title": "Film Burn Pulse",
     "originalFile": "71-film-burn-pulse-cinematic-intro.ts",
     "originalPage": "https://artlist.io/video-templates/film-burn-pulse---cinematic-intro/130956",
     "slug": "film-burn-pulse-cinematic-intro",
@@ -2670,7 +3621,38 @@
       "pulse",
       "cinematic",
       "intro",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding",
+      "fire",
+      "flame",
+      "flames",
+      "burning",
+      "heat",
+      "spark",
+      "sparks",
+      "glow",
+      "fireworks",
+      "pyrotechnics",
+      "explosion",
+      "night",
+      "analog",
+      "analogue",
+      "8mm",
+      "vhs",
+      "retro",
+      "vintage",
+      "archive",
+      "grain",
+      "nostalgia"
     ],
     "outputDuration": 23.12,
     "outputWidth": 1920,
@@ -2685,11 +3667,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/345_film-burn-pulse-cinematic-intro.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Film Burn Pulse - Cinematic Intro"
   },
   {
     "id": "346",
-    "title": "Minimal Kinetic Split Screens",
+    "title": "Minimal Kinetic Split",
     "originalFile": "72-minimal-kinetic-split-screens.ts",
     "originalPage": "https://artlist.io/video-templates/minimal-kinetic-split-screens/132432",
     "slug": "minimal-kinetic-split-screens",
@@ -2709,7 +3692,17 @@
       "kinetic",
       "split",
       "screens",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 43.084,
     "outputWidth": 1920,
@@ -2724,11 +3717,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/346_minimal-kinetic-split-screens.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Minimal Kinetic Split Screens"
   },
   {
     "id": "347",
-    "title": "Analog Light Leaks Transitions",
+    "title": "Analog Light Leaks",
     "originalFile": "73-analog-light-leaks-transitions.ts",
     "originalPage": "https://artlist.io/video-templates/analog-light-leaks-transitions/131880",
     "slug": "analog-light-leaks-transitions",
@@ -2748,7 +3742,27 @@
       "light",
       "leaks",
       "transitions",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding",
+      "film",
+      "analogue",
+      "8mm",
+      "vhs",
+      "retro",
+      "vintage",
+      "archive",
+      "grain",
+      "nostalgia",
+      "cinematic"
     ],
     "outputDuration": 62.63,
     "outputWidth": 1920,
@@ -2763,7 +3777,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/347_analog-light-leaks-transitions.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Analog Light Leaks Transitions"
   },
   {
     "id": "348",
@@ -2785,7 +3800,16 @@
     "keywords": [
       "another",
       "typography",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 27.3,
     "outputWidth": 1920,
@@ -2800,7 +3824,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/348_another-typography.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Another Typography"
   },
   {
     "id": "349",
@@ -2822,7 +3847,17 @@
     "keywords": [
       "label",
       "stickers",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 36.036,
     "outputWidth": 1920,
@@ -2837,7 +3872,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/349_label-stickers.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Label Stickers"
   },
   {
     "id": "350",
@@ -2859,7 +3895,16 @@
     "keywords": [
       "cinematic",
       "titles",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 45,
     "outputWidth": 1920,
@@ -2874,11 +3919,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/350_cinematic-titles-2.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Cinematic Titles"
   },
   {
     "id": "351",
-    "title": "Scribble Pack",
+    "title": "Scribble",
     "originalFile": "77-scribble-pack.ts",
     "originalPage": "https://artlist.io/video-templates/scribble-pack/1000851",
     "slug": "scribble-pack",
@@ -2896,7 +3942,17 @@
     "keywords": [
       "scribble",
       "pack",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 24.191,
     "outputWidth": 1920,
@@ -2911,11 +3967,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/351_scribble-pack.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Scribble Pack"
   },
   {
     "id": "352",
-    "title": "Glass Render Typographic Opener",
+    "title": "Glass Render Typographic",
     "originalFile": "78-glass-render-typographic-opener.ts",
     "originalPage": "https://artlist.io/video-templates/glass-render-typographic-opener/1000824",
     "slug": "glass-render-typographic-opener",
@@ -2935,7 +3992,17 @@
       "render",
       "typographic",
       "opener",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 15.084,
     "outputWidth": 1920,
@@ -2950,7 +4017,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/352_glass-render-typographic-opener.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Glass Render Typographic Opener"
   },
   {
     "id": "353",
@@ -2973,7 +4041,17 @@
       "bento",
       "multiscreen",
       "opener",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 30.664,
     "outputWidth": 1920,
@@ -2988,11 +4066,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/353_bento-multiscreen-opener.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Bento Multiscreen Opener"
   },
   {
     "id": "354",
-    "title": "Ethereal Glass Logo Reveal",
+    "title": "Ethereal Glass Logo",
     "originalFile": "80-ethereal-glass-logo-reveal.ts",
     "originalPage": "https://artlist.io/video-templates/ethereal-glass-logo-reveal/1000805",
     "slug": "ethereal-glass-logo-reveal",
@@ -3012,7 +4091,17 @@
       "glass",
       "logo",
       "reveal",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 5.767,
     "outputWidth": 1920,
@@ -3027,11 +4116,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/354_ethereal-glass-logo-reveal.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Ethereal Glass Logo Reveal"
   },
   {
     "id": "355",
-    "title": "Grunge Doodles Pack",
+    "title": "Grunge Doodles",
     "originalFile": "81-grunge-doodles-pack.ts",
     "originalPage": "https://artlist.io/video-templates/grunge-doodles-pack/1000585",
     "slug": "grunge-doodles-pack",
@@ -3050,7 +4140,17 @@
       "grunge",
       "doodles",
       "pack",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 31.432,
     "outputWidth": 1920,
@@ -3065,7 +4165,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/355_grunge-doodles-pack.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Grunge Doodles Pack"
   },
   {
     "id": "356",
@@ -3087,7 +4188,17 @@
     "keywords": [
       "rhythmic",
       "beats",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 21.917,
     "outputWidth": 1920,
@@ -3102,7 +4213,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/356_rhythmic-beats.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Rhythmic Beats"
   },
   {
     "id": "357",
@@ -3125,7 +4237,17 @@
       "leaning",
       "poster",
       "mockups",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 33.959,
     "outputWidth": 1920,
@@ -3140,7 +4262,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/357_leaning-poster-mockups.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Leaning Poster Mockups"
   },
   {
     "id": "358",
@@ -3163,7 +4286,17 @@
       "vintage",
       "projector",
       "transitions",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 25.52,
     "outputWidth": 1920,
@@ -3178,11 +4311,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/358_vintage-projector-transitions.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Vintage Projector Transitions"
   },
   {
     "id": "359",
-    "title": "Snip Snap - Branding Pack",
+    "title": "Snip Snap Branding",
     "originalFile": "85-snip-snap-branding-pack.ts",
     "originalPage": "https://artlist.io/video-templates/snip-snap---branding-pack/1000584",
     "slug": "snip-snap-branding-pack",
@@ -3202,7 +4336,16 @@
       "snap",
       "branding",
       "pack",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative"
     ],
     "outputDuration": 42.042,
     "outputWidth": 1920,
@@ -3217,11 +4360,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/359_snip-snap-branding-pack.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Snip Snap - Branding Pack"
   },
   {
     "id": "360",
-    "title": "Text & Stickers",
+    "title": "Text Stickers",
     "originalFile": "86-text-stickers.ts",
     "originalPage": "https://artlist.io/video-templates/text--stickers/1000642",
     "slug": "text-stickers",
@@ -3239,7 +4383,17 @@
     "keywords": [
       "text",
       "stickers",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 30.898,
     "outputWidth": 1920,
@@ -3254,7 +4408,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/360_text-stickers.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Text & Stickers"
   },
   {
     "id": "361",
@@ -3274,9 +4429,20 @@
     "category": "Template",
     "theme": "06",
     "keywords": [
+      "ai",
       "text",
       "intro",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 25.1,
     "outputWidth": 1920,
@@ -3291,7 +4457,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/361_ai-text-intro.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "AI Text Intro"
   },
   {
     "id": "362",
@@ -3314,7 +4481,17 @@
       "taped",
       "paper",
       "transitions",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 19.534,
     "outputWidth": 1920,
@@ -3329,7 +4506,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/362_taped-paper-transitions.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Taped Paper Transitions"
   },
   {
     "id": "363",
@@ -3351,7 +4529,16 @@
     "keywords": [
       "pixel",
       "titles",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 28.709,
     "outputWidth": 1920,
@@ -3366,7 +4553,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/363_pixel-titles.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Pixel Titles"
   },
   {
     "id": "364",
@@ -3388,7 +4576,17 @@
     "keywords": [
       "shadowplay",
       "mockups",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 16.042,
     "outputWidth": 1920,
@@ -3403,7 +4601,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/364_shadowplay-mockups.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Shadowplay Mockups"
   },
   {
     "id": "365",
@@ -3426,7 +4625,17 @@
       "camera",
       "viewfinder",
       "transitions",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 26.08,
     "outputWidth": 1920,
@@ -3441,7 +4650,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/365_camera-viewfinder-transitions.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Camera Viewfinder Transitions"
   },
   {
     "id": "366",
@@ -3463,7 +4673,16 @@
     "keywords": [
       "clean",
       "titles",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 17.125,
     "outputWidth": 1920,
@@ -3478,7 +4697,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/366_clean-titles.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Clean Titles"
   },
   {
     "id": "367",
@@ -3500,7 +4720,17 @@
     "keywords": [
       "digital",
       "dystopia",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 43.084,
     "outputWidth": 1920,
@@ -3515,11 +4745,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/367_digital-dystopia.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Digital Dystopia"
   },
   {
     "id": "368",
-    "title": "Shredded Print Paper Transitions",
+    "title": "Shredded Print Paper",
     "originalFile": "94-shredded-print-paper-transitions.ts",
     "originalPage": "https://artlist.io/video-templates/shredded-print-paper-transitions/1000512",
     "slug": "shredded-print-paper-transitions",
@@ -3539,7 +4770,17 @@
       "print",
       "paper",
       "transitions",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 32.08,
     "outputWidth": 1920,
@@ -3554,7 +4795,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/368_shredded-print-paper-transitions.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Shredded Print Paper Transitions"
   },
   {
     "id": "369",
@@ -3576,7 +4818,17 @@
     "keywords": [
       "printed",
       "opener",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 30.084,
     "outputWidth": 1920,
@@ -3591,7 +4843,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/369_printed-opener.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Printed Opener"
   },
   {
     "id": "370",
@@ -3613,7 +4866,17 @@
     "keywords": [
       "digital",
       "brutalism",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 27.034,
     "outputWidth": 1920,
@@ -3628,11 +4891,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/370_digital-brutalism.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Digital Brutalism"
   },
   {
     "id": "371",
-    "title": "Clear Cut Phone Mockup",
+    "title": "Clear Cut Phone",
     "originalFile": "97-clear-cut-phone-mockup.ts",
     "originalPage": "https://artlist.io/video-templates/clear-cut-phone-mockup/106291",
     "slug": "clear-cut-phone-mockup",
@@ -3652,7 +4916,17 @@
       "cut",
       "phone",
       "mockup",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 20.084,
     "outputWidth": 1920,
@@ -3667,11 +4941,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/371_clear-cut-phone-mockup.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Clear Cut Phone Mockup"
   },
   {
     "id": "372",
-    "title": "Duotone Music Grooves Intro",
+    "title": "Duotone Music Grooves",
     "originalFile": "98-duotone-music-grooves-intro.ts",
     "originalPage": "https://artlist.io/video-templates/duotone-music-grooves-intro/1000371",
     "slug": "duotone-music-grooves-intro",
@@ -3691,7 +4966,17 @@
       "music",
       "grooves",
       "intro",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 14.715,
     "outputWidth": 1920,
@@ -3706,11 +4991,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/372_duotone-music-grooves-intro.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Duotone Music Grooves Intro"
   },
   {
     "id": "373",
-    "title": "Glitch Grunge Distortion Logo",
+    "title": "Glitch Grunge Distortion",
     "originalFile": "99-glitch-grunge-distortion-logo.ts",
     "originalPage": "https://artlist.io/video-templates/glitch-grunge-distortion-logo/110210",
     "slug": "glitch-grunge-distortion-logo",
@@ -3730,7 +5016,24 @@
       "grunge",
       "distortion",
       "logo",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding",
+      "digital",
+      "screen",
+      "signal",
+      "noise",
+      "error",
+      "technology",
+      "cyber"
     ],
     "outputDuration": 8.12,
     "outputWidth": 1920,
@@ -3745,7 +5048,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/373_glitch-grunge-distortion-logo.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Glitch Grunge Distortion Logo"
   },
   {
     "id": "374",
@@ -3768,7 +5072,27 @@
       "film",
       "frame",
       "transitions",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding",
+      "analog",
+      "analogue",
+      "8mm",
+      "vhs",
+      "retro",
+      "vintage",
+      "archive",
+      "grain",
+      "nostalgia",
+      "cinematic"
     ],
     "outputDuration": 20.1,
     "outputWidth": 1920,
@@ -3783,7 +5107,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/374_film-frame-transitions.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Film Frame Transitions"
   },
   {
     "id": "375",
@@ -3806,7 +5131,17 @@
       "classic",
       "camera",
       "viewfinder",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 22.36,
     "outputWidth": 1920,
@@ -3821,7 +5156,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/375_classic-camera-viewfinder.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Classic Camera Viewfinder"
   },
   {
     "id": "376",
@@ -3842,8 +5178,19 @@
     "theme": "06",
     "keywords": [
       "study",
+      "up",
       "intro",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 20.48,
     "outputWidth": 1920,
@@ -3858,7 +5205,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/376_study-up-intro.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Study Up Intro"
   },
   {
     "id": "377",
@@ -3880,7 +5228,28 @@
     "keywords": [
       "fire",
       "transitions",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding",
+      "flame",
+      "flames",
+      "burning",
+      "heat",
+      "spark",
+      "sparks",
+      "glow",
+      "fireworks",
+      "pyrotechnics",
+      "explosion",
+      "night"
     ],
     "outputDuration": 21.322,
     "outputWidth": 1920,
@@ -3895,7 +5264,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/377_fire-transitions.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Fire Transitions"
   },
   {
     "id": "378",
@@ -3918,7 +5288,17 @@
       "luxury",
       "logo",
       "intro",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 17.785,
     "outputWidth": 1920,
@@ -3933,7 +5313,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/378_luxury-logo-intro.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Luxury Logo Intro"
   },
   {
     "id": "379",
@@ -3955,7 +5336,17 @@
     "keywords": [
       "crazy",
       "illusion",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 25,
     "outputWidth": 1920,
@@ -3970,11 +5361,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/379_crazy-illusion.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Crazy Illusion"
   },
   {
     "id": "380",
-    "title": "Valentines Greetings Pack",
+    "title": "Valentines Greetings",
     "originalFile": "106-valentines-greetings-pack.ts",
     "originalPage": "https://artlist.io/video-templates/valentines-greetings-pack/129072",
     "slug": "valentines-greetings-pack",
@@ -3993,7 +5385,17 @@
       "valentines",
       "greetings",
       "pack",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 25.125,
     "outputWidth": 1920,
@@ -4008,7 +5410,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/380_valentines-greetings-pack.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Valentines Greetings Pack"
   },
   {
     "id": "381",
@@ -4031,7 +5434,17 @@
       "calm",
       "modern",
       "slideshow",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 35.7,
     "outputWidth": 1920,
@@ -4046,7 +5459,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/381_calm-modern-slideshow.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Calm Modern Slideshow"
   },
   {
     "id": "382",
@@ -4069,7 +5483,17 @@
       "modern",
       "dimensional",
       "flow",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 15.434,
     "outputWidth": 1920,
@@ -4084,7 +5508,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/382_modern-dimensional-flow.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Modern Dimensional Flow"
   },
   {
     "id": "383",
@@ -4106,7 +5531,16 @@
     "keywords": [
       "move",
       "typography",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 63.063,
     "outputWidth": 1920,
@@ -4121,11 +5555,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/383_move-typography.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Move Typography"
   },
   {
     "id": "384",
-    "title": "Urban Future Event Promo",
+    "title": "Urban Future Event",
     "originalFile": "110-urban-future-event-promo.ts",
     "originalPage": "https://artlist.io/video-templates/urban-future-event-promo/106318",
     "slug": "urban-future-event-promo",
@@ -4145,7 +5580,17 @@
       "future",
       "event",
       "promo",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 29.934,
     "outputWidth": 1920,
@@ -4160,7 +5605,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/384_urban-future-event-promo.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Urban Future Event Promo"
   },
   {
     "id": "385",
@@ -4181,8 +5627,30 @@
     "theme": "06",
     "keywords": [
       "fired",
+      "up",
       "titles",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding",
+      "fire",
+      "flame",
+      "flames",
+      "burning",
+      "heat",
+      "spark",
+      "sparks",
+      "glow",
+      "fireworks",
+      "pyrotechnics",
+      "explosion",
+      "night"
     ],
     "outputDuration": 24.709,
     "outputWidth": 1920,
@@ -4197,11 +5665,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/385_fired-up-titles.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Fired Up Titles"
   },
   {
     "id": "386",
-    "title": "Title & Logo VHS Vibes",
+    "title": "Title Logo VHS",
     "originalFile": "112-title-logo-vhs-vibes.ts",
     "originalPage": "https://artlist.io/video-templates/title--logo-vhs-vibes/122352",
     "slug": "title-logo-vhs-vibes",
@@ -4221,7 +5690,27 @@
       "logo",
       "vhs",
       "vibes",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding",
+      "film",
+      "analog",
+      "analogue",
+      "8mm",
+      "retro",
+      "vintage",
+      "archive",
+      "grain",
+      "nostalgia",
+      "cinematic"
     ],
     "outputDuration": 53.36,
     "outputWidth": 1920,
@@ -4236,7 +5725,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/386_title-logo-vhs-vibes.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Title & Logo VHS Vibes"
   },
   {
     "id": "387",
@@ -4258,7 +5748,17 @@
     "keywords": [
       "price",
       "tag",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 35.875,
     "outputWidth": 1920,
@@ -4273,7 +5773,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/387_price-tag.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Price Tag"
   },
   {
     "id": "388",
@@ -4295,7 +5796,17 @@
     "keywords": [
       "paper",
       "transitions",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 19.387,
     "outputWidth": 1920,
@@ -4310,7 +5821,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/388_paper-transitions.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Paper Transitions"
   },
   {
     "id": "389",
@@ -4333,7 +5845,16 @@
       "merry",
       "mayhem",
       "titles",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 58.875,
     "outputWidth": 1920,
@@ -4348,7 +5869,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/389_merry-mayhem-titles.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Merry Mayhem Titles"
   },
   {
     "id": "390",
@@ -4371,7 +5893,16 @@
       "giant",
       "cinematic",
       "titles",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 31.767,
     "outputWidth": 1920,
@@ -4386,7 +5917,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/390_giant-cinematic-titles.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Giant Cinematic Titles"
   },
   {
     "id": "391",
@@ -4409,7 +5941,17 @@
       "ripped",
       "logo",
       "transitions",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 30.067,
     "outputWidth": 1920,
@@ -4424,7 +5966,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/391_ripped-logo-transitions.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Ripped Logo Transitions"
   },
   {
     "id": "392",
@@ -4446,7 +5989,17 @@
     "keywords": [
       "brick",
       "block",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 52.953,
     "outputWidth": 1920,
@@ -4461,7 +6014,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/392_brick-block.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Brick Block"
   },
   {
     "id": "393",
@@ -4484,7 +6038,16 @@
       "scribble",
       "motion",
       "kit",
-      "experimental"
+      "experimental",
+      "template",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 36.967,
     "outputWidth": 1920,
@@ -4499,11 +6062,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/393_scribble-motion-kit.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Scribble Motion Kit"
   },
   {
     "id": "394",
-    "title": "8mm Film Look Emulator",
+    "title": "8mm Film Look",
     "originalFile": "120-8mm-film-look-emulator.ts",
     "originalPage": "https://artlist.io/video-templates/8mm-film-look-emulator/1000217",
     "slug": "8mm-film-look-emulator",
@@ -4523,7 +6087,26 @@
       "film",
       "look",
       "emulator",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding",
+      "analog",
+      "analogue",
+      "vhs",
+      "retro",
+      "vintage",
+      "archive",
+      "grain",
+      "nostalgia",
+      "cinematic"
     ],
     "outputDuration": 20.08,
     "outputWidth": 1920,
@@ -4538,7 +6121,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/394_8mm-film-look-emulator.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "8mm Film Look Emulator"
   },
   {
     "id": "395",
@@ -4561,7 +6145,17 @@
       "photo",
       "collage",
       "transitions",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 18.68,
     "outputWidth": 1920,
@@ -4576,7 +6170,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/395_photo-collage-transitions.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Photo Collage Transitions"
   },
   {
     "id": "396",
@@ -4599,7 +6194,27 @@
       "authentic",
       "film",
       "look",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding",
+      "analog",
+      "analogue",
+      "8mm",
+      "vhs",
+      "retro",
+      "vintage",
+      "archive",
+      "grain",
+      "nostalgia",
+      "cinematic"
     ],
     "outputDuration": 35.134,
     "outputWidth": 1920,
@@ -4614,11 +6229,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/396_authentic-film-look.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Authentic Film Look"
   },
   {
     "id": "397",
-    "title": "Modular Sliding Split Screens",
+    "title": "Modular Sliding Split",
     "originalFile": "123-modular-sliding-split-screens.ts",
     "originalPage": "https://artlist.io/video-templates/modular-sliding-split-screens/105164",
     "slug": "modular-sliding-split-screens",
@@ -4638,7 +6254,17 @@
       "sliding",
       "split",
       "screens",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 59.977,
     "outputWidth": 1920,
@@ -4653,7 +6279,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/397_modular-sliding-split-screens.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Modular Sliding Split Screens"
   },
   {
     "id": "398",
@@ -4676,7 +6303,17 @@
       "dream",
       "glow",
       "effect",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 70.738,
     "outputWidth": 1920,
@@ -4691,7 +6328,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/398_dream-glow-effect.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Dream Glow Effect"
   },
   {
     "id": "399",
@@ -4713,7 +6351,17 @@
     "keywords": [
       "stretch",
       "transitions",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 21.08,
     "outputWidth": 1920,
@@ -4728,11 +6376,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/399_stretch-transitions.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Stretch Transitions"
   },
   {
     "id": "400",
-    "title": "Y2K Prints",
+    "title": "Y2k Prints",
     "originalFile": "126-y2k-prints.ts",
     "originalPage": "https://artlist.io/video-templates/y2k-prints/127606",
     "slug": "y2k-prints",
@@ -4750,7 +6399,17 @@
     "keywords": [
       "y2k",
       "prints",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 42.834,
     "outputWidth": 1920,
@@ -4765,7 +6424,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/400_y2k-prints.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Y2K Prints"
   },
   {
     "id": "401",
@@ -4787,7 +6447,17 @@
     "keywords": [
       "time",
       "machine",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding"
     ],
     "outputDuration": 12.867,
     "outputWidth": 1920,
@@ -4802,7 +6472,8 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/401_time-machine.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Time Machine"
   },
   {
     "id": "402",
@@ -4825,7 +6496,27 @@
       "halftone",
       "retro",
       "reveal",
-      "experimental"
+      "experimental",
+      "template",
+      "motion",
+      "graphics",
+      "typography",
+      "titles",
+      "design",
+      "animation",
+      "editing",
+      "creative",
+      "branding",
+      "film",
+      "analog",
+      "analogue",
+      "8mm",
+      "vhs",
+      "vintage",
+      "archive",
+      "grain",
+      "nostalgia",
+      "cinematic"
     ],
     "outputDuration": 50.125,
     "outputWidth": 1920,
@@ -4840,11 +6531,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/402_halftone-retro-reveal.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Halftone Retro Reveal"
   },
   {
     "id": "403",
-    "title": "Tranquil Background Flowers Nature",
+    "title": "Blossom",
     "originalFile": "001-tranquil-background-flowers-nature.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/tranquil-background-flowers-nature/6623837",
     "slug": "tranquil-background-flowers-nature",
@@ -4864,7 +6556,24 @@
       "background",
       "flowers",
       "nature",
-      "experimental"
+      "experimental",
+      "landscape",
+      "outdoors",
+      "environment",
+      "organic",
+      "natural",
+      "earth",
+      "scenery",
+      "flower",
+      "blossom",
+      "bloom",
+      "blooms",
+      "floral",
+      "petal",
+      "petals",
+      "botanical",
+      "garden",
+      "spring"
     ],
     "outputDuration": 5.125,
     "outputWidth": 1920,
@@ -4879,11 +6588,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/403_tranquil-background-flowers-nature.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Tranquil Background Flowers Nature"
   },
   {
     "id": "404",
-    "title": "Lofi Generative Audio Particles",
+    "title": "Audio Particles",
     "originalFile": "002-lofi-generative-audio-particles.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/lofi-generative-audio-particles/515230",
     "slug": "lofi-generative-audio-particles",
@@ -4903,7 +6613,16 @@
       "generative",
       "audio",
       "particles",
-      "experimental"
+      "experimental",
+      "abstract",
+      "texture",
+      "material",
+      "motion",
+      "visual",
+      "organic",
+      "surface",
+      "macro",
+      "art"
     ],
     "outputDuration": 20.6,
     "outputWidth": 1920,
@@ -4918,11 +6637,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/404_lofi-generative-audio-particles.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Lofi Generative Audio Particles"
   },
   {
     "id": "405",
-    "title": "Burst Of Blue And Yellow Paints With Colored Spots",
+    "title": "Paint Burst",
     "originalFile": "003-burst-of-blue-and-yellow-paints-with-colored-spots.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/burst-of-blue-and-yellow-paints-with-colored-spots/96320",
     "slug": "burst-of-blue-and-yellow-paints-with-colored-spots",
@@ -4940,13 +6660,30 @@
     "keywords": [
       "burst",
       "blue",
-      "and",
       "yellow",
       "paints",
-      "with",
       "colored",
       "spots",
-      "experimental"
+      "experimental",
+      "abstract",
+      "texture",
+      "material",
+      "motion",
+      "visual",
+      "organic",
+      "surface",
+      "macro",
+      "art",
+      "liquid",
+      "fluid",
+      "ink",
+      "oil",
+      "paint",
+      "flow",
+      "swirl",
+      "mixing",
+      "viscous",
+      "pigment"
     ],
     "outputDuration": 73.04,
     "outputWidth": 1920,
@@ -4961,11 +6698,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/405_burst-of-blue-and-yellow-paints-with-colored-spots.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Burst Of Blue And Yellow Paints With Colored Spots"
   },
   {
     "id": "406",
-    "title": "Mirror Effect Ride Blur Driving",
+    "title": "Mirror Ride",
     "originalFile": "004-mirror-effect-ride-blur-driving.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/mirror-effect-ride-blur-driving/521779",
     "slug": "mirror-effect-ride-blur-driving",
@@ -4986,7 +6724,16 @@
       "ride",
       "blur",
       "driving",
-      "experimental"
+      "experimental",
+      "abstract",
+      "texture",
+      "material",
+      "motion",
+      "visual",
+      "organic",
+      "surface",
+      "macro",
+      "art"
     ],
     "outputDuration": 10.72,
     "outputWidth": 1920,
@@ -5001,11 +6748,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/406_mirror-effect-ride-blur-driving.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Mirror Effect Ride Blur Driving"
   },
   {
     "id": "407",
-    "title": "Flower Contemplative Ethereal Minimalist",
+    "title": "Ethereal Flower",
     "originalFile": "005-flower-contemplative-ethereal-minimalist.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/flower-contemplative-ethereal-minimalist/6599834",
     "slug": "flower-contemplative-ethereal-minimalist",
@@ -5025,7 +6773,25 @@
       "contemplative",
       "ethereal",
       "minimalist",
-      "experimental"
+      "experimental",
+      "nature",
+      "landscape",
+      "outdoors",
+      "environment",
+      "organic",
+      "natural",
+      "earth",
+      "scenery",
+      "flowers",
+      "blossom",
+      "bloom",
+      "blooms",
+      "floral",
+      "petal",
+      "petals",
+      "botanical",
+      "garden",
+      "spring"
     ],
     "outputDuration": 10.125,
     "outputWidth": 1920,
@@ -5040,11 +6806,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/407_flower-contemplative-ethereal-minimalist.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Flower Contemplative Ethereal Minimalist"
   },
   {
     "id": "408",
-    "title": "Abstract Animation Sci-Fi Landscape Surreal Desert",
+    "title": "Desert Mirage",
     "originalFile": "006-abstract-animation-sci-fi-landscape-surreal-desert.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/abstract-animation-sci-fi-landscape-surreal-desert/6610774",
     "slug": "abstract-animation-sci-fi-landscape-surreal-desert",
@@ -5063,6 +6830,7 @@
       "abstract",
       "animation",
       "sci",
+      "fi",
       "landscape",
       "surreal",
       "desert",
@@ -5081,11 +6849,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/408_abstract-animation-sci-fi-landscape-surreal-desert.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Abstract Animation Sci-Fi Landscape Surreal Desert"
   },
   {
     "id": "409",
-    "title": "Film Burn Transition Effect Overlay",
+    "title": "Film Burn",
     "originalFile": "007-film-burn-transition-effect-overlay.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/film-burn-transition-effect-overlay/6508352",
     "slug": "film-burn-transition-effect-overlay",
@@ -5106,7 +6875,39 @@
       "transition",
       "effect",
       "overlay",
-      "experimental"
+      "experimental",
+      "fire",
+      "flame",
+      "flames",
+      "burning",
+      "heat",
+      "spark",
+      "sparks",
+      "glow",
+      "fireworks",
+      "pyrotechnics",
+      "explosion",
+      "night",
+      "analog",
+      "analogue",
+      "8mm",
+      "vhs",
+      "retro",
+      "vintage",
+      "archive",
+      "grain",
+      "nostalgia",
+      "cinematic",
+      "template",
+      "typography",
+      "titles",
+      "motion",
+      "graphics",
+      "animation",
+      "editing",
+      "branding",
+      "design",
+      "creative"
     ],
     "outputDuration": 1.6,
     "outputWidth": 1920,
@@ -5121,11 +6922,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/409_film-burn-transition-effect-overlay.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Film Burn Transition Effect Overlay"
   },
   {
     "id": "410",
-    "title": "Smooth Liquid Animated Background",
+    "title": "Smooth Liquid",
     "originalFile": "008-smooth-liquid-animated-background.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/smooth-liquid-animated-background/515218",
     "slug": "smooth-liquid-animated-background",
@@ -5145,7 +6947,25 @@
       "liquid",
       "animated",
       "background",
-      "experimental"
+      "experimental",
+      "abstract",
+      "texture",
+      "material",
+      "motion",
+      "visual",
+      "organic",
+      "surface",
+      "macro",
+      "art",
+      "fluid",
+      "ink",
+      "oil",
+      "paint",
+      "flow",
+      "swirl",
+      "mixing",
+      "viscous",
+      "pigment"
     ],
     "outputDuration": 20,
     "outputWidth": 1920,
@@ -5160,11 +6980,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/410_smooth-liquid-animated-background.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Smooth Liquid Animated Background"
   },
   {
     "id": "411",
-    "title": "Digital Art Seamless Loop Background Tetris",
+    "title": "Digital Art",
     "originalFile": "009-digital-art-seamless-loop-background-tetris.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/digital-art-seamless-loop-background-tetris/6611287",
     "slug": "digital-art-seamless-loop-background-tetris",
@@ -5201,11 +7022,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/411_digital-art-seamless-loop-background-tetris.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Digital Art Seamless Loop Background Tetris"
   },
   {
     "id": "412",
-    "title": "Red Paint Flowing Into A Sparkling Gold Semicircle",
+    "title": "Gilded Paint",
     "originalFile": "010-red-paint-flowing-into-a-sparkling-gold-semicircle.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/red-paint-flowing-into-a-sparkling-gold-semicircle/96332",
     "slug": "red-paint-flowing-into-a-sparkling-gold-semicircle",
@@ -5224,11 +7046,28 @@
       "red",
       "paint",
       "flowing",
-      "into",
       "sparkling",
       "gold",
       "semicircle",
-      "experimental"
+      "experimental",
+      "abstract",
+      "texture",
+      "material",
+      "motion",
+      "visual",
+      "organic",
+      "surface",
+      "macro",
+      "art",
+      "liquid",
+      "fluid",
+      "ink",
+      "oil",
+      "flow",
+      "swirl",
+      "mixing",
+      "viscous",
+      "pigment"
     ],
     "outputDuration": 12.64,
     "outputWidth": 1920,
@@ -5243,11 +7082,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/412_red-paint-flowing-into-a-sparkling-gold-semicircle.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Red Paint Flowing Into A Sparkling Gold Semicircle"
   },
   {
     "id": "413",
-    "title": "Background Blur Spring Botanical",
+    "title": "Spring Blur",
     "originalFile": "011-background-blur-spring-botanical.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/background-blur-spring-botanical/6623739",
     "slug": "background-blur-spring-botanical",
@@ -5267,7 +7107,15 @@
       "blur",
       "spring",
       "botanical",
-      "experimental"
+      "experimental",
+      "nature",
+      "landscape",
+      "outdoors",
+      "environment",
+      "organic",
+      "natural",
+      "earth",
+      "scenery"
     ],
     "outputDuration": 10.08,
     "outputWidth": 1920,
@@ -5282,11 +7130,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/413_background-blur-spring-botanical.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Background Blur Spring Botanical"
   },
   {
     "id": "414",
-    "title": "Ball Flashing On A Broken Screen",
+    "title": "Broken Signal",
     "originalFile": "012-ball-flashing-on-a-broken-screen.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/ball-flashing-on-a-broken-screen/178501",
     "slug": "ball-flashing-on-a-broken-screen",
@@ -5306,7 +7155,15 @@
       "flashing",
       "broken",
       "screen",
-      "experimental"
+      "experimental",
+      "glitch",
+      "distortion",
+      "digital",
+      "signal",
+      "noise",
+      "error",
+      "technology",
+      "cyber"
     ],
     "outputDuration": 7.56,
     "outputWidth": 1920,
@@ -5321,11 +7178,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/414_ball-flashing-on-a-broken-screen.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Ball Flashing On A Broken Screen"
   },
   {
     "id": "415",
-    "title": "Lines VJ Flow CGI",
+    "title": "Light Lines",
     "originalFile": "013-lines-vj-flow-cgi.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/lines-vj-flow-cgi/688227",
     "slug": "lines-vj-flow-cgi",
@@ -5342,6 +7200,7 @@
     "theme": "06",
     "keywords": [
       "lines",
+      "vj",
       "flow",
       "cgi",
       "experimental"
@@ -5359,11 +7218,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/415_lines-vj-flow-cgi.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Lines VJ Flow CGI"
   },
   {
     "id": "416",
-    "title": "Light Streaks Film 16mm Overlay",
+    "title": "Film Streaks",
     "originalFile": "014-light-streaks-film-16mm-overlay.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/light-streaks-film-16mm-overlay/6615986",
     "slug": "light-streaks-film-16mm-overlay",
@@ -5384,7 +7244,17 @@
       "film",
       "16mm",
       "overlay",
-      "experimental"
+      "experimental",
+      "analog",
+      "analogue",
+      "8mm",
+      "vhs",
+      "retro",
+      "vintage",
+      "archive",
+      "grain",
+      "nostalgia",
+      "cinematic"
     ],
     "outputDuration": 12.28,
     "outputWidth": 1920,
@@ -5399,11 +7269,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/416_light-streaks-film-16mm-overlay.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Light Streaks Film 16mm Overlay"
   },
   {
     "id": "417",
-    "title": "Flowing Yellow And Pink With Multicolored Dots Of Paint",
+    "title": "Candy Paint",
     "originalFile": "015-flowing-yellow-and-pink-with-multicolored-dots-of-paint.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/flowing-yellow-and-pink-with-multicolored-dots-of-paint/96321",
     "slug": "flowing-yellow-and-pink-with-multicolored-dots-of-paint",
@@ -5421,13 +7292,29 @@
     "keywords": [
       "flowing",
       "yellow",
-      "and",
       "pink",
-      "with",
       "multicolored",
       "dots",
       "paint",
-      "experimental"
+      "experimental",
+      "abstract",
+      "texture",
+      "material",
+      "motion",
+      "visual",
+      "organic",
+      "surface",
+      "macro",
+      "art",
+      "liquid",
+      "fluid",
+      "ink",
+      "oil",
+      "flow",
+      "swirl",
+      "mixing",
+      "viscous",
+      "pigment"
     ],
     "outputDuration": 27.28,
     "outputWidth": 1920,
@@ -5442,11 +7329,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/417_flowing-yellow-and-pink-with-multicolored-dots-of-paint.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Flowing Yellow And Pink With Multicolored Dots Of Paint"
   },
   {
     "id": "418",
-    "title": "Ethereal Serene Background Liquid",
+    "title": "Liquid Serenity",
     "originalFile": "016-ethereal-serene-background-liquid.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/ethereal-serene-background-liquid/6623598",
     "slug": "ethereal-serene-background-liquid",
@@ -5466,7 +7354,25 @@
       "serene",
       "background",
       "liquid",
-      "experimental"
+      "experimental",
+      "abstract",
+      "texture",
+      "material",
+      "motion",
+      "visual",
+      "organic",
+      "surface",
+      "macro",
+      "art",
+      "fluid",
+      "ink",
+      "oil",
+      "paint",
+      "flow",
+      "swirl",
+      "mixing",
+      "viscous",
+      "pigment"
     ],
     "outputDuration": 16.4,
     "outputWidth": 1920,
@@ -5481,11 +7387,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/418_ethereal-serene-background-liquid.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Ethereal Serene Background Liquid"
   },
   {
     "id": "419",
-    "title": "Monolith Dunes Rectangle Sand",
+    "title": "Desert Monolith",
     "originalFile": "017-monolith-dunes-rectangle-sand.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/monolith-dunes-rectangle-sand/617752",
     "slug": "monolith-dunes-rectangle-sand",
@@ -5520,11 +7427,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/419_monolith-dunes-rectangle-sand.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Monolith Dunes Rectangle Sand"
   },
   {
     "id": "420",
-    "title": "Particles Golden Dust Macro",
+    "title": "Particles Golden",
     "originalFile": "018-particles-golden-dust-macro.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/particles-golden-dust-macro/6620130",
     "slug": "particles-golden-dust-macro",
@@ -5544,7 +7452,15 @@
       "golden",
       "dust",
       "macro",
-      "experimental"
+      "experimental",
+      "abstract",
+      "texture",
+      "material",
+      "motion",
+      "visual",
+      "organic",
+      "surface",
+      "art"
     ],
     "outputDuration": 29.88,
     "outputWidth": 1920,
@@ -5559,11 +7475,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/420_particles-golden-dust-macro.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Particles Golden Dust Macro"
   },
   {
     "id": "421",
-    "title": "Combining Ink Splatter Blend",
+    "title": "Ink Bloom",
     "originalFile": "019-combining-ink-splatter-blend.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/combining-ink-splatter-blend/6107448",
     "slug": "combining-ink-splatter-blend",
@@ -5583,7 +7500,25 @@
       "ink",
       "splatter",
       "blend",
-      "experimental"
+      "experimental",
+      "abstract",
+      "texture",
+      "material",
+      "motion",
+      "visual",
+      "organic",
+      "surface",
+      "macro",
+      "art",
+      "liquid",
+      "fluid",
+      "oil",
+      "paint",
+      "flow",
+      "swirl",
+      "mixing",
+      "viscous",
+      "pigment"
     ],
     "outputDuration": 7.134,
     "outputWidth": 1920,
@@ -5598,11 +7533,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/421_combining-ink-splatter-blend.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Combining Ink Splatter Blend"
   },
   {
     "id": "422",
-    "title": "Production Line Purple Halved 3d",
+    "title": "Purple Assembly",
     "originalFile": "020-production-line-purple-halved-3d.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/production-line-purple-halved-3d/539289",
     "slug": "production-line-purple-halved-3d",
@@ -5622,6 +7558,7 @@
       "line",
       "purple",
       "halved",
+      "3d",
       "experimental"
     ],
     "outputDuration": 2.12,
@@ -5637,11 +7574,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/422_production-line-purple-halved-3d.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Production Line Purple Halved 3d"
   },
   {
     "id": "423",
-    "title": "Ethereal Mysterious Fluid Dynamics Abstract Art",
+    "title": "Fluid Mystery",
     "originalFile": "021-ethereal-mysterious-fluid-dynamics-abstract-art.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/ethereal-mysterious-fluid-dynamics-abstract-art/329744",
     "slug": "ethereal-mysterious-fluid-dynamics-abstract-art",
@@ -5663,7 +7601,23 @@
       "dynamics",
       "abstract",
       "art",
-      "experimental"
+      "experimental",
+      "texture",
+      "material",
+      "motion",
+      "visual",
+      "organic",
+      "surface",
+      "macro",
+      "liquid",
+      "ink",
+      "oil",
+      "paint",
+      "flow",
+      "swirl",
+      "mixing",
+      "viscous",
+      "pigment"
     ],
     "outputDuration": 15.04,
     "outputWidth": 1920,
@@ -5678,11 +7632,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/423_ethereal-mysterious-fluid-dynamics-abstract-art.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Ethereal Mysterious Fluid Dynamics Abstract Art"
   },
   {
     "id": "424",
-    "title": "Particles Audio Wave Vj",
+    "title": "Audio Wave",
     "originalFile": "022-particles-audio-wave-vj.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/particles-audio-wave-vj/515221",
     "slug": "particles-audio-wave-vj",
@@ -5701,7 +7656,17 @@
       "particles",
       "audio",
       "wave",
-      "experimental"
+      "vj",
+      "experimental",
+      "abstract",
+      "texture",
+      "material",
+      "motion",
+      "visual",
+      "organic",
+      "surface",
+      "macro",
+      "art"
     ],
     "outputDuration": 20.1,
     "outputWidth": 1920,
@@ -5716,11 +7681,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/424_particles-audio-wave-vj.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Particles Audio Wave Vj"
   },
   {
     "id": "425",
-    "title": "Colorful Colors Flowing Mixture",
+    "title": "Color Flow",
     "originalFile": "023-colorful-colors-flowing-mixture.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/colorful-colors-flowing-mixture/757555",
     "slug": "colorful-colors-flowing-mixture",
@@ -5740,7 +7706,16 @@
       "colors",
       "flowing",
       "mixture",
-      "experimental"
+      "experimental",
+      "abstract",
+      "texture",
+      "material",
+      "motion",
+      "visual",
+      "organic",
+      "surface",
+      "macro",
+      "art"
     ],
     "outputDuration": 35.102,
     "outputWidth": 1920,
@@ -5755,11 +7730,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/425_colorful-colors-flowing-mixture.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Colorful Colors Flowing Mixture"
   },
   {
     "id": "426",
-    "title": "Highway Pattern Grain Background",
+    "title": "Grain Highway",
     "originalFile": "024-highway-pattern-grain-background.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/highway-pattern-grain-background/6580493",
     "slug": "highway-pattern-grain-background",
@@ -5779,7 +7755,16 @@
       "pattern",
       "grain",
       "background",
-      "experimental"
+      "experimental",
+      "abstract",
+      "texture",
+      "material",
+      "motion",
+      "visual",
+      "organic",
+      "surface",
+      "macro",
+      "art"
     ],
     "outputDuration": 8.88,
     "outputWidth": 1920,
@@ -5794,11 +7779,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/426_highway-pattern-grain-background.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Highway Pattern Grain Background"
   },
   {
     "id": "427",
-    "title": "Colorful Mixture Ink Liquid",
+    "title": "Ink Mixture",
     "originalFile": "025-colorful-mixture-ink-liquid.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/colorful-mixture-ink-liquid/757566",
     "slug": "colorful-mixture-ink-liquid",
@@ -5818,7 +7804,24 @@
       "mixture",
       "ink",
       "liquid",
-      "experimental"
+      "experimental",
+      "abstract",
+      "texture",
+      "material",
+      "motion",
+      "visual",
+      "organic",
+      "surface",
+      "macro",
+      "art",
+      "fluid",
+      "oil",
+      "paint",
+      "flow",
+      "swirl",
+      "mixing",
+      "viscous",
+      "pigment"
     ],
     "outputDuration": 23.457,
     "outputWidth": 1920,
@@ -5833,11 +7836,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/427_colorful-mixture-ink-liquid.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Colorful Mixture Ink Liquid"
   },
   {
     "id": "428",
-    "title": "Blue Pink Liquid Paint",
+    "title": "Blue Pink",
     "originalFile": "026-blue-pink-liquid-paint.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/blue-pink-liquid-paint/716446",
     "slug": "blue-pink-liquid-paint",
@@ -5857,7 +7861,24 @@
       "pink",
       "liquid",
       "paint",
-      "experimental"
+      "experimental",
+      "abstract",
+      "texture",
+      "material",
+      "motion",
+      "visual",
+      "organic",
+      "surface",
+      "macro",
+      "art",
+      "fluid",
+      "ink",
+      "oil",
+      "flow",
+      "swirl",
+      "mixing",
+      "viscous",
+      "pigment"
     ],
     "outputDuration": 16.04,
     "outputWidth": 1920,
@@ -5872,11 +7893,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/428_blue-pink-liquid-paint.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Blue Pink Liquid Paint"
   },
   {
     "id": "429",
-    "title": "Background Liquid Flow Spark",
+    "title": "Liquid Spark",
     "originalFile": "027-background-liquid-flow-spark.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/background-liquid-flow-spark/6563019",
     "slug": "background-liquid-flow-spark",
@@ -5896,7 +7918,24 @@
       "liquid",
       "flow",
       "spark",
-      "experimental"
+      "experimental",
+      "abstract",
+      "texture",
+      "material",
+      "motion",
+      "visual",
+      "organic",
+      "surface",
+      "macro",
+      "art",
+      "fluid",
+      "ink",
+      "oil",
+      "paint",
+      "swirl",
+      "mixing",
+      "viscous",
+      "pigment"
     ],
     "outputDuration": 15.48,
     "outputWidth": 1920,
@@ -5911,11 +7950,12 @@
     "uploaded": true,
     "cdnUrl": "https://source-media.oosu.dev/media/429_background-liquid-flow-spark.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "originalTitle": "Background Liquid Flow Spark"
   },
   {
     "id": "430",
-    "title": "Images Flashing On A Broken Screen",
+    "title": "Broken Images",
     "originalFile": "029-images-flashing-on-a-broken-screen.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/images-flashing-on-a-broken-screen/178665",
     "slug": "images-flashing-on-a-broken-screen",
@@ -5935,7 +7975,15 @@
       "flashing",
       "broken",
       "screen",
-      "experimental"
+      "experimental",
+      "glitch",
+      "distortion",
+      "digital",
+      "signal",
+      "noise",
+      "error",
+      "technology",
+      "cyber"
     ],
     "outputDuration": 7.24,
     "outputWidth": 1920,
@@ -5951,11 +7999,12 @@
     "cdnUrl": "https://source-media-b2.oosu.dev/media/430_images-flashing-on-a-broken-screen.mp4",
     "cdnHttpStatus": 200,
     "rangeHttpStatus": 206,
-    "media": "b2"
+    "media": "b2",
+    "originalTitle": "Images Flashing On A Broken Screen"
   },
   {
     "id": "431",
-    "title": "Tranquil Background Flowers Nature",
+    "title": "Flowers",
     "originalFile": "030-tranquil-background-flowers-nature.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/tranquil-background-flowers-nature/6623842",
     "slug": "tranquil-background-flowers-nature-2",
@@ -5975,7 +8024,24 @@
       "background",
       "flowers",
       "nature",
-      "experimental"
+      "experimental",
+      "landscape",
+      "outdoors",
+      "environment",
+      "organic",
+      "natural",
+      "earth",
+      "scenery",
+      "flower",
+      "blossom",
+      "bloom",
+      "blooms",
+      "floral",
+      "petal",
+      "petals",
+      "botanical",
+      "garden",
+      "spring"
     ],
     "outputDuration": 5.125,
     "outputWidth": 1920,
@@ -5991,11 +8057,12 @@
     "cdnUrl": "https://source-media-b2.oosu.dev/media/431_tranquil-background-flowers-nature-2.mp4",
     "cdnHttpStatus": 200,
     "rangeHttpStatus": 206,
-    "media": "b2"
+    "media": "b2",
+    "originalTitle": "Tranquil Background Flowers Nature"
   },
   {
     "id": "432",
-    "title": "Dunes Rectangle Sand Sci Fi",
+    "title": "Desert Frame",
     "originalFile": "031-dunes-rectangle-sand-sci-fi.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/dunes-rectangle-sand-sci-fi/617770",
     "slug": "dunes-rectangle-sand-sci-fi",
@@ -6015,6 +8082,7 @@
       "rectangle",
       "sand",
       "sci",
+      "fi",
       "experimental"
     ],
     "outputDuration": 9.209,
@@ -6031,11 +8099,12 @@
     "cdnUrl": "https://source-media-b2.oosu.dev/media/432_dunes-rectangle-sand-sci-fi.mp4",
     "cdnHttpStatus": 200,
     "rangeHttpStatus": 206,
-    "media": "b2"
+    "media": "b2",
+    "originalTitle": "Dunes Rectangle Sand Sci Fi"
   },
   {
     "id": "433",
-    "title": "Dynamic Shapes, Background, Loop, Experimental",
+    "title": "Dynamic Shapes",
     "originalFile": "032-dynamic-shapes-background-loop-experimental.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/dynamic-shapes-background-loop-experimental/6616714",
     "slug": "dynamic-shapes-background-loop-experimental",
@@ -6055,7 +8124,16 @@
       "shapes",
       "background",
       "loop",
-      "experimental"
+      "experimental",
+      "abstract",
+      "texture",
+      "material",
+      "motion",
+      "visual",
+      "organic",
+      "surface",
+      "macro",
+      "art"
     ],
     "outputDuration": 20.067,
     "outputWidth": 1920,
@@ -6071,11 +8149,12 @@
     "cdnUrl": "https://source-media-b2.oosu.dev/media/433_dynamic-shapes-background-loop-experimental.mp4",
     "cdnHttpStatus": 200,
     "rangeHttpStatus": 206,
-    "media": "b2"
+    "media": "b2",
+    "originalTitle": "Dynamic Shapes, Background, Loop, Experimental"
   },
   {
     "id": "434",
-    "title": "Abstract, Speed, Driving, Tunnel",
+    "title": "Speed Tunnel",
     "originalFile": "034-abstract-speed-driving-tunnel.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/abstract-speed-driving-tunnel/521754",
     "slug": "abstract-speed-driving-tunnel",
@@ -6111,11 +8190,12 @@
     "cdnUrl": "https://source-media-b2.oosu.dev/media/434_abstract-speed-driving-tunnel.mp4",
     "cdnHttpStatus": 200,
     "rangeHttpStatus": 206,
-    "media": "b2"
+    "media": "b2",
+    "originalTitle": "Abstract, Speed, Driving, Tunnel"
   },
   {
     "id": "435",
-    "title": "Futuristic Design, Abstract Form, Fluid Motion",
+    "title": "Fluid Form",
     "originalFile": "035-futuristic-design-abstract-form-fluid-motion.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/futuristic-design-abstract-form-fluid-motion/329111",
     "slug": "futuristic-design-abstract-form-fluid-motion",
@@ -6137,7 +8217,18 @@
       "form",
       "fluid",
       "motion",
-      "experimental"
+      "experimental",
+      "liquid",
+      "ink",
+      "oil",
+      "paint",
+      "flow",
+      "swirl",
+      "mixing",
+      "viscous",
+      "pigment",
+      "macro",
+      "texture"
     ],
     "outputDuration": 8.48,
     "outputWidth": 1920,
@@ -6153,11 +8244,12 @@
     "cdnUrl": "https://source-media-b2.oosu.dev/media/435_futuristic-design-abstract-form-fluid-motion.mp4",
     "cdnHttpStatus": 200,
     "rangeHttpStatus": 206,
-    "media": "b2"
+    "media": "b2",
+    "originalTitle": "Futuristic Design, Abstract Form, Fluid Motion"
   },
   {
     "id": "436",
-    "title": "Abstract View Of Glittery Black And Red Liquid",
+    "title": "Red Liquid",
     "originalFile": "037-abstract-view-of-glittery-black-and-red-liquid.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/abstract-view-of-glittery-black-and-red-liquid/51118",
     "slug": "abstract-view-of-glittery-black-and-red-liquid",
@@ -6177,10 +8269,26 @@
       "view",
       "glittery",
       "black",
-      "and",
       "red",
       "liquid",
-      "experimental"
+      "experimental",
+      "texture",
+      "material",
+      "motion",
+      "visual",
+      "organic",
+      "surface",
+      "macro",
+      "art",
+      "fluid",
+      "ink",
+      "oil",
+      "paint",
+      "flow",
+      "swirl",
+      "mixing",
+      "viscous",
+      "pigment"
     ],
     "outputDuration": 13.56,
     "outputWidth": 1920,
@@ -6198,11 +8306,12 @@
     "rangeHttpStatus": 206,
     "supersedesOutputFile": "438_abstract-view-of-glittery-black-and-red-liquid.mp4",
     "cropApplied": "1920:900:0:90",
-    "media": "b2"
+    "media": "b2",
+    "originalTitle": "Abstract View Of Glittery Black And Red Liquid"
   },
   {
     "id": "437",
-    "title": "Popcorn Popping From A Frying Pan",
+    "title": "Popcorn Popping",
     "originalFile": "038-popcorn-popping-from-a-frying-pan.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/popcorn-popping-from-a-frying-pan/59263",
     "slug": "popcorn-popping-from-a-frying-pan",
@@ -6220,10 +8329,44 @@
     "keywords": [
       "popcorn",
       "popping",
-      "from",
       "frying",
       "pan",
-      "experimental"
+      "experimental",
+      "food",
+      "drink",
+      "culinary",
+      "cooking",
+      "kitchen",
+      "ingredient",
+      "meal",
+      "restaurant",
+      "gastronomy",
+      "liquid",
+      "fluid",
+      "ink",
+      "oil",
+      "paint",
+      "flow",
+      "swirl",
+      "mixing",
+      "viscous",
+      "pigment",
+      "macro",
+      "texture",
+      "dish",
+      "recipe",
+      "space",
+      "astronomy",
+      "cosmos",
+      "galaxy",
+      "universe",
+      "star",
+      "stars",
+      "celestial",
+      "cosmic",
+      "sci",
+      "fi",
+      "deep"
     ],
     "outputDuration": 10.72,
     "outputWidth": 1920,
@@ -6239,11 +8382,12 @@
     "cdnUrl": "https://source-media-b2.oosu.dev/media/437_popcorn-popping-from-a-frying-pan.mp4",
     "cdnHttpStatus": 200,
     "rangeHttpStatus": 206,
-    "media": "b2"
+    "media": "b2",
+    "originalTitle": "Popcorn Popping From A Frying Pan"
   },
   {
     "id": "438",
-    "title": "Pink And Red Waves Of Color Mixing",
+    "title": "Pink Current",
     "originalFile": "039-pink-and-red-waves-of-color-mixing.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/pink-and-red-waves-of-color-mixing/51202",
     "slug": "pink-and-red-waves-of-color-mixing",
@@ -6260,12 +8404,29 @@
     "theme": "06",
     "keywords": [
       "pink",
-      "and",
       "red",
       "waves",
       "color",
       "mixing",
-      "experimental"
+      "experimental",
+      "abstract",
+      "texture",
+      "material",
+      "motion",
+      "visual",
+      "organic",
+      "surface",
+      "macro",
+      "art",
+      "liquid",
+      "fluid",
+      "ink",
+      "oil",
+      "paint",
+      "flow",
+      "swirl",
+      "viscous",
+      "pigment"
     ],
     "outputDuration": 12.613,
     "outputWidth": 1920,
@@ -6283,11 +8444,12 @@
     "rangeHttpStatus": 206,
     "supersedesOutputFile": "440_pink-and-red-waves-of-color-mixing.mp4",
     "cropApplied": "1920:900:0:90",
-    "media": "b2"
+    "media": "b2",
+    "originalTitle": "Pink And Red Waves Of Color Mixing"
   },
   {
     "id": "439",
-    "title": "Record Playing With Blood On It",
+    "title": "Blood Record",
     "originalFile": "041-record-playing-with-blood-on-it.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/record-playing-with-blood-on-it/82907",
     "slug": "record-playing-with-blood-on-it",
@@ -6305,9 +8467,19 @@
     "keywords": [
       "record",
       "playing",
-      "with",
       "blood",
-      "experimental"
+      "it",
+      "experimental",
+      "object",
+      "product",
+      "artifact",
+      "detail",
+      "still",
+      "life",
+      "material",
+      "design",
+      "macro",
+      "sculpture"
     ],
     "outputDuration": 2.04,
     "outputWidth": 1920,
@@ -6323,11 +8495,12 @@
     "cdnUrl": "https://source-media-b2.oosu.dev/media/439_record-playing-with-blood-on-it.mp4",
     "cdnHttpStatus": 200,
     "rangeHttpStatus": 206,
-    "media": "b2"
+    "media": "b2",
+    "originalTitle": "Record Playing With Blood On It"
   },
   {
     "id": "440",
-    "title": "Cyberdelic, Lighting, Neon, Futuristic",
+    "title": "Cyberdelic Lighting",
     "originalFile": "042-cyberdelic-lighting-neon-futuristic.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/cyberdelic-lighting-neon-futuristic/511434",
     "slug": "cyberdelic-lighting-neon-futuristic",
@@ -6347,7 +8520,16 @@
       "lighting",
       "neon",
       "futuristic",
-      "experimental"
+      "experimental",
+      "abstract",
+      "texture",
+      "material",
+      "motion",
+      "visual",
+      "organic",
+      "surface",
+      "macro",
+      "art"
     ],
     "outputDuration": 12.2,
     "outputWidth": 1920,
@@ -6363,11 +8545,12 @@
     "cdnUrl": "https://source-media-b2.oosu.dev/media/440_cyberdelic-lighting-neon-futuristic.mp4",
     "cdnHttpStatus": 200,
     "rangeHttpStatus": 206,
-    "media": "b2"
+    "media": "b2",
+    "originalTitle": "Cyberdelic, Lighting, Neon, Futuristic"
   },
   {
     "id": "441",
-    "title": "Bubbles, Background, Flowers, Nature",
+    "title": "Floral Bubbles",
     "originalFile": "043-bubbles-background-flowers-nature.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/bubbles-background-flowers-nature/6623835",
     "slug": "bubbles-background-flowers-nature",
@@ -6387,7 +8570,31 @@
       "background",
       "flowers",
       "nature",
-      "experimental"
+      "experimental",
+      "landscape",
+      "outdoors",
+      "environment",
+      "organic",
+      "natural",
+      "earth",
+      "scenery",
+      "flower",
+      "blossom",
+      "bloom",
+      "blooms",
+      "floral",
+      "petal",
+      "petals",
+      "botanical",
+      "garden",
+      "spring",
+      "bubble",
+      "soap",
+      "foam",
+      "iridescent",
+      "surface",
+      "macro",
+      "colorful"
     ],
     "outputDuration": 5.125,
     "outputWidth": 1920,
@@ -6403,11 +8610,12 @@
     "cdnUrl": "https://source-media-b2.oosu.dev/media/441_bubbles-background-flowers-nature.mp4",
     "cdnHttpStatus": 200,
     "rangeHttpStatus": 206,
-    "media": "b2"
+    "media": "b2",
+    "originalTitle": "Bubbles, Background, Flowers, Nature"
   },
   {
     "id": "442",
-    "title": "Colorful Glitches On A Broken Screen",
+    "title": "Broken Glitch",
     "originalFile": "045-colorful-glitches-on-a-broken-screen.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/colorful-glitches-on-a-broken-screen/178505",
     "slug": "colorful-glitches-on-a-broken-screen",
@@ -6427,7 +8635,15 @@
       "glitches",
       "broken",
       "screen",
-      "experimental"
+      "experimental",
+      "glitch",
+      "distortion",
+      "digital",
+      "signal",
+      "noise",
+      "error",
+      "technology",
+      "cyber"
     ],
     "outputDuration": 7.64,
     "outputWidth": 1920,
@@ -6443,11 +8659,12 @@
     "cdnUrl": "https://source-media-b2.oosu.dev/media/442_colorful-glitches-on-a-broken-screen.mp4",
     "cdnHttpStatus": 200,
     "rangeHttpStatus": 206,
-    "media": "b2"
+    "media": "b2",
+    "originalTitle": "Colorful Glitches On A Broken Screen"
   },
   {
     "id": "443",
-    "title": "Red And Pink Paint Flowing Slowly With Mint Green",
+    "title": "Mint Paint",
     "originalFile": "046-red-and-pink-paint-flowing-slowly-with-mint-green.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/red-and-pink-paint-flowing-slowly-with-mint-green/96317",
     "slug": "red-and-pink-paint-flowing-slowly-with-mint-green",
@@ -6464,15 +8681,31 @@
     "theme": "06",
     "keywords": [
       "red",
-      "and",
       "pink",
       "paint",
       "flowing",
       "slowly",
-      "with",
       "mint",
       "green",
-      "experimental"
+      "experimental",
+      "abstract",
+      "texture",
+      "material",
+      "motion",
+      "visual",
+      "organic",
+      "surface",
+      "macro",
+      "art",
+      "liquid",
+      "fluid",
+      "ink",
+      "oil",
+      "flow",
+      "swirl",
+      "mixing",
+      "viscous",
+      "pigment"
     ],
     "outputDuration": 40.8,
     "outputWidth": 1920,
@@ -6488,11 +8721,12 @@
     "cdnUrl": "https://source-media-b2.oosu.dev/media/443_red-and-pink-paint-flowing-slowly-with-mint-green.mp4",
     "cdnHttpStatus": 200,
     "rangeHttpStatus": 206,
-    "media": "b2"
+    "media": "b2",
+    "originalTitle": "Red And Pink Paint Flowing Slowly With Mint Green"
   },
   {
     "id": "444",
-    "title": "Dark Background Demonstration Human Hands Hand Movements",
+    "title": "Human Hands",
     "originalFile": "047-dark-background-demonstration-human-hands-hand-movements.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/dark-background-demonstration-human-hands-hand-movements/201860",
     "slug": "dark-background-demonstration-human-hands-hand-movements",
@@ -6515,7 +8749,25 @@
       "hands",
       "hand",
       "movements",
-      "experimental"
+      "experimental",
+      "sport",
+      "fitness",
+      "physical",
+      "training",
+      "athlete",
+      "exercise",
+      "strength",
+      "movement",
+      "performance",
+      "people",
+      "person",
+      "portrait",
+      "lifestyle",
+      "emotion",
+      "culture",
+      "documentary",
+      "body",
+      "muscle"
     ],
     "outputDuration": 6.64,
     "outputWidth": 1920,
@@ -6531,11 +8783,12 @@
     "cdnUrl": "https://source-media-b2.oosu.dev/media/444_dark-background-demonstration-human-hands-hand-movements.mp4",
     "cdnHttpStatus": 200,
     "rangeHttpStatus": 206,
-    "media": "b2"
+    "media": "b2",
+    "originalTitle": "Dark Background Demonstration Human Hands Hand Movements"
   },
   {
     "id": "445",
-    "title": "Red Liquid Flowing With Bubbles",
+    "title": "Red Bubbles",
     "originalFile": "048-red-liquid-flowing-with-bubbles.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/red-liquid-flowing-with-bubbles/51215",
     "slug": "red-liquid-flowing-with-bubbles",
@@ -6554,9 +8807,31 @@
       "red",
       "liquid",
       "flowing",
-      "with",
       "bubbles",
-      "experimental"
+      "experimental",
+      "abstract",
+      "texture",
+      "material",
+      "motion",
+      "visual",
+      "organic",
+      "surface",
+      "macro",
+      "art",
+      "fluid",
+      "ink",
+      "oil",
+      "paint",
+      "flow",
+      "swirl",
+      "mixing",
+      "viscous",
+      "pigment",
+      "bubble",
+      "soap",
+      "foam",
+      "iridescent",
+      "colorful"
     ],
     "outputDuration": 5.072,
     "outputWidth": 1920,
@@ -6572,11 +8847,12 @@
     "cdnUrl": "https://source-media-b2.oosu.dev/media/445_red-liquid-flowing-with-bubbles.mp4",
     "cdnHttpStatus": 200,
     "rangeHttpStatus": 206,
-    "media": "b2"
+    "media": "b2",
+    "originalTitle": "Red Liquid Flowing With Bubbles"
   },
   {
     "id": "446",
-    "title": "Photogrammetry Point Cloud Lofi Market",
+    "title": "Point Cloud",
     "originalFile": "049-photogrammetry-point-cloud-lofi-market.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/photogrammetry-point-cloud-lofi-market/508256",
     "slug": "photogrammetry-point-cloud-lofi-market",
@@ -6613,11 +8889,12 @@
     "cdnUrl": "https://source-media-b2.oosu.dev/media/446_photogrammetry-point-cloud-lofi-market.mp4",
     "cdnHttpStatus": 200,
     "rangeHttpStatus": 206,
-    "media": "b2"
+    "media": "b2",
+    "originalTitle": "Photogrammetry Point Cloud Lofi Market"
   },
   {
     "id": "447",
-    "title": "Ball Video Jockey 88 Bpm Electric",
+    "title": "Electric Orb",
     "originalFile": "050-ball-video-jockey-88-bpm-electric.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/ball-video-jockey-88-bpm-electric/647766",
     "slug": "ball-video-jockey-88-bpm-electric",
@@ -6636,9 +8913,19 @@
       "ball",
       "video",
       "jockey",
+      "88",
       "bpm",
       "electric",
-      "experimental"
+      "experimental",
+      "abstract",
+      "texture",
+      "material",
+      "motion",
+      "visual",
+      "organic",
+      "surface",
+      "macro",
+      "art"
     ],
     "outputDuration": 32.5,
     "outputWidth": 1920,
@@ -6654,11 +8941,12 @@
     "cdnUrl": "https://source-media-b2.oosu.dev/media/447_ball-video-jockey-88-bpm-electric.mp4",
     "cdnHttpStatus": 200,
     "rangeHttpStatus": 206,
-    "media": "b2"
+    "media": "b2",
+    "originalTitle": "Ball Video Jockey 88 Bpm Electric"
   },
   {
     "id": "448",
-    "title": "Geometric Shapes Pastel Colors Abstract Art Soft Shadows",
+    "title": "Geometric Shapes",
     "originalFile": "051-geometric-shapes-pastel-colors-abstract-art-soft-shadows.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/geometric-shapes-pastel-colors-abstract-art-soft-shadows/324580",
     "slug": "geometric-shapes-pastel-colors-abstract-art-soft-shadows",
@@ -6698,11 +8986,12 @@
     "cdnUrl": "https://source-media-b2.oosu.dev/media/448_geometric-shapes-pastel-colors-abstract-art-soft-shadows.mp4",
     "cdnHttpStatus": 200,
     "rangeHttpStatus": 206,
-    "media": "b2"
+    "media": "b2",
+    "originalTitle": "Geometric Shapes Pastel Colors Abstract Art Soft Shadows"
   },
   {
     "id": "449",
-    "title": "Man Standing In A Red Room",
+    "title": "Red Room",
     "originalFile": "052-man-standing-in-a-red-room.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/man-standing-in-a-red-room/82884",
     "slug": "man-standing-in-a-red-room",
@@ -6722,7 +9011,15 @@
       "standing",
       "red",
       "room",
-      "experimental"
+      "experimental",
+      "people",
+      "human",
+      "portrait",
+      "lifestyle",
+      "culture",
+      "person",
+      "emotion",
+      "documentary"
     ],
     "outputDuration": 4.24,
     "outputWidth": 1920,
@@ -6738,11 +9035,12 @@
     "cdnUrl": "https://source-media-b2.oosu.dev/media/449_man-standing-in-a-red-room.mp4",
     "cdnHttpStatus": 200,
     "rangeHttpStatus": 206,
-    "media": "b2"
+    "media": "b2",
+    "originalTitle": "Man Standing In A Red Room"
   },
   {
     "id": "450",
-    "title": "Transition Glitch Quick Blue",
+    "title": "Blue Glitch",
     "originalFile": "054-transition-glitch-quick-blue.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/transition-glitch-quick-blue/337321",
     "slug": "transition-glitch-quick-blue",
@@ -6762,7 +9060,25 @@
       "glitch",
       "quick",
       "blue",
-      "experimental"
+      "experimental",
+      "distortion",
+      "digital",
+      "screen",
+      "signal",
+      "noise",
+      "error",
+      "technology",
+      "cyber",
+      "template",
+      "typography",
+      "titles",
+      "motion",
+      "graphics",
+      "animation",
+      "editing",
+      "branding",
+      "design",
+      "creative"
     ],
     "outputDuration": 2.084,
     "outputWidth": 1920,
@@ -6778,11 +9094,12 @@
     "cdnUrl": "https://source-media-b2.oosu.dev/media/450_transition-glitch-quick-blue.mp4",
     "cdnHttpStatus": 200,
     "rangeHttpStatus": 206,
-    "media": "b2"
+    "media": "b2",
+    "originalTitle": "Transition Glitch Quick Blue"
   },
   {
     "id": "451",
-    "title": "Dirtbikes In Smoke In Front Of Headlights At Night",
+    "title": "Smoke Riders",
     "originalFile": "055-dirtbikes-in-smoke-in-front-of-headlights-at-night.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/dirtbikes-in-smoke-in-front-of-headlights-at-night/36237",
     "slug": "dirtbikes-in-smoke-in-front-of-headlights-at-night",
@@ -6821,11 +9138,12 @@
     "rangeHttpStatus": 206,
     "media": "b2",
     "supersedesOutputFile": "456_dirtbikes-in-smoke-in-front-of-headlights-at-night.mp4",
-    "cropApplied": "1920:816:0:132"
+    "cropApplied": "1920:816:0:132",
+    "originalTitle": "Dirtbikes In Smoke In Front Of Headlights At Night"
   },
   {
     "id": "452",
-    "title": "Colorful Lines Moving And Flashing",
+    "title": "Colorful Lines",
     "originalFile": "056-colorful-lines-moving-and-flashing.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/colorful-lines-moving-and-flashing/178678",
     "slug": "colorful-lines-moving-and-flashing",
@@ -6844,7 +9162,6 @@
       "colorful",
       "lines",
       "moving",
-      "and",
       "flashing",
       "experimental"
     ],
@@ -6862,11 +9179,12 @@
     "cdnUrl": "https://source-media-b2.oosu.dev/media/452_colorful-lines-moving-and-flashing.mp4",
     "cdnHttpStatus": 200,
     "rangeHttpStatus": 206,
-    "media": "b2"
+    "media": "b2",
+    "originalTitle": "Colorful Lines Moving And Flashing"
   },
   {
     "id": "453",
-    "title": "Disintegrate Vfx Street Photogrammetry",
+    "title": "Street Dissolve",
     "originalFile": "057-disintegrate-vfx-street-photogrammetry.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/disintegrate-vfx-street-photogrammetry/502610",
     "slug": "disintegrate-vfx-street-photogrammetry",
@@ -6902,11 +9220,12 @@
     "cdnUrl": "https://source-media-b2.oosu.dev/media/453_disintegrate-vfx-street-photogrammetry.mp4",
     "cdnHttpStatus": 200,
     "rangeHttpStatus": 206,
-    "media": "b2"
+    "media": "b2",
+    "originalTitle": "Disintegrate Vfx Street Photogrammetry"
   },
   {
     "id": "454",
-    "title": "Fluid Splashing Paint Pink",
+    "title": "Pink Splash",
     "originalFile": "058-fluid-splashing-paint-pink.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/fluid-splashing-paint-pink/406592",
     "slug": "fluid-splashing-paint-pink",
@@ -6926,7 +9245,24 @@
       "splashing",
       "paint",
       "pink",
-      "experimental"
+      "experimental",
+      "abstract",
+      "texture",
+      "material",
+      "motion",
+      "visual",
+      "organic",
+      "surface",
+      "macro",
+      "art",
+      "liquid",
+      "ink",
+      "oil",
+      "flow",
+      "swirl",
+      "mixing",
+      "viscous",
+      "pigment"
     ],
     "outputDuration": 34.68,
     "outputWidth": 1920,
@@ -6942,11 +9278,12 @@
     "cdnUrl": "https://source-media-b2.oosu.dev/media/454_fluid-splashing-paint-pink.mp4",
     "cdnHttpStatus": 200,
     "rangeHttpStatus": 206,
-    "media": "b2"
+    "media": "b2",
+    "originalTitle": "Fluid Splashing Paint Pink"
   },
   {
     "id": "455",
-    "title": "Covid 19 Flashing On A Cracked And Broken Screen",
+    "title": "Broken Warning",
     "originalFile": "059-covid-19-flashing-on-a-cracked-and-broken-screen.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/covid-19-flashing-on-a-cracked-and-broken-screen/178480",
     "slug": "covid-19-flashing-on-a-cracked-and-broken-screen",
@@ -6963,12 +9300,20 @@
     "theme": "06",
     "keywords": [
       "covid",
+      "19",
       "flashing",
       "cracked",
-      "and",
       "broken",
       "screen",
-      "experimental"
+      "experimental",
+      "glitch",
+      "distortion",
+      "digital",
+      "signal",
+      "noise",
+      "error",
+      "technology",
+      "cyber"
     ],
     "outputDuration": 9.08,
     "outputWidth": 1920,
@@ -6984,11 +9329,12 @@
     "cdnUrl": "https://source-media-b2.oosu.dev/media/455_covid-19-flashing-on-a-cracked-and-broken-screen.mp4",
     "cdnHttpStatus": 200,
     "rangeHttpStatus": 206,
-    "media": "b2"
+    "media": "b2",
+    "originalTitle": "Covid 19 Flashing On A Cracked And Broken Screen"
   },
   {
     "id": "456",
-    "title": "Black Background, Hand Movement, Instructional Video, Communication Skills",
+    "title": "Hand Signals",
     "originalFile": "060-black-background-hand-movement-instructional-video-communication-skills.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/black-background-hand-movement-instructional-video-communication-skills/201410",
     "slug": "black-background-hand-movement-instructional-video-communication-skills",
@@ -7012,7 +9358,25 @@
       "video",
       "communication",
       "skills",
-      "experimental"
+      "experimental",
+      "sport",
+      "fitness",
+      "physical",
+      "training",
+      "athlete",
+      "exercise",
+      "strength",
+      "performance",
+      "body",
+      "human",
+      "muscle",
+      "people",
+      "person",
+      "portrait",
+      "lifestyle",
+      "emotion",
+      "culture",
+      "documentary"
     ],
     "outputDuration": 9.56,
     "outputWidth": 1920,
@@ -7028,11 +9392,12 @@
     "cdnUrl": "https://source-media-b2.oosu.dev/media/456_black-background-hand-movement-instructional-video-communication-skills.mp4",
     "cdnHttpStatus": 200,
     "rangeHttpStatus": 206,
-    "media": "b2"
+    "media": "b2",
+    "originalTitle": "Black Background, Hand Movement, Instructional Video, Communication Skills"
   },
   {
     "id": "457",
-    "title": "Musical Notes On Stand Rack-Focus",
+    "title": "Musical Notes",
     "originalFile": "061-musical-notes-on-stand-rack-focus.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/musical-notes-on-stand-rack-focus/67624",
     "slug": "musical-notes-on-stand-rack-focus",
@@ -7053,7 +9418,17 @@
       "stand",
       "rack",
       "focus",
-      "experimental"
+      "experimental",
+      "object",
+      "product",
+      "artifact",
+      "detail",
+      "still",
+      "life",
+      "material",
+      "design",
+      "macro",
+      "sculpture"
     ],
     "outputDuration": 4.16,
     "outputWidth": 1920,
@@ -7069,11 +9444,12 @@
     "cdnUrl": "https://source-media-b2.oosu.dev/media/457_musical-notes-on-stand-rack-focus.mp4",
     "cdnHttpStatus": 200,
     "rangeHttpStatus": 206,
-    "media": "b2"
+    "media": "b2",
+    "originalTitle": "Musical Notes On Stand Rack-Focus"
   },
   {
     "id": "458",
-    "title": "\"Danger\" Flashing On A Cracked Screen",
+    "title": "Danger Signal",
     "originalFile": "062-danger-flashing-on-a-cracked-screen.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/danger-flashing-on-a-cracked-screen/187303",
     "slug": "danger-flashing-on-a-cracked-screen",
@@ -7109,11 +9485,12 @@
     "cdnUrl": "https://source-media-b2.oosu.dev/media/458_danger-flashing-on-a-cracked-screen.mp4",
     "cdnHttpStatus": 200,
     "rangeHttpStatus": 206,
-    "media": "b2"
+    "media": "b2",
+    "originalTitle": "\"Danger\" Flashing On A Cracked Screen"
   },
   {
     "id": "459",
-    "title": "Seen From Under The Stream The Man Squats On The Rocks And Drinks Water",
+    "title": "Underwater Figure",
     "originalFile": "063-seen-from-under-the-stream-the-man-squats-on-the-rocks-and-drinks-water.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/seen-from-under-the-stream-the-man-squats-on-the-rocks-and-drinks-water/48655",
     "slug": "seen-from-under-the-stream-the-man-squats-on-the-rocks-and-drinks-water",
@@ -7130,15 +9507,41 @@
     "theme": "06",
     "keywords": [
       "seen",
-      "from",
       "under",
-      "the",
       "stream",
       "man",
       "squats",
       "rocks",
-      "and",
-      "drinks"
+      "drinks",
+      "water",
+      "nature",
+      "landscape",
+      "outdoors",
+      "environment",
+      "organic",
+      "natural",
+      "earth",
+      "scenery",
+      "liquid",
+      "fluid",
+      "ink",
+      "oil",
+      "paint",
+      "flow",
+      "swirl",
+      "mixing",
+      "viscous",
+      "pigment",
+      "macro",
+      "texture",
+      "people",
+      "person",
+      "human",
+      "portrait",
+      "lifestyle",
+      "emotion",
+      "culture",
+      "documentary"
     ],
     "outputDuration": 24.68,
     "outputWidth": 1920,
@@ -7156,11 +9559,12 @@
     "rangeHttpStatus": 206,
     "media": "b2",
     "supersedesOutputFile": "464_seen-from-under-the-stream-the-man-squats-on-the-rocks-and-drinks-water.mp4",
-    "cropApplied": "1920:800:0:140"
+    "cropApplied": "1920:800:0:140",
+    "originalTitle": "Seen From Under The Stream The Man Squats On The Rocks And Drinks Water"
   },
   {
     "id": "460",
-    "title": "The Word \"Play\" Flashing On A Broken Screen",
+    "title": "Play Signal",
     "originalFile": "064-the-word-play-flashing-on-a-broken-screen.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/the-word-play-flashing-on-a-broken-screen/178534",
     "slug": "the-word-play-flashing-on-a-broken-screen",
@@ -7176,13 +9580,20 @@
     "category": "Experimental / Material / Object",
     "theme": "06",
     "keywords": [
-      "the",
       "word",
       "play",
       "flashing",
       "broken",
       "screen",
-      "experimental"
+      "experimental",
+      "glitch",
+      "distortion",
+      "digital",
+      "signal",
+      "noise",
+      "error",
+      "technology",
+      "cyber"
     ],
     "outputDuration": 7.76,
     "outputWidth": 1920,
@@ -7198,11 +9609,12 @@
     "cdnUrl": "https://source-media-b2.oosu.dev/media/460_the-word-play-flashing-on-a-broken-screen.mp4",
     "cdnHttpStatus": 200,
     "rangeHttpStatus": 206,
-    "media": "b2"
+    "media": "b2",
+    "originalTitle": "The Word \"Play\" Flashing On A Broken Screen"
   },
   {
     "id": "461",
-    "title": "Phantom, Fog, Clouds, Lightning",
+    "title": "Storm Cloud",
     "originalFile": "065-phantom-fog-clouds-lightning.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/phantom-fog-clouds-lightning/599481",
     "slug": "phantom-fog-clouds-lightning",
@@ -7222,7 +9634,16 @@
       "fog",
       "clouds",
       "lightning",
-      "experimental"
+      "experimental",
+      "abstract",
+      "texture",
+      "material",
+      "motion",
+      "visual",
+      "organic",
+      "surface",
+      "macro",
+      "art"
     ],
     "outputDuration": 9.44,
     "outputWidth": 1920,
@@ -7238,11 +9659,12 @@
     "cdnUrl": "https://source-media-b2.oosu.dev/media/461_phantom-fog-clouds-lightning.mp4",
     "cdnHttpStatus": 200,
     "rangeHttpStatus": 206,
-    "media": "b2"
+    "media": "b2",
+    "originalTitle": "Phantom, Fog, Clouds, Lightning"
   },
   {
     "id": "462",
-    "title": "Distorted Shapes Flashing",
+    "title": "Distorted Shapes",
     "originalFile": "066-distorted-shapes-flashing.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/distorted-shapes-flashing/178666",
     "slug": "distorted-shapes-flashing",
@@ -7261,7 +9683,16 @@
       "distorted",
       "shapes",
       "flashing",
-      "experimental"
+      "experimental",
+      "glitch",
+      "distortion",
+      "digital",
+      "screen",
+      "signal",
+      "noise",
+      "error",
+      "technology",
+      "cyber"
     ],
     "outputDuration": 8.24,
     "outputWidth": 1920,
@@ -7277,11 +9708,12 @@
     "cdnUrl": "https://source-media-b2.oosu.dev/media/462_distorted-shapes-flashing.mp4",
     "cdnHttpStatus": 200,
     "rangeHttpStatus": 206,
-    "media": "b2"
+    "media": "b2",
+    "originalTitle": "Distorted Shapes Flashing"
   },
   {
     "id": "463",
-    "title": "Blue Flash Light Transition",
+    "title": "Blue Flash",
     "originalFile": "067-blue-flash-light-transition.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/blue-flash-light-transition/337306",
     "slug": "blue-flash-light-transition",
@@ -7301,7 +9733,17 @@
       "flash",
       "light",
       "transition",
-      "experimental"
+      "experimental",
+      "template",
+      "typography",
+      "titles",
+      "motion",
+      "graphics",
+      "animation",
+      "editing",
+      "branding",
+      "design",
+      "creative"
     ],
     "outputDuration": 2.084,
     "outputWidth": 1920,
@@ -7317,11 +9759,12 @@
     "cdnUrl": "https://source-media-b2.oosu.dev/media/463_blue-flash-light-transition.mp4",
     "cdnHttpStatus": 200,
     "rangeHttpStatus": 206,
-    "media": "b2"
+    "media": "b2",
+    "originalTitle": "Blue Flash Light Transition"
   },
   {
     "id": "464",
-    "title": "Man Working In A Recording Studio And Looking At A Screen",
+    "title": "Studio Work",
     "originalFile": "070-man-working-in-a-recording-studio-and-looking-at-a-screen.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/man-working-in-a-recording-studio-and-looking-at-a-screen/82891",
     "slug": "man-working-in-a-recording-studio-and-looking-at-a-screen",
@@ -7341,10 +9784,17 @@
       "working",
       "recording",
       "studio",
-      "and",
       "looking",
       "screen",
-      "experimental"
+      "experimental",
+      "people",
+      "human",
+      "portrait",
+      "lifestyle",
+      "culture",
+      "person",
+      "emotion",
+      "documentary"
     ],
     "outputDuration": 6.56,
     "outputWidth": 1920,
@@ -7360,11 +9810,12 @@
     "cdnUrl": "https://source-media-b2.oosu.dev/media/464_man-working-in-a-recording-studio-and-looking-at-a-screen.mp4",
     "cdnHttpStatus": 200,
     "rangeHttpStatus": 206,
-    "media": "b2"
+    "media": "b2",
+    "originalTitle": "Man Working In A Recording Studio And Looking At A Screen"
   },
   {
     "id": "465",
-    "title": "Ice And Bubbles In Whiskey Glass",
+    "title": "Ice Bubbles",
     "originalFile": "071-ice-and-bubbles-in-whiskey-glass.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/ice-and-bubbles-in-whiskey-glass/67357",
     "slug": "ice-and-bubbles-in-whiskey-glass",
@@ -7381,11 +9832,24 @@
     "theme": "06",
     "keywords": [
       "ice",
-      "and",
       "bubbles",
       "whiskey",
       "glass",
-      "experimental"
+      "experimental",
+      "abstract",
+      "texture",
+      "material",
+      "motion",
+      "visual",
+      "organic",
+      "surface",
+      "macro",
+      "art",
+      "bubble",
+      "soap",
+      "foam",
+      "iridescent",
+      "colorful"
     ],
     "outputDuration": 9.72,
     "outputWidth": 1920,
@@ -7401,11 +9865,12 @@
     "cdnUrl": "https://source-media-b2.oosu.dev/media/465_ice-and-bubbles-in-whiskey-glass.mp4",
     "cdnHttpStatus": 200,
     "rangeHttpStatus": 206,
-    "media": "b2"
+    "media": "b2",
+    "originalTitle": "Ice And Bubbles In Whiskey Glass"
   },
   {
     "id": "466",
-    "title": "Glittery Neon Blue And Pink Liquids Swirling",
+    "title": "Neon Liquid",
     "originalFile": "072-glittery-neon-blue-and-pink-liquids-swirling.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/glittery-neon-blue-and-pink-liquids-swirling/51077",
     "slug": "glittery-neon-blue-and-pink-liquids-swirling",
@@ -7424,11 +9889,29 @@
       "glittery",
       "neon",
       "blue",
-      "and",
       "pink",
       "liquids",
       "swirling",
-      "experimental"
+      "experimental",
+      "abstract",
+      "texture",
+      "material",
+      "motion",
+      "visual",
+      "organic",
+      "surface",
+      "macro",
+      "art",
+      "liquid",
+      "fluid",
+      "ink",
+      "oil",
+      "paint",
+      "flow",
+      "swirl",
+      "mixing",
+      "viscous",
+      "pigment"
     ],
     "outputDuration": 6.76,
     "outputWidth": 1920,
@@ -7444,11 +9927,12 @@
     "cdnUrl": "https://source-media-b2.oosu.dev/media/466_glittery-neon-blue-and-pink-liquids-swirling.mp4",
     "cdnHttpStatus": 200,
     "rangeHttpStatus": 206,
-    "media": "b2"
+    "media": "b2",
+    "originalTitle": "Glittery Neon Blue And Pink Liquids Swirling"
   },
   {
     "id": "467",
-    "title": "Red Orange And White Patches With Gold Sparkles",
+    "title": "Golden Patches",
     "originalFile": "073-red-orange-and-white-patches-with-gold-sparkles.ts",
     "originalPage": "https://artlist.io/stock-footage/clip/red-orange-and-white-patches-with-gold-sparkles/96337",
     "slug": "red-orange-and-white-patches-with-gold-sparkles",
@@ -7466,13 +9950,20 @@
     "keywords": [
       "red",
       "orange",
-      "and",
       "white",
       "patches",
-      "with",
       "gold",
       "sparkles",
-      "experimental"
+      "experimental",
+      "abstract",
+      "texture",
+      "material",
+      "motion",
+      "visual",
+      "organic",
+      "surface",
+      "macro",
+      "art"
     ],
     "outputDuration": 35.4,
     "outputWidth": 1920,
@@ -7488,6 +9979,7 @@
     "cdnUrl": "https://source-media-b2.oosu.dev/media/467_red-orange-and-white-patches-with-gold-sparkles.mp4",
     "cdnHttpStatus": 200,
     "rangeHttpStatus": 206,
-    "media": "b2"
+    "media": "b2",
+    "originalTitle": "Red Orange And White Patches With Gold Sparkles"
   }
 ]
