@@ -12,6 +12,7 @@ for (const item of items) {
   if (ids.has(item.id)) errors.push(`duplicate id ${item.id}`);
   ids.add(item.id);
   if (!item.title || !item.clip || !item.thumb || !item.category) errors.push(`missing required metadata ${item.id}`);
+  if (item.theme === "01" || (!item.theme && item.id === "01")) errors.push(`retired theme 01 is still assigned ${item.id}`);
   if (!Array.isArray(item.keywords) || item.keywords.length < 7) errors.push(`insufficient keywords ${item.id}`);
   if (Number(item.id) >= 275 && item.title.trim().split(/\s+/).length > 3) errors.push(`long display title ${item.id}`);
   try { await access(`assets/thumbs/${item.thumb}`); } catch { errors.push(`missing thumbnail ${item.id}: ${item.thumb}`); }
