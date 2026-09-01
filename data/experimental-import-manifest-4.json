@@ -57,7 +57,7 @@
     "fps": 24.96671105193076,
     "videoCodec": "h264",
     "audioStreamsOriginal": 0,
-    "category": "Abstract",
+    "category": "Object",
     "theme": "06",
     "keywords": [
       "photo",
@@ -552,7 +552,7 @@
     "fps": 24.875415282392026,
     "videoCodec": "h264",
     "audioStreamsOriginal": 0,
-    "category": "Nature / Land",
+    "category": "Object",
     "theme": "06",
     "keywords": [
       "backyard",
@@ -597,7 +597,7 @@
     "fps": 24.771428571428572,
     "videoCodec": "h264",
     "audioStreamsOriginal": 0,
-    "category": "Sport / Physical",
+    "category": "People / Culture",
     "theme": "06",
     "keywords": [
       "retro",
@@ -643,7 +643,7 @@
     "fps": 24.62962962962963,
     "videoCodec": "h264",
     "audioStreamsOriginal": 0,
-    "category": "People / Culture",
+    "category": "Object",
     "theme": "06",
     "keywords": [
       "christmas",
@@ -914,7 +914,7 @@
     "fps": 24.765698219306465,
     "videoCodec": "h264",
     "audioStreamsOriginal": 0,
-    "category": "Business",
+    "category": "Object",
     "theme": "06",
     "keywords": [
       "bank",
@@ -959,7 +959,7 @@
     "fps": 24.832589285714285,
     "videoCodec": "h264",
     "audioStreamsOriginal": 0,
-    "category": "People / Culture",
+    "category": "Object",
     "theme": "06",
     "keywords": [
       "christmas",
@@ -1049,7 +1049,7 @@
     "fps": 24.860022396416575,
     "videoCodec": "h264",
     "audioStreamsOriginal": 0,
-    "category": "People / Culture",
+    "category": "Object",
     "theme": "06",
     "keywords": [
       "oil",
@@ -1094,7 +1094,7 @@
     "fps": 23.890483893166902,
     "videoCodec": "h264",
     "audioStreamsOriginal": 0,
-    "category": "Abstract",
+    "category": "People / Culture",
     "theme": "06",
     "keywords": [
       "plastic",
@@ -1229,7 +1229,7 @@
     "fps": 24.86139986139986,
     "videoCodec": "h264",
     "audioStreamsOriginal": 0,
-    "category": "Business",
+    "category": "Object",
     "theme": "06",
     "keywords": [
       "money",
@@ -1364,7 +1364,7 @@
     "fps": 23.823800289403778,
     "videoCodec": "h264",
     "audioStreamsOriginal": 0,
-    "category": "Nature / Land",
+    "category": "Object",
     "theme": "06",
     "keywords": [
       "wind",
