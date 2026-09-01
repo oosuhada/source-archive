@@ -63,13 +63,15 @@ async function keyframeMaxGap(filePath) {
 async function processEntry(entry) {
   const outputPath = path.join(mediaDir, entry.outputFile);
   const thumbPath = path.join(thumbsDir, entry.thumb);
-  const target = outputDimensions(entry.width, entry.height);
+  const crop = entry.cropApplied?.split(":").map(Number);
+  const target = outputDimensions(crop?.[0] || entry.width, crop?.[1] || entry.height);
+  const filters = [...(crop ? [`crop=${entry.cropApplied}`] : []), `scale=${target.width}:${target.height}`];
   try {
     await stat(outputPath);
   } catch {
     await execFileAsync(ffmpeg, [
       "-hide_banner", "-loglevel", "warning", "-y", "-fflags", "+genpts", "-i", entry.originalPath,
-      "-map", "0:v:0", "-an", "-vf", `scale=${target.width}:${target.height}`,
+      "-map", "0:v:0", "-an", "-vf", filters.join(","),
       "-c:v", "libx264", "-preset", "fast", "-crf", "20", "-pix_fmt", "yuv420p",
       "-force_key_frames", "expr:gte(t,n_forced*0.5)", "-movflags", "+faststart",
       "-map_metadata", "-1", "-avoid_negative_ts", "make_zero", outputPath,

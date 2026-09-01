@@ -8,7 +8,7 @@ const [manifestPath, buildRoot, wrangler] = process.argv.slice(2);
 if (!manifestPath || !buildRoot || !wrangler) throw new Error("Usage: node scripts/upload-experimental-media.mjs <manifest> <build-root> <wrangler>");
 
 const manifest = JSON.parse(await readFile(manifestPath, "utf8"));
-if (manifest.length !== 200) throw new Error(`Expected 200 entries, found ${manifest.length}`);
+if (!manifest.length) throw new Error("Import manifest is empty");
 const bucket = "source-archive-media";
 const cdnRoot = "https://source-media.oosu.dev/media/";
 
