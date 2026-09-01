@@ -2,6 +2,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import { createContext, runInContext } from "node:vm";
 
 const dataPath = "data/source-library-youtube-data.js";
+const coreDataPath = "data/source-library-data.js";
 const manifestPaths = ["data/experimental-import-manifest.json", "data/experimental-import-manifest-2.json"];
 const firstImportedId = 275;
 
@@ -22,6 +23,18 @@ const categoryTerms = {
   "People / Culture": ["people", "human", "portrait", "lifestyle", "culture", "person", "emotion", "documentary"],
   "Travel / City / Architecture": ["travel", "city", "architecture", "destination", "place", "urban", "landmark", "heritage", "aerial"],
   "Sport / Physical": ["sport", "fitness", "physical", "training", "athlete", "exercise", "strength", "movement", "performance"],
+  "Experimental / Material / Object": ["experimental", "material", "object", "abstract", "texture", "visual", "motion", "surface", "art", "macro"],
+  "Experimental": ["experimental", "abstract", "creative", "visual", "motion", "concept", "art"],
+  "Water": ["water", "aquatic", "ocean", "sea", "coast", "wave", "liquid", "marine", "nature"],
+  "Sky / Space / Weather": ["sky", "space", "weather", "atmosphere", "celestial", "cloud", "nature", "environment"],
+  "Work / Tech": ["work", "technology", "business", "office", "digital", "professional", "productivity", "innovation"],
+  "Business": ["business", "office", "corporate", "professional", "work", "commerce", "finance", "startup"],
+  "Apple": ["apple", "technology", "device", "computer", "mobile", "consumer-electronics", "product", "design"],
+  "Nature": ["nature", "landscape", "outdoors", "environment", "natural", "earth", "scenery", "wildlife"],
+  "Food": ["food", "culinary", "cooking", "ingredient", "meal", "restaurant", "gastronomy"],
+  "People": ["people", "human", "person", "portrait", "lifestyle", "culture", "emotion", "documentary"],
+  "Travel": ["travel", "destination", "place", "journey", "tourism", "location", "exploration"],
+  "Sport": ["sport", "fitness", "athlete", "exercise", "training", "movement", "performance"],
 };
 const preferredTerms = {
   "Object": new Set("projector film hammer pipe statue pillar record screen glass camera product object sculpture monolith instrument".split(" ")),
@@ -33,18 +46,25 @@ const preferredTerms = {
   "Sport / Physical": new Set("sport fitness workout gym athlete exercise bodybuilder boxing tennis basketball diving lifting training dancer ballet fighter".split(" ")),
 };
 const conceptRules = [
-  [/flower|blossom|bloom|petal|floral/i, ["flower", "flowers", "blossom", "bloom", "blooms", "floral", "petal", "petals", "botanical", "garden", "spring"]],
-  [/liquid|fluid|ink|oil|paint|emulsion/i, ["liquid", "fluid", "ink", "oil", "paint", "flow", "swirl", "mixing", "viscous", "pigment", "macro", "texture"]],
-  [/bubble|soap/i, ["bubble", "bubbles", "soap", "foam", "iridescent", "surface", "macro", "colorful"]],
-  [/fire|burn|flame|firework/i, ["fire", "flame", "flames", "burning", "heat", "spark", "sparks", "glow", "fireworks", "pyrotechnics", "explosion", "night"]],
-  [/film|8mm|vhs|analog|retro|nostalgia/i, ["film", "analog", "analogue", "8mm", "vhs", "retro", "vintage", "archive", "grain", "nostalgia", "cinematic"]],
-  [/glitch|distort|broken screen|digital breach/i, ["glitch", "distortion", "digital", "screen", "signal", "noise", "error", "technology", "cyber"]],
-  [/galaxy|space|astronomy|astral|cosmic|nebula|star|wormhole/i, ["space", "astronomy", "cosmos", "galaxy", "universe", "star", "stars", "celestial", "cosmic", "sci-fi", "deep-space"]],
-  [/body|muscle|fitness|gym|workout|athlete|exercise|lifting|boxing|tennis/i, ["body", "human", "muscle", "fitness", "training", "exercise", "athlete", "strength", "movement", "sport", "physical"]],
-  [/ruin|rome|roman|greece|athens|temple|pyramid|giza|petra|stonehenge|architecture/i, ["architecture", "ancient", "history", "heritage", "archaeology", "landmark", "travel", "monument", "historic"]],
-  [/food|bread|cake|dessert|burger|pasta|kitchen|chef|restaurant|tomato|potato|honey|sushi/i, ["food", "culinary", "cooking", "kitchen", "ingredient", "meal", "dish", "restaurant", "recipe", "gastronomy"]],
-  [/man|woman|people|person|friends|couple|portrait|children|models/i, ["people", "person", "human", "portrait", "lifestyle", "emotion", "culture", "documentary"]],
-  [/typography|title|opener|slideshow|transition|branding|logo/i, ["template", "typography", "titles", "motion-graphics", "animation", "editing", "branding", "design", "creative"]],
+  [/\b(?:flowers?|blossoms?|blooms?|petals?|floral)\b/i, ["flower", "flowers", "blossom", "bloom", "blooms", "floral", "petal", "petals", "botanical", "garden", "spring"]],
+  [/\b(?:liquid|fluid|ink|oil|paint|emulsion)\b/i, ["liquid", "fluid", "ink", "oil", "paint", "flow", "swirl", "mixing", "viscous", "pigment", "macro", "texture"]],
+  [/\b(?:bubbles?|soap)\b/i, ["bubble", "bubbles", "soap", "foam", "iridescent", "surface", "macro", "colorful"]],
+  [/\b(?:fire|fireplace|burning?|flames?|fireworks?)\b/i, ["fire", "flame", "flames", "burning", "heat", "spark", "sparks", "glow", "fireworks", "pyrotechnics", "explosion", "night"]],
+  [/\b(?:film|8mm|vhs|analog|retro|nostalgia)\b/i, ["film", "analog", "analogue", "8mm", "vhs", "retro", "vintage", "archive", "grain", "nostalgia", "cinematic"]],
+  [/\b(?:glitch|distortion?|broken screen|digital breach)\b/i, ["glitch", "distortion", "digital", "screen", "signal", "noise", "error", "technology", "cyber"]],
+  [/\b(?:galaxy|space|astronomy|astral|cosmic|nebula|stars?|wormhole)\b/i, ["space", "astronomy", "cosmos", "galaxy", "universe", "star", "stars", "celestial", "cosmic", "sci-fi", "deep-space"]],
+  [/\b(?:body|muscles?|fitness|gym|workout|athlete|exercise|lifting|boxing|tennis)\b/i, ["body", "human", "muscle", "fitness", "training", "exercise", "athlete", "strength", "movement", "sport", "physical"]],
+  [/\b(?:ruins?|rome|roman|greece|athens|temple|pyramids?|giza|petra|stonehenge|architecture)\b/i, ["architecture", "ancient", "history", "heritage", "archaeology", "landmark", "travel", "monument", "historic"]],
+  [/\b(?:food|bread|cake|dessert|burger|pasta|kitchen|chef|restaurant|tomatoes?|potatoes?|honey|sushi)\b/i, ["food", "culinary", "cooking", "kitchen", "ingredient", "meal", "dish", "restaurant", "recipe", "gastronomy"]],
+  [/\b(?:man|woman|people|person|friends|couple|portrait|children|models)\b/i, ["people", "person", "human", "portrait", "lifestyle", "emotion", "culture", "documentary"]],
+  [/\b(?:typography|titles?|opener|slideshow|transition|branding|logo)\b/i, ["template", "typography", "titles", "motion-graphics", "animation", "editing", "branding", "design", "creative"]],
+  [/\b(?:water|ocean|sea|coast|waves?|rain|waterfall|surf)\b/i, ["water", "aquatic", "ocean", "sea", "coast", "waves", "marine", "blue", "nature", "fluid"]],
+  [/\b(?:forest|trees?|pine|mountains?|alpine|landscape|field|cliff)\b/i, ["nature", "landscape", "outdoors", "environment", "scenery", "earth", "natural"]],
+  [/\b(?:clouds?|sky|storm|thunder|aurora|sunset|sunrise)\b/i, ["sky", "weather", "atmosphere", "clouds", "celestial", "nature", "light"]],
+  [/\b(?:office|business|corporate|startup|meeting|presentation|typing)\b/i, ["business", "office", "work", "corporate", "professional", "productivity", "team", "workplace"]],
+  [/\b(?:iphone|ipad|macbook|airpods|apple watch|imac|mac mini)\b/i, ["apple", "technology", "device", "consumer-electronics", "product-design", "hardware", "digital"]],
+  [/\b(?:car|drive|road|airplane|airport|boat|train|bike)\b/i, ["transport", "travel", "vehicle", "journey", "mobility", "transportation"]],
+  [/\b(?:family|baby|father|mother|mom|son|daughter)\b/i, ["family", "people", "relationship", "parent", "child", "lifestyle", "togetherness"]],
 ];
 const phraseTitles = [
   [/milky way/i, "Milky Way"],
@@ -131,11 +151,22 @@ function shortTitle(item) {
 function enrichedKeywords(item, originalTitle) {
   const words = new Set([
     ...tokens(originalTitle),
-    ...(item.keywords || []).flatMap(tokens),
     ...(categoryTerms[item.category] || []).flatMap(tokens),
   ]);
-  const searchable = `${originalTitle} ${(item.keywords || []).join(" ")} ${item.category}`;
-  for (const [rule, additions] of conceptRules) if (rule.test(searchable)) additions.flatMap(tokens).forEach((word) => words.add(word));
+  let changed = true;
+  while (changed) {
+    changed = false;
+    const searchable = `${originalTitle} ${[...words].join(" ")} ${item.category}`;
+    for (const [rule, additions] of conceptRules) {
+      if (!rule.test(searchable)) continue;
+      for (const word of additions.flatMap(tokens)) {
+        if (!words.has(word)) {
+          words.add(word);
+          changed = true;
+        }
+      }
+    }
+  }
   return [...words].filter((word) => word && !stopWords.has(word)).slice(0, 64);
 }
 
@@ -171,21 +202,43 @@ let data = await readFile(dataPath, "utf8");
 const context = { window: {} };
 createContext(context);
 runInContext(data, context);
-const imported = context.window.SOURCE_LIBRARY.filter((item) => Number(item.id) >= firstImportedId);
+const catalog = context.window.SOURCE_LIBRARY;
 const metadata = new Map();
 
-for (const item of [...imported].sort((a, b) => Number(b.id) - Number(a.id))) {
+for (const item of [...catalog].sort((a, b) => Number(b.id) - Number(a.id))) {
   const originalTitle = originalTitleById.get(item.id) || item.title;
-  const title = shortTitle(item);
+  const title = Number(item.id) >= firstImportedId ? shortTitle(item) : item.title;
   const keywords = enrichedKeywords(item, originalTitle);
   metadata.set(item.id, { title, originalTitle, keywords });
   const bounds = objectBounds(data, `"id": "${item.id}"`);
   const object = data.slice(bounds.start, bounds.end);
   let revised = object.replace(/"title": "(?:\\.|[^"])*"/, `"title": ${JSON.stringify(title)}`);
-  revised = revised.replace(/"keywords": \[[\s\S]*?\]/, `"keywords": ${JSON.stringify(keywords, null, 6).replace(/^/gm, "    ").trimStart()}`);
+  const formattedKeywords = JSON.stringify(keywords, null, 6).replace(/^/gm, "    ").trimStart();
+  revised = /"keywords": \[[\s\S]*?\]/.test(revised)
+    ? revised.replace(/"keywords": \[[\s\S]*?\]/, `"keywords": ${formattedKeywords}`)
+    : revised.slice(0, -1).replace(/\s*$/, "") + `,\n    "keywords": ${formattedKeywords}\n  }`;
   data = data.slice(0, bounds.start) + revised + data.slice(bounds.end);
 }
 await writeFile(dataPath, data);
+
+let coreData = await readFile(coreDataPath, "utf8");
+const coreContext = { window: {} };
+createContext(coreContext);
+runInContext(coreData, coreContext);
+const coreItems = coreContext.window.SOURCE_LIBRARY.filter((item) => Number(item.id) < firstImportedId);
+
+for (const item of [...coreItems].sort((a, b) => Number(b.id) - Number(a.id))) {
+  const keywords = enrichedKeywords(item, item.title);
+  metadata.set(item.id, { title: item.title, originalTitle: item.title, keywords });
+  const bounds = objectBounds(coreData, `id:"${item.id}"`);
+  const object = coreData.slice(bounds.start, bounds.end);
+  const keywordValue = JSON.stringify(keywords);
+  const revised = /,keywords:\[[^\]]*\]/.test(object)
+    ? object.replace(/,keywords:\[[^\]]*\]/, `,keywords:${keywordValue}`)
+    : object.slice(0, -1) + `,keywords:${keywordValue}}`;
+  coreData = coreData.slice(0, bounds.start) + revised + coreData.slice(bounds.end);
+}
+await writeFile(coreDataPath, coreData);
 
 for (const manifestPath of manifestPaths) {
   const manifest = JSON.parse(await readFile(manifestPath, "utf8"));
@@ -199,6 +252,8 @@ for (const manifestPath of manifestPaths) {
   await writeFile(manifestPath, JSON.stringify(manifest, null, 2) + "\n");
 }
 
-const report = [...metadata].map(([id, value]) => ({ id, ...value, words: value.title.split(/\s+/).length }));
+const report = [...metadata]
+  .sort(([left], [right]) => Number(left) - Number(right))
+  .map(([id, value]) => ({ id, ...value, words: value.title.split(/\s+/).length }));
 await writeFile("data/search-metadata-audit.json", JSON.stringify(report, null, 2) + "\n");
 process.stdout.write(JSON.stringify({ updated: report.length, overThreeWords: report.filter((item) => item.words > 3).length, averageKeywords: Number((report.reduce((sum, item) => sum + item.keywords.length, 0) / report.length).toFixed(1)) }) + "\n");
