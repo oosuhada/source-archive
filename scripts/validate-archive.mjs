@@ -31,11 +31,27 @@ for (const file of ["data/experimental-import-manifest.json", "data/experimental
 
 if (network) {
   const sample = items.filter((_, index) => index % Math.max(1, Math.floor(items.length / 20)) === 0).slice(0, 20);
+  const fetchRange = async (url) => {
+    let lastError;
+    for (let attempt = 0; attempt < 3; attempt += 1) {
+      try {
+        const response = await fetch(url, { headers: { Range: "bytes=0-1023" }, signal: AbortSignal.timeout(15000) });
+        if (response.status === 206) return response;
+        lastError = new Error(`HTTP ${response.status}`);
+        await response.body?.cancel();
+        if (response.status !== 429 && response.status < 500) break;
+      } catch (error) { lastError = error; }
+      await new Promise((resolve) => setTimeout(resolve, 500 * (attempt + 1)));
+    }
+    throw lastError;
+  };
   for (const item of sample) {
     const root = item.media === "b2" ? "https://source-media-b2.oosu.dev/media/" : "https://source-media.oosu.dev/media/";
-    const response = await fetch(root + encodeURIComponent(item.clip), { headers: { Range: "bytes=0-1023" } });
-    if (response.status !== 206 || !response.headers.get("content-range")) errors.push(`live Range validation failed ${item.id}: ${response.status}`);
-    await response.body?.cancel();
+    try {
+      const response = await fetchRange(root + encodeURIComponent(item.clip));
+      if (!response.headers.get("content-range")) errors.push(`live Range validation missing Content-Range ${item.id}`);
+      await response.body?.cancel();
+    } catch (error) { errors.push(`live Range validation failed ${item.id}: ${error.message}`); }
   }
 }
 
