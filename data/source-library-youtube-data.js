@@ -20987,5 +20987,425 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
           "human",
           "muscle"
     ]
+  },
+  {
+    "id": "645",
+    "title": "Haunted House",
+    "clip": "645_haunted-house-6336691-6336686-6336696-6336712-6336716.mp4",
+    "thumb": "645_haunted-house-6336691-6336686-6336696-6336712-6336716.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/251-haunted-house-6336691-6336686-6336696-6336712-6336716.mp4",
+    "ranges": [
+      [
+        0,
+        62.88
+      ]
+    ],
+    "theme": "06",
+    "category": "Travel / City / Architecture",
+    "keywords": [
+      "haunted",
+      "house",
+      "interior",
+      "architecture",
+      "dark",
+      "gothic",
+      "abandoned",
+      "mansion",
+      "horror",
+      "vintage",
+      "room",
+      "travel"
+    ]
+  },
+  {
+    "id": "646",
+    "title": "Stone Warrior",
+    "clip": "646_monochromatic-warriors-240788-240743-240760.mp4",
+    "thumb": "646_monochromatic-warriors-240788-240743-240760.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/252-monochromatic-warriors-240788-240743-240760.mp4",
+    "ranges": [
+      [
+        0,
+        32.12
+      ]
+    ],
+    "theme": "06",
+    "category": "Object",
+    "keywords": [
+      "stone",
+      "warrior",
+      "statue",
+      "sculpture",
+      "monochrome",
+      "classical",
+      "body",
+      "figure",
+      "hero",
+      "marble",
+      "art",
+      "object"
+    ]
+  },
+  {
+    "id": "647",
+    "title": "Greek Warriors",
+    "clip": "647_greek-dark-warriors-240793-240800-240805-240807.mp4",
+    "thumb": "647_greek-dark-warriors-240793-240800-240805-240807.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/253-greek-dark-warriors-240793-240800-240805-240807.mp4",
+    "ranges": [
+      [
+        0,
+        32.64
+      ]
+    ],
+    "theme": "06",
+    "category": "Object",
+    "keywords": [
+      "greek",
+      "warriors",
+      "statue",
+      "sculpture",
+      "classical",
+      "mythology",
+      "ancient",
+      "hero",
+      "figure",
+      "marble",
+      "art",
+      "object"
+    ]
+  },
+  {
+    "id": "648",
+    "title": "Sculptor",
+    "clip": "648_sculptor-workshop-717287-717277-717276-717298-717314.mp4",
+    "thumb": "648_sculptor-workshop-717287-717277-717276-717298-717314.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/254-sculptor-workshop-717287-717277-717276-717298-717314.mp4",
+    "ranges": [
+      [
+        0,
+        68.16
+      ]
+    ],
+    "theme": "06",
+    "category": "People / Culture",
+    "keywords": [
+      "sculptor",
+      "artist",
+      "workshop",
+      "sculpture",
+      "clay",
+      "craft",
+      "studio",
+      "hands",
+      "making",
+      "creative",
+      "culture",
+      "people"
+    ]
+  },
+  {
+    "id": "649",
+    "title": "Neon David",
+    "clip": "649_white-head-david-purple-715297.mp4",
+    "thumb": "649_white-head-david-purple-715297.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/255-white-head-david-purple-715297.mp4",
+    "ranges": [
+      [
+        0,
+        8.97
+      ]
+    ],
+    "theme": "06",
+    "category": "Object",
+    "keywords": [
+      "neon",
+      "david",
+      "statue",
+      "sculpture",
+      "bust",
+      "purple",
+      "light",
+      "classical",
+      "marble",
+      "art",
+      "museum",
+      "object"
+    ]
+  },
+  {
+    "id": "650",
+    "title": "Golden David",
+    "clip": "650_man-white-head-david-715298.mp4",
+    "thumb": "650_man-white-head-david-715298.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/256-man-white-head-david-715298.mp4",
+    "ranges": [
+      [
+        0,
+        15.97
+      ]
+    ],
+    "theme": "06",
+    "category": "Object",
+    "keywords": [
+      "golden",
+      "david",
+      "statue",
+      "sculpture",
+      "bust",
+      "classical",
+      "marble",
+      "surreal",
+      "art",
+      "museum",
+      "head",
+      "object"
+    ]
+  },
+  {
+    "id": "651",
+    "title": "Lady Liberty",
+    "clip": "651_manhattan-lady-liberty-302062.mp4",
+    "thumb": "651_manhattan-lady-liberty-302062.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/257-manhattan-lady-liberty-302062.mp4",
+    "ranges": [
+      [
+        0,
+        29.7
+      ]
+    ],
+    "theme": "06",
+    "category": "Travel / City / Architecture",
+    "keywords": [
+      "lady",
+      "liberty",
+      "statue",
+      "manhattan",
+      "new york",
+      "nyc",
+      "america",
+      "landmark",
+      "city",
+      "architecture",
+      "travel",
+      "skyline"
+    ]
+  },
+  {
+    "id": "652",
+    "title": "Still Life",
+    "clip": "652_vintage-still-life-309877-309886-309932.mp4",
+    "thumb": "652_vintage-still-life-309877-309886-309932.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/258-vintage-still-life-309877-309886-309932.mp4",
+    "ranges": [
+      [
+        0,
+        58.8
+      ]
+    ],
+    "theme": "06",
+    "category": "Object",
+    "keywords": [
+      "still",
+      "life",
+      "vintage",
+      "bottles",
+      "statue",
+      "interior",
+      "composition",
+      "antique",
+      "objects",
+      "art",
+      "table",
+      "museum"
+    ]
+  },
+  {
+    "id": "653",
+    "title": "Stone Interior",
+    "clip": "653_stone-building-interiors-94209-94211-94213-94217-94206.mp4",
+    "thumb": "653_stone-building-interiors-94209-94211-94213-94217-94206.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/259-stone-building-interiors-94209-94211-94213-94217-94206.mp4",
+    "ranges": [
+      [
+        0,
+        34.76
+      ]
+    ],
+    "theme": "06",
+    "category": "Travel / City / Architecture",
+    "keywords": [
+      "stone",
+      "interior",
+      "building",
+      "architecture",
+      "columns",
+      "historic",
+      "classical",
+      "monument",
+      "museum",
+      "travel",
+      "structure",
+      "facade"
+    ]
+  },
+  {
+    "id": "654",
+    "title": "Tokyo",
+    "clip": "654_tokyo-cityscape-series.mp4",
+    "thumb": "654_tokyo-cityscape-series.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/260-tokyo-cityscape-series.mp4",
+    "ranges": [
+      [
+        0,
+        71.84
+      ]
+    ],
+    "theme": "06",
+    "category": "Travel / City / Architecture",
+    "keywords": [
+      "tokyo",
+      "japan",
+      "city",
+      "cityscape",
+      "train",
+      "metro",
+      "urban",
+      "architecture",
+      "street",
+      "travel",
+      "asia",
+      "night"
+    ]
+  },
+  {
+    "id": "655",
+    "title": "Seoul",
+    "clip": "655_seoul-cityscape-series.mp4",
+    "thumb": "655_seoul-cityscape-series.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/261-seoul-cityscape-series.mp4",
+    "ranges": [
+      [
+        0,
+        57.4
+      ]
+    ],
+    "theme": "06",
+    "category": "Travel / City / Architecture",
+    "keywords": [
+      "seoul",
+      "korea",
+      "city",
+      "cityscape",
+      "urban",
+      "architecture",
+      "street",
+      "traffic",
+      "travel",
+      "asia",
+      "night",
+      "skyline"
+    ]
+  },
+  {
+    "id": "656",
+    "title": "Vienna",
+    "clip": "656_vienna-historic-landmarks.mp4",
+    "thumb": "656_vienna-historic-landmarks.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/262-vienna-historic-landmarks.mp4",
+    "ranges": [
+      [
+        0,
+        42.04
+      ]
+    ],
+    "theme": "06",
+    "category": "Travel / City / Architecture",
+    "keywords": [
+      "vienna",
+      "austria",
+      "historic",
+      "landmark",
+      "architecture",
+      "palace",
+      "monument",
+      "city",
+      "europe",
+      "travel",
+      "museum",
+      "classical"
+    ]
+  },
+  {
+    "id": "657",
+    "title": "Meditation",
+    "clip": "657_yoga-meditation-silhouette-6414315-6414388.mp4",
+    "thumb": "657_yoga-meditation-silhouette-6414315-6414388.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/263-yoga-meditation-silhouette-6414315-6414388.mp4",
+    "ranges": [
+      [
+        0,
+        24.28
+      ]
+    ],
+    "theme": "06",
+    "category": "People / Culture",
+    "keywords": [
+      "meditation",
+      "yoga",
+      "silhouette",
+      "mindfulness",
+      "wellness",
+      "spiritual",
+      "calm",
+      "human",
+      "body",
+      "sky",
+      "people",
+      "peace"
+    ]
+  },
+  {
+    "id": "658",
+    "title": "Warsaw Glitch",
+    "clip": "658_warsaw-ai-glitch-682113-682125-682121-682117.mp4",
+    "thumb": "658_warsaw-ai-glitch-682113-682125-682121-682117.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/264-warsaw-ai-glitch-682113-682125-682121-682117.mp4",
+    "ranges": [
+      [
+        0,
+        24.2
+      ]
+    ],
+    "theme": "06",
+    "category": "Travel / City / Architecture",
+    "keywords": [
+      "warsaw",
+      "poland",
+      "glitch",
+      "ai",
+      "city",
+      "architecture",
+      "statue",
+      "urban",
+      "landmark",
+      "travel",
+      "europe",
+      "digital"
+    ]
   }
 ]);
