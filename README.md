@@ -6,6 +6,8 @@ Source Archive는 수백 개의 대용량 영상 소스를 정적 웹사이트�
 
 ## Live Site / 라이브 사이트
 
+![Source Archive live gallery](assets/readme/source-archive-live-gallery.png)
+
 [oosuhada.github.io/source-archive](https://oosuhada.github.io/source-archive/)
 
 ## Why I Built It / 문제의식

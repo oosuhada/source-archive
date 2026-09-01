@@ -3,11 +3,11 @@
 Audit date: 2026-09-01  
 Scope: 644/644 catalog thumbnails
 
-Every thumbnail was reviewed in a labeled 5×5 contact sheet against its display title. Suspected mismatches were then checked against frames at 15%, 30%, 50%, 70%, and 85% of the corresponding MP4. The timestamps below are recommendations; this audit does not replace thumbnail files.
+Every thumbnail was reviewed in a labeled 5×5 contact sheet against its display title. Suspected mismatches were then checked against frames at 15%, 30%, 50%, 70%, and 85% of the corresponding MP4. The selected timestamps below were applied to the catalog thumbnails.
 
-## Recommended thumbnail frames
+## Applied thumbnail frames
 
-| ID | Title | Recommended frame | Reason |
+| ID | Title | Applied frame | Reason |
 | ---: | --- | ---: | --- |
 | 41 | Thunder | 4.45 s | Brightest visible flash; the current frame is nearly black. |
 | 138 | Life | 10.95 s | Shows the full vortex structure instead of a single dark point. |
