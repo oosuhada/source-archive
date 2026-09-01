@@ -50,21 +50,20 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
         85
       ]
     ],
-    "theme": "01",
-    "category": "Experimental / Material / Object",
+    "theme": "08",
+    "category": "Object",
     "keywords": [
           "old",
           "tv",
-          "experimental",
-          "material",
+          "television",
+          "retro",
+          "vintage",
+          "screen",
+          "monitor",
           "object",
-          "abstract",
-          "texture",
-          "visual",
-          "motion",
-          "surface",
-          "art",
-          "macro"
+          "electronics",
+          "crt",
+          "broadcast"
     ]
   },
   {
@@ -116,7 +115,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
         29.667
       ]
     ],
-    "theme": "01",
+    "theme": "02",
     "category": "People / Culture",
     "keywords": [
           "people",
@@ -300,7 +299,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
         37
       ]
     ],
-    "theme": "01",
+    "theme": "05",
     "category": "Experimental / Material / Object",
     "crop": "iw:trunc(ih*0.666667/2)*2:0:trunc(ih*0.166667/2)*2",
     "keywords": [
@@ -426,7 +425,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "26",
-    "title": "Office2",
+    "title": "Office 2",
     "clip": "26_office.mp4",
     "thumb": "26_office.jpg",
     "source": "youtube:__O1eATrXI0",
@@ -845,7 +844,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
         50
       ]
     ],
-    "theme": "01",
+    "theme": "10",
     "category": "Experimental / Material / Object",
     "keywords": [
           "ink",
@@ -908,7 +907,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
         8.9
       ]
     ],
-    "theme": "01",
+    "theme": "09",
     "category": "Sky / Space / Weather",
     "keywords": [
           "thunder",
@@ -1189,7 +1188,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "50",
-    "title": "Coffee2",
+    "title": "Coffee 2",
     "clip": "50_coffee-2.mp4",
     "thumb": "50_coffee-2.jpg",
     "source": "youtube:0jIeCAOkgcQ",
@@ -2441,7 +2440,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "92",
-    "title": "Sunset2",
+    "title": "Sunset 2",
     "clip": "92_sunset-2.mp4",
     "thumb": "92_sunset-2.jpg",
     "source": "youtube:Xocr00KRisI",
@@ -2788,7 +2787,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "102",
-    "title": "Tea2",
+    "title": "Tea 2",
     "clip": "102_tea-2.mp4",
     "thumb": "102_tea-2.jpg",
     "source": "youtube:NgF_GHZUlcA",
@@ -2886,7 +2885,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
         18
       ]
     ],
-    "theme": "01",
+    "theme": "04",
     "category": "Experimental / Material / Object",
     "keywords": [
           "cinematic",
@@ -3410,7 +3409,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "121",
-    "title": "ChatGPT2",
+    "title": "ChatGPT 2",
     "clip": "121_chatgpt-2.mp4",
     "thumb": "121_chatgpt-2.jpg",
     "source": "youtube:OpeKKTlLZ0I",
@@ -3928,7 +3927,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "139",
-    "title": "Scrolling2",
+    "title": "Scrolling 2",
     "clip": "139_scrolling-2.mp4",
     "thumb": "139_scrolling-2.jpg",
     "source": "youtube:1d-vk39ADvk",
@@ -4277,7 +4276,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "149",
-    "title": "Galaxy",
+    "title": "Galaxy 2",
     "clip": "149_galaxy-2.mp4",
     "thumb": "149_galaxy-2.jpg",
     "source": "pixabay:https://pixabay.com/videos/galaxy-space-universe-stars-141478/",
@@ -4618,7 +4617,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
         12.933
       ]
     ],
-    "theme": "01",
+    "theme": "06",
     "category": "People",
     "keywords": [
           "silhouette",
@@ -5151,7 +5150,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
         10.9
       ]
     ],
-    "theme": "01",
+    "theme": "07",
     "category": "People",
     "keywords": [
           "panic",
@@ -6338,7 +6337,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "220",
-    "title": "Apple Watch ULTRA2",
+    "title": "Apple Watch Ultra 2",
     "clip": "220_apple-watch-ultra2.mp4",
     "thumb": "220_apple-watch-ultra2.jpg",
     "source": "youtube:3CEBi4HX_wE",
@@ -6829,7 +6828,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "235",
-    "title": "Water Drops",
+    "title": "Water Drops 2",
     "clip": "235_water-drops-ii.mp4",
     "thumb": "235_water-drops-ii.jpg",
     "source": "youtube:https://www.youtube.com/watch?v=0b1WqBZ3jZQ",
@@ -7163,7 +7162,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "244",
-    "title": "james webb",
+    "title": "James Webb",
     "clip": "244_james-webb.mp4",
     "thumb": "244_james-webb.jpg",
     "source": "youtube:https://www.youtube.com/watch?v=f3ZoUaopCOM",
@@ -7656,7 +7655,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
         47
       ]
     ],
-    "theme": "01",
+    "theme": "06",
     "category": "Abstract",
     "keywords": [
           "cracked",
@@ -7675,7 +7674,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "261",
-    "title": "Cracked glass2",
+    "title": "Cracked Glass 2",
     "clip": "261_cracked-glass2.mp4",
     "thumb": "261_cracked-glass2.jpg",
     "source": "stock:https://mixkit.co/free-stock-video/cracked-texture-with-abstract-light-30732/",
@@ -7685,7 +7684,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
         38
       ]
     ],
-    "theme": "01",
+    "theme": "08",
     "category": "Abstract",
     "keywords": [
           "cracked",
@@ -7714,7 +7713,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
         11
       ]
     ],
-    "theme": "01",
+    "theme": "05",
     "category": "Abstract",
     "keywords": [
           "kaleidoscope",
@@ -7897,7 +7896,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "269",
-    "title": "modeling2",
+    "title": "Modeling 2",
     "clip": "269_modeling2.mp4",
     "thumb": "269_modeling2.jpg",
     "source": "stock:https://mixkit.co/free-stock-video/black-male-posing-confidently-100148/",
@@ -8988,7 +8987,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "303",
-    "title": "Film Titles",
+    "title": "Film Titles 2",
     "clip": "303_film-titles-2.mp4",
     "thumb": "303_film-titles-2.jpg",
     "source": "local:macbookpro/29-film-titles.ts",
@@ -10455,7 +10454,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "350",
-    "title": "Cinematic Titles",
+    "title": "Cinematic Titles 2",
     "clip": "350_cinematic-titles-2.mp4",
     "thumb": "350_cinematic-titles-2.jpg",
     "source": "local:macbookpro/76-cinematic-titles.ts",
@@ -12095,7 +12094,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "403",
-    "title": "Blossom",
+    "title": "Blossom 2",
     "clip": "403_tranquil-background-flowers-nature.mp4",
     "thumb": "403_tranquil-background-flowers-nature.jpg",
     "source": "local:macbookpro/001-tranquil-background-flowers-nature.ts",
@@ -14638,7 +14637,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "471",
-    "title": "Piano Reflection",
+    "title": "Blurred Reflection",
     "clip": "471_reflection-from-a-piano-cropped.mp4",
     "thumb": "471_reflection-from-a-piano.jpg",
     "media": "b2",
@@ -14668,7 +14667,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "472",
-    "title": "Friends",
+    "title": "Friends 2",
     "clip": "472_friends-hanging-street-urban-life.mp4",
     "thumb": "472_friends-hanging-street-urban-life.jpg",
     "media": "b2",
@@ -14699,7 +14698,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "473",
-    "title": "Milky Way",
+    "title": "Milky Way 2",
     "clip": "473_astrophotography-stars-sky-milky-way.mp4",
     "thumb": "473_astrophotography-stars-sky-milky-way.jpg",
     "media": "b2",
@@ -15269,7 +15268,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "489",
-    "title": "Workout Fitness",
+    "title": "Workout Fitness 2",
     "clip": "489_workout-fitness-training-basketball-2.mp4",
     "thumb": "489_workout-fitness-training-basketball-2.jpg",
     "media": "b2",
@@ -15333,7 +15332,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "491",
-    "title": "Tea",
+    "title": "Tea 3",
     "clip": "491_teabag-in-tea.mp4",
     "thumb": "491_teabag-in-tea.jpg",
     "media": "b2",
@@ -15537,7 +15536,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "497",
-    "title": "Pull Ups",
+    "title": "Pull Ups 2",
     "clip": "497_closeup-of-mans-chest-doing-leg-pull-ups-on-a-bar-in-the-gym.mp4",
     "thumb": "497_closeup-of-mans-chest-doing-leg-pull-ups-on-a-bar-in-the-gym.jpg",
     "media": "b2",
@@ -15576,7 +15575,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "498",
-    "title": "Bodybuilder",
+    "title": "Bodybuilder 2",
     "clip": "498_bodybuilder-flexing-his-veiny-arm-muscles.mp4",
     "thumb": "498_bodybuilder-flexing-his-veiny-arm-muscles.jpg",
     "media": "b2",
@@ -15806,7 +15805,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "504",
-    "title": "Weight Lifting",
+    "title": "Weight Lifting 2",
     "clip": "504_usa-bearded-man-weight-lifting-bar.mp4",
     "thumb": "504_usa-bearded-man-weight-lifting-bar.jpg",
     "media": "b2",
@@ -15934,7 +15933,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "507",
-    "title": "Gym",
+    "title": "Gym 2",
     "clip": "507_shirtless-man-squatting-with-barbell-over-shoulder-at-gym.mp4",
     "thumb": "507_shirtless-man-squatting-with-barbell-over-shoulder-at-gym.jpg",
     "media": "b2",
@@ -16779,7 +16778,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "528",
-    "title": "Ancient Ruins",
+    "title": "Ancient Ruins 2",
     "clip": "528_pompeii-archeology-ancient-ruins.mp4",
     "thumb": "528_pompeii-archeology-ancient-ruins.jpg",
     "media": "b2",
@@ -17028,7 +17027,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "535",
-    "title": "Friends",
+    "title": "Friends 3",
     "clip": "535_vietnam-friends-shilohuette-beach.mp4",
     "thumb": "535_vietnam-friends-shilohuette-beach.jpg",
     "media": "b2",
@@ -17058,7 +17057,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "536",
-    "title": "Friends",
+    "title": "Friends 4",
     "clip": "536_laughing-women-men-hanging-out.mp4",
     "thumb": "536_laughing-women-men-hanging-out.jpg",
     "media": "b2",
@@ -17512,7 +17511,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "550",
-    "title": "Workout",
+    "title": "Workout 2",
     "clip": "550_looking-at-camera-men-shirtless-workout.mp4",
     "thumb": "550_looking-at-camera-men-shirtless-workout.jpg",
     "media": "b2",
@@ -17577,7 +17576,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "552",
-    "title": "Exercise",
+    "title": "Exercise 2",
     "clip": "552_exercise-looking-at-camera-portrait-wellbeing.mp4",
     "thumb": "552_exercise-looking-at-camera-portrait-wellbeing.jpg",
     "media": "b2",
@@ -17969,7 +17968,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "563",
-    "title": "Drummer",
+    "title": "Drummer 2",
     "clip": "563_drummer-plays-drums-vigorously.mp4",
     "thumb": "563_drummer-plays-drums-vigorously.jpg",
     "media": "b2",
@@ -18885,7 +18884,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "588",
-    "title": "Black Hole",
+    "title": "Black Hole 2",
     "clip": "588_stars-space-black-hole-cosmos.mp4",
     "thumb": "588_stars-space-black-hole-cosmos.jpg",
     "media": "b2",
@@ -20169,7 +20168,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "623",
-    "title": "Exercise",
+    "title": "Exercise 3",
     "clip": "623_632793-632794-exercise-trainer-abs.mp4",
     "thumb": "623_632793-632794-exercise-trainer-abs.jpg",
     "media": "b2",
@@ -20203,7 +20202,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "624",
-    "title": "Bodybuilder",
+    "title": "Bodybuilder 3",
     "clip": "624_bodybuilder-curlbar-62328.mp4",
     "thumb": "624_bodybuilder-curlbar-62328.jpg",
     "media": "b2",
@@ -20236,7 +20235,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "625",
-    "title": "Bodybuilder",
+    "title": "Bodybuilder 4",
     "clip": "625_bodybuilder-weights-62313-62310.mp4",
     "thumb": "625_bodybuilder-weights-62313-62310.jpg",
     "media": "b2",
@@ -20356,7 +20355,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "628",
-    "title": "Drummer",
+    "title": "Drummer 3",
     "clip": "628_drums-24247-24246-24245.mp4",
     "thumb": "628_drums-24247-24246-24245.jpg",
     "media": "b2",
@@ -20386,7 +20385,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "629",
-    "title": "Boxing",
+    "title": "Boxing 2",
     "clip": "629_fight-club-6033493-6033495-6033487-6033500.mp4",
     "thumb": "629_fight-club-6033493-6033495-6033487-6033500.jpg",
     "media": "b2",
@@ -20420,7 +20419,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "630",
-    "title": "Fitness",
+    "title": "Fitness 2",
     "clip": "630_fitness-632780-110-632796-extended.mp4",
     "thumb": "630_fitness-632780-110-632796-extended.jpg",
     "media": "b2",
@@ -20454,7 +20453,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "631",
-    "title": "Gym Training",
+    "title": "Gym Training 2",
     "clip": "631_gym-training-501762-501764-501763.mp4",
     "thumb": "631_gym-training-501762-501764-501763.jpg",
     "media": "b2",
@@ -20679,7 +20678,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "637",
-    "title": "Giza",
+    "title": "Giza 2",
     "clip": "637_pyramids-6396472-6396471-6396480-6396470.mp4",
     "thumb": "637_pyramids-6396472-6396471-6396480-6396470.jpg",
     "media": "b2",
@@ -20955,7 +20954,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "644",
-    "title": "Tennis",
+    "title": "Tennis 2",
     "clip": "644_tennis-series-122-225-215-240.mp4",
     "thumb": "644_tennis-series-122-225-215-240.jpg",
     "media": "b2",
@@ -20987,6 +20986,1386 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
           "body",
           "human",
           "muscle"
+    ]
+  },
+  {
+    "id": "645",
+    "title": "Haunted House",
+    "clip": "645_haunted-house-6336691-6336686-6336696-6336712-6336716.mp4",
+    "thumb": "645_haunted-house-6336691-6336686-6336696-6336712-6336716.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/251-haunted-house-6336691-6336686-6336696-6336712-6336716.mp4",
+    "ranges": [
+      [
+        0,
+        62.88
+      ]
+    ],
+    "theme": "06",
+    "category": "Travel / City / Architecture",
+    "keywords": [
+      "haunted",
+      "house",
+      "interior",
+      "architecture",
+      "dark",
+      "gothic",
+      "abandoned",
+      "mansion",
+      "horror",
+      "vintage",
+      "room",
+      "travel"
+    ]
+  },
+  {
+    "id": "646",
+    "title": "Stone Warrior",
+    "clip": "646_monochromatic-warriors-240788-240743-240760.mp4",
+    "thumb": "646_monochromatic-warriors-240788-240743-240760.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/252-monochromatic-warriors-240788-240743-240760.mp4",
+    "ranges": [
+      [
+        0,
+        32.12
+      ]
+    ],
+    "theme": "06",
+    "category": "Object",
+    "keywords": [
+      "stone",
+      "warrior",
+      "statue",
+      "sculpture",
+      "monochrome",
+      "classical",
+      "body",
+      "figure",
+      "hero",
+      "marble",
+      "art",
+      "object"
+    ]
+  },
+  {
+    "id": "647",
+    "title": "Greek Warriors",
+    "clip": "647_greek-dark-warriors-240793-240800-240805-240807.mp4",
+    "thumb": "647_greek-dark-warriors-240793-240800-240805-240807.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/253-greek-dark-warriors-240793-240800-240805-240807.mp4",
+    "ranges": [
+      [
+        0,
+        32.64
+      ]
+    ],
+    "theme": "06",
+    "category": "Object",
+    "keywords": [
+      "greek",
+      "warriors",
+      "statue",
+      "sculpture",
+      "classical",
+      "mythology",
+      "ancient",
+      "hero",
+      "figure",
+      "marble",
+      "art",
+      "object"
+    ]
+  },
+  {
+    "id": "648",
+    "title": "Sculptor",
+    "clip": "648_sculptor-workshop-717287-717277-717276-717298-717314.mp4",
+    "thumb": "648_sculptor-workshop-717287-717277-717276-717298-717314.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/254-sculptor-workshop-717287-717277-717276-717298-717314.mp4",
+    "ranges": [
+      [
+        0,
+        68.16
+      ]
+    ],
+    "theme": "06",
+    "category": "People / Culture",
+    "keywords": [
+      "sculptor",
+      "artist",
+      "workshop",
+      "sculpture",
+      "clay",
+      "craft",
+      "studio",
+      "hands",
+      "making",
+      "creative",
+      "culture",
+      "people"
+    ]
+  },
+  {
+    "id": "649",
+    "title": "Neon David",
+    "clip": "649_white-head-david-purple-715297.mp4",
+    "thumb": "649_white-head-david-purple-715297.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/255-white-head-david-purple-715297.mp4",
+    "ranges": [
+      [
+        0,
+        8.97
+      ]
+    ],
+    "theme": "06",
+    "category": "Object",
+    "keywords": [
+      "neon",
+      "david",
+      "statue",
+      "sculpture",
+      "bust",
+      "purple",
+      "light",
+      "classical",
+      "marble",
+      "art",
+      "museum",
+      "object"
+    ]
+  },
+  {
+    "id": "650",
+    "title": "Golden David",
+    "clip": "650_man-white-head-david-715298.mp4",
+    "thumb": "650_man-white-head-david-715298.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/256-man-white-head-david-715298.mp4",
+    "ranges": [
+      [
+        0,
+        15.97
+      ]
+    ],
+    "theme": "06",
+    "category": "Object",
+    "keywords": [
+      "golden",
+      "david",
+      "statue",
+      "sculpture",
+      "bust",
+      "classical",
+      "marble",
+      "surreal",
+      "art",
+      "museum",
+      "head",
+      "object"
+    ]
+  },
+  {
+    "id": "651",
+    "title": "Lady Liberty",
+    "clip": "651_manhattan-lady-liberty-302062.mp4",
+    "thumb": "651_manhattan-lady-liberty-302062.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/257-manhattan-lady-liberty-302062.mp4",
+    "ranges": [
+      [
+        0,
+        29.7
+      ]
+    ],
+    "theme": "06",
+    "category": "Travel / City / Architecture",
+    "keywords": [
+      "lady",
+      "liberty",
+      "statue",
+      "manhattan",
+      "new york",
+      "nyc",
+      "america",
+      "landmark",
+      "city",
+      "architecture",
+      "travel",
+      "skyline"
+    ]
+  },
+  {
+    "id": "652",
+    "title": "Still Life",
+    "clip": "652_vintage-still-life-309877-309886-309932.mp4",
+    "thumb": "652_vintage-still-life-309877-309886-309932.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/258-vintage-still-life-309877-309886-309932.mp4",
+    "ranges": [
+      [
+        0,
+        58.8
+      ]
+    ],
+    "theme": "06",
+    "category": "Object",
+    "keywords": [
+      "still",
+      "life",
+      "vintage",
+      "bottles",
+      "statue",
+      "interior",
+      "composition",
+      "antique",
+      "objects",
+      "art",
+      "table",
+      "museum"
+    ]
+  },
+  {
+    "id": "653",
+    "title": "Stone Interior",
+    "clip": "653_stone-building-interiors-94209-94211-94213-94217-94206.mp4",
+    "thumb": "653_stone-building-interiors-94209-94211-94213-94217-94206.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/259-stone-building-interiors-94209-94211-94213-94217-94206.mp4",
+    "ranges": [
+      [
+        0,
+        34.76
+      ]
+    ],
+    "theme": "06",
+    "category": "Travel / City / Architecture",
+    "keywords": [
+      "stone",
+      "interior",
+      "building",
+      "architecture",
+      "columns",
+      "historic",
+      "classical",
+      "monument",
+      "museum",
+      "travel",
+      "structure",
+      "facade"
+    ]
+  },
+  {
+    "id": "654",
+    "title": "Tokyo",
+    "clip": "654_tokyo-cityscape-series.mp4",
+    "thumb": "654_tokyo-cityscape-series.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/260-tokyo-cityscape-series.mp4",
+    "ranges": [
+      [
+        0,
+        71.84
+      ]
+    ],
+    "theme": "06",
+    "category": "Travel / City / Architecture",
+    "keywords": [
+      "tokyo",
+      "japan",
+      "city",
+      "cityscape",
+      "train",
+      "metro",
+      "urban",
+      "architecture",
+      "street",
+      "travel",
+      "asia",
+      "night"
+    ]
+  },
+  {
+    "id": "655",
+    "title": "Seoul",
+    "clip": "655_seoul-cityscape-series.mp4",
+    "thumb": "655_seoul-cityscape-series.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/261-seoul-cityscape-series.mp4",
+    "ranges": [
+      [
+        0,
+        57.4
+      ]
+    ],
+    "theme": "06",
+    "category": "Travel / City / Architecture",
+    "keywords": [
+      "seoul",
+      "korea",
+      "city",
+      "cityscape",
+      "urban",
+      "architecture",
+      "street",
+      "traffic",
+      "travel",
+      "asia",
+      "night",
+      "skyline"
+    ]
+  },
+  {
+    "id": "656",
+    "title": "Vienna",
+    "clip": "656_vienna-historic-landmarks.mp4",
+    "thumb": "656_vienna-historic-landmarks.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/262-vienna-historic-landmarks.mp4",
+    "ranges": [
+      [
+        0,
+        42.04
+      ]
+    ],
+    "theme": "06",
+    "category": "Travel / City / Architecture",
+    "keywords": [
+      "vienna",
+      "austria",
+      "historic",
+      "landmark",
+      "architecture",
+      "palace",
+      "monument",
+      "city",
+      "europe",
+      "travel",
+      "museum",
+      "classical"
+    ]
+  },
+  {
+    "id": "657",
+    "title": "Meditation",
+    "clip": "657_yoga-meditation-silhouette-6414315-6414388.mp4",
+    "thumb": "657_yoga-meditation-silhouette-6414315-6414388.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/263-yoga-meditation-silhouette-6414315-6414388.mp4",
+    "ranges": [
+      [
+        0,
+        24.28
+      ]
+    ],
+    "theme": "06",
+    "category": "People / Culture",
+    "keywords": [
+      "meditation",
+      "yoga",
+      "silhouette",
+      "mindfulness",
+      "wellness",
+      "spiritual",
+      "calm",
+      "human",
+      "body",
+      "sky",
+      "people",
+      "peace"
+    ]
+  },
+  {
+    "id": "658",
+    "title": "Warsaw Glitch",
+    "clip": "658_warsaw-ai-glitch-682113-682125-682121-682117.mp4",
+    "thumb": "658_warsaw-ai-glitch-682113-682125-682121-682117.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/264-warsaw-ai-glitch-682113-682125-682121-682117.mp4",
+    "ranges": [
+      [
+        0,
+        24.2
+      ]
+    ],
+    "theme": "06",
+    "category": "Travel / City / Architecture",
+    "keywords": [
+      "warsaw",
+      "poland",
+      "glitch",
+      "ai",
+      "city",
+      "architecture",
+      "statue",
+      "urban",
+      "landmark",
+      "travel",
+      "europe",
+      "digital"
+    ]
+  },
+  {
+    "id": "659",
+    "title": "Greek Faces",
+    "clip": "659_greek-faces.mp4",
+    "thumb": "659_greek-faces.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/265-greek-faces.mp4",
+    "ranges": [
+      [
+        0,
+        27.2
+      ]
+    ],
+    "theme": "06",
+    "category": "Object",
+    "keywords": [
+      "greek",
+      "faces",
+      "classical",
+      "sculpture",
+      "statue",
+      "marble",
+      "profile",
+      "portrait",
+      "art",
+      "museum",
+      "ancient",
+      "object"
+    ]
+  },
+  {
+    "id": "660",
+    "title": "Photo Collage",
+    "clip": "660_creative-photo-collage.mp4",
+    "thumb": "660_creative-photo-collage.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/266-creative-photo-collage.mp4",
+    "ranges": [
+      [
+        0,
+        60.08
+      ]
+    ],
+    "theme": "06",
+    "category": "Object",
+    "keywords": [
+      "photo",
+      "collage",
+      "portrait",
+      "photography",
+      "paper",
+      "composition",
+      "creative",
+      "editorial",
+      "faces",
+      "cutout",
+      "design",
+      "abstract"
+    ]
+  },
+  {
+    "id": "661",
+    "title": "Gymnast Rings",
+    "clip": "661_gymnast-rings.mp4",
+    "thumb": "661_gymnast-rings.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/267-gymnast-rings.mp4",
+    "ranges": [
+      [
+        0,
+        55.08
+      ]
+    ],
+    "theme": "06",
+    "category": "Sport / Physical",
+    "keywords": [
+      "gymnast",
+      "rings",
+      "gymnastics",
+      "athlete",
+      "acrobatics",
+      "strength",
+      "training",
+      "arena",
+      "competition",
+      "sport",
+      "fitness",
+      "motion"
+    ]
+  },
+  {
+    "id": "662",
+    "title": "Pommel Horse",
+    "clip": "662_gymnast-pommel-horse.mp4",
+    "thumb": "662_gymnast-pommel-horse.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/268-gymnast-pommel-horse.mp4",
+    "ranges": [
+      [
+        0,
+        70.92
+      ]
+    ],
+    "theme": "06",
+    "category": "Sport / Physical",
+    "keywords": [
+      "gymnast",
+      "pommel",
+      "horse",
+      "gymnastics",
+      "athlete",
+      "acrobatics",
+      "strength",
+      "arena",
+      "competition",
+      "sport",
+      "fitness",
+      "motion"
+    ]
+  },
+  {
+    "id": "663",
+    "title": "Swimmers",
+    "clip": "663_swimmers.mp4",
+    "thumb": "663_swimmers.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/269-swimmers.mp4",
+    "ranges": [
+      [
+        0,
+        49.48
+      ]
+    ],
+    "theme": "06",
+    "category": "Sport / Physical",
+    "keywords": [
+      "swimmers",
+      "swimming",
+      "underwater",
+      "pool",
+      "athlete",
+      "aquatic",
+      "training",
+      "competition",
+      "sport",
+      "fitness",
+      "water",
+      "motion"
+    ]
+  },
+  {
+    "id": "664",
+    "title": "Church Interior",
+    "clip": "664_church-interior.mp4",
+    "thumb": "664_church-interior.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/270-church-interior.mp4",
+    "ranges": [
+      [
+        0,
+        45.84
+      ]
+    ],
+    "theme": "06",
+    "category": "Travel / City / Architecture",
+    "keywords": [
+      "church",
+      "interior",
+      "architecture",
+      "altar",
+      "cathedral",
+      "religion",
+      "historic",
+      "sacred",
+      "aisle",
+      "travel",
+      "building",
+      "heritage"
+    ]
+  },
+  {
+    "id": "665",
+    "title": "Figure Skating",
+    "clip": "665_figure-skating.mp4",
+    "thumb": "665_figure-skating.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/271-figure-skating.mp4",
+    "ranges": [
+      [
+        0,
+        70.12
+      ]
+    ],
+    "theme": "06",
+    "category": "Sport / Physical",
+    "keywords": [
+      "figure",
+      "skating",
+      "ice",
+      "skater",
+      "athlete",
+      "rink",
+      "performance",
+      "winter",
+      "competition",
+      "sport",
+      "grace",
+      "motion"
+    ]
+  },
+  {
+    "id": "666",
+    "title": "Fine Dining 2",
+    "clip": "666_fine-dining.mp4",
+    "thumb": "666_fine-dining.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/272-fine-dining.mp4",
+    "ranges": [
+      [
+        0,
+        95.96
+      ]
+    ],
+    "theme": "06",
+    "category": "Food / Drink",
+    "keywords": [
+      "fine",
+      "dining",
+      "restaurant",
+      "table",
+      "cutlery",
+      "plate",
+      "hospitality",
+      "luxury",
+      "meal",
+      "food",
+      "service",
+      "interior"
+    ]
+  },
+  {
+    "id": "667",
+    "title": "Ice Hockey",
+    "clip": "667_ice-hockey.mp4",
+    "thumb": "667_ice-hockey.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/273-ice-hockey.mp4",
+    "ranges": [
+      [
+        0,
+        55.04
+      ]
+    ],
+    "theme": "06",
+    "category": "Sport / Physical",
+    "keywords": [
+      "ice",
+      "hockey",
+      "players",
+      "puck",
+      "rink",
+      "team",
+      "athlete",
+      "winter",
+      "competition",
+      "sport",
+      "game",
+      "action"
+    ]
+  },
+  {
+    "id": "668",
+    "title": "Forest Foraging",
+    "clip": "668_forest-foraging.mp4",
+    "thumb": "668_forest-foraging.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/274-forest-foraging.mp4",
+    "ranges": [
+      [
+        0,
+        56.44
+      ]
+    ],
+    "theme": "06",
+    "category": "Nature / Land",
+    "keywords": [
+      "forest",
+      "foraging",
+      "mushroom",
+      "hands",
+      "wild",
+      "woodland",
+      "harvest",
+      "organic",
+      "nature",
+      "outdoors",
+      "ecology",
+      "food"
+    ]
+  },
+  {
+    "id": "669",
+    "title": "Jazz Ensemble",
+    "clip": "669_jazz-ensemble.mp4",
+    "thumb": "669_jazz-ensemble.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/275-jazz-ensemble.mp4",
+    "ranges": [
+      [
+        0,
+        86.52
+      ]
+    ],
+    "theme": "06",
+    "category": "People / Culture",
+    "keywords": [
+      "jazz",
+      "ensemble",
+      "musicians",
+      "music",
+      "instrument",
+      "performance",
+      "band",
+      "concert",
+      "culture",
+      "people",
+      "stage",
+      "rhythm"
+    ]
+  },
+  {
+    "id": "670",
+    "title": "Fencing",
+    "clip": "670_fencing.mp4",
+    "thumb": "670_fencing.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/276-fencing.mp4",
+    "ranges": [
+      [
+        0,
+        48.6
+      ]
+    ],
+    "theme": "06",
+    "category": "Sport / Physical",
+    "keywords": [
+      "fencing",
+      "fencer",
+      "sword",
+      "athlete",
+      "duel",
+      "combat",
+      "training",
+      "competition",
+      "sport",
+      "uniform",
+      "mask",
+      "motion"
+    ]
+  },
+  {
+    "id": "671",
+    "title": "Backyard Film",
+    "clip": "671_yard-8mm.mp4",
+    "thumb": "671_yard-8mm.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/277-yard-8mm.mp4",
+    "ranges": [
+      [
+        0,
+        48
+      ]
+    ],
+    "theme": "06",
+    "category": "Object",
+    "keywords": [
+      "backyard",
+      "yard",
+      "garden",
+      "home",
+      "vintage",
+      "8mm",
+      "film",
+      "nostalgia",
+      "grass",
+      "outdoors",
+      "family",
+      "nature"
+    ]
+  },
+  {
+    "id": "672",
+    "title": "Retro Cycling",
+    "clip": "672_retro-cycling-8mm.mp4",
+    "thumb": "672_retro-cycling-8mm.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/278-retro-cycling-8mm.mp4",
+    "ranges": [
+      [
+        0,
+        34.76
+      ]
+    ],
+    "theme": "06",
+    "category": "People / Culture",
+    "keywords": [
+      "retro",
+      "cycling",
+      "bicycle",
+      "child",
+      "vintage",
+      "8mm",
+      "film",
+      "nostalgia",
+      "outdoors",
+      "sport",
+      "bike",
+      "motion"
+    ]
+  },
+  {
+    "id": "673",
+    "title": "Christmas Film",
+    "clip": "673_christmas-50s-8mm.mp4",
+    "thumb": "673_christmas-50s-8mm.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/279-christmas-50s-8mm.mp4",
+    "ranges": [
+      [
+        0,
+        42.64
+      ]
+    ],
+    "theme": "06",
+    "category": "Object",
+    "keywords": [
+      "christmas",
+      "holiday",
+      "vintage",
+      "1950s",
+      "8mm",
+      "film",
+      "tree",
+      "family",
+      "nostalgia",
+      "celebration",
+      "winter",
+      "culture"
+    ]
+  },
+  {
+    "id": "674",
+    "title": "Glass Sculpture",
+    "clip": "674_glass-sculpture.mp4",
+    "thumb": "674_glass-sculpture.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/280-glass-sculpture.mp4",
+    "ranges": [
+      [
+        0,
+        57.584
+      ]
+    ],
+    "theme": "06",
+    "category": "Object",
+    "keywords": [
+      "glass",
+      "sculpture",
+      "molten",
+      "furnace",
+      "craft",
+      "artisan",
+      "material",
+      "heat",
+      "making",
+      "art",
+      "object",
+      "workshop"
+    ]
+  },
+  {
+    "id": "675",
+    "title": "Whiskey Pour",
+    "clip": "675_whiskey-pouring.mp4",
+    "thumb": "675_whiskey-pouring.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/281-whiskey-pouring.mp4",
+    "ranges": [
+      [
+        0,
+        41.48
+      ]
+    ],
+    "theme": "06",
+    "category": "Food / Drink",
+    "keywords": [
+      "whiskey",
+      "pour",
+      "glass",
+      "drink",
+      "alcohol",
+      "spirits",
+      "bar",
+      "amber",
+      "beverage",
+      "ice",
+      "closeup",
+      "food"
+    ]
+  },
+  {
+    "id": "676",
+    "title": "Rolling Dice",
+    "clip": "676_spinning-dice.mp4",
+    "thumb": "676_spinning-dice.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/282-spinning-dice.mp4",
+    "ranges": [
+      [
+        0,
+        20.16
+      ]
+    ],
+    "theme": "06",
+    "category": "Object",
+    "keywords": [
+      "dice",
+      "rolling",
+      "game",
+      "chance",
+      "luck",
+      "table",
+      "object",
+      "casino",
+      "random",
+      "play",
+      "motion",
+      "closeup"
+    ]
+  },
+  {
+    "id": "677",
+    "title": "Light Bulbs",
+    "clip": "677_light-bulbs.mp4",
+    "thumb": "677_light-bulbs.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/283-light-bulbs.mp4",
+    "ranges": [
+      [
+        0,
+        17.76
+      ]
+    ],
+    "theme": "06",
+    "category": "Object",
+    "keywords": [
+      "light",
+      "bulbs",
+      "filament",
+      "electricity",
+      "illumination",
+      "glow",
+      "lamp",
+      "technology",
+      "object",
+      "design",
+      "warm",
+      "energy"
+    ]
+  },
+  {
+    "id": "678",
+    "title": "Calligraphy",
+    "clip": "678_japanese-calligraphy.mp4",
+    "thumb": "678_japanese-calligraphy.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/284-japanese-calligraphy.mp4",
+    "ranges": [
+      [
+        0,
+        57.16
+      ]
+    ],
+    "theme": "06",
+    "category": "People / Culture",
+    "keywords": [
+      "japanese",
+      "calligraphy",
+      "writing",
+      "ink",
+      "brush",
+      "paper",
+      "artist",
+      "tradition",
+      "culture",
+      "craft",
+      "handwriting",
+      "studio"
+    ]
+  },
+  {
+    "id": "679",
+    "title": "Bank Robbery",
+    "clip": "679_bank-robbery.mp4",
+    "thumb": "679_bank-robbery.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/285-bank-robbery.mp4",
+    "ranges": [
+      [
+        0,
+        42.4
+      ]
+    ],
+    "theme": "06",
+    "category": "Object",
+    "keywords": [
+      "bank",
+      "robbery",
+      "security",
+      "cctv",
+      "crime",
+      "camera",
+      "surveillance",
+      "money",
+      "finance",
+      "heist",
+      "interior",
+      "business"
+    ]
+  },
+  {
+    "id": "680",
+    "title": "Christmas Home",
+    "clip": "680_christmas-home.mp4",
+    "thumb": "680_christmas-home.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/286-christmas-home.mp4",
+    "ranges": [
+      [
+        0,
+        71.28
+      ]
+    ],
+    "theme": "06",
+    "category": "Object",
+    "keywords": [
+      "christmas",
+      "home",
+      "tree",
+      "holiday",
+      "ornament",
+      "lights",
+      "family",
+      "celebration",
+      "winter",
+      "cozy",
+      "interior",
+      "culture"
+    ]
+  },
+  {
+    "id": "681",
+    "title": "Pencil Drawing",
+    "clip": "681_pencil-drawing.mp4",
+    "thumb": "681_pencil-drawing.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/287-pencil-drawing.mp4",
+    "ranges": [
+      [
+        0,
+        52.4
+      ]
+    ],
+    "theme": "06",
+    "category": "Object",
+    "keywords": [
+      "pencil",
+      "drawing",
+      "graphite",
+      "paper",
+      "sketch",
+      "line",
+      "artist",
+      "illustration",
+      "creative",
+      "closeup",
+      "craft",
+      "object"
+    ]
+  },
+  {
+    "id": "682",
+    "title": "Oil Painting",
+    "clip": "682_oil-painting.mp4",
+    "thumb": "682_oil-painting.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/288-oil-painting.mp4",
+    "ranges": [
+      [
+        0,
+        71.12
+      ]
+    ],
+    "theme": "06",
+    "category": "Object",
+    "keywords": [
+      "oil",
+      "painting",
+      "paint",
+      "tubes",
+      "artist",
+      "canvas",
+      "palette",
+      "color",
+      "studio",
+      "creative",
+      "craft",
+      "culture"
+    ]
+  },
+  {
+    "id": "683",
+    "title": "Plastic Dance",
+    "clip": "683_plastic-modern-dance.mp4",
+    "thumb": "683_plastic-modern-dance.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/289-plastic-modern-dance.mp4",
+    "ranges": [
+      [
+        0,
+        69.987
+      ]
+    ],
+    "theme": "06",
+    "category": "People / Culture",
+    "keywords": [
+      "plastic",
+      "dance",
+      "performer",
+      "silhouette",
+      "fabric",
+      "installation",
+      "movement",
+      "experimental",
+      "abstract",
+      "art",
+      "texture",
+      "body"
+    ]
+  },
+  {
+    "id": "684",
+    "title": "Kettlebell",
+    "clip": "684_kettlebell-workout.mp4",
+    "thumb": "684_kettlebell-workout.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/290-kettlebell-workout.mp4",
+    "ranges": [
+      [
+        0,
+        72.75
+      ]
+    ],
+    "theme": "06",
+    "category": "Sport / Physical",
+    "keywords": [
+      "kettlebell",
+      "workout",
+      "strength",
+      "fitness",
+      "athlete",
+      "training",
+      "gym",
+      "exercise",
+      "muscle",
+      "sport",
+      "weight",
+      "motion"
+    ]
+  },
+  {
+    "id": "685",
+    "title": "Rope Climb",
+    "clip": "685_rope-climbing-workout.mp4",
+    "thumb": "685_rope-climbing-workout.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/291-rope-climbing-workout.mp4",
+    "ranges": [
+      [
+        0,
+        37.584
+      ]
+    ],
+    "theme": "06",
+    "category": "Sport / Physical",
+    "keywords": [
+      "rope",
+      "climb",
+      "workout",
+      "strength",
+      "fitness",
+      "athlete",
+      "training",
+      "gym",
+      "exercise",
+      "muscle",
+      "sport",
+      "pull"
+    ]
+  },
+  {
+    "id": "686",
+    "title": "Money Count",
+    "clip": "686_money-counting.mp4",
+    "thumb": "686_money-counting.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/292-money-counting.mp4",
+    "ranges": [
+      [
+        0,
+        57.48
+      ]
+    ],
+    "theme": "06",
+    "category": "Object",
+    "keywords": [
+      "money",
+      "counting",
+      "cash",
+      "currency",
+      "banknotes",
+      "finance",
+      "business",
+      "wealth",
+      "payment",
+      "economy",
+      "dollar",
+      "closeup"
+    ]
+  },
+  {
+    "id": "687",
+    "title": "Beer Pour",
+    "clip": "687_beer-pouring.mp4",
+    "thumb": "687_beer-pouring.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/293-beer-pouring.mp4",
+    "ranges": [
+      [
+        0,
+        47.8
+      ]
+    ],
+    "theme": "06",
+    "category": "Food / Drink",
+    "keywords": [
+      "beer",
+      "pour",
+      "glass",
+      "drink",
+      "alcohol",
+      "brewery",
+      "foam",
+      "bar",
+      "beverage",
+      "golden",
+      "closeup",
+      "food"
+    ]
+  },
+  {
+    "id": "688",
+    "title": "Charcoal Drawing",
+    "clip": "688_charcoal-drawing.mp4",
+    "thumb": "688_charcoal-drawing.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/294-charcoal-drawing.mp4",
+    "ranges": [
+      [
+        0,
+        33.88
+      ]
+    ],
+    "theme": "06",
+    "category": "Object",
+    "keywords": [
+      "charcoal",
+      "drawing",
+      "paper",
+      "sketch",
+      "black",
+      "artist",
+      "illustration",
+      "creative",
+      "closeup",
+      "craft",
+      "texture",
+      "object"
+    ]
+  },
+  {
+    "id": "689",
+    "title": "Wind Turbines",
+    "clip": "689_tenerife-wind-turbines.mp4",
+    "thumb": "689_tenerife-wind-turbines.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/295-tenerife-wind-turbines.mp4",
+    "ranges": [
+      [
+        0,
+        39.248
+      ]
+    ],
+    "theme": "06",
+    "category": "Object",
+    "keywords": [
+      "wind",
+      "turbines",
+      "renewable",
+      "energy",
+      "electricity",
+      "sustainability",
+      "landscape",
+      "environment",
+      "technology",
+      "nature",
+      "clean",
+      "power"
+    ]
+  },
+  {
+    "id": "690",
+    "title": "Sunset Horizon",
+    "clip": "690_sunset-horizon.mp4",
+    "thumb": "690_sunset-horizon.jpg",
+    "media": "b2",
+    "source": "local:macbookpro/296-sunset-horizon.mp4",
+    "ranges": [
+      [
+        0,
+        58.1
+      ]
+    ],
+    "theme": "06",
+    "category": "Nature / Land",
+    "keywords": [
+      "sunset",
+      "horizon",
+      "sun",
+      "sky",
+      "silhouette",
+      "evening",
+      "dusk",
+      "landscape",
+      "nature",
+      "orange",
+      "calm",
+      "scenery"
     ]
   }
 ]);

@@ -10,7 +10,7 @@
   </style>
   <style>
     .search-toggle,.search-close{flex:0 0 auto;width:34px;height:28px;display:grid;place-items:center;border:0;background:#0b0b0b;color:rgba(255,255,255,.62);cursor:pointer;padding:0}.search-toggle{margin-left:12px;position:relative;z-index:2;box-shadow:-14px 0 18px #0b0b0b}.search-toggle:hover,.search-toggle:focus-visible,.search-close:hover,.search-close:focus-visible{color:#fff;outline:none}.search-toggle svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.5}.search-shell{display:flex;align-items:center;width:100%;gap:10px}.search-mark{flex:0 0 auto;width:15px;height:15px;fill:none;stroke:rgba(255,255,255,.48);stroke-width:1.5}.archive-search{min-width:0;flex:1;border:0;outline:0;background:transparent;color:#fff;font:500 11px/1.2 ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;letter-spacing:.08em}.archive-search::placeholder{color:rgba(255,255,255,.28)}.search-empty{grid-column:1/-1;min-height:35vh;display:grid;place-items:center;color:rgba(255,255,255,.34);font:500 11px/1 ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;letter-spacing:.12em;text-transform:uppercase}
-    .gallery-sentinel{grid-column:1/-1;height:1px}.performance-dashboard{position:fixed;z-index:99;right:12px;bottom:12px;white-space:pre;padding:10px 12px;border:1px solid rgba(255,255,255,.18);background:rgba(0,0,0,.82);color:#a8ffbd;font:10px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace;pointer-events:none;backdrop-filter:blur(10px)}
+    .gallery-sentinel{grid-column:1/-1;height:1px}.tile.thumbnail-error{background:linear-gradient(135deg,#151515,#202020)}.tile.thumbnail-error::before{content:"THUMBNAIL UNAVAILABLE";position:absolute;inset:0;display:grid;place-items:center;color:rgba(255,255,255,.28);font:9px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.12em}.tile.thumbnail-error img{visibility:hidden}.performance-dashboard{position:fixed;z-index:99;right:12px;bottom:12px;white-space:pre;padding:10px 12px;border:1px solid rgba(255,255,255,.18);background:rgba(0,0,0,.82);color:#a8ffbd;font:10px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace;pointer-events:none;backdrop-filter:blur(10px)}
   </style>
 </head>
 <body>
@@ -76,7 +76,7 @@
     let searchMode=params.has('q');
     let searchQuery=params.get('q')||'';
     let orderedItems=[];
-    let searchResultIds=null,searchRequestId=0,searchReady=false,renderLimit=72,resultKey='',galleryObserver=null;
+    let searchResultIds=null,searchRequestId=0,searchReady=false,renderLimit=48,resultKey='',galleryObserver=null;
     const metric=(group,values)=>dispatchEvent(new CustomEvent('source-archive:metric',{detail:{group,values}}));
     function seededShuffle(list,seed=20260829){
       const out=[...list];let s=seed>>>0;
@@ -105,7 +105,27 @@
         ['274','229'],['107','274']
       ]);
       stable.forEach(item=>{if(publicIdSwaps.has(item.id))item.publicId=publicIdSwaps.get(item.id)});
+      // The gallery is a numbered archive: its physical order always follows
+      // public IDs. Title-family ordering is applied only to search results.
       orderedItems=[...items].sort((a,b)=>Number(a.publicId)-Number(b.publicId));
+    }
+    function titleFamily(item){
+      const match=item.title.trim().match(/^(.*?)(?:\s+(\d+))?$/);
+      return {base:match[1].toLowerCase(),variant:match[2]?Number(match[2]):1};
+    }
+    function orderTitleVariants(list){
+      const bases=new Set(list.map(item=>titleFamily(item)).filter(parsed=>parsed.variant===1).map(parsed=>parsed.base));
+      const families=new Map();
+      for(const item of list){const parsed=titleFamily(item);if(parsed.variant>1&&bases.has(parsed.base)){if(!families.has(parsed.base))families.set(parsed.base,[]);families.get(parsed.base).push({item,variant:parsed.variant})}}
+      if(!families.size)return list;
+      const variants=new Set([...families.values()].flatMap(group=>group.map(entry=>entry.item.id)));
+      const output=[];
+      for(const item of list){
+        if(variants.has(item.id))continue;
+        output.push(item);const parsed=titleFamily(item);const group=families.get(parsed.base);
+        if(group)output.push(...group.sort((a,b)=>a.variant-b.variant||Number(a.item.publicId)-Number(b.item.publicId)).map(entry=>entry.item));
+      }
+      return output;
     }
     function searchScore(item,query){
       const normalized=query.trim().toLowerCase();if(!normalized)return 1;
@@ -157,7 +177,7 @@
       if(!searchQuery.trim()){searchResultIds=[];renderGallery();return}
       searchResultIds=null;renderGallery();
       if(searchWorker&&searchReady){searchWorker.postMessage({type:'search',query:searchQuery,requestId:++searchRequestId});return}
-      if(!searchWorker){const started=performance.now();searchResultIds=orderedItems.map(item=>({item,score:searchScore(item,searchQuery)})).filter(result=>result.score>0).sort((a,b)=>b.score-a.score).map(result=>result.item.id);metric('search',{last:performance.now()-started,results:searchResultIds.length});renderGallery()}
+      if(!searchWorker){const started=performance.now();const ranked=orderedItems.map(item=>({item,score:searchScore(item,searchQuery)})).filter(result=>result.score>0).sort((a,b)=>b.score-a.score||Number(a.item.publicId)-Number(b.item.publicId)).map(result=>result.item);searchResultIds=orderTitleVariants(ranked).map(item=>item.id);metric('search',{last:performance.now()-started,results:searchResultIds.length});renderGallery()}
     }
     if(searchWorker){
       searchWorker.addEventListener('message',({data})=>{
@@ -177,6 +197,17 @@
         tile.addEventListener('mouseleave',()=>stop(tile));
       });
     }
+    function bindImageRecovery(root){
+      root.querySelectorAll('.tile img:not([data-recovery-bound])').forEach(img=>{
+        img.dataset.recoveryBound='1';img.dataset.retryCount='0';
+        img.addEventListener('load',()=>{img.closest('.tile')?.classList.remove('thumbnail-error')});
+        img.addEventListener('error',()=>{
+          const attempt=Number(img.dataset.retryCount||0)+1;img.dataset.retryCount=String(attempt);
+          if(attempt<=2){setTimeout(()=>{const url=new URL(img.src,location.href);url.searchParams.set('retry',`${window.SOURCE_ARCHIVE_BUILD?.version||'dev'}-${attempt}`);img.src=url.href},attempt*350);return}
+          img.closest('.tile')?.classList.add('thumbnail-error');metric('resources',{thumbnailErrors:(window.__SOURCE_ARCHIVE_METRICS__?.resources?.thumbnailErrors||0)+1});
+        });
+      });
+    }
     function renderGallery(){
       let visible;
       if(searchMode&&searchQuery.trim()){
@@ -184,11 +215,11 @@
         const byId=new Map(orderedItems.map(item=>[item.id,item]));visible=searchResultIds.map(id=>byId.get(id)).filter(Boolean);
       }else visible=activeFilter==='ALL'||searchMode?orderedItems:orderedItems.filter(item=>categoryFor(item)===activeFilter);
       const contextQuery=searchMode?`&q=${encodeURIComponent(searchQuery)}`:activeFilter==='ALL'?'':`&filter=${encodeURIComponent(activeFilter)}`;
-      const key=`${activeFilter}|${searchQuery}|${visible.map(item=>item.id).join(',')}`;if(key!==resultKey){resultKey=key;renderLimit=72}
+      const key=`${activeFilter}|${searchQuery}|${visible.map(item=>item.id).join(',')}`;if(key!==resultKey){resultKey=key;renderLimit=48}
       const shown=visible.slice(0,renderLimit);
       gallery.innerHTML=shown.length?shown.map(item=>{const preview=previewUrl(item);return `<a class="tile" href="?clip=${item.publicId}${contextQuery}" aria-label="${item.publicId} ${item.title}"${preview?` data-preview="${preview}"`:''}><img src="${thumbRoot}${item.thumb}" alt="" loading="lazy" decoding="async" fetchpriority="low" width="16" height="9">${preview?'<video class="tile-preview" muted playsinline loop preload="none"></video>':''}<span class="n">${item.publicId}</span><span class="tile-title">${item.title}</span></a>`}).join(''):'<div class="search-empty">NO MATCHES</div>';
-      if(shown.length<visible.length){gallery.insertAdjacentHTML('beforeend','<i class="gallery-sentinel" aria-hidden="true"></i>');galleryObserver?.disconnect();galleryObserver=new IntersectionObserver(entries=>{if(entries.some(entry=>entry.isIntersecting)){renderLimit+=72;renderGallery()}},{rootMargin:'800px'});galleryObserver.observe(gallery.querySelector('.gallery-sentinel'))}
-      bindTilePreviews(gallery);
+      if(shown.length<visible.length){gallery.insertAdjacentHTML('beforeend','<i class="gallery-sentinel" aria-hidden="true"></i>');galleryObserver?.disconnect();galleryObserver=new IntersectionObserver(entries=>{if(entries.some(entry=>entry.isIntersecting)){renderLimit+=48;renderGallery()}},{rootMargin:'500px'});galleryObserver.observe(gallery.querySelector('.gallery-sentinel'))}
+      bindImageRecovery(gallery);bindTilePreviews(gallery);
     }
     async function prepareGallery(){
       try{
