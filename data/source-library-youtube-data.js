@@ -4419,7 +4419,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "super",
       "hot",
@@ -4440,7 +4440,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "burnin",
       "beat",
@@ -4460,7 +4460,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "bubble",
       "trouble",
@@ -4480,7 +4480,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "nostalgic",
       "future",
@@ -4500,7 +4500,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "kinetic",
       "punk",
@@ -4520,7 +4520,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "liquid",
       "glass",
@@ -4542,7 +4542,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "real",
       "film",
@@ -4563,7 +4563,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "y2keys",
       "experimental"
@@ -4582,7 +4582,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "digital",
       "breach",
@@ -4602,7 +4602,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "stamp",
       "experimental"
@@ -4621,7 +4621,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "film",
       "titles",
@@ -4641,7 +4641,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "retro",
       "screen",
@@ -4662,7 +4662,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "classic",
       "collection",
@@ -4682,7 +4682,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "playful",
       "nature",
@@ -4702,7 +4702,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "semi",
       "brutalism",
@@ -4723,7 +4723,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "ultimate",
       "typewriter",
@@ -4743,7 +4743,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "abstract",
       "golden",
@@ -4764,7 +4764,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "mystic",
       "growth",
@@ -4785,7 +4785,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "cinematic",
       "titles",
@@ -4805,7 +4805,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "ink",
       "flow",
@@ -4825,7 +4825,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "route",
       "intro",
@@ -4845,7 +4845,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "retro",
       "snap",
@@ -4865,7 +4865,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "retro",
       "futuristic",
@@ -4886,7 +4886,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "spray",
       "paint",
@@ -4907,7 +4907,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "gothic",
       "chrome",
@@ -4929,7 +4929,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "all",
       "the",
@@ -4951,7 +4951,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "glass",
       "bubble",
@@ -4972,7 +4972,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "bags",
       "experimental"
@@ -4991,7 +4991,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "film",
       "titles",
@@ -5011,7 +5011,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "unique",
       "cinematic",
@@ -5033,7 +5033,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "liquid",
       "typography",
@@ -5054,7 +5054,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "exploding",
       "typography",
@@ -5074,7 +5074,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "duotone",
       "event",
@@ -5095,7 +5095,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "soap",
       "bubbles",
@@ -5116,7 +5116,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "christmas",
       "toys",
@@ -5136,7 +5136,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "cast",
       "kinetic",
@@ -5157,7 +5157,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "sticker",
       "tag",
@@ -5180,7 +5180,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "play",
       "time",
@@ -5201,7 +5201,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "crystal",
       "palace",
@@ -5222,7 +5222,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "stickers",
       "titles",
@@ -5242,7 +5242,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "extract",
       "glitch",
@@ -5264,7 +5264,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "the",
       "cool",
@@ -5286,7 +5286,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "main",
       "squeeze",
@@ -5307,7 +5307,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "epic",
       "streaming",
@@ -5329,7 +5329,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "short",
       "brand",
@@ -5350,7 +5350,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "paper",
       "typography",
@@ -5370,7 +5370,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "creative",
       "titles",
@@ -5390,7 +5390,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "face",
       "collage",
@@ -5410,7 +5410,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "conversation",
       "kit",
@@ -5430,7 +5430,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "infographic",
       "poster",
@@ -5450,7 +5450,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "control",
       "kinetic",
@@ -5471,7 +5471,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "clean",
       "unique",
@@ -5492,7 +5492,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "marketing",
       "promo",
@@ -5512,7 +5512,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "freeze",
       "frame",
@@ -5534,7 +5534,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "poptype",
       "slides",
@@ -5554,7 +5554,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "film",
       "leaks",
@@ -5577,7 +5577,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "future",
       "titles",
@@ -5597,7 +5597,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "animated",
       "stickers",
@@ -5618,7 +5618,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "change",
       "your",
@@ -5641,7 +5641,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "send",
       "print",
@@ -5661,7 +5661,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "top",
       "secret",
@@ -5684,7 +5684,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "tear",
       "experimental"
@@ -5703,7 +5703,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "shredding",
       "news",
@@ -5723,7 +5723,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "real",
       "gritty",
@@ -5746,7 +5746,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "minimal",
       "typo",
@@ -5766,7 +5766,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "change",
       "things",
@@ -5788,7 +5788,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "take",
       "overlays",
@@ -5810,7 +5810,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "get",
       "gritty",
@@ -5832,7 +5832,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "vintage",
       "vortex",
@@ -5853,7 +5853,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "promo",
       "saas",
@@ -5874,7 +5874,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "film",
       "burn",
@@ -5897,7 +5897,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "minimal",
       "kinetic",
@@ -5919,7 +5919,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "analog",
       "light",
@@ -5941,7 +5941,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "another",
       "typography",
@@ -5961,7 +5961,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "label",
       "stickers",
@@ -5981,7 +5981,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "cinematic",
       "titles",
@@ -6001,7 +6001,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "scribble",
       "pack",
@@ -6021,7 +6021,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "glass",
       "render",
@@ -6043,7 +6043,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "bento",
       "multiscreen",
@@ -6064,7 +6064,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "ethereal",
       "glass",
@@ -6086,7 +6086,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "grunge",
       "doodles",
@@ -6107,7 +6107,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "rhythmic",
       "beats",
@@ -6127,7 +6127,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "leaning",
       "poster",
@@ -6148,7 +6148,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "vintage",
       "projector",
@@ -6169,7 +6169,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "snip",
       "snap",
@@ -6191,7 +6191,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "text",
       "stickers",
@@ -6211,7 +6211,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "text",
       "intro",
@@ -6231,7 +6231,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "taped",
       "paper",
@@ -6252,7 +6252,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "pixel",
       "titles",
@@ -6272,7 +6272,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "shadowplay",
       "mockups",
@@ -6292,7 +6292,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "camera",
       "viewfinder",
@@ -6313,7 +6313,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "clean",
       "titles",
@@ -6333,7 +6333,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "digital",
       "dystopia",
@@ -6353,7 +6353,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "shredded",
       "print",
@@ -6375,7 +6375,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "printed",
       "opener",
@@ -6395,7 +6395,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "digital",
       "brutalism",
@@ -6415,7 +6415,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "clear",
       "cut",
@@ -6437,7 +6437,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "duotone",
       "music",
@@ -6459,7 +6459,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "glitch",
       "grunge",
@@ -6481,7 +6481,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "film",
       "frame",
@@ -6502,7 +6502,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "classic",
       "camera",
@@ -6523,7 +6523,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "study",
       "intro",
@@ -6543,7 +6543,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "fire",
       "transitions",
@@ -6563,7 +6563,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "luxury",
       "logo",
@@ -6584,7 +6584,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "crazy",
       "illusion",
@@ -6604,7 +6604,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "valentines",
       "greetings",
@@ -6625,7 +6625,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "calm",
       "modern",
@@ -6646,7 +6646,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "modern",
       "dimensional",
@@ -6667,7 +6667,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "move",
       "typography",
@@ -6687,7 +6687,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "urban",
       "future",
@@ -6709,7 +6709,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "fired",
       "titles",
@@ -6729,7 +6729,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "title",
       "logo",
@@ -6751,7 +6751,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "price",
       "tag",
@@ -6771,7 +6771,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "paper",
       "transitions",
@@ -6791,7 +6791,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "merry",
       "mayhem",
@@ -6812,7 +6812,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "giant",
       "cinematic",
@@ -6833,7 +6833,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "ripped",
       "logo",
@@ -6854,7 +6854,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "brick",
       "block",
@@ -6874,7 +6874,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "scribble",
       "motion",
@@ -6895,7 +6895,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "8mm",
       "film",
@@ -6917,7 +6917,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "photo",
       "collage",
@@ -6938,7 +6938,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "authentic",
       "film",
@@ -6959,7 +6959,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "modular",
       "sliding",
@@ -6981,7 +6981,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "dream",
       "glow",
@@ -7002,7 +7002,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "stretch",
       "transitions",
@@ -7022,7 +7022,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "y2k",
       "prints",
@@ -7042,7 +7042,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "time",
       "machine",
@@ -7062,7 +7062,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Template",
     "keywords": [
       "halftone",
       "retro",
