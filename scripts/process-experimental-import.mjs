@@ -10,6 +10,7 @@ if (!manifestPath || !buildRoot || !ffmpeg || !ffprobe) {
 }
 
 const limit = limitRaw ? Number(limitRaw) : Infinity;
+const concurrency = Math.max(1, Number(process.env.PROCESS_CONCURRENCY || 2));
 const mediaDir = path.join(buildRoot, "media");
 const thumbsDir = path.join(buildRoot, "thumbs");
 await mkdir(mediaDir, { recursive: true });
@@ -110,7 +111,7 @@ async function processEntry(entry) {
   process.stdout.write(`${entry.id} ${entry.outputFile} ${entry.outputWidth}x${entry.outputHeight} ${entry.outputBytes}\n`);
 }
 
-for (let offset = 0; offset < selected.length; offset += 2) {
-  await Promise.all(selected.slice(offset, offset + 2).map(processEntry));
+for (let offset = 0; offset < selected.length; offset += concurrency) {
+  await Promise.all(selected.slice(offset, offset + concurrency).map(processEntry));
   await writeFile(manifestPath, JSON.stringify(manifest, null, 2) + "\n");
 }

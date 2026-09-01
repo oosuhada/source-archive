@@ -1,6 +1,27 @@
 let documents = [];
 let publicIds = {};
 const normalize = (value) => String(value).toLowerCase().trim();
+const titleFamily = (value) => {
+  const match = normalize(value).match(/^(.*?)(?:\s+(\d+))?$/);
+  return { base: match[1], variant: match[2] ? Number(match[2]) : 1 };
+};
+const orderTitleVariants = (list) => {
+  const bases = new Set(list.filter((result) => result.family.variant === 1).map((result) => result.family.base));
+  const groups = new Map();
+  for (const result of list) if (result.family.variant > 1 && bases.has(result.family.base)) {
+    if (!groups.has(result.family.base)) groups.set(result.family.base, []);
+    groups.get(result.family.base).push(result);
+  }
+  const variants = new Set([...groups.values()].flatMap((group) => group.map((result) => result.id)));
+  const output = [];
+  for (const result of list) {
+    if (variants.has(result.id)) continue;
+    output.push(result);
+    const group = groups.get(result.family.base);
+    if (group) output.push(...group.sort((left, right) => left.family.variant - right.family.variant));
+  }
+  return output;
+};
 
 async function initialize(payload) {
   publicIds = payload.publicIds || {};
@@ -39,10 +60,10 @@ self.addEventListener("message", async ({ data }) => {
     if (data.type === "init") return await initialize(data);
     if (data.type !== "search") return;
     const startedAt = performance.now();
-    const results = documents.map((document) => ({ id: document.id, score: score(document, data.query) }))
+    const results = documents.map((document) => ({ id: document.id, score: score(document, data.query), family: titleFamily(document.title) }))
       .filter((result) => result.score > 0)
       .sort((left, right) => right.score - left.score || Number(publicIds[left.id] || left.id) - Number(publicIds[right.id] || right.id));
-    postMessage({ type: "results", requestId: data.requestId, ids: results.map((result) => result.id), duration: performance.now() - startedAt });
+    postMessage({ type: "results", requestId: data.requestId, ids: orderTitleVariants(results).map((result) => result.id), duration: performance.now() - startedAt });
   } catch (error) {
     postMessage({ type: "error", message: String(error?.message || error) });
   }
