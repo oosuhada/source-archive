@@ -40,7 +40,9 @@ Detail pages translate scroll progress into media time. Source files are prepare
 
 ### Fast discovery
 
-Archive cards initially use compact JPEG thumbnails with native lazy loading and asynchronous decoding. The gallery renders 72 records at a time as the user approaches the end of the current batch, avoiding a 644-card initial DOM.
+Archive cards initially use compact JPEG thumbnails with native lazy loading and asynchronous decoding. The gallery renders 48 records at a time as the user approaches the end of the current batch, avoiding a 644-card initial DOM and limiting burst traffic to GitHub Pages.
+
+Thumbnail responses are cached only when the response is successful and its content type is an image. Transient `429` and `5xx` responses are retried but never cached; the card itself performs two cache-busted retries before showing a stable placeholder.
 
 Search metadata is normalized at build time into `data/search-index.json`. Query scoring runs inside `search-worker.js`, keeping keystrokes, animation, and scrolling on the main thread responsive.
 
