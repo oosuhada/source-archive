@@ -105,7 +105,25 @@
         ['274','229'],['107','274']
       ]);
       stable.forEach(item=>{if(publicIdSwaps.has(item.id))item.publicId=publicIdSwaps.get(item.id)});
-      orderedItems=[...items].sort((a,b)=>Number(a.publicId)-Number(b.publicId));
+      orderedItems=orderTitleVariants([...items].sort((a,b)=>Number(a.publicId)-Number(b.publicId)));
+    }
+    function titleFamily(item){
+      const match=item.title.trim().match(/^(.*?)(?:\s+(\d+))?$/);
+      return {base:match[1].toLowerCase(),variant:match[2]?Number(match[2]):1};
+    }
+    function orderTitleVariants(list){
+      const bases=new Set(list.map(item=>titleFamily(item)).filter(parsed=>parsed.variant===1).map(parsed=>parsed.base));
+      const families=new Map();
+      for(const item of list){const parsed=titleFamily(item);if(parsed.variant>1&&bases.has(parsed.base)){if(!families.has(parsed.base))families.set(parsed.base,[]);families.get(parsed.base).push({item,variant:parsed.variant})}}
+      if(!families.size)return list;
+      const variants=new Set([...families.values()].flatMap(group=>group.map(entry=>entry.item.id)));
+      const output=[];
+      for(const item of list){
+        if(variants.has(item.id))continue;
+        output.push(item);const parsed=titleFamily(item);const group=families.get(parsed.base);
+        if(group)output.push(...group.sort((a,b)=>a.variant-b.variant||Number(a.item.publicId)-Number(b.item.publicId)).map(entry=>entry.item));
+      }
+      return output;
     }
     function searchScore(item,query){
       const normalized=query.trim().toLowerCase();if(!normalized)return 1;
@@ -157,7 +175,7 @@
       if(!searchQuery.trim()){searchResultIds=[];renderGallery();return}
       searchResultIds=null;renderGallery();
       if(searchWorker&&searchReady){searchWorker.postMessage({type:'search',query:searchQuery,requestId:++searchRequestId});return}
-      if(!searchWorker){const started=performance.now();searchResultIds=orderedItems.map(item=>({item,score:searchScore(item,searchQuery)})).filter(result=>result.score>0).sort((a,b)=>b.score-a.score).map(result=>result.item.id);metric('search',{last:performance.now()-started,results:searchResultIds.length});renderGallery()}
+      if(!searchWorker){const started=performance.now();const ranked=orderedItems.map(item=>({item,score:searchScore(item,searchQuery)})).filter(result=>result.score>0).sort((a,b)=>b.score-a.score||Number(a.item.publicId)-Number(b.item.publicId)).map(result=>result.item);searchResultIds=orderTitleVariants(ranked).map(item=>item.id);metric('search',{last:performance.now()-started,results:searchResultIds.length});renderGallery()}
     }
     if(searchWorker){
       searchWorker.addEventListener('message',({data})=>{
