@@ -1525,7 +1525,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "09",
-    "category": "Sky / Space / Weather"
+    "category": "Abstract"
   },
   {
     "id": "114",
@@ -2257,7 +2257,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "02",
-    "category": "Nature"
+    "category": "Abstract"
   },
   {
     "id": "160",
@@ -2422,7 +2422,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "07",
-    "category": "People"
+    "category": "Object"
   },
   {
     "id": "171",
@@ -3416,7 +3416,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "08",
-    "category": "Water",
+    "category": "Object",
     "keywords": [
       "ocean",
       "sea",
@@ -3439,7 +3439,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "11",
-    "category": "Water",
+    "category": "Abstract",
     "keywords": [
       "coastline",
       "beach",
@@ -3491,7 +3491,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "04",
-    "category": "Water",
+    "category": "Nature / Land",
     "keywords": [
       "niagara falls",
       "waterfall",
@@ -3844,7 +3844,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "03",
-    "category": "Experimental",
+    "category": "Object",
     "keywords": [
       "american flag",
       "flag",
@@ -4122,7 +4122,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "01",
-    "category": "Experimental",
+    "category": "Abstract",
     "keywords": [
       "cracked glass",
       "texture",
@@ -4145,7 +4145,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "01",
-    "category": "Experimental",
+    "category": "Abstract",
     "keywords": [
       "cracked glass",
       "abstract light",
@@ -4168,7 +4168,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "01",
-    "category": "Experimental",
+    "category": "Abstract",
     "keywords": [
       "kaleidoscope",
       "abstract",
@@ -4191,7 +4191,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "03",
-    "category": "Experimental",
+    "category": "Food / Drink",
     "keywords": [
       "champagne",
       "bubbles",
@@ -4370,7 +4370,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
     "source": "local:aphrodite_before_v03_reversed_plus_shore_arrival",
     "ranges": [[0, 14]],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Object",
     "keywords": ["aphrodite", "shore arrival", "cloak settles", "venus", "mythic", "experimental"]
   },
   {
@@ -4403,7 +4403,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
     "source": "local:ritual_approach",
     "ranges": [[0, 6]],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Object",
     "keywords": ["ritual approach", "colossus", "offering", "statue", "mythic", "experimental"]
   },
   {
@@ -7083,7 +7083,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Nature / Land",
     "keywords": [
       "tranquil",
       "background",
@@ -7105,7 +7105,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "lofi",
       "generative",
@@ -7127,7 +7127,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "burst",
       "blue",
@@ -7153,7 +7153,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "mirror",
       "effect",
@@ -7176,7 +7176,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Nature / Land",
     "keywords": [
       "flower",
       "contemplative",
@@ -7245,7 +7245,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "smooth",
       "liquid",
@@ -7291,7 +7291,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "red",
       "paint",
@@ -7316,7 +7316,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Nature / Land",
     "keywords": [
       "background",
       "blur",
@@ -7404,7 +7404,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "flowing",
       "yellow",
@@ -7430,7 +7430,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "ethereal",
       "serene",
@@ -7474,7 +7474,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "particles",
       "golden",
@@ -7496,7 +7496,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "combining",
       "ink",
@@ -7540,7 +7540,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "ethereal",
       "mysterious",
@@ -7564,7 +7564,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "particles",
       "audio",
@@ -7585,7 +7585,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "colorful",
       "colors",
@@ -7607,7 +7607,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "highway",
       "pattern",
@@ -7629,7 +7629,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "colorful",
       "mixture",
@@ -7651,7 +7651,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "blue",
       "pink",
@@ -7673,7 +7673,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "background",
       "liquid",
@@ -7738,7 +7738,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Nature / Land",
     "keywords": [
       "tranquil",
       "background",
@@ -7782,7 +7782,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "dynamic",
       "shapes",
@@ -7872,7 +7872,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "abstract",
       "view",
@@ -7897,7 +7897,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Food / Drink",
     "keywords": [
       "popcorn",
       "popping",
@@ -7920,7 +7920,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "pink",
       "and",
@@ -7969,7 +7969,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Object",
     "keywords": [
       "record",
       "playing",
@@ -7991,7 +7991,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "cyberdelic",
       "lighting",
@@ -8013,7 +8013,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Nature / Land",
     "keywords": [
       "bubbles",
       "background",
@@ -8079,7 +8079,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "red",
       "and",
@@ -8106,7 +8106,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Sport / Physical",
     "keywords": [
       "dark",
       "background",
@@ -8131,7 +8131,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "red",
       "liquid",
@@ -8179,7 +8179,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "ball",
       "video",
@@ -8230,7 +8230,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "People / Culture",
     "keywords": [
       "man",
       "standing",
@@ -8348,7 +8348,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "fluid",
       "splashing",
@@ -8396,7 +8396,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Sport / Physical",
     "keywords": [
       "black",
       "background",
@@ -8423,7 +8423,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Object",
     "keywords": [
       "musical",
       "notes",
@@ -8470,7 +8470,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Nature / Land",
     "keywords": [
       "seen",
       "from",
@@ -8523,7 +8523,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "phantom",
       "fog",
@@ -8593,7 +8593,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "People / Culture",
     "keywords": [
       "man",
       "working",
@@ -8619,7 +8619,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "ice",
       "and",
@@ -8643,7 +8643,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "glittery",
       "neon",
@@ -8669,7 +8669,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "red",
       "orange",
@@ -8696,7 +8696,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Sport / Physical",
     "keywords": [
       "workout",
       "fitness",
@@ -8719,7 +8719,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Object",
     "keywords": [
       "cloudy",
       "animated",
@@ -8743,7 +8743,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Travel / City / Architecture",
     "keywords": [
       "fortress",
       "history",
@@ -8788,7 +8788,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "People / Culture",
     "keywords": [
       "friends",
       "hanging",
@@ -8882,7 +8882,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Food / Drink",
     "keywords": [
       "garlic",
       "onions",
@@ -8908,7 +8908,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Food / Drink",
     "keywords": [
       "social",
       "media",
@@ -8933,7 +8933,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Food / Drink",
     "keywords": [
       "eclair",
       "baking",
@@ -8956,7 +8956,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Food / Drink",
     "keywords": [
       "sushi",
       "salmon",
@@ -8980,7 +8980,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "People / Culture",
     "keywords": [
       "outfit",
       "style",
@@ -9005,7 +9005,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "spermatozoa",
       "pregnancy",
@@ -9028,7 +9028,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "magnification",
       "artificial",
@@ -9051,7 +9051,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "red",
       "abstract",
@@ -9074,7 +9074,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Sport / Physical",
     "keywords": [
       "black",
       "and",
@@ -9099,7 +9099,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Object",
     "keywords": [
       "steel",
       "metal",
@@ -9122,7 +9122,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Sport / Physical",
     "keywords": [
       "man",
       "covered",
@@ -9147,7 +9147,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Sport / Physical",
     "keywords": [
       "athlete",
       "dancer",
@@ -9170,7 +9170,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "emulsion",
       "merge",
@@ -9194,7 +9194,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Sport / Physical",
     "keywords": [
       "workout",
       "fitness",
@@ -9217,7 +9217,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "microscopic",
       "tadpole",
@@ -9240,7 +9240,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Food / Drink",
     "keywords": [
       "teabag",
       "tea",
@@ -9261,7 +9261,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Sport / Physical",
     "keywords": [
       "exercise",
       "training",
@@ -9285,7 +9285,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "drops",
       "fruit",
@@ -9308,7 +9308,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "dark",
       "blue",
@@ -9334,7 +9334,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Sport / Physical",
     "keywords": [
       "exercise",
       "exercising",
@@ -9357,7 +9357,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Sport / Physical",
     "keywords": [
       "metal",
       "multi",
@@ -9383,7 +9383,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Sport / Physical",
     "keywords": [
       "closeup",
       "mans",
@@ -9411,7 +9411,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Sport / Physical",
     "keywords": [
       "bodybuilder",
       "flexing",
@@ -9436,7 +9436,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Object",
     "keywords": [
       "man",
       "inspecting",
@@ -9461,7 +9461,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "colorful",
       "substance",
@@ -9484,7 +9484,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "People / Culture",
     "keywords": [
       "hydrogel",
       "eye",
@@ -9509,7 +9509,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Object",
     "keywords": [
       "wooden",
       "hammer",
@@ -9533,7 +9533,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Sport / Physical",
     "keywords": [
       "looking",
       "camera",
@@ -9558,7 +9558,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Sport / Physical",
     "keywords": [
       "usa",
       "bearded",
@@ -9583,7 +9583,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "transition",
       "preroll",
@@ -9606,7 +9606,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Sport / Physical",
     "keywords": [
       "muscular",
       "abs",
@@ -9629,7 +9629,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Sport / Physical",
     "keywords": [
       "shirtless",
       "man",
@@ -9656,7 +9656,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Sport / Physical",
     "keywords": [
       "athlete",
       "dance",
@@ -9678,7 +9678,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Travel / City / Architecture",
     "keywords": [
       "stonehenge",
       "stones",
@@ -9701,7 +9701,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Travel / City / Architecture",
     "keywords": [
       "buildings",
       "city",
@@ -9724,7 +9724,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Travel / City / Architecture",
     "keywords": [
       "malta",
       "drone",
@@ -9747,7 +9747,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Travel / City / Architecture",
     "keywords": [
       "ruins",
       "columns",
@@ -9770,7 +9770,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Travel / City / Architecture",
     "keywords": [
       "ancient",
       "giza",
@@ -9793,7 +9793,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Travel / City / Architecture",
     "keywords": [
       "8mm",
       "perforation",
@@ -9817,7 +9817,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Travel / City / Architecture",
     "keywords": [
       "woman",
       "meditating",
@@ -9840,7 +9840,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Nature / Land",
     "keywords": [
       "karosta",
       "latvia",
@@ -9863,7 +9863,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Nature / Land",
     "keywords": [
       "sky",
       "province",
@@ -9886,7 +9886,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Object",
     "keywords": [
       "stone",
       "pillar",
@@ -9911,7 +9911,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Travel / City / Architecture",
     "keywords": [
       "gunibsky",
       "dagestan",
@@ -9935,7 +9935,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Travel / City / Architecture",
     "keywords": [
       "roman",
       "ruins",
@@ -9959,7 +9959,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Travel / City / Architecture",
     "keywords": [
       "ancient",
       "ruins",
@@ -9981,7 +9981,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Object",
     "keywords": [
       "statue",
       "balinese",
@@ -10004,7 +10004,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Travel / City / Architecture",
     "keywords": [
       "temple",
       "islam",
@@ -10027,7 +10027,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Travel / City / Architecture",
     "keywords": [
       "archaeological",
       "site",
@@ -10051,7 +10051,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Travel / City / Architecture",
     "keywords": [
       "nostalgia",
       "monochrome",
@@ -10075,7 +10075,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Travel / City / Architecture",
     "keywords": [
       "8mm",
       "athens",
@@ -10099,7 +10099,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Travel / City / Architecture",
     "keywords": [
       "man",
       "walking",
@@ -10126,7 +10126,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Travel / City / Architecture",
     "keywords": [
       "pompeii",
       "archeology",
@@ -10149,7 +10149,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Travel / City / Architecture",
     "keywords": [
       "cultural",
       "sauna",
@@ -10172,7 +10172,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Travel / City / Architecture",
     "keywords": [
       "ruins",
       "nostalgia",
@@ -10196,7 +10196,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Travel / City / Architecture",
     "keywords": [
       "greece",
       "ancient",
@@ -10219,7 +10219,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "People / Culture",
     "keywords": [
       "holding",
       "hands",
@@ -10246,7 +10246,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "People / Culture",
     "keywords": [
       "traditional",
       "attire",
@@ -10273,7 +10273,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "People / Culture",
     "keywords": [
       "jacket",
       "plane",
@@ -10297,7 +10297,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "People / Culture",
     "keywords": [
       "vietnam",
       "friends",
@@ -10320,7 +10320,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "People / Culture",
     "keywords": [
       "laughing",
       "women",
@@ -10344,7 +10344,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "People / Culture",
     "keywords": [
       "angry",
       "distraught",
@@ -10367,7 +10367,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "People / Culture",
     "keywords": [
       "complicity",
       "dancing",
@@ -10391,7 +10391,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "People / Culture",
     "keywords": [
       "man",
       "standing",
@@ -10417,7 +10417,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "People / Culture",
     "keywords": [
       "wire",
       "india",
@@ -10440,7 +10440,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Nature / Land",
     "keywords": [
       "summer",
       "vietnam",
@@ -10463,7 +10463,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "People / Culture",
     "keywords": [
       "underpass",
       "briefcase",
@@ -10486,7 +10486,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "People / Culture",
     "keywords": [
       "looking",
       "down",
@@ -10510,7 +10510,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "People / Culture",
     "keywords": [
       "men",
       "beard",
@@ -10533,7 +10533,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "People / Culture",
     "keywords": [
       "models",
       "laughing",
@@ -10556,7 +10556,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "People / Culture",
     "keywords": [
       "mechanic",
       "using",
@@ -10580,7 +10580,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "People / Culture",
     "keywords": [
       "sunny",
       "day",
@@ -10606,7 +10606,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "People / Culture",
     "keywords": [
       "curly",
       "hair",
@@ -10631,7 +10631,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "People / Culture",
     "keywords": [
       "city",
       "serious",
@@ -10655,7 +10655,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Sport / Physical",
     "keywords": [
       "looking",
       "camera",
@@ -10679,7 +10679,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "People / Culture",
     "keywords": [
       "daydreaming",
       "earring",
@@ -10702,7 +10702,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Sport / Physical",
     "keywords": [
       "exercise",
       "looking",
@@ -10726,7 +10726,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "People / Culture",
     "keywords": [
       "man",
       "holding",
@@ -10751,7 +10751,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Food / Drink",
     "keywords": [
       "eating",
       "food",
@@ -10775,7 +10775,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Food / Drink",
     "keywords": [
       "man",
       "reading",
@@ -10801,7 +10801,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Food / Drink",
     "keywords": [
       "man",
       "sitting",
@@ -10824,7 +10824,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "People / Culture",
     "keywords": [
       "children",
       "poverty",
@@ -10847,7 +10847,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Food / Drink",
     "keywords": [
       "drinking",
       "watching",
@@ -10870,7 +10870,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "People / Culture",
     "keywords": [
       "man",
       "looking",
@@ -10893,7 +10893,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "People / Culture",
     "keywords": [
       "two",
       "men",
@@ -10919,7 +10919,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Sport / Physical",
     "keywords": [
       "gym",
       "freinds",
@@ -10942,7 +10942,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "People / Culture",
     "keywords": [
       "glasses",
       "bearded",
@@ -10968,7 +10968,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "People / Culture",
     "keywords": [
       "drummer",
       "plays",
@@ -10991,7 +10991,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Travel / City / Architecture",
     "keywords": [
       "wadi",
       "musa",
@@ -11016,7 +11016,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Sport / Physical",
     "keywords": [
       "athlete",
       "dramatic",
@@ -11039,7 +11039,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "People / Culture",
     "keywords": [
       "blurred",
       "background",
@@ -11063,7 +11063,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "bpm",
       "music",
@@ -11086,7 +11086,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "music",
       "spiral",
@@ -11110,7 +11110,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "abstract",
       "river",
@@ -11136,7 +11136,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Cosmos",
     "keywords": [
       "abstract",
       "cgi",
@@ -11159,7 +11159,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Cosmos",
     "keywords": [
       "astronomy",
       "outer",
@@ -11183,7 +11183,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Cosmos",
     "keywords": [
       "space",
       "sci",
@@ -11207,7 +11207,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Cosmos",
     "keywords": [
       "space",
       "sci",
@@ -11231,7 +11231,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "pills",
       "liquid",
@@ -11254,7 +11254,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "neon",
       "background",
@@ -11277,7 +11277,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Cosmos",
     "keywords": [
       "abstract",
       "cgi",
@@ -11300,7 +11300,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "dark",
       "purple",
@@ -11326,7 +11326,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "art",
       "artistic",
@@ -11349,7 +11349,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "burning",
       "loops",
@@ -11371,7 +11371,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "abstract",
       "background",
@@ -11394,7 +11394,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Cosmos",
     "keywords": [
       "loop",
       "nebula",
@@ -11416,7 +11416,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Cosmos",
     "keywords": [
       "space",
       "cosmic",
@@ -11439,7 +11439,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "jellyfish",
       "marine",
@@ -11462,7 +11462,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "light",
       "waves",
@@ -11485,7 +11485,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "soap",
       "bubble",
@@ -11509,7 +11509,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "background",
       "liquid",
@@ -11533,7 +11533,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "fluid",
       "colors",
@@ -11556,7 +11556,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Cosmos",
     "keywords": [
       "stars",
       "space",
@@ -11580,7 +11580,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "soap",
       "round",
@@ -11603,7 +11603,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Cosmos",
     "keywords": [
       "astral",
       "luminescent",
@@ -11626,7 +11626,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "background",
       "liquid",
@@ -11650,7 +11650,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "aqua",
       "blue",
@@ -11673,7 +11673,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Cosmos",
     "keywords": [
       "loop",
       "wormhole",
@@ -11696,7 +11696,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "liquid",
       "ink",
@@ -11719,7 +11719,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "vibrant",
       "colors",
@@ -11742,7 +11742,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Cosmos",
     "keywords": [
       "galaxy",
       "spiral",
@@ -11765,7 +11765,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Abstract",
     "keywords": [
       "experimantal",
       "fluid",
@@ -11788,7 +11788,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Cosmos",
     "keywords": [
       "darkness",
       "astronomy",
@@ -11812,7 +11812,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Food / Drink",
     "keywords": [
       "kitchen",
       "bread",
@@ -11835,7 +11835,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Food / Drink",
     "keywords": [
       "almonds",
       "sweet",
@@ -11858,7 +11858,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Food / Drink",
     "keywords": [
       "hamburger",
       "bun",
@@ -11881,7 +11881,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Food / Drink",
     "keywords": [
       "sitting",
       "cutlery",
@@ -11905,7 +11905,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Food / Drink",
     "keywords": [
       "serving",
       "tray",
@@ -11929,7 +11929,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Food / Drink",
     "keywords": [
       "square",
       "eaten",
@@ -11953,7 +11953,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Food / Drink",
     "keywords": [
       "woman",
       "opening",
@@ -11977,7 +11977,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Food / Drink",
     "keywords": [
       "potatoes",
       "vegetable",
@@ -12003,7 +12003,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Food / Drink",
     "keywords": [
       "chef",
       "pours",
@@ -12031,7 +12031,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Food / Drink",
     "keywords": [
       "background",
       "top",
@@ -12056,7 +12056,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Food / Drink",
     "keywords": [
       "food",
       "and",
@@ -12081,7 +12081,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Food / Drink",
     "keywords": [
       "decoration",
       "preparations",
@@ -12104,7 +12104,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Food / Drink",
     "keywords": [
       "crunchy",
       "bits",
@@ -12132,7 +12132,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Food / Drink",
     "keywords": [
       "man",
       "placing",
@@ -12156,7 +12156,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Food / Drink",
     "keywords": [
       "olive",
       "twig",
@@ -12182,7 +12182,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Food / Drink",
     "keywords": [
       "chef",
       "dinner",
@@ -12205,7 +12205,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Food / Drink",
     "keywords": [
       "dessert",
       "sprinkling",
@@ -12230,7 +12230,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Food / Drink",
     "keywords": [
       "water",
       "falling",
@@ -12254,7 +12254,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Food / Drink",
     "keywords": [
       "sweet",
       "potatoes",
@@ -12278,7 +12278,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Food / Drink",
     "keywords": [
       "bread",
       "groceries",
@@ -12301,7 +12301,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Food / Drink",
     "keywords": [
       "placing",
       "pie",
@@ -12324,7 +12324,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Food / Drink",
     "keywords": [
       "person",
       "pouring",
@@ -12349,7 +12349,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Food / Drink",
     "keywords": [
       "pasta",
       "bolognese",
@@ -12372,7 +12372,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Food / Drink",
     "keywords": [
       "meet",
       "street",
@@ -12395,7 +12395,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Sport / Physical",
     "keywords": [
       "exercise",
       "trainer",
@@ -12417,7 +12417,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Sport / Physical",
     "keywords": [
       "bodybuilder",
       "curlbar",
@@ -12438,7 +12438,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Sport / Physical",
     "keywords": [
       "bodybuilder",
       "weights",
@@ -12459,7 +12459,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Object",
     "keywords": [
       "burning",
       "car",
@@ -12480,7 +12480,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Sport / Physical",
     "keywords": [
       "diving",
       "the",
@@ -12502,7 +12502,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "People / Culture",
     "keywords": [
       "drums",
       "experimental"
@@ -12522,7 +12522,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Sport / Physical",
     "keywords": [
       "fight",
       "club",
@@ -12543,7 +12543,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Sport / Physical",
     "keywords": [
       "fitness",
       "extended",
@@ -12564,7 +12564,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Sport / Physical",
     "keywords": [
       "gym",
       "training",
@@ -12585,7 +12585,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Travel / City / Architecture",
     "keywords": [
       "larnaca",
       "cyprus",
@@ -12608,7 +12608,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Nature / Land",
     "keywords": [
       "larnaca",
       "waves",
@@ -12629,7 +12629,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Sport / Physical",
     "keywords": [
       "legs",
       "motion",
@@ -12650,7 +12650,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Sport / Physical",
     "keywords": [
       "lifting",
       "partners",
@@ -12671,7 +12671,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "People / Culture",
     "keywords": [
       "mud",
       "dirt",
@@ -12694,7 +12694,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Travel / City / Architecture",
     "keywords": [
       "pyramids",
       "experimental"
@@ -12714,7 +12714,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Travel / City / Architecture",
     "keywords": [
       "rome",
       "experimental"
@@ -12734,7 +12734,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Travel / City / Architecture",
     "keywords": [
       "rome",
       "oldfilm",
@@ -12755,7 +12755,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Travel / City / Architecture",
     "keywords": [
       "rome",
       "oldfilm",
@@ -12776,7 +12776,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Travel / City / Architecture",
     "keywords": [
       "rome",
       "oldfilm",
@@ -12797,7 +12797,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Travel / City / Architecture",
     "keywords": [
       "rome",
       "oldfilm",
@@ -12818,7 +12818,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Nature / Land",
     "keywords": [
       "sun",
       "down",
@@ -12839,7 +12839,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Experimental / Material / Object",
+    "category": "Sport / Physical",
     "keywords": [
       "tennis",
       "series",
