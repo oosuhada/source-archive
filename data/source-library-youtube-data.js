@@ -2313,7 +2313,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "09",
-    "category": "People / Culture",
+    "category": "Object",
     "keywords": [
           "kite",
           "people",
@@ -3475,7 +3475,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "05",
-    "category": "People / Culture",
+    "category": "Object",
     "keywords": [
           "painting",
           "people",
@@ -3822,7 +3822,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "People / Culture",
+    "category": "Experimental / Material / Object",
     "keywords": [
           "dreamer",
           "people",
@@ -4033,7 +4033,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "03",
-    "category": "People / Culture",
+    "category": "Object",
     "keywords": [
           "morning",
           "people",
@@ -5004,7 +5004,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "05",
-    "category": "People",
+    "category": "Experimental / Material / Object",
     "keywords": [
           "modeling",
           "people",
@@ -5718,7 +5718,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "07",
-    "category": "People",
+    "category": "Object",
     "keywords": [
           "headphone",
           "people",
@@ -7881,7 +7881,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "03",
-    "category": "People",
+    "category": "Object",
     "keywords": [
           "pottery",
           "people",
@@ -17391,7 +17391,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "People / Culture",
+    "category": "Object",
     "keywords": [
           "mechanic",
           "using",
