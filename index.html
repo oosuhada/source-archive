@@ -191,11 +191,15 @@
       const stop=tile=>{if(!tile)return;const preview=tile.querySelector('.tile-preview');if(!preview)return;delete tile.dataset.previewWanted;preview.pause();tile.classList.remove('previewing');try{preview.currentTime=0}catch{}if(active===tile)active=null};
       root.querySelectorAll('.tile[data-preview]:not([data-bound])').forEach(tile=>{
         tile.dataset.bound='1';const preview=tile.querySelector('.tile-preview');if(!preview)return;
-        // A tile can be hovered repeatedly. Keeping this listener active is
-        // essential: the class is removed on leave and must be restored on
-        // every subsequent successful playback, not only the first one.
-        preview.addEventListener('playing',()=>{tile.classList.add('previewing');metric('media',{firstFrame:performance.now()-Number(tile.dataset.hoverAt||performance.now())})});
-        const start=()=>{if(!tile.dataset.preview||active===tile)return;if(active&&active!==tile)stop(active);active=tile;tile.dataset.previewWanted='1';tile.dataset.hoverAt=performance.now();preview.muted=true;preview.defaultMuted=true;preview.playsInline=true;preview.preload='auto';if(!preview.src)preview.src=tile.dataset.preview;try{preview.currentTime=0}catch{}const play=()=>{if(active===tile&&tile.dataset.previewWanted==='1')preview.play().catch(()=>{})};play();if(preview.readyState<3)preview.addEventListener('canplay',play,{once:true})};
+        const wanted=()=>active===tile&&tile.dataset.previewWanted==='1';
+        const reveal=()=>{if(wanted())tile.classList.add('previewing')};
+        const play=()=>{if(wanted())preview.play().catch(()=>{})};
+        // Reveal on the first decoded frame rather than only on `playing`.
+        // Some browsers resolve muted autoplay slightly later than canplay.
+        preview.addEventListener('loadeddata',reveal);
+        preview.addEventListener('canplay',()=>{reveal();play()});
+        preview.addEventListener('playing',()=>{reveal();metric('media',{firstFrame:performance.now()-Number(tile.dataset.hoverAt||performance.now())})});
+        const start=()=>{if(!tile.dataset.preview||active===tile)return;if(active&&active!==tile)stop(active);active=tile;tile.dataset.previewWanted='1';tile.dataset.hoverAt=performance.now();preview.muted=true;preview.defaultMuted=true;preview.autoplay=true;preview.playsInline=true;preview.preload='auto';if(!preview.src){preview.src=tile.dataset.preview;preview.load()}else{try{preview.currentTime=0}catch{}};play()};
         tile.addEventListener('pointerenter',start);
         tile.addEventListener('mouseenter',start);
         tile.addEventListener('mouseleave',()=>stop(tile));
@@ -222,7 +226,7 @@
       const contextQuery=searchMode?`&q=${encodeURIComponent(searchQuery)}`:activeFilter==='ALL'?'':`&filter=${encodeURIComponent(activeFilter)}`;
       const key=`${activeFilter}|${searchQuery}|${visible.map(item=>item.id).join(',')}`;if(key!==resultKey){resultKey=key;renderLimit=48}
       const shown=visible.slice(0,renderLimit);
-      gallery.innerHTML=shown.length?shown.map(item=>{const preview=previewUrl(item);return `<a class="tile" href="?clip=${item.publicId}${contextQuery}" aria-label="${item.publicId} ${item.title}"${preview?` data-preview="${preview}"`:''}><img src="${thumbRoot}${item.thumb}" alt="" loading="lazy" decoding="async" fetchpriority="low" width="16" height="9">${preview?'<video class="tile-preview" muted playsinline loop preload="none"></video>':''}<span class="n">${item.publicId}</span><span class="tile-title">${item.title}</span></a>`}).join(''):'<div class="search-empty">NO MATCHES</div>';
+      gallery.innerHTML=shown.length?shown.map(item=>{const preview=previewUrl(item);return `<a class="tile" href="?clip=${item.publicId}${contextQuery}" aria-label="${item.publicId} ${item.title}"${preview?` data-preview="${preview}"`:''}><img src="${thumbRoot}${item.thumb}" alt="" loading="lazy" decoding="async" fetchpriority="low" width="16" height="9">${preview?'<video class="tile-preview" muted autoplay playsinline loop preload="none"></video>':''}<span class="n">${item.publicId}</span><span class="tile-title">${item.title}</span></a>`}).join(''):'<div class="search-empty">NO MATCHES</div>';
       if(shown.length<visible.length){gallery.insertAdjacentHTML('beforeend','<i class="gallery-sentinel" aria-hidden="true"></i>');galleryObserver?.disconnect();galleryObserver=new IntersectionObserver(entries=>{if(entries.some(entry=>entry.isIntersecting)){renderLimit+=48;renderGallery()}},{rootMargin:'500px'});galleryObserver.observe(gallery.querySelector('.gallery-sentinel'))}
       bindImageRecovery(gallery);bindTilePreviews(gallery);
     }
