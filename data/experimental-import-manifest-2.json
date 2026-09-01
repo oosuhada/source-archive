@@ -34,9 +34,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 8479130,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/475_workout-fitness-training-basketball.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/475_workout-fitness-training-basketball.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "476",
@@ -74,9 +75,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 7695844,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/476_cloudy-animated-particles-warrior-monochromatic.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/476_cloudy-animated-particles-warrior-monochromatic.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "477",
@@ -113,9 +115,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 22441658,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/477_fortress-history-stairs-arc.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/477_fortress-history-stairs-arc.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "478",
@@ -151,9 +154,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 2748286,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/478_reflection-from-a-piano.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/478_reflection-from-a-piano.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "479",
@@ -191,9 +195,10 @@
     "keyframeMaxGap": 0.5,
     "outputBytes": 11376929,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/479_friends-hanging-street-urban-life.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/479_friends-hanging-street-urban-life.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "480",
@@ -231,9 +236,10 @@
     "keyframeMaxGap": 0.501,
     "outputBytes": 32492051,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/480_astrophotography-stars-sky-milky-way.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/480_astrophotography-stars-sky-milky-way.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "481",
@@ -270,9 +276,10 @@
     "keyframeMaxGap": 0.5,
     "outputBytes": 33006482,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/481_celestial-galaxy-universe-space.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/481_celestial-galaxy-universe-space.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "482",
@@ -309,9 +316,10 @@
     "keyframeMaxGap": 0.501,
     "outputBytes": 13254841,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/482_astronomy-star-galaxy-constellation.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/482_astronomy-star-galaxy-constellation.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "483",
@@ -351,9 +359,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 4180417,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/483_garlic-onions-and-tomato-paste-in-cast-iron.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/483_garlic-onions-and-tomato-paste-in-cast-iron.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "484",
@@ -392,9 +401,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 2882298,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/484_social-media-salad-dish-photographing-blogger.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/484_social-media-salad-dish-photographing-blogger.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "485",
@@ -431,9 +441,10 @@
     "keyframeMaxGap": 0.5,
     "outputBytes": 9744475,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/485_eclair-baking-dessert-pastry.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/485_eclair-baking-dessert-pastry.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "486",
@@ -471,9 +482,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 2775775,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/486_sushi-salmon-top-shot-display.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/486_sushi-salmon-top-shot-display.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "487",
@@ -512,9 +524,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 20126063,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/487_outfit-style-looking-at-camera-fashion-model.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/487_outfit-style-looking-at-camera-fashion-model.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "488",
@@ -551,9 +564,10 @@
     "keyframeMaxGap": 0.501,
     "outputBytes": 51759347,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/488_spermatozoa-pregnancy-reproduction-fertilizing.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/488_spermatozoa-pregnancy-reproduction-fertilizing.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "489",
@@ -590,9 +604,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 10113189,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/489_magnification-artificial-extraterrestrial-particles.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/489_magnification-artificial-extraterrestrial-particles.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "490",
@@ -629,9 +644,10 @@
     "keyframeMaxGap": 0.501,
     "outputBytes": 8905547,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/490_red-abstract-wildfire-heat.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/490_red-abstract-wildfire-heat.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "491",
@@ -670,9 +686,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 5009355,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/491_black-and-white-bodybuilder-man-torso.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/491_black-and-white-bodybuilder-man-torso.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "492",
@@ -709,9 +726,10 @@
     "keyframeMaxGap": 0.501,
     "outputBytes": 2030611,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/492_steel-metal-palm-fasteners.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/492_steel-metal-palm-fasteners.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "493",
@@ -750,9 +768,10 @@
     "keyframeMaxGap": 0.501,
     "outputBytes": 7484673,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/493_man-covered-in-black-paint-green-screen.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/493_man-covered-in-black-paint-green-screen.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "494",
@@ -789,9 +808,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 2645725,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/494_athlete-dancer-ballet-stretching.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/494_athlete-dancer-ballet-stretching.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "495",
@@ -829,9 +849,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 16847472,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/495_emulsion-merge-color-blend-mixture.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/495_emulsion-merge-color-blend-mixture.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "496",
@@ -868,9 +889,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 9864142,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/496_workout-fitness-training-basketball-2.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/496_workout-fitness-training-basketball-2.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "497",
@@ -907,9 +929,10 @@
     "keyframeMaxGap": 0.501,
     "outputBytes": 9834771,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/497_microscopic-tadpole-fertilization-reproduction.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/497_microscopic-tadpole-fertilization-reproduction.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "498",
@@ -944,9 +967,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 17431347,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/498_teabag-in-tea.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/498_teabag-in-tea.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "499",
@@ -984,9 +1008,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 6226650,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/499_exercise-training-fitness-park-bars.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/499_exercise-training-fitness-park-bars.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "500",
@@ -1023,9 +1048,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 3571992,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/500_drops-fruit-slice-red.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/500_drops-fruit-slice-red.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "501",
@@ -1066,9 +1092,10 @@
     "keyframeMaxGap": 0.501,
     "outputBytes": 14883965,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/501_dark-blue-substance-surrounded-by-white-bubble-of-color.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/501_dark-blue-substance-surrounded-by-white-bubble-of-color.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "502",
@@ -1105,9 +1132,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 2331817,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/502_exercise-exercising-gym-fitness.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/502_exercise-exercising-gym-fitness.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "503",
@@ -1147,9 +1175,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 6093666,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/503_metal-multi-weight-dumbbells-on-shelf-rack-focus.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/503_metal-multi-weight-dumbbells-on-shelf-rack-focus.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "504",
@@ -1191,9 +1220,10 @@
     "keyframeMaxGap": 0.5,
     "outputBytes": 6145326,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/504_closeup-of-mans-chest-doing-leg-pull-ups-on-a-bar-in-the-gym.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/504_closeup-of-mans-chest-doing-leg-pull-ups-on-a-bar-in-the-gym.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "505",
@@ -1232,9 +1262,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 16353930,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/505_bodybuilder-flexing-his-veiny-arm-muscles.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/505_bodybuilder-flexing-his-veiny-arm-muscles.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "506",
@@ -1273,9 +1304,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 6325734,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/506_man-inspecting-film-on-a-take-up-reel-on-a-projector.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/506_man-inspecting-film-on-a-take-up-reel-on-a-projector.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "507",
@@ -1312,9 +1344,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 39821845,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/507_colorful-substance-liquid-moving.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/507_colorful-substance-liquid-moving.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "508",
@@ -1353,9 +1386,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 6137472,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/508_hydrogel-eye-patch-moisturizer-gaze-face.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/508_hydrogel-eye-patch-moisturizer-gaze-face.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "509",
@@ -1393,9 +1427,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 1520400,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/509_wooden-hammer-hitting-metal-pipe.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/509_wooden-hammer-hitting-metal-pipe.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "510",
@@ -1434,9 +1469,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 3736584,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/510_looking-at-camera-fighter-locker-room-silhouette.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/510_looking-at-camera-fighter-locker-room-silhouette.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "511",
@@ -1475,9 +1511,10 @@
     "keyframeMaxGap": 0.501,
     "outputBytes": 5402880,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/511_usa-bearded-man-weight-lifting-bar.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/511_usa-bearded-man-weight-lifting-bar.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "512",
@@ -1514,9 +1551,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 10311699,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/512_transition-preroll-archive-8mm.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/512_transition-preroll-archive-8mm.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "513",
@@ -1553,9 +1591,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 20887100,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/513_632798-muscular-abs-top-shot.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/513_632798-muscular-abs-top-shot.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "514",
@@ -1596,9 +1635,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 13669131,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/514_shirtless-man-squatting-with-barbell-over-shoulder-at-gym.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/514_shirtless-man-squatting-with-barbell-over-shoulder-at-gym.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "515",
@@ -1634,9 +1674,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 28042497,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/515_123-146-athlete-dance-workout.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/515_123-146-athlete-dance-workout.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "516",
@@ -1673,9 +1714,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 5124097,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/516_stonehenge-stones-england-monument.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/516_stonehenge-stones-england-monument.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "517",
@@ -1712,9 +1754,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 6898200,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/517_buildings-city-nostalgia-monochrome.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/517_buildings-city-nostalgia-monochrome.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "518",
@@ -1751,9 +1794,10 @@
     "keyframeMaxGap": 0.501,
     "outputBytes": 44293377,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/518_malta-drone-architecture-cityscape.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/518_malta-drone-architecture-cityscape.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "519",
@@ -1790,9 +1834,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 21740745,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/519_ruins-columns-stone-italy.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/519_ruins-columns-stone-italy.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "520",
@@ -1829,9 +1874,10 @@
     "keyframeMaxGap": 0.5,
     "outputBytes": 10331249,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/520_ancient-giza-desert-sand.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/520_ancient-giza-desert-sand.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "521",
@@ -1869,9 +1915,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 6239753,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/521_8mm-perforation-nostalgic-retro-footage.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/521_8mm-perforation-nostalgic-retro-footage.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "522",
@@ -1908,9 +1955,10 @@
     "keyframeMaxGap": 0.501,
     "outputBytes": 13370933,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/522_woman-meditating-ruins-pyramids.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/522_woman-meditating-ruins-pyramids.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "523",
@@ -1947,9 +1995,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 31199279,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/523_karosta-latvia-sea-ocean.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/523_karosta-latvia-sea-ocean.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "524",
@@ -1986,9 +2035,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 3397136,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/524_sky-province-trees-old.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/524_sky-province-trees-old.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "525",
@@ -2027,9 +2077,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 5640386,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/525_stone-pillar-carving-near-plants-outdoors.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/525_stone-pillar-carving-near-plants-outdoors.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "526",
@@ -2067,9 +2118,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 66932212,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/526_gunibsky-dagestan-russian-federation-drone.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/526_gunibsky-dagestan-russian-federation-drone.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "527",
@@ -2107,9 +2159,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 74820854,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/527_roman-ruins-and-a-church-aerial.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/527_roman-ruins-and-a-church-aerial.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "528",
@@ -2145,9 +2198,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 12768019,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/528_174-172-ancient-ruins-8mm.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/528_174-172-ancient-ruins-8mm.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "529",
@@ -2184,9 +2238,10 @@
     "keyframeMaxGap": 0.5,
     "outputBytes": 8057780,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/529_statue-balinese-statue-temple-tradition.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/529_statue-balinese-statue-temple-tradition.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "530",
@@ -2223,9 +2278,10 @@
     "keyframeMaxGap": 0.501,
     "outputBytes": 37229447,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/530_temple-islam-desert-ancient.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/530_temple-islam-desert-ancient.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "531",
@@ -2263,9 +2319,10 @@
     "keyframeMaxGap": 0.501,
     "outputBytes": 41009886,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/531_archaeological-site-woman-archaeologist-ancient.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/531_archaeological-site-woman-archaeologist-ancient.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "532",
@@ -2303,9 +2360,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 5146896,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/532_nostalgia-monochrome-old-film-8mm.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/532_nostalgia-monochrome-old-film-8mm.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "533",
@@ -2343,9 +2401,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 5389791,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/533_8mm-athens-greece-old-film.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/533_8mm-athens-greece-old-film.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "534",
@@ -2387,9 +2446,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 10431397,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/534_man-walking-past-brick-wall-in-desert-on-sunny-day.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/534_man-walking-past-brick-wall-in-desert-on-sunny-day.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "535",
@@ -2426,9 +2486,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 4857360,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/535_pompeii-archeology-ancient-ruins.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/535_pompeii-archeology-ancient-ruins.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "536",
@@ -2465,9 +2526,10 @@
     "keyframeMaxGap": 0.501,
     "outputBytes": 7345343,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/536_cultural-sauna-temazcal-garden.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/536_cultural-sauna-temazcal-garden.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "537",
@@ -2505,9 +2567,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 6390924,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/537_ruins-nostalgia-monochrome-old-film.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/537_ruins-nostalgia-monochrome-old-film.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "538",
@@ -2544,9 +2607,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 5005081,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/538_greece-ancient-ruin-pillars.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/538_greece-ancient-ruin-pillars.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "539",
@@ -2587,9 +2651,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 14892201,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/539_holding-hands-walking-together-two-men-romantic-couple.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/539_holding-hands-walking-together-two-men-romantic-couple.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "540",
@@ -2630,9 +2695,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 8115231,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/540_traditional-attire-animal-care-elderly-man-daily-routine.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/540_traditional-attire-animal-care-elderly-man-daily-routine.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "541",
@@ -2670,9 +2736,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 17580209,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/541_jacket-plane-portrait-beanie-hat.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/541_jacket-plane-portrait-beanie-hat.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "542",
@@ -2709,9 +2776,10 @@
     "keyframeMaxGap": 0.501,
     "outputBytes": 12291854,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/542_vietnam-friends-shilohuette-beach.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/542_vietnam-friends-shilohuette-beach.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "543",
@@ -2749,9 +2817,10 @@
     "keyframeMaxGap": 0.5,
     "outputBytes": 12343580,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/543_laughing-women-men-hanging-out.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/543_laughing-women-men-hanging-out.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "544",
@@ -2788,9 +2857,10 @@
     "keyframeMaxGap": 0.5,
     "outputBytes": 4116757,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/544_angry-distraught-upset-sad.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/544_angry-distraught-upset-sad.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "545",
@@ -2828,9 +2898,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 5505258,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/545_complicity-dancing-jumping-down-syndrome.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/545_complicity-dancing-jumping-down-syndrome.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "546",
@@ -2870,9 +2941,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 3187804,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/546_man-standing-outdoors-and-licking-his-lips.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/546_man-standing-outdoors-and-licking-his-lips.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "547",
@@ -2909,9 +2981,10 @@
     "keyframeMaxGap": 0.501,
     "outputBytes": 7971644,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/547_wire-india-kashmir-man.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/547_wire-india-kashmir-man.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "548",
@@ -2948,9 +3021,10 @@
     "keyframeMaxGap": 0.501,
     "outputBytes": 22162321,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/548_summer-vietnam-ocean-sea.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/548_summer-vietnam-ocean-sea.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "549",
@@ -2987,9 +3061,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 9356605,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/549_underpass-briefcase-walking-frustrated.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/549_underpass-briefcase-walking-frustrated.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "550",
@@ -3027,9 +3102,10 @@
     "keyframeMaxGap": 0.5,
     "outputBytes": 5762871,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/550_looking-down-focused-serious-man.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/550_looking-down-focused-serious-man.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "551",
@@ -3066,9 +3142,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 5993059,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/551_men-beard-romantic-partner.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/551_men-beard-romantic-partner.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "552",
@@ -3105,9 +3182,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 7358248,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/552_models-laughing-standing-men.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/552_models-laughing-standing-men.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "553",
@@ -3145,9 +3223,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 2654378,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/553_mechanic-using-impact-drill-in-garage.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/553_mechanic-using-impact-drill-in-garage.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "554",
@@ -3187,9 +3266,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 15351321,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/554_sunny-day-hard-work-fishing-boat-seafaring.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/554_sunny-day-hard-work-fishing-boat-seafaring.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "555",
@@ -3228,9 +3308,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 11038008,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/555_curly-hair-back-shot-man-pizza.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/555_curly-hair-back-shot-man-pizza.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "556",
@@ -3268,9 +3349,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 3962955,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/556_city-serious-portrait-looking-at-camera.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/556_city-serious-portrait-looking-at-camera.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "557",
@@ -3308,9 +3390,10 @@
     "keyframeMaxGap": 0.501,
     "outputBytes": 6271970,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/557_looking-at-camera-men-shirtless-workout.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/557_looking-at-camera-men-shirtless-workout.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "558",
@@ -3347,9 +3430,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 4804513,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/558_daydreaming-earring-contemplate-thinking.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/558_daydreaming-earring-contemplate-thinking.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "559",
@@ -3387,9 +3471,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 13117941,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/559_exercise-looking-at-camera-portrait-wellbeing.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/559_exercise-looking-at-camera-portrait-wellbeing.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "560",
@@ -3428,9 +3513,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 2766627,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/560_man-holding-up-his-hand-in-the-sunlight.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/560_man-holding-up-his-hand-in-the-sunlight.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "561",
@@ -3468,9 +3554,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 12513466,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/561_eating-food-daily-life-candid.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/561_eating-food-daily-life-candid.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "562",
@@ -3510,9 +3597,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 11081294,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/562_man-reading-a-book-and-drinking-a-hot-beverage.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/562_man-reading-a-book-and-drinking-a-hot-beverage.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "563",
@@ -3549,9 +3637,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 7262612,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/563_man-sitting-drinking-cup.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/563_man-sitting-drinking-cup.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "564",
@@ -3588,9 +3677,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 11993017,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/564_children-poverty-walking-gang.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/564_children-poverty-walking-gang.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "565",
@@ -3627,9 +3717,10 @@
     "keyframeMaxGap": 0.501,
     "outputBytes": 30671533,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/565_drinking-watching-beer-friends.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/565_drinking-watching-beer-friends.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "566",
@@ -3666,9 +3757,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 6926201,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/566_man-looking-posing-field.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/566_man-looking-posing-field.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "567",
@@ -3708,9 +3800,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 9875989,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/567_two-men-and-a-boy-near-a-house-at-halloween.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/567_two-men-and-a-boy-near-a-house-at-halloween.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "568",
@@ -3747,9 +3840,10 @@
     "keyframeMaxGap": 0.501,
     "outputBytes": 9922875,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/568_gym-freinds-training-strength.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/568_gym-freinds-training-strength.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "569",
@@ -3789,9 +3883,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 3183742,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/569_glasses-bearded-man-warm-glow-concentrated-effort.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/569_glasses-bearded-man-warm-glow-concentrated-effort.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "570",
@@ -3828,9 +3923,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 7081519,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/570_drummer-plays-drums-vigorously.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/570_drummer-plays-drums-vigorously.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "571",
@@ -3869,9 +3965,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 6208020,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/571_wadi-musa-arabian-desert-jordan-petra.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/571_wadi-musa-arabian-desert-jordan-petra.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "572",
@@ -3908,9 +4005,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 5325998,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/572_athlete-dramatic-goggles-preparation.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/572_athlete-dramatic-goggles-preparation.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "573",
@@ -3948,9 +4046,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 5024768,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/573_blurred-background-cars-buildings-standing.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/573_blurred-background-cars-buildings-standing.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "574",
@@ -3987,9 +4086,10 @@
     "keyframeMaxGap": 0.5,
     "outputBytes": 170198435,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/574_bpm-music-71-bpm-video-jockey.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/574_bpm-music-71-bpm-video-jockey.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "575",
@@ -4027,9 +4127,10 @@
     "keyframeMaxGap": 0.5,
     "outputBytes": 120022877,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/575_music-spiral-108-bpm-video-jockey.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/575_music-spiral-108-bpm-video-jockey.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "576",
@@ -4069,9 +4170,10 @@
     "keyframeMaxGap": 0.501,
     "outputBytes": 14182950,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/576_abstract-river-of-blue-surrounded-by-multi-colored-bubbles.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/576_abstract-river-of-blue-surrounded-by-multi-colored-bubbles.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "577",
@@ -4108,9 +4210,10 @@
     "keyframeMaxGap": 0.5,
     "outputBytes": 9057142,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/577_abstract-cgi-sci-fi-galaxy.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/577_abstract-cgi-sci-fi-galaxy.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "578",
@@ -4148,9 +4251,10 @@
     "keyframeMaxGap": 0.5,
     "outputBytes": 11649343,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/578_astronomy-outer-space-glowing-darkness.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/578_astronomy-outer-space-glowing-darkness.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "579",
@@ -4188,9 +4292,10 @@
     "keyframeMaxGap": 0.5,
     "outputBytes": 13735126,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/579_space-sci-fi-super-nova-astral.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/579_space-sci-fi-super-nova-astral.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "580",
@@ -4228,9 +4333,10 @@
     "keyframeMaxGap": 0.5,
     "outputBytes": 18747907,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/580_space-sci-fi-super-nova-astral-2.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/580_space-sci-fi-super-nova-astral-2.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "581",
@@ -4267,9 +4373,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 15835294,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/581_pills-liquid-probe-lens-vj.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/581_pills-liquid-probe-lens-vj.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "582",
@@ -4306,9 +4413,10 @@
     "keyframeMaxGap": 0.5,
     "outputBytes": 44245813,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/582_neon-background-vj-loop-glowing.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/582_neon-background-vj-loop-glowing.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "583",
@@ -4345,9 +4453,10 @@
     "keyframeMaxGap": 0.5,
     "outputBytes": 9853675,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/583_abstract-cgi-sci-fi-galaxy-2.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/583_abstract-cgi-sci-fi-galaxy-2.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "584",
@@ -4387,9 +4496,10 @@
     "keyframeMaxGap": 0.5,
     "outputBytes": 3076664,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/584_dark-purple-red-and-pink-liquids-swirling.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/584_dark-purple-red-and-pink-liquids-swirling.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "585",
@@ -4426,9 +4536,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 9469607,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/585_art-artistic-creative-drop.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/585_art-artistic-creative-drop.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "586",
@@ -4464,9 +4575,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 54934556,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/586_burning-loops-vj-fire.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/586_burning-loops-vj-fire.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "587",
@@ -4503,9 +4615,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 44515916,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/587_abstract-background-flowing-glitter.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/587_abstract-background-flowing-glitter.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "588",
@@ -4541,9 +4654,10 @@
     "keyframeMaxGap": 0.5,
     "outputBytes": 26301921,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/588_loop-nebula-galaxy-3d.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/588_loop-nebula-galaxy-3d.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "589",
@@ -4580,9 +4694,10 @@
     "keyframeMaxGap": 0.5,
     "outputBytes": 5860033,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/589_space-cosmic-clouds-galaxy.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/589_space-cosmic-clouds-galaxy.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "590",
@@ -4619,9 +4734,10 @@
     "keyframeMaxGap": 0.501,
     "outputBytes": 35971070,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/590_jellyfish-marine-sea-underwater.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/590_jellyfish-marine-sea-underwater.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "591",
@@ -4658,9 +4774,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 13745499,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/591_light-waves-projection-beams-light.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/591_light-waves-projection-beams-light.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "592",
@@ -4698,9 +4815,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 13589917,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/592_soap-bubble-colorful-liquid-shiny.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/592_soap-bubble-colorful-liquid-shiny.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "593",
@@ -4738,9 +4856,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 13149399,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/593_background-liquid-sparkling-glittery-colors.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/593_background-liquid-sparkling-glittery-colors.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "594",
@@ -4777,9 +4896,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 31198418,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/594_fluid-colors-ink-fractals.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/594_fluid-colors-ink-fractals.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "595",
@@ -4817,9 +4937,10 @@
     "keyframeMaxGap": 0.501,
     "outputBytes": 24069321,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/595_stars-space-black-hole-cosmos.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/595_stars-space-black-hole-cosmos.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "596",
@@ -4856,9 +4977,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 10696041,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/596_soap-round-dark-abstract.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/596_soap-round-dark-abstract.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "597",
@@ -4895,9 +5017,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 53555219,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/597_astral-luminescent-illuminated-dust.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/597_astral-luminescent-illuminated-dust.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "598",
@@ -4935,9 +5058,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 8576890,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/598_background-liquid-sparkling-glittery-colors-2.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/598_background-liquid-sparkling-glittery-colors-2.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "599",
@@ -4974,9 +5098,10 @@
     "keyframeMaxGap": 0.5,
     "outputBytes": 61781283,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/599_aqua-blue-pattern-textured.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/599_aqua-blue-pattern-textured.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "600",
@@ -5013,9 +5138,10 @@
     "keyframeMaxGap": 0.5,
     "outputBytes": 41327142,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/600_loop-wormhole-tunnel-galaxy.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/600_loop-wormhole-tunnel-galaxy.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "601",
@@ -5052,9 +5178,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 8919136,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/601_liquid-ink-oil-colorful.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/601_liquid-ink-oil-colorful.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "602",
@@ -5091,9 +5218,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 23280968,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/602_vibrant-colors-fluid-flowing.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/602_vibrant-colors-fluid-flowing.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "603",
@@ -5130,9 +5258,10 @@
     "keyframeMaxGap": 0.501,
     "outputBytes": 11580996,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/603_galaxy-spiral-star-space.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/603_galaxy-spiral-star-space.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "604",
@@ -5169,9 +5298,10 @@
     "keyframeMaxGap": 0.5,
     "outputBytes": 15648522,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/604_experimantal-fluid-light-footage.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/604_experimantal-fluid-light-footage.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "605",
@@ -5209,9 +5339,10 @@
     "keyframeMaxGap": 0.5,
     "outputBytes": 7611898,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/605_darkness-astronomy-outer-space-glowing.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/605_darkness-astronomy-outer-space-glowing.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "606",
@@ -5248,9 +5379,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 16929713,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/606_kitchen-bread-woman-tomatoe.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/606_kitchen-bread-woman-tomatoe.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "607",
@@ -5287,9 +5419,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 11539745,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/607_almonds-sweet-dessert-cake.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/607_almonds-sweet-dessert-cake.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "608",
@@ -5326,9 +5459,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 8157839,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/608_hamburger-bun-onion-lettuce.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/608_hamburger-bun-onion-lettuce.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "609",
@@ -5366,9 +5500,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 5147208,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/609_sitting-cutlery-candle-lit-poverty.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/609_sitting-cutlery-candle-lit-poverty.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "610",
@@ -5406,9 +5541,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 4198116,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/610_serving-tray-carrying-hot-restaurant.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/610_serving-tray-carrying-hot-restaurant.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "611",
@@ -5446,9 +5582,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 2869142,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/611_square-eaten-stop-motion-plate.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/611_square-eaten-stop-motion-plate.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "612",
@@ -5486,9 +5623,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 2382728,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/612_woman-opening-a-fig-at-market-closeup.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/612_woman-opening-a-fig-at-market-closeup.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "613",
@@ -5528,9 +5666,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 7991072,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/613_potatoes-vegetable-pancakes-heating-trays-chafing-dish.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/613_potatoes-vegetable-pancakes-heating-trays-chafing-dish.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "614",
@@ -5572,9 +5711,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 6318213,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/614_chef-pours-oil-over-finished-and-plated-dish-of-meat-in-the-kitchen.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/614_chef-pours-oil-over-finished-and-plated-dish-of-meat-in-the-kitchen.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "615",
@@ -5613,9 +5753,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 4378140,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/615_background-top-shot-olives-color-grade.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/615_background-top-shot-olives-color-grade.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "616",
@@ -5654,9 +5795,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 9662155,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/616_food-and-drink-forest-ceremony-table.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/616_food-and-drink-forest-ceremony-table.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "617",
@@ -5693,9 +5835,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 12669664,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/617_decoration-preparations-kitchen-restaurant.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/617_decoration-preparations-kitchen-restaurant.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "618",
@@ -5737,9 +5880,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 4388320,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/618_crunchy-bits-sprinkled-over-vanilla-ice-cream-in-cone-black-background.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/618_crunchy-bits-sprinkled-over-vanilla-ice-cream-in-cone-black-background.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "619",
@@ -5777,9 +5921,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 3901670,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/619_man-placing-tomato-on-burger-on-plate.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/619_man-placing-tomato-on-burger-on-plate.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "620",
@@ -5819,9 +5964,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 13362775,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/620_olive-twig-decoration-on-top-of-slices-of-cake-on-a-plate.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/620_olive-twig-decoration-on-top-of-slices-of-cake-on-a-plate.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "621",
@@ -5858,9 +6004,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 15700760,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/621_chef-dinner-fine-date.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/621_chef-dinner-fine-date.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "622",
@@ -5899,9 +6046,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 3370171,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/622_dessert-sprinkling-top-shot-take-out.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/622_dessert-sprinkling-top-shot-take-out.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "623",
@@ -5939,9 +6087,10 @@
     "keyframeMaxGap": 0.5,
     "outputBytes": 58168705,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/623_water-falling-into-boiling-cooking.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/623_water-falling-into-boiling-cooking.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "624",
@@ -5979,9 +6128,10 @@
     "keyframeMaxGap": 0.501,
     "outputBytes": 24692162,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/624_sweet-potatoes-sauteed-presentation-decorating.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/624_sweet-potatoes-sauteed-presentation-decorating.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "625",
@@ -6018,9 +6168,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 3874088,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/625_bread-groceries-ingredients-healthy.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/625_bread-groceries-ingredients-healthy.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "626",
@@ -6057,9 +6208,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 4838083,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/626_placing-pie-spoon-plate.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/626_placing-pie-spoon-plate.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "627",
@@ -6098,9 +6250,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 6754279,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/627_person-pouring-honey-onto-a-piece-of-bread.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/627_person-pouring-honey-onto-a-piece-of-bread.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "628",
@@ -6137,9 +6290,10 @@
     "keyframeMaxGap": 0.5,
     "outputBytes": 20171029,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/628_pasta-bolognese-eating-ragu.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/628_pasta-bolognese-eating-ragu.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "629",
@@ -6176,9 +6330,10 @@
     "keyframeMaxGap": 0.5,
     "outputBytes": 3670954,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/629_meet-street-food-market-food-market.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/629_meet-street-food-market-food-market.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "630",
@@ -6214,9 +6369,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 16625590,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/630_632793-632794-exercise-trainer-abs.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/630_632793-632794-exercise-trainer-abs.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "631",
@@ -6251,9 +6407,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 16080626,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/631_bodybuilder-curlbar-62328.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/631_bodybuilder-curlbar-62328.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "632",
@@ -6288,9 +6445,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 15993714,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/632_bodybuilder-weights-62313-62310.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/632_bodybuilder-weights-62313-62310.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "633",
@@ -6325,9 +6483,10 @@
     "keyframeMaxGap": 0.501,
     "outputBytes": 75088684,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/633_burning-car-6213471-6213473-6213478-6213495.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/633_burning-car-6213471-6213473-6213478-6213495.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "634",
@@ -6363,9 +6522,10 @@
     "keyframeMaxGap": 0.5,
     "outputBytes": 33182968,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/634_diving-in-the-pool-580116-580117-580113.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/634_diving-in-the-pool-580116-580117-580113.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "635",
@@ -6399,9 +6559,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 15534274,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/635_drums-24247-24246-24245.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/635_drums-24247-24246-24245.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "636",
@@ -6436,9 +6597,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 15807021,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/636_fight-club-6033493-6033495-6033487-6033500.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/636_fight-club-6033493-6033495-6033487-6033500.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "637",
@@ -6473,9 +6635,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 29896689,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/637_fitness-632780-110-632796-extended.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/637_fitness-632780-110-632796-extended.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "638",
@@ -6510,9 +6673,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 47477608,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/638_gym-training-501762-501764-501763.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/638_gym-training-501762-501764-501763.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "639",
@@ -6549,9 +6713,10 @@
     "keyframeMaxGap": 0.501,
     "outputBytes": 16384268,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/639_larnaca-cyprus-summer-vacation-6227286.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/639_larnaca-cyprus-summer-vacation-6227286.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "640",
@@ -6586,9 +6751,10 @@
     "keyframeMaxGap": 0.501,
     "outputBytes": 64368853,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/640_larnaca-waves-6227289-6227290-6227291.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/640_larnaca-waves-6227289-6227290-6227291.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "641",
@@ -6623,9 +6789,10 @@
     "keyframeMaxGap": 0.5,
     "outputBytes": 27645519,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/641_legs-in-motion-6198902-6198913-6198917-6198895-6198907-6198912.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/641_legs-in-motion-6198902-6198913-6198917-6198895-6198907-6198912.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "642",
@@ -6660,9 +6827,10 @@
     "keyframeMaxGap": 0.501,
     "outputBytes": 53757475,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/642_lifting-partners-6199792-6199793-6199794.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/642_lifting-partners-6199792-6199793-6199794.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "643",
@@ -6699,9 +6867,10 @@
     "keyframeMaxGap": 0.501,
     "outputBytes": 31650889,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/643_mud-dirt-studio-man-6315902.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/643_mud-dirt-studio-man-6315902.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "644",
@@ -6739,9 +6908,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 67627332,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/644_pyramids-6396472-6396471-6396480-6396470.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/644_pyramids-6396472-6396471-6396480-6396470.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "645",
@@ -6775,9 +6945,10 @@
     "keyframeMaxGap": 0.501,
     "outputBytes": 51970789,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/645_rome-6202806-6202797-6202829-6202837.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/645_rome-6202806-6202797-6202829-6202837.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "646",
@@ -6812,9 +6983,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 18744148,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/646_rome-oldfilm-6096236-6096230-6096243-6096252.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/646_rome-oldfilm-6096236-6096230-6096243-6096252.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "647",
@@ -6849,9 +7021,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 17245210,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/647_rome-oldfilm-6096239-6096246-6096248-6096264.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/647_rome-oldfilm-6096239-6096246-6096248-6096264.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "648",
@@ -6886,9 +7059,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 25948257,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/648_rome-oldfilm-6096250-6096251-6096252-6096253.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/648_rome-oldfilm-6096250-6096251-6096252-6096253.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "649",
@@ -6923,9 +7097,10 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 19445066,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/649_rome-oldfilm-6096266-6096232-6096230-6096257-6096220.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/649_rome-oldfilm-6096266-6096232-6096230-6096257-6096220.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "650",
@@ -6960,9 +7135,10 @@
     "keyframeMaxGap": 0.5,
     "outputBytes": 10340327,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/650_sun-down-6212871-6212872.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/650_sun-down-6212871-6212872.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   },
   {
     "id": "651",
@@ -6997,8 +7173,9 @@
     "keyframeMaxGap": 0.52,
     "outputBytes": 14076503,
     "uploaded": true,
-    "cdnUrl": "https://source-media.oosu.dev/media/651_tennis-series-122-225-215-240.mp4",
+    "cdnUrl": "https://source-media-b2.oosu.dev/media/651_tennis-series-122-225-215-240.mp4",
     "cdnHttpStatus": 200,
-    "rangeHttpStatus": 206
+    "rangeHttpStatus": 206,
+    "media": "b2"
   }
 ]
