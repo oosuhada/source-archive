@@ -34,6 +34,7 @@ const metadata = entries.map((entry) => {
     title: entry.title,
     clip: entry.outputFile,
     thumb: entry.thumb,
+    ...(entry.media ? { media: entry.media } : {}),
     source: `local:macbookpro/${entry.originalFile}`,
     ranges: [[0, entry.outputDuration]],
     theme: entry.theme,

@@ -38,7 +38,11 @@
   <script src="data/source-library-youtube-data.js"></script>
   <script>
     const thumbRoot='assets/thumbs/';
-    const videoRoot='https://source-media.oosu.dev/media/';
+    const videoRoots={
+      r2:'https://source-media.oosu.dev/media/',
+      b2:'https://source-media-b2.oosu.dev/media/'
+    };
+    const videoUrl=item=>`${videoRoots[item.media]||videoRoots.r2}${item.clip}`;
     const items=window.SOURCE_LIBRARY||[];
     const params=new URLSearchParams(location.search);
     const selected=params.get('clip');
@@ -189,7 +193,7 @@
         visible=orderedItems.map(item=>({item,score:searchScore(item,searchQuery)})).filter(result=>result.score>0).sort((a,b)=>b.score-a.score||Number(a.item.publicId)-Number(b.item.publicId)).map(result=>result.item);
       }else visible=activeFilter==='ALL'||searchMode?orderedItems:orderedItems.filter(item=>categoryFor(item)===activeFilter);
       const contextQuery=searchMode?`&q=${encodeURIComponent(searchQuery)}`:activeFilter==='ALL'?'':`&filter=${encodeURIComponent(activeFilter)}`;
-      gallery.innerHTML=visible.length?visible.map(item=>`<a class="tile" href="?clip=${item.publicId}${contextQuery}" aria-label="${item.publicId} ${item.title}" data-preview="${videoRoot}${item.clip}"><img src="${thumbRoot}${item.thumb}" alt=""><video class="tile-preview" muted playsinline loop preload="none"></video><span class="n">${item.publicId}</span><span class="tile-title">${item.title}</span></a>`).join(''):'<div class="search-empty">NO MATCHES</div>';
+      gallery.innerHTML=visible.length?visible.map(item=>`<a class="tile" href="?clip=${item.publicId}${contextQuery}" aria-label="${item.publicId} ${item.title}" data-preview="${videoUrl(item)}"><img src="${thumbRoot}${item.thumb}" alt=""><video class="tile-preview" muted playsinline loop preload="none"></video><span class="n">${item.publicId}</span><span class="tile-title">${item.title}</span></a>`).join(''):'<div class="search-empty">NO MATCHES</div>';
       if(matchMedia('(hover:hover) and (pointer:fine)').matches){
         let active=null;
         const stop=tile=>{
@@ -257,7 +261,7 @@
         video.setAttribute('playsinline','');
         video.setAttribute('webkit-playsinline','');
         video.preload='auto';
-        video.src=`${videoRoot}${item.clip}`;
+        video.src=videoUrl(item);
         let duration=1,target=0,ready=false,primed=false,seekTimer=0,seekRaf=0,lastSeekAt=0,pendingSeek=false;
         const clamp=v=>Math.max(0,Math.min(1,v));
         const seekInterval=95;
