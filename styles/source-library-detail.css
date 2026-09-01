@@ -137,12 +137,6 @@
 .progress{background:rgba(255,255,255,.16)}
 .progress i{background:rgba(255,255,255,.82)}
 
-/* 01 — SHADOW: title is crossed by a moving dark plane. */
-.theme-01 .archive-title{left:7vw;top:14vh;mix-blend-mode:difference;transform:translateX(calc(var(--intro) * 2.5vw))}
-.theme-01 .motif-a{display:block;inset:-10vh auto -10vh 18vw;width:30vw;background:rgba(0,0,0,.72);transform:skewX(-8deg) translateX(calc(var(--intro) * 22vw))}
-.theme-01 .motif-b{display:block;left:7vw;top:21vh;width:clamp(90px,16vw,240px);height:1px;background:rgba(255,255,255,.48);transform:scaleX(var(--intro));transform-origin:left}
-.theme-01 .film video{filter:brightness(calc(.58 + var(--intro) * .28)) contrast(1.09)}
-
 /* 02 — FOREST: quiet vertical depth, like tree trunks becoming a grid. */
 .theme-02 .archive-title{left:50%;top:11vh;transform:translateX(-50%);letter-spacing:calc(.16em + var(--intro) * .08em)}
 .theme-02 .motif-a,.theme-02 .motif-b,.theme-02 .motif-c{display:block;top:0;bottom:0;width:1px;background:linear-gradient(180deg,transparent,rgba(255,255,255,.28),transparent)}
@@ -220,7 +214,7 @@
 @media(max-width:700px){
   .archive-title,.archive-title-reflection{font-size:clamp(18px,6vw,28px);letter-spacing:.12em}
   .theme-03 .archive-title,.theme-09 .archive-title{right:18px}
-  .theme-01 .archive-title,.theme-04 .archive-title,.theme-06 .archive-title,.theme-08 .archive-title,.theme-10 .archive-title,.theme-10 .archive-title-reflection{left:18px}
+  .theme-04 .archive-title,.theme-06 .archive-title,.theme-08 .archive-title,.theme-10 .archive-title,.theme-10 .archive-title-reflection{left:18px}
 }
 
 @media(prefers-reduced-motion:reduce){
