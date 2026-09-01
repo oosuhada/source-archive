@@ -8146,6 +8146,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
     "title": "Photogrammetry Point Cloud Lofi Market",
     "clip": "450_photogrammetry-point-cloud-lofi-market.mp4",
     "thumb": "450_photogrammetry-point-cloud-lofi-market.jpg",
+    "media": "b2",
     "source": "local:macbookpro/049-photogrammetry-point-cloud-lofi-market.ts",
     "ranges": [
       [
@@ -8169,6 +8170,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
     "title": "Ball Video Jockey 88 Bpm Electric",
     "clip": "451_ball-video-jockey-88-bpm-electric.mp4",
     "thumb": "451_ball-video-jockey-88-bpm-electric.jpg",
+    "media": "b2",
     "source": "local:macbookpro/050-ball-video-jockey-88-bpm-electric.ts",
     "ranges": [
       [
@@ -8192,6 +8194,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
     "title": "Geometric Shapes Pastel Colors Abstract Art Soft Shadows",
     "clip": "452_geometric-shapes-pastel-colors-abstract-art-soft-shadows.mp4",
     "thumb": "452_geometric-shapes-pastel-colors-abstract-art-soft-shadows.jpg",
+    "media": "b2",
     "source": "local:macbookpro/051-geometric-shapes-pastel-colors-abstract-art-soft-shadows.ts",
     "ranges": [
       [
@@ -8218,6 +8221,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
     "title": "Man Standing In A Red Room",
     "clip": "453_man-standing-in-a-red-room.mp4",
     "thumb": "453_man-standing-in-a-red-room.jpg",
+    "media": "b2",
     "source": "local:macbookpro/052-man-standing-in-a-red-room.ts",
     "ranges": [
       [
@@ -8241,6 +8245,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
     "title": "Transition Glitch Quick Blue",
     "clip": "455_transition-glitch-quick-blue.mp4",
     "thumb": "455_transition-glitch-quick-blue.jpg",
+    "media": "b2",
     "source": "local:macbookpro/054-transition-glitch-quick-blue.ts",
     "ranges": [
       [
@@ -8263,6 +8268,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
     "title": "Dirtbikes In Smoke In Front Of Headlights At Night",
     "clip": "456_dirtbikes-in-smoke-in-front-of-headlights-at-night-cropped.mp4",
     "thumb": "456_dirtbikes-in-smoke-in-front-of-headlights-at-night.jpg",
+    "media": "b2",
     "source": "local:macbookpro/055-dirtbikes-in-smoke-in-front-of-headlights-at-night.ts",
     "ranges": [
       [
@@ -8286,6 +8292,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
     "title": "Colorful Lines Moving And Flashing",
     "clip": "457_colorful-lines-moving-and-flashing.mp4",
     "thumb": "457_colorful-lines-moving-and-flashing.jpg",
+    "media": "b2",
     "source": "local:macbookpro/056-colorful-lines-moving-and-flashing.ts",
     "ranges": [
       [
@@ -8309,6 +8316,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
     "title": "Disintegrate Vfx Street Photogrammetry",
     "clip": "458_disintegrate-vfx-street-photogrammetry.mp4",
     "thumb": "458_disintegrate-vfx-street-photogrammetry.jpg",
+    "media": "b2",
     "source": "local:macbookpro/057-disintegrate-vfx-street-photogrammetry.ts",
     "ranges": [
       [
@@ -8331,6 +8339,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
     "title": "Fluid Splashing Paint Pink",
     "clip": "459_fluid-splashing-paint-pink.mp4",
     "thumb": "459_fluid-splashing-paint-pink.jpg",
+    "media": "b2",
     "source": "local:macbookpro/058-fluid-splashing-paint-pink.ts",
     "ranges": [
       [
@@ -8353,6 +8362,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
     "title": "Covid 19 Flashing On A Cracked And Broken Screen",
     "clip": "460_covid-19-flashing-on-a-cracked-and-broken-screen.mp4",
     "thumb": "460_covid-19-flashing-on-a-cracked-and-broken-screen.jpg",
+    "media": "b2",
     "source": "local:macbookpro/059-covid-19-flashing-on-a-cracked-and-broken-screen.ts",
     "ranges": [
       [
@@ -8377,6 +8387,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
     "title": "Black Background, Hand Movement, Instructional Video, Communication Skills",
     "clip": "461_black-background-hand-movement-instructional-video-communication-skills.mp4",
     "thumb": "461_black-background-hand-movement-instructional-video-communication-skills.jpg",
+    "media": "b2",
     "source": "local:macbookpro/060-black-background-hand-movement-instructional-video-communication-skills.ts",
     "ranges": [
       [
@@ -8403,6 +8414,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
     "title": "Musical Notes On Stand Rack-Focus",
     "clip": "462_musical-notes-on-stand-rack-focus.mp4",
     "thumb": "462_musical-notes-on-stand-rack-focus.jpg",
+    "media": "b2",
     "source": "local:macbookpro/061-musical-notes-on-stand-rack-focus.ts",
     "ranges": [
       [
@@ -8426,6 +8438,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
     "title": "\"Danger\" Flashing On A Cracked Screen",
     "clip": "463_danger-flashing-on-a-cracked-screen.mp4",
     "thumb": "463_danger-flashing-on-a-cracked-screen.jpg",
+    "media": "b2",
     "source": "local:macbookpro/062-danger-flashing-on-a-cracked-screen.ts",
     "ranges": [
       [
@@ -8448,6 +8461,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
     "title": "Seen From Under The Stream The Man Squats On The Rocks And Drinks Water",
     "clip": "464_seen-from-under-the-stream-the-man-squats-on-the-rocks-and-drinks-water-cropped.mp4",
     "thumb": "464_seen-from-under-the-stream-the-man-squats-on-the-rocks-and-drinks-water.jpg",
+    "media": "b2",
     "source": "local:macbookpro/063-seen-from-under-the-stream-the-man-squats-on-the-rocks-and-drinks-water.ts",
     "ranges": [
       [
@@ -8475,6 +8489,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
     "title": "The Word \"Play\" Flashing On A Broken Screen",
     "clip": "465_the-word-play-flashing-on-a-broken-screen.mp4",
     "thumb": "465_the-word-play-flashing-on-a-broken-screen.jpg",
+    "media": "b2",
     "source": "local:macbookpro/064-the-word-play-flashing-on-a-broken-screen.ts",
     "ranges": [
       [
@@ -8499,6 +8514,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
     "title": "Phantom, Fog, Clouds, Lightning",
     "clip": "466_phantom-fog-clouds-lightning.mp4",
     "thumb": "466_phantom-fog-clouds-lightning.jpg",
+    "media": "b2",
     "source": "local:macbookpro/065-phantom-fog-clouds-lightning.ts",
     "ranges": [
       [
@@ -8521,6 +8537,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
     "title": "Distorted Shapes Flashing",
     "clip": "467_distorted-shapes-flashing.mp4",
     "thumb": "467_distorted-shapes-flashing.jpg",
+    "media": "b2",
     "source": "local:macbookpro/066-distorted-shapes-flashing.ts",
     "ranges": [
       [
@@ -8542,6 +8559,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
     "title": "Blue Flash Light Transition",
     "clip": "468_blue-flash-light-transition.mp4",
     "thumb": "468_blue-flash-light-transition.jpg",
+    "media": "b2",
     "source": "local:macbookpro/067-blue-flash-light-transition.ts",
     "ranges": [
       [
@@ -8566,6 +8584,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
     "title": "Man Working In A Recording Studio And Looking At A Screen",
     "clip": "471_man-working-in-a-recording-studio-and-looking-at-a-screen.mp4",
     "thumb": "471_man-working-in-a-recording-studio-and-looking-at-a-screen.jpg",
+    "media": "b2",
     "source": "local:macbookpro/070-man-working-in-a-recording-studio-and-looking-at-a-screen.ts",
     "ranges": [
       [
@@ -8591,6 +8610,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
     "title": "Ice And Bubbles In Whiskey Glass",
     "clip": "472_ice-and-bubbles-in-whiskey-glass.mp4",
     "thumb": "472_ice-and-bubbles-in-whiskey-glass.jpg",
+    "media": "b2",
     "source": "local:macbookpro/071-ice-and-bubbles-in-whiskey-glass.ts",
     "ranges": [
       [
@@ -8614,6 +8634,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
     "title": "Glittery Neon Blue And Pink Liquids Swirling",
     "clip": "473_glittery-neon-blue-and-pink-liquids-swirling.mp4",
     "thumb": "473_glittery-neon-blue-and-pink-liquids-swirling.jpg",
+    "media": "b2",
     "source": "local:macbookpro/072-glittery-neon-blue-and-pink-liquids-swirling.ts",
     "ranges": [
       [
@@ -8639,6 +8660,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
     "title": "Red Orange And White Patches With Gold Sparkles",
     "clip": "474_red-orange-and-white-patches-with-gold-sparkles.mp4",
     "thumb": "474_red-orange-and-white-patches-with-gold-sparkles.jpg",
+    "media": "b2",
     "source": "local:macbookpro/073-red-orange-and-white-patches-with-gold-sparkles.ts",
     "ranges": [
       [
