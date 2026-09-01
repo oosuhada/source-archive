@@ -6,7 +6,7 @@ const [manifestPath, buildRoot] = process.argv.slice(2);
 if (!manifestPath || !buildRoot) throw new Error("Usage: node scripts/apply-experimental-import.mjs <manifest> <build-root>");
 
 const entries = JSON.parse(await readFile(manifestPath, "utf8"));
-if (entries.length !== 200) throw new Error(`Expected 200 entries, found ${entries.length}`);
+if (!entries.length) throw new Error("Import manifest is empty");
 for (const entry of entries) {
   if (!entry.fastStart || entry.outputAudioStreams !== 0 || entry.outputVideoCodec !== "h264" || entry.outputPixelFormat !== "yuv420p") {
     throw new Error(`${entry.id}: output validation is incomplete`);

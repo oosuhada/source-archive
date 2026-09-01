@@ -24,9 +24,9 @@ The repository keeps the interface, metadata, and thumbnails in GitHub Pages. MP
 
 ## Current archive size
 
-- 471 archive items
-- 471 MP4 clips in Cloudflare R2
-- 471 JPEG thumbnails
+- 648 archive items
+- 648 MP4 clips in Cloudflare R2
+- 648 JPEG thumbnails
 
 ## Usage
 
