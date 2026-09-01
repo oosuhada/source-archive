@@ -8755,7 +8755,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   {
     "id": "478",
     "title": "Reflection From A Piano",
-    "clip": "478_reflection-from-a-piano.mp4",
+    "clip": "478_reflection-from-a-piano-cropped.mp4",
     "thumb": "478_reflection-from-a-piano.jpg",
     "media": "b2",
     "source": "local:macbookpro/077-reflection-from-a-piano.ts",
@@ -9498,7 +9498,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   {
     "id": "509",
     "title": "Wooden Hammer Hitting Metal Pipe",
-    "clip": "509_wooden-hammer-hitting-metal-pipe.mp4",
+    "clip": "509_wooden-hammer-hitting-metal-pipe-cropped.mp4",
     "thumb": "509_wooden-hammer-hitting-metal-pipe.jpg",
     "media": "b2",
     "source": "local:macbookpro/108-wooden-hammer-hitting-metal-pipe.ts",
@@ -11099,7 +11099,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   {
     "id": "576",
     "title": "Abstract River Of Blue Surrounded By Multi Colored Bubbles",
-    "clip": "576_abstract-river-of-blue-surrounded-by-multi-colored-bubbles.mp4",
+    "clip": "576_abstract-river-of-blue-surrounded-by-multi-colored-bubbles-cropped.mp4",
     "thumb": "576_abstract-river-of-blue-surrounded-by-multi-colored-bubbles.jpg",
     "media": "b2",
     "source": "local:macbookpro/175-abstract-river-of-blue-surrounded-by-multi-colored-bubbles.ts",
