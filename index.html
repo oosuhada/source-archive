@@ -39,6 +39,7 @@
   <script src="performance-dashboard.js"></script>
   <script src="data/source-library-data.js"></script>
   <script src="data/source-library-youtube-data.js"></script>
+  <script src="data/preview-manifest.js"></script>
   <script>
     const thumbRoot='assets/thumbs/';
     const videoRoots={
@@ -52,6 +53,10 @@
     const videoUrl=item=>`${videoRoots[item.media]||videoRoots.r2}${item.clip}`;
     const previewUrl=item=>item.preview?`${previewRoots[item.previewMedia||item.media]||previewRoots.r2}${item.preview}`:'';
     const items=window.SOURCE_LIBRARY||[];
+    // Do not couple hover playback to asynchronously fetched metadata: if one
+    // metadata request fails, valid preview mappings must still be available.
+    const previewById=new Map((window.SOURCE_ARCHIVE_PREVIEWS||[]).map(entry=>[entry.id,entry]));
+    items.forEach(item=>{const entry=previewById.get(item.id);if(entry){item.preview=entry.file;item.previewMedia=entry.media}});
     const params=new URLSearchParams(location.search);
     const selected=params.get('clip');
     const gallery=document.querySelector('#gallery');
@@ -232,10 +237,9 @@
     }
     async function prepareGallery(){
       try{
-        const [response,overridesResponse,previewsResponse]=await Promise.all([
+        const [response,overridesResponse]=await Promise.all([
           fetch('data/youtube-archive-manifest.json',{cache:'no-store'}),
-          fetch('data/youtube-archive-manifest-overrides.json',{cache:'no-store'}),
-          fetch(`data/preview-manifest.json?v=${encodeURIComponent(window.SOURCE_ARCHIVE_BUILD?.version||'dev')}`)
+          fetch('data/youtube-archive-manifest-overrides.json',{cache:'no-store'})
         ]);
         if(response.ok){
           const manifest=await response.json();
@@ -251,7 +255,6 @@
             if(Array.isArray(meta.keywords))item.keywords=meta.keywords;
           });
         }
-        if(previewsResponse.ok){const previews=await previewsResponse.json();const previewById=new Map(previews.map(entry=>[entry.id,entry]));items.forEach(item=>{const entry=previewById.get(item.id);if(entry){item.preview=entry.file;item.previewMedia=entry.media}})}
       }catch{}
       if(!filterDefs.includes(activeFilter))activeFilter='ALL';
       renderTopbar();renderGallery();
