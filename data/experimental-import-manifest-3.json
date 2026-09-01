@@ -12,7 +12,7 @@
     "fps": 25,
     "videoCodec": "h264",
     "audioStreamsOriginal": 1,
-    "category": "Travel / City / Architecture",
+    "category": "Experimental / Material / Object",
     "theme": "06",
     "keywords": [
       "haunted",
@@ -150,7 +150,7 @@
     "fps": 25,
     "videoCodec": "h264",
     "audioStreamsOriginal": 1,
-    "category": "People / Culture",
+    "category": "Object",
     "theme": "06",
     "keywords": [
       "sculptor",
@@ -288,7 +288,7 @@
     "fps": 23.98,
     "videoCodec": "h264",
     "audioStreamsOriginal": 0,
-    "category": "Travel / City / Architecture",
+    "category": "Object",
     "theme": "06",
     "keywords": [
       "lady",
@@ -380,7 +380,7 @@
     "fps": 25,
     "videoCodec": "h264",
     "audioStreamsOriginal": 0,
-    "category": "Travel / City / Architecture",
+    "category": "Object",
     "theme": "06",
     "keywords": [
       "stone",
@@ -610,7 +610,7 @@
     "fps": 25,
     "videoCodec": "h264",
     "audioStreamsOriginal": 0,
-    "category": "Travel / City / Architecture",
+    "category": "Object",
     "theme": "06",
     "keywords": [
       "warsaw",

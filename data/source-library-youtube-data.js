@@ -20367,7 +20367,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "People / Culture",
+    "category": "Object",
     "keywords": [
           "drummer",
           "plays",
@@ -20574,7 +20574,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
   },
   {
     "id": "634",
-    "title": "Running Legs",
+    "title": "Legs",
     "clip": "634_legs-in-motion-6198902-6198913-6198917-6198895-6198907-6198912.mp4",
     "thumb": "634_legs-in-motion-6198902-6198913-6198917-6198895-6198907-6198912.jpg",
     "media": "b2",
@@ -20586,7 +20586,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Sport / Physical",
+    "category": "Experimental / Material / Object",
     "keywords": [
           "legs",
           "motion",
@@ -21002,7 +21002,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Travel / City / Architecture",
+    "category": "Experimental / Material / Object",
     "keywords": [
       "haunted",
       "house",
@@ -21092,7 +21092,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "People / Culture",
+    "category": "Object",
     "keywords": [
       "sculptor",
       "artist",
@@ -21182,7 +21182,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Travel / City / Architecture",
+    "category": "Object",
     "keywords": [
       "lady",
       "liberty",
@@ -21242,7 +21242,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Travel / City / Architecture",
+    "category": "Object",
     "keywords": [
       "stone",
       "interior",
@@ -21392,7 +21392,7 @@ window.SOURCE_LIBRARY = (window.SOURCE_LIBRARY || []).concat([
       ]
     ],
     "theme": "06",
-    "category": "Travel / City / Architecture",
+    "category": "Object",
     "keywords": [
       "warsaw",
       "poland",
