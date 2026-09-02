@@ -1,4 +1,4 @@
-const VERSION="source-archive-f03d2d2439f2";
+const VERSION="source-archive-929af90833c1";
 const PRECACHE=["./","./index.html","./search-worker.js","./performance-dashboard.js","./data/source-library-data.js","./data/source-library-youtube-data.js","./data/search-index.json","./data/build-meta.js","./data/preview-manifest.js"];
 self.addEventListener('message',event=>{if(event.data==='SKIP_WAITING')self.skipWaiting()});
 self.addEventListener('install',event=>event.waitUntil(caches.open(VERSION).then(cache=>cache.addAll(PRECACHE)).then(()=>self.skipWaiting())));
