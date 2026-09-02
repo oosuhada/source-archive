@@ -84,6 +84,8 @@
     let searchResultIds=null,searchRequestId=0,searchReady=false,resultKey='';
     const thumbnailState=new Map(),thumbnailQueue=[];
     let thumbnailActive=0,thumbnailObserver=null,thumbnailPauseUntil=0,thumbnailResumeTimer=0;
+    const previewState=new Map(),previewQueue=[];
+    let previewActive=0,previewObserver=null;
     const thumbnailConcurrency=matchMedia('(max-width:700px)').matches?3:4;
     const metric=(group,values)=>dispatchEvent(new CustomEvent('source-archive:metric',{detail:{group,values}}));
     function seededShuffle(list,seed=20260829){
@@ -214,6 +216,42 @@
         tile.addEventListener('pointerleave',()=>stop(tile));
       });
     }
+    function pumpPreviewQueue(){
+      while(previewActive<4&&previewQueue.length){
+        const url=previewQueue.shift();
+        if(previewState.get(url)!=='queued')continue;
+        previewActive+=1;previewState.set(url,'warming');
+        // Native video loading avoids cross-origin fetch restrictions and puts
+        // the first playable bytes in the browser's immutable HTTP cache.
+        const warmer=document.createElement('video');warmer.muted=true;warmer.playsInline=true;warmer.preload='auto';
+        let settled=false;
+        const finish=state=>{if(settled)return;settled=true;previewState.set(url,state);previewActive-=1;warmer.removeAttribute('src');warmer.load();pumpPreviewQueue()};
+        warmer.addEventListener('loadeddata',()=>finish('ready'),{once:true});
+        warmer.addEventListener('error',()=>finish('error'),{once:true});
+        setTimeout(()=>finish('ready'),8000);
+        warmer.src=url;warmer.load();
+      }
+    }
+    function queuePreview(url,priority=0){
+      const state=previewState.get(url);if(state==='ready'||state==='warming'||state==='attached'||state==='queued')return;
+      previewState.set(url,'queued');if(priority)previewQueue.unshift(url);else previewQueue.push(url);pumpPreviewQueue();
+    }
+    function attachPreview(tile){
+      const url=tile.dataset.preview,preview=tile.querySelector('.tile-preview');if(!url||!preview||preview.src)return;
+      previewState.set(url,'attached');preview.preload='auto';preview.src=url;preview.load();
+    }
+    function preparePreviews(root){
+      previewObserver?.disconnect();
+      const tiles=[...root.querySelectorAll('.tile[data-preview]')];
+      tiles.slice(0,36).forEach(attachPreview);
+      previewObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{
+        if(entry.isIntersecting)attachPreview(entry.target);
+      }),{rootMargin:'2500px 0px'});
+      tiles.forEach(tile=>previewObserver.observe(tile));
+      // All remaining previews are warmed after the initial render. They are
+      // only 24MB total, and a four-request queue leaves hover bandwidth free.
+      setTimeout(()=>tiles.forEach(tile=>queuePreview(tile.dataset.preview)),1200);
+    }
     function bindImageRecovery(root){
       root.querySelectorAll('.tile img:not([data-recovery-bound])').forEach(img=>{
         img.dataset.recoveryBound='1';img.dataset.retryCount='0';
@@ -287,7 +325,7 @@
       const contextQuery=searchMode?`&q=${encodeURIComponent(searchQuery)}`:activeFilter==='ALL'?'':`&filter=${encodeURIComponent(activeFilter)}`;
       const key=`${activeFilter}|${searchQuery}|${visible.map(item=>item.id).join(',')}`;resultKey=key;
       gallery.innerHTML=visible.length?visible.map(item=>{const preview=previewUrl(item),thumb=`${thumbRoot}${item.thumb}`,lowThumb=`assets/thumbs-low/${item.thumb}`;return `<a class="tile thumbnail-loading" href="?clip=${item.publicId}${contextQuery}" aria-label="${item.publicId} ${item.title}"${preview?` data-preview="${preview}"`:''}><img src="${lowThumb}" data-low="${lowThumb}" data-thumb="${thumb}" alt="" decoding="async" fetchpriority="low" width="240" height="135">${preview?'<video class="tile-preview" muted autoplay playsinline loop preload="none"></video>':''}<span class="n">${item.publicId}</span><span class="tile-title">${item.title}</span></a>`}).join(''):'<div class="search-empty">NO MATCHES</div>';
-      bindImageRecovery(gallery);bindTilePreviews(gallery);prepareThumbnails(gallery);
+      bindImageRecovery(gallery);bindTilePreviews(gallery);preparePreviews(gallery);prepareThumbnails(gallery);
     }
     async function prepareGallery(){
       try{
