@@ -26,5 +26,5 @@ for (let start = 0, number = 1; start < clips.length; start += packSize, number 
   }
   await writeFile(join(output, `boot-${String(number).padStart(2, '0')}.bin`), Buffer.concat([header, ...table, ...payload]));
 }
-await writeFile(manifest, `window.SOURCE_ARCHIVE_HLS_BOOT_PACKS=${JSON.stringify(map)};\n`);
+await writeFile(manifest, `self.SOURCE_ARCHIVE_HLS_BOOT_PACKS=${JSON.stringify(map)};\n`);
 console.log(JSON.stringify({ clips: clips.length, packs: new Set(Object.values(map)).size, output }));
