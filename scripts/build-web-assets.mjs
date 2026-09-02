@@ -24,7 +24,7 @@ const documents = context.window.SOURCE_LIBRARY.map((item) => {
 const payload = JSON.stringify({ schema: 1, documents });
 const previewManifest = await readFile("data/preview-manifest.json", "utf8");
 const previews = JSON.parse(previewManifest);
-const applicationSources = await Promise.all(["index.html", "search-worker.js", "performance-dashboard.js", "styles/source-library-detail.css"].map((file) => readFile(file, "utf8")));
+const applicationSources = await Promise.all(["index.html", "search-worker.js", "performance-dashboard.js", "styles/source-library-detail.css", "data/micro-pack-manifest.js"].map((file) => readFile(file, "utf8")));
 const thumbnailSources = await Promise.all(context.window.SOURCE_LIBRARY.map((item) => readFile(`assets/thumbs/${item.thumb}`)));
 const versionHash = createHash("sha256").update(payload).update(previewManifest);
 for (const source of applicationSources) versionHash.update(source);
@@ -34,7 +34,7 @@ await writeFile("data/search-index.json", payload + "\n");
 await writeFile("data/build-meta.js", `window.SOURCE_ARCHIVE_BUILD=${JSON.stringify({ version, items: documents.length })};\n`);
 await writeFile("data/preview-manifest.js", `window.SOURCE_ARCHIVE_PREVIEWS=${JSON.stringify(previews)};\n`);
 
-const precache = ["./", "./index.html", "./search-worker.js", "./performance-dashboard.js", "./data/source-library-data.js", "./data/source-library-youtube-data.js", "./data/search-index.json", "./data/build-meta.js", "./data/preview-manifest.js"];
+const precache = ["./", "./index.html", "./search-worker.js", "./performance-dashboard.js", "./data/source-library-data.js", "./data/source-library-youtube-data.js", "./data/search-index.json", "./data/build-meta.js", "./data/preview-manifest.js", "./data/micro-pack-manifest.js"];
 const serviceWorker = `const VERSION=${JSON.stringify(`source-archive-${version}`)};
 const PRECACHE=${JSON.stringify(precache)};
 self.addEventListener('message',event=>{if(event.data==='SKIP_WAITING')self.skipWaiting()});
@@ -50,7 +50,7 @@ self.addEventListener('fetch',event=>{
   });
   const isMetadata=url.pathname.includes('/data/')||url.pathname.endsWith('/index.html')||url.pathname.endsWith('/');
   if(isMetadata){event.respondWith(retry(event.request).then(async response=>{if(response.ok){const copy=response.clone();await caches.open(VERSION).then(cache=>cache.put(event.request,copy))}else{const cached=await caches.match(event.request);if(cached)return cached}return response}).catch(()=>caches.match(event.request)));return}
-  if(url.pathname.includes('/assets/thumbs/')||url.pathname.includes('/assets/thumbs-low/')||url.pathname.includes('/assets/thumbs-medium/')){event.respondWith(caches.open(VERSION).then(async cache=>{
+  if(url.pathname.includes('/assets/thumbs/')||url.pathname.includes('/assets/thumbs-low/')||url.pathname.includes('/assets/thumbs-medium/')||url.pathname.includes('/assets/thumbs-360/')){event.respondWith(caches.open(VERSION).then(async cache=>{
     const hit=await cache.match(event.request);
     if(hit&&hit.ok&&String(hit.headers.get('content-type')||'').startsWith('image/'))return hit;
     if(hit)await cache.delete(event.request);
