@@ -19,7 +19,7 @@ for (const item of items) {
 }
 for (let id = 1; id <= items.length; id += 1) if (!ids.has(String(id)) && !ids.has(String(id).padStart(2, "0"))) errors.push(`missing numeric id ${id}`);
 
-for (const file of ["data/experimental-import-manifest.json", "data/experimental-import-manifest-2.json", "data/experimental-import-manifest-3.json", "data/experimental-import-manifest-4.json"]) {
+for (const file of ["data/experimental-import-manifest.json", "data/experimental-import-manifest-2.json", "data/experimental-import-manifest-3.json", "data/experimental-import-manifest-4.json", "data/experimental-import-manifest-5.json"]) {
   for (const item of JSON.parse(await readFile(file, "utf8"))) {
     if (item.outputAudioStreams !== 0) errors.push(`audio stream present ${item.id}`);
     if (item.outputVideoCodec !== "h264") errors.push(`unexpected codec ${item.id}: ${item.outputVideoCodec}`);

@@ -6,7 +6,7 @@
   <title>Source Archive</title>
   <link rel="stylesheet" href="styles/source-library-detail.css">
   <style>
-    *{box-sizing:border-box}html,body{margin:0;background:#0b0b0b;color:#eee;font-family:Arial,Helvetica,sans-serif}body{min-height:100vh}.filters{position:sticky;top:0;z-index:20;display:flex;align-items:center;padding:14px 18px 12px;overflow:hidden;background:rgba(11,11,11,.94);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.07)}.filter-strip{min-width:0;flex:1;display:flex;align-items:center;gap:18px;overflow-x:auto;scrollbar-width:none}.filter-strip::-webkit-scrollbar{display:none}.filter{flex:0 0 auto;padding:0 0 4px;border:0;border-bottom:1px solid transparent;background:none;color:rgba(255,255,255,.4);font:500 10px/1 ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;letter-spacing:.11em;text-transform:uppercase;white-space:nowrap;cursor:pointer;transition:color .2s ease,border-color .2s ease}.filter b{margin-left:6px;font-weight:500;color:rgba(255,255,255,.24)}.filter:hover,.filter:focus-visible{color:rgba(255,255,255,.78);outline:none}.filter.active{color:#fff;border-color:rgba(255,255,255,.72)}.filter.active b{color:rgba(255,255,255,.55)}.gallery{padding:10px 18px 18px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.tile{position:relative;display:block;aspect-ratio:16/9;overflow:hidden;background:#181818;color:inherit;text-decoration:none;border:0;isolation:isolate}.tile::after{content:"";position:absolute;inset:0;z-index:1;background:radial-gradient(circle at 50% 44%,rgba(0,0,0,.14),rgba(0,0,0,.72));box-shadow:inset 0 0 72px rgba(0,0,0,.72);opacity:0;transition:opacity .3s ease}.tile img,.tile-preview{width:100%;height:100%;object-fit:cover;object-position:center center;display:block;transition:filter .32s ease}.tile-preview{position:absolute;inset:0;z-index:0;opacity:0;transition:opacity .2s ease,filter .32s ease;pointer-events:none}.tile.previewing .tile-preview{opacity:1}.tile:hover img,.tile:hover .tile-preview,.tile:focus-visible img,.tile:focus-visible .tile-preview{filter:brightness(.5) contrast(1.06) saturate(.84)}.tile:hover::after,.tile:focus-visible::after{opacity:1}.n{position:absolute;z-index:3;left:12px;top:10px;font:11px/1 ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;letter-spacing:.08em;text-shadow:0 1px 8px #000}.tile-title{position:absolute;z-index:3;left:50%;top:50%;transform:translate(-50%,-50%);margin:0;opacity:0;font:500 clamp(12px,1.15vw,16px)/1 ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;letter-spacing:.18em;text-transform:uppercase;text-shadow:0 2px 18px rgba(0,0,0,.82);transition:opacity .24s ease;pointer-events:none;white-space:nowrap}.tile:hover .tile-title,.tile:focus-visible .tile-title{opacity:1}.detail{display:none}.detail.active{display:block;min-height:720vh}.film{position:fixed;inset:0;background:#000;overflow:hidden}.film video{width:100%;height:100%;object-fit:cover;display:block}.back{position:fixed;z-index:6;left:18px;top:18px;border:0;background:rgba(0,0,0,.45);color:#fff;padding:10px 12px;font:11px/1 ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;text-decoration:none;backdrop-filter:blur(8px)}.counter{position:fixed;z-index:6;right:18px;top:18px;font:11px/1 ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;text-shadow:0 1px 8px #000}.progress{position:fixed;z-index:3;left:18px;right:18px;bottom:18px;height:1px;background:rgba(255,255,255,.25)}.progress i{display:block;height:100%;width:0;background:#fff}.error{display:none;position:fixed;inset:0;z-index:5;place-items:center;background:#111;font:12px ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace}.error.show{display:grid}@media(max-width:1020px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:560px){.filters{padding:12px 10px 10px}.filter-strip{gap:14px}.gallery{grid-template-columns:1fr;padding:8px 10px 10px}.tile-title{font-size:13px}}
+    *{box-sizing:border-box}html,body{margin:0;background:#0b0b0b;color:#eee;font-family:Arial,Helvetica,sans-serif}body{min-height:100vh}.filters{position:sticky;top:0;z-index:20;display:flex;align-items:center;padding:14px 18px 12px;overflow:hidden;background:rgba(11,11,11,.94);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.07)}.filter-strip{min-width:0;flex:1;display:flex;align-items:center;gap:18px;overflow-x:auto;scrollbar-width:none}.filter-strip::-webkit-scrollbar{display:none}.filter{flex:0 0 auto;padding:0 0 4px;border:0;border-bottom:1px solid transparent;background:none;color:rgba(255,255,255,.4);font:500 10px/1 ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;letter-spacing:.11em;text-transform:uppercase;white-space:nowrap;cursor:pointer;transition:color .2s ease,border-color .2s ease}.filter b{margin-left:6px;font-weight:500;color:rgba(255,255,255,.24)}.filter:hover,.filter:focus-visible{color:rgba(255,255,255,.78);outline:none}.filter.active{color:#fff;border-color:rgba(255,255,255,.72)}.filter.active b{color:rgba(255,255,255,.55)}.gallery{padding:10px 18px 18px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.tile{position:relative;display:block;aspect-ratio:16/9;overflow:hidden;background:#181818;color:inherit;text-decoration:none;border:0;isolation:isolate}.tile.thumbnail-loading{background:linear-gradient(110deg,#151515 18%,#292929 35%,#151515 52%);background-size:260% 100%;animation:thumbnail-shimmer 1.1s linear infinite}.tile.thumbnail-ready{background:#181818}.tile::after{content:"";position:absolute;inset:0;z-index:1;background:radial-gradient(circle at 50% 44%,rgba(0,0,0,.14),rgba(0,0,0,.72));box-shadow:inset 0 0 72px rgba(0,0,0,.72);opacity:0;transition:opacity .3s ease}.tile img,.tile-preview{width:100%;height:100%;object-fit:cover;object-position:center center;display:block;transition:opacity .16s ease,filter .32s ease}.tile.thumbnail-loading img{opacity:0}.tile.thumbnail-ready img{opacity:1}.tile-preview{position:absolute;inset:0;z-index:0;opacity:0;transition:opacity .2s ease,filter .32s ease;pointer-events:none}.tile.previewing .tile-preview{opacity:1}.tile:hover img,.tile:hover .tile-preview,.tile:focus-visible img,.tile:focus-visible .tile-preview{filter:brightness(.5) contrast(1.06) saturate(.84)}.tile:hover::after,.tile:focus-visible::after{opacity:1}.n{position:absolute;z-index:3;left:12px;top:10px;font:11px/1 ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;letter-spacing:.08em;text-shadow:0 1px 8px #000}.tile-title{position:absolute;z-index:3;left:50%;top:50%;transform:translate(-50%,-50%);margin:0;opacity:0;font:500 clamp(12px,1.15vw,16px)/1 ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;letter-spacing:.18em;text-transform:uppercase;text-shadow:0 2px 18px rgba(0,0,0,.82);transition:opacity .24s ease;pointer-events:none;white-space:nowrap}.tile:hover .tile-title,.tile:focus-visible .tile-title{opacity:1}.detail{display:none}.detail.active{display:block;min-height:720vh}.film{position:fixed;inset:0;background:#000;overflow:hidden}.film video{width:100%;height:100%;object-fit:cover;display:block}.back{position:fixed;z-index:6;left:18px;top:18px;border:0;background:rgba(0,0,0,.45);color:#fff;padding:10px 12px;font:11px/1 ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;text-decoration:none;backdrop-filter:blur(8px)}.counter{position:fixed;z-index:6;right:18px;top:18px;font:11px/1 ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;text-shadow:0 1px 8px #000}.progress{position:fixed;z-index:3;left:18px;right:18px;bottom:18px;height:1px;background:rgba(255,255,255,.25)}.progress i{display:block;height:100%;width:0;background:#fff}.error{display:none;position:fixed;inset:0;z-index:5;place-items:center;background:#111;font:12px ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace}.error.show{display:grid}@keyframes thumbnail-shimmer{to{background-position:-260% 0}}@media(max-width:1020px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:560px){.filters{padding:12px 10px 10px}.filter-strip{gap:14px}.gallery{grid-template-columns:1fr;padding:8px 10px 10px}.tile-title{font-size:13px}}
   </style>
   <style>
     .search-toggle,.search-close{flex:0 0 auto;width:34px;height:28px;display:grid;place-items:center;border:0;background:#0b0b0b;color:rgba(255,255,255,.62);cursor:pointer;padding:0}.search-toggle{margin-left:12px;position:relative;z-index:2;box-shadow:-14px 0 18px #0b0b0b}.search-toggle:hover,.search-toggle:focus-visible,.search-close:hover,.search-close:focus-visible{color:#fff;outline:none}.search-toggle svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.5}.search-shell{display:flex;align-items:center;width:100%;gap:10px}.search-mark{flex:0 0 auto;width:15px;height:15px;fill:none;stroke:rgba(255,255,255,.48);stroke-width:1.5}.archive-search{min-width:0;flex:1;border:0;outline:0;background:transparent;color:#fff;font:500 11px/1.2 ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;letter-spacing:.08em}.archive-search::placeholder{color:rgba(255,255,255,.28)}.search-empty{grid-column:1/-1;min-height:35vh;display:grid;place-items:center;color:rgba(255,255,255,.34);font:500 11px/1 ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;letter-spacing:.12em;text-transform:uppercase}
@@ -39,8 +39,9 @@
   <script src="performance-dashboard.js"></script>
   <script src="data/source-library-data.js"></script>
   <script src="data/source-library-youtube-data.js"></script>
+  <script src="data/preview-manifest.js"></script>
   <script>
-    const thumbRoot='assets/thumbs/';
+    const thumbRoot='assets/thumbs-medium/';
     const videoRoots={
       r2:'https://source-media.oosu.dev/media/',
       b2:'https://source-media-b2.oosu.dev/media/'
@@ -52,6 +53,10 @@
     const videoUrl=item=>`${videoRoots[item.media]||videoRoots.r2}${item.clip}`;
     const previewUrl=item=>item.preview?`${previewRoots[item.previewMedia||item.media]||previewRoots.r2}${item.preview}`:'';
     const items=window.SOURCE_LIBRARY||[];
+    // Do not couple hover playback to asynchronously fetched metadata: if one
+    // metadata request fails, valid preview mappings must still be available.
+    const previewById=new Map((window.SOURCE_ARCHIVE_PREVIEWS||[]).map(entry=>[entry.id,entry]));
+    items.forEach(item=>{const entry=previewById.get(item.id);if(entry){item.preview=entry.file;item.previewMedia=entry.media}});
     const params=new URLSearchParams(location.search);
     const selected=params.get('clip');
     const gallery=document.querySelector('#gallery');
@@ -76,7 +81,10 @@
     let searchMode=params.has('q');
     let searchQuery=params.get('q')||'';
     let orderedItems=[];
-    let searchResultIds=null,searchRequestId=0,searchReady=false,renderLimit=48,resultKey='',galleryObserver=null;
+    let searchResultIds=null,searchRequestId=0,searchReady=false,resultKey='';
+    const thumbnailState=new Map(),thumbnailQueue=[];
+    let thumbnailActive=0,thumbnailObserver=null,thumbnailPauseUntil=0,thumbnailResumeTimer=0;
+    const thumbnailConcurrency=matchMedia('(max-width:700px)').matches?3:4;
     const metric=(group,values)=>dispatchEvent(new CustomEvent('source-archive:metric',{detail:{group,values}}));
     function seededShuffle(list,seed=20260829){
       const out=[...list];let s=seed>>>0;
@@ -187,26 +195,88 @@
       });
     }
     function bindTilePreviews(root){
-      if(!matchMedia('(hover:hover) and (pointer:fine)').matches)return;
       let active=null;
-      const stop=tile=>{if(!tile)return;const preview=tile.querySelector('.tile-preview');if(!preview)return;preview.pause();tile.classList.remove('previewing');try{preview.currentTime=0}catch{}if(active===tile)active=null};
+      const stop=tile=>{if(!tile)return;const preview=tile.querySelector('.tile-preview');if(!preview)return;delete tile.dataset.previewWanted;preview.pause();tile.classList.remove('previewing');try{preview.currentTime=0}catch{}if(active===tile)active=null};
       root.querySelectorAll('.tile[data-preview]:not([data-bound])').forEach(tile=>{
         tile.dataset.bound='1';const preview=tile.querySelector('.tile-preview');if(!preview)return;
-        preview.addEventListener('playing',()=>{tile.classList.add('previewing');metric('media',{firstFrame:performance.now()-Number(tile.dataset.hoverAt||performance.now())})},{once:true});
-        tile.addEventListener('mouseenter',()=>{if(!tile.dataset.preview)return;if(active&&active!==tile)stop(active);active=tile;tile.dataset.hoverAt=performance.now();if(!preview.src)preview.src=tile.dataset.preview;try{preview.currentTime=0}catch{}preview.play().catch(()=>{})});
+        const wanted=()=>active===tile&&tile.dataset.previewWanted==='1';
+        const reveal=()=>{if(wanted())tile.classList.add('previewing')};
+        const play=()=>{if(wanted())preview.play().catch(()=>{})};
+        // Reveal on the first decoded frame rather than only on `playing`.
+        // Some browsers resolve muted autoplay slightly later than canplay.
+        preview.addEventListener('loadeddata',reveal);
+        preview.addEventListener('canplay',()=>{reveal();play()});
+        preview.addEventListener('playing',()=>{reveal();metric('media',{firstFrame:performance.now()-Number(tile.dataset.hoverAt||performance.now())})});
+        const start=()=>{if(!tile.dataset.preview||active===tile)return;if(active&&active!==tile)stop(active);pauseThumbnailWarmup();active=tile;tile.dataset.previewWanted='1';tile.dataset.hoverAt=performance.now();preview.muted=true;preview.defaultMuted=true;preview.autoplay=true;preview.playsInline=true;preview.preload='auto';if(!preview.src){preview.src=tile.dataset.preview;preview.load()}else{try{preview.currentTime=0}catch{}};play()};
+        tile.addEventListener('pointerenter',start);
+        tile.addEventListener('mouseenter',start);
         tile.addEventListener('mouseleave',()=>stop(tile));
+        tile.addEventListener('pointerleave',()=>stop(tile));
       });
     }
     function bindImageRecovery(root){
       root.querySelectorAll('.tile img:not([data-recovery-bound])').forEach(img=>{
         img.dataset.recoveryBound='1';img.dataset.retryCount='0';
-        img.addEventListener('load',()=>{img.closest('.tile')?.classList.remove('thumbnail-error')});
+        const markLoaded=()=>{
+          const tile=img.closest('.tile');if(!tile)return;
+          tile.classList.remove('thumbnail-error','thumbnail-loading');
+          tile.classList.add(img.getAttribute('src')===img.dataset.low?'thumbnail-lowready':'thumbnail-ready');
+        };
+        img.addEventListener('load',markLoaded);if(img.complete&&img.naturalWidth)markLoaded();
         img.addEventListener('error',()=>{
           const attempt=Number(img.dataset.retryCount||0)+1;img.dataset.retryCount=String(attempt);
           if(attempt<=2){setTimeout(()=>{const url=new URL(img.src,location.href);url.searchParams.set('retry',`${window.SOURCE_ARCHIVE_BUILD?.version||'dev'}-${attempt}`);img.src=url.href},attempt*350);return}
           img.closest('.tile')?.classList.add('thumbnail-error');metric('resources',{thumbnailErrors:(window.__SOURCE_ARCHIVE_METRICS__?.resources?.thumbnailErrors||0)+1});
         });
       });
+    }
+    function updateThumbnail(url,state){
+      document.querySelectorAll('img[data-thumb]').forEach(img=>{
+        if(img.dataset.thumb!==url)return;
+        const tile=img.closest('.tile');
+        if(state==='ready'){
+          if(img.src!==url)img.src=url;
+          tile?.classList.remove('thumbnail-loading');tile?.classList.add('thumbnail-ready');
+        }
+        if(state==='error')tile?.classList.remove('thumbnail-loading');
+      });
+    }
+    function pumpThumbnailQueue(){
+      if(Date.now()<thumbnailPauseUntil){clearTimeout(thumbnailResumeTimer);thumbnailResumeTimer=setTimeout(pumpThumbnailQueue,thumbnailPauseUntil-Date.now()+20);return}
+      while(thumbnailActive<thumbnailConcurrency&&thumbnailQueue.length){
+        const entry=thumbnailQueue.shift();
+        if(thumbnailState.get(entry.url)!=='queued')continue;
+        thumbnailActive+=1;thumbnailState.set(entry.url,'loading');
+        const image=new Image();image.decoding='async';
+        image.onload=()=>{thumbnailState.set(entry.url,'ready');thumbnailActive-=1;updateThumbnail(entry.url,'ready');pumpThumbnailQueue()};
+        image.onerror=()=>{thumbnailState.set(entry.url,'error');thumbnailActive-=1;updateThumbnail(entry.url,'error');pumpThumbnailQueue()};
+        image.src=entry.url;
+      }
+    }
+    function queueThumbnail(url,priority=0){
+      const state=thumbnailState.get(url);
+      if(state==='ready'){updateThumbnail(url,'ready');return}
+      if(state==='queued'||state==='loading')return;
+      thumbnailState.set(url,'queued');
+      if(priority>0)thumbnailQueue.unshift({url});else thumbnailQueue.push({url});
+      pumpThumbnailQueue();
+    }
+    function pauseThumbnailWarmup(){
+      // Video playback is the primary hover interaction. Do not begin another
+      // medium-resolution image transfer while its first frame is arriving.
+      thumbnailPauseUntil=Date.now()+900;
+    }
+    function prepareThumbnails(root){
+      thumbnailObserver?.disconnect();
+      const images=[...root.querySelectorAll('img[data-thumb]')];
+      // All cards receive a tiny 240px image immediately. 480px images only
+      // warm near the viewport, so hover video never competes with 960px art.
+      images.slice(0,24).forEach(img=>queueThumbnail(img.dataset.thumb,2));
+      thumbnailObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{
+        if(entry.isIntersecting)queueThumbnail(entry.target.dataset.thumb,3);
+      }),{rootMargin:'1500px 0px'});
+      images.forEach(img=>thumbnailObserver.observe(img));
+      setTimeout(()=>images.forEach(img=>queueThumbnail(img.dataset.thumb)),3000);
     }
     function renderGallery(){
       let visible;
@@ -215,18 +285,15 @@
         const byId=new Map(orderedItems.map(item=>[item.id,item]));visible=searchResultIds.map(id=>byId.get(id)).filter(Boolean);
       }else visible=activeFilter==='ALL'||searchMode?orderedItems:orderedItems.filter(item=>categoryFor(item)===activeFilter);
       const contextQuery=searchMode?`&q=${encodeURIComponent(searchQuery)}`:activeFilter==='ALL'?'':`&filter=${encodeURIComponent(activeFilter)}`;
-      const key=`${activeFilter}|${searchQuery}|${visible.map(item=>item.id).join(',')}`;if(key!==resultKey){resultKey=key;renderLimit=48}
-      const shown=visible.slice(0,renderLimit);
-      gallery.innerHTML=shown.length?shown.map(item=>{const preview=previewUrl(item);return `<a class="tile" href="?clip=${item.publicId}${contextQuery}" aria-label="${item.publicId} ${item.title}"${preview?` data-preview="${preview}"`:''}><img src="${thumbRoot}${item.thumb}" alt="" loading="lazy" decoding="async" fetchpriority="low" width="16" height="9">${preview?'<video class="tile-preview" muted playsinline loop preload="none"></video>':''}<span class="n">${item.publicId}</span><span class="tile-title">${item.title}</span></a>`}).join(''):'<div class="search-empty">NO MATCHES</div>';
-      if(shown.length<visible.length){gallery.insertAdjacentHTML('beforeend','<i class="gallery-sentinel" aria-hidden="true"></i>');galleryObserver?.disconnect();galleryObserver=new IntersectionObserver(entries=>{if(entries.some(entry=>entry.isIntersecting)){renderLimit+=48;renderGallery()}},{rootMargin:'500px'});galleryObserver.observe(gallery.querySelector('.gallery-sentinel'))}
-      bindImageRecovery(gallery);bindTilePreviews(gallery);
+      const key=`${activeFilter}|${searchQuery}|${visible.map(item=>item.id).join(',')}`;resultKey=key;
+      gallery.innerHTML=visible.length?visible.map(item=>{const preview=previewUrl(item),thumb=`${thumbRoot}${item.thumb}`,lowThumb=`assets/thumbs-low/${item.thumb}`;return `<a class="tile thumbnail-loading" href="?clip=${item.publicId}${contextQuery}" aria-label="${item.publicId} ${item.title}"${preview?` data-preview="${preview}"`:''}><img src="${lowThumb}" data-low="${lowThumb}" data-thumb="${thumb}" alt="" decoding="async" fetchpriority="low" width="240" height="135">${preview?'<video class="tile-preview" muted autoplay playsinline loop preload="none"></video>':''}<span class="n">${item.publicId}</span><span class="tile-title">${item.title}</span></a>`}).join(''):'<div class="search-empty">NO MATCHES</div>';
+      bindImageRecovery(gallery);bindTilePreviews(gallery);prepareThumbnails(gallery);
     }
     async function prepareGallery(){
       try{
-        const [response,overridesResponse,previewsResponse]=await Promise.all([
+        const [response,overridesResponse]=await Promise.all([
           fetch('data/youtube-archive-manifest.json',{cache:'no-store'}),
-          fetch('data/youtube-archive-manifest-overrides.json',{cache:'no-store'}),
-          fetch(`data/preview-manifest.json?v=${encodeURIComponent(window.SOURCE_ARCHIVE_BUILD?.version||'dev')}`)
+          fetch('data/youtube-archive-manifest-overrides.json',{cache:'no-store'})
         ]);
         if(response.ok){
           const manifest=await response.json();
@@ -242,7 +309,6 @@
             if(Array.isArray(meta.keywords))item.keywords=meta.keywords;
           });
         }
-        if(previewsResponse.ok){const previews=await previewsResponse.json();const previewById=new Map(previews.map(entry=>[entry.id,entry]));items.forEach(item=>{const entry=previewById.get(item.id);if(entry){item.preview=entry.file;item.previewMedia=entry.media}})}
       }catch{}
       if(!filterDefs.includes(activeFilter))activeFilter='ALL';
       renderTopbar();renderGallery();
