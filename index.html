@@ -41,7 +41,7 @@
   <script src="data/source-library-youtube-data.js"></script>
   <script src="data/preview-manifest.js"></script>
   <script>
-    const thumbRoot='assets/thumbs-medium/';
+    const thumbRoot='assets/thumbs-360/';
     const videoRoots={
       r2:'https://source-media.oosu.dev/media/',
       b2:'https://source-media-b2.oosu.dev/media/'
@@ -269,8 +269,8 @@
     function prepareThumbnails(root){
       thumbnailObserver?.disconnect();
       const images=[...root.querySelectorAll('img[data-thumb]')];
-      // All cards receive a tiny 240px image immediately. 480px images only
-      // warm near the viewport, so hover video never competes with 960px art.
+      // All cards receive a tiny 240px image immediately. 360px images only
+      // warm near the viewport, so hover video never competes with large art.
       images.slice(0,24).forEach(img=>queueThumbnail(img.dataset.thumb,2));
       thumbnailObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{
         if(entry.isIntersecting)queueThumbnail(entry.target.dataset.thumb,3);
