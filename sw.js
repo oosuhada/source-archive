@@ -1,5 +1,5 @@
-const VERSION="source-archive-929af90833c1";
-const PRECACHE=["./","./index.html","./search-worker.js","./performance-dashboard.js","./data/source-library-data.js","./data/source-library-youtube-data.js","./data/search-index.json","./data/build-meta.js","./data/preview-manifest.js"];
+const VERSION="source-archive-adafa51d248f";
+const PRECACHE=["./","./index.html","./search-worker.js","./performance-dashboard.js","./data/source-library-data.js","./data/source-library-youtube-data.js","./data/search-index.json","./data/build-meta.js","./data/preview-manifest.js","./data/micro-pack-manifest.js"];
 self.addEventListener('message',event=>{if(event.data==='SKIP_WAITING')self.skipWaiting()});
 self.addEventListener('install',event=>event.waitUntil(caches.open(VERSION).then(cache=>cache.addAll(PRECACHE)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==VERSION).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));

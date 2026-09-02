@@ -40,6 +40,7 @@
   <script src="data/source-library-data.js"></script>
   <script src="data/source-library-youtube-data.js"></script>
   <script src="data/preview-manifest.js"></script>
+  <script src="data/micro-pack-manifest.js"></script>
   <script>
     const thumbRoot='assets/thumbs-360/';
     const videoRoots={
@@ -50,10 +51,11 @@
       r2:'https://source-media.oosu.dev/previews/',
       b2:'https://source-media-b2.oosu.dev/previews/'
     };
-    const microPreviewRoots={b2:'https://source-media-b2.oosu.dev/micro-previews/'};
     const videoUrl=item=>`${videoRoots[item.media]||videoRoots.r2}${item.clip}`;
     const previewUrl=item=>item.preview?`${previewRoots[item.previewMedia||item.media]||previewRoots.r2}${item.preview}`:'';
-    const microPreviewUrl=item=>item.previewMicro?`${microPreviewRoots[item.previewMicroMedia||'b2']}${item.previewMicro}`:'';
+    // 5-second / 180px previews live in 15 same-origin packs on GitHub Pages.
+    // This replaces 731 B2 reads on every new browser cache with 15 requests.
+    const microPreviewUrl=item=>item.previewMicro||'';
     const items=window.SOURCE_LIBRARY||[];
     // Do not couple hover playback to asynchronously fetched metadata: if one
     // metadata request fails, valid preview mappings must still be available.
@@ -86,9 +88,9 @@
     let searchResultIds=null,searchRequestId=0,searchReady=false,resultKey='';
     const thumbnailState=new Map(),thumbnailQueue=[];
     let thumbnailActive=0,thumbnailObserver=null,thumbnailPauseUntil=0,thumbnailResumeTimer=0;
-    const previewState=new Map(),previewQueue=[],microObjectUrls=new Map();
+    const previewState=new Map(),previewQueue=[],microObjectUrls=new Map(),microPackLoads=new Map();
     let previewActive=0,previewObserver=null;
-    const microCacheName=`source-archive-micro-${window.SOURCE_ARCHIVE_BUILD?.version||'dev'}`;
+    const microCacheName=`source-archive-micro-packs-${window.SOURCE_ARCHIVE_BUILD?.version||'dev'}`;
     const thumbnailConcurrency=matchMedia('(max-width:700px)').matches?3:4;
     const metric=(group,values)=>dispatchEvent(new CustomEvent('source-archive:metric',{detail:{group,values}}));
     function seededShuffle(list,seed=20260829){
@@ -217,17 +219,40 @@
           // preview download compete until that frame is already on screen.
           if(!tile.dataset.microStarted){tile.dataset.microStarted='1';setTimeout(()=>{if(wanted())warmStandardPreview(tile)},700)}
         });
-        const start=()=>{if(!tile.dataset.micro||active===tile)return;if(active&&active!==tile)stop(active);pauseThumbnailWarmup();active=tile;tile.dataset.previewWanted='1';tile.dataset.hoverAt=performance.now();tile.dataset.microStarted='';queuePreview(tile.dataset.micro,4);preview.muted=true;preview.defaultMuted=true;preview.autoplay=true;preview.playsInline=true;preview.preload='auto';if(!preview.src){preview.src=microObjectUrls.get(tile.dataset.micro)||tile.dataset.micro;preview.load()}else{try{preview.currentTime=0}catch{}};play()};
+        const start=()=>{if(!tile.dataset.micro||active===tile)return;if(active&&active!==tile)stop(active);pauseThumbnailWarmup();active=tile;tile.dataset.previewWanted='1';tile.dataset.hoverAt=performance.now();tile.dataset.microStarted='';queuePreview(tile.dataset.micro,4);preview.muted=true;preview.defaultMuted=true;preview.autoplay=true;preview.playsInline=true;preview.preload='auto';const cached=microObjectUrls.get(tile.dataset.micro);if(!preview.src&&cached){preview.src=cached;preview.load()}else if(!preview.src){cacheMicroPreview(tile.dataset.micro).then(()=>{if(wanted()&&!preview.src){preview.src=microObjectUrls.get(tile.dataset.micro);preview.load();play()}}).catch(()=>{})}else{try{preview.currentTime=0}catch{}};play()};
         tile.addEventListener('pointerenter',start);
         tile.addEventListener('mouseenter',start);
         tile.addEventListener('mouseleave',()=>stop(tile));
         tile.addEventListener('pointerleave',()=>stop(tile));
       });
     }
-    async function cacheMicroPreview(url){
-      const cache=await caches.open(microCacheName);let response=await cache.match(url);
-      if(!response){const network=await fetch(url,{mode:'cors',cache:'force-cache'});if(!network.ok)throw new Error(`micro preview ${network.status}`);cache.put(url,network.clone()).catch(()=>{});response=network}
-      const blob=await response.blob();const previous=microObjectUrls.get(url);if(previous)URL.revokeObjectURL(previous);microObjectUrls.set(url,URL.createObjectURL(blob));
+    function unpackStoredZip(buffer){
+      const bytes=new Uint8Array(buffer),view=new DataView(buffer);let end=-1;
+      for(let index=bytes.length-22;index>=Math.max(0,bytes.length-65558);index-=1){if(view.getUint32(index,true)===0x06054b50){end=index;break}}
+      if(end<0)throw new Error('Invalid micro preview pack');
+      const entries=view.getUint16(end+10,true),directory=view.getUint32(end+16,true),decoder=new TextDecoder();const files=new Map();let cursor=directory;
+      for(let index=0;index<entries;index+=1){
+        if(view.getUint32(cursor,true)!==0x02014b50)throw new Error('Invalid micro preview directory');
+        const method=view.getUint16(cursor+10,true),size=view.getUint32(cursor+24,true),nameLength=view.getUint16(cursor+28,true),extraLength=view.getUint16(cursor+30,true),commentLength=view.getUint16(cursor+32,true),offset=view.getUint32(cursor+42,true),name=decoder.decode(bytes.slice(cursor+46,cursor+46+nameLength));
+        if(method!==0)throw new Error('Compressed micro preview pack');
+        const localNameLength=view.getUint16(offset+26,true),localExtraLength=view.getUint16(offset+28,true),start=offset+30+localNameLength+localExtraLength;
+        files.set(name,new Blob([bytes.slice(start,start+size)],{type:'video/mp4'}));cursor+=46+nameLength+extraLength+commentLength;
+      }
+      return files;
+    }
+    async function loadMicroPack(pack){
+      if(microPackLoads.has(pack))return microPackLoads.get(pack);
+      const task=(async()=>{
+        const cache=await caches.open(microCacheName),url=`assets/micro-packs/${pack}`;let response=await cache.match(url);
+        if(!response){response=await fetch(url,{cache:'force-cache'});if(!response.ok)throw new Error(`micro preview pack ${response.status}`);cache.put(url,response.clone()).catch(()=>{})}
+        for(const [name,blob] of unpackStoredZip(await response.arrayBuffer())){if(!microObjectUrls.has(name))microObjectUrls.set(name,URL.createObjectURL(blob))}
+      })();
+      microPackLoads.set(pack,task);return task;
+    }
+    async function cacheMicroPreview(file){
+      if(microObjectUrls.has(file))return;
+      const pack=window.SOURCE_ARCHIVE_MICRO_PACKS?.[file];if(!pack)throw new Error('Unknown micro preview');
+      await loadMicroPack(pack);if(!microObjectUrls.has(file))throw new Error('Missing packed micro preview');
     }
     function pumpPreviewQueue(){
       while(previewActive<8&&previewQueue.length){
@@ -255,8 +280,8 @@
       tiles.slice(0,48).forEach(tile=>queuePreview(tile.dataset.micro,2));
       previewObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){queuePreview(entry.target.dataset.micro,3);attachPreview(entry.target)}}),{rootMargin:'2500px 0px'});
       tiles.forEach(tile=>previewObserver.observe(tile));
-      // Every 5-second micro preview is fully fetched into Cache Storage. Once
-      // this 14MB warmup completes, any card can begin playback immediately.
+      // 731 micro clips are bundled into only 15 same-origin packs. Fetching all
+      // packs keeps any-hover playback immediate without exhausting B2 reads.
       setTimeout(()=>tiles.forEach(tile=>queuePreview(tile.dataset.micro)),0);
     }
     function bindImageRecovery(root){
