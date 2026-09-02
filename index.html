@@ -12,7 +12,6 @@
     .search-toggle,.search-close{flex:0 0 auto;width:34px;height:28px;display:grid;place-items:center;border:0;background:#0b0b0b;color:rgba(255,255,255,.62);cursor:pointer;padding:0}.search-toggle{margin-left:12px;position:relative;z-index:2;box-shadow:-14px 0 18px #0b0b0b}.search-toggle:hover,.search-toggle:focus-visible,.search-close:hover,.search-close:focus-visible{color:#fff;outline:none}.search-toggle svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.5}.search-shell{display:flex;align-items:center;width:100%;gap:10px}.search-mark{flex:0 0 auto;width:15px;height:15px;fill:none;stroke:rgba(255,255,255,.48);stroke-width:1.5}.archive-search{min-width:0;flex:1;border:0;outline:0;background:transparent;color:#fff;font:500 11px/1.2 ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;letter-spacing:.08em}.archive-search::placeholder{color:rgba(255,255,255,.28)}.search-empty{grid-column:1/-1;min-height:35vh;display:grid;place-items:center;color:rgba(255,255,255,.34);font:500 11px/1 ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;letter-spacing:.12em;text-transform:uppercase}
     .gallery-sentinel{grid-column:1/-1;height:1px}.tile.thumbnail-error{background:linear-gradient(135deg,#151515,#202020)}.tile.thumbnail-error::before{content:"THUMBNAIL UNAVAILABLE";position:absolute;inset:0;display:grid;place-items:center;color:rgba(255,255,255,.28);font:9px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.12em}.tile.thumbnail-error img{visibility:hidden}.performance-dashboard{position:fixed;z-index:99;right:12px;bottom:12px;white-space:pre;padding:10px 12px;border:1px solid rgba(255,255,255,.18);background:rgba(0,0,0,.82);color:#a8ffbd;font:10px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace;pointer-events:none;backdrop-filter:blur(10px)}
   </style>
-  <style>.tile.previewing.standard-previewing .tile-preview{opacity:0}.tile.previewing.standard-previewing .tile-preview-standard{opacity:1}</style>
 </head>
 <body>
   <nav id="filters" class="filters" aria-label="Archive filters"></nav>
@@ -41,7 +40,6 @@
   <script src="data/source-library-data.js"></script>
   <script src="data/source-library-youtube-data.js"></script>
   <script src="data/preview-manifest.js"></script>
-  <script src="data/micro-pack-manifest.js"></script>
   <script src="assets/vendor/hls.min.js"></script>
   <script>
     const thumbRoot='assets/thumbs-360/';
@@ -56,14 +54,11 @@
     const videoUrl=item=>`${videoRoots[item.media]||videoRoots.r2}${item.clip}`;
     const previewUrl=item=>item.preview?`${previewRoots[item.previewMedia||item.media]||previewRoots.r2}${item.preview}`:'';
     const hlsPreviewUrl=item=>item.preview?`https://source-media.oosu.dev/hls/${item.preview.replace(/-preview\.mp4$/, '')}/master.m3u8`:'';
-    // 5-second / 180px previews live in 15 same-origin packs on GitHub Pages.
-    // This replaces 731 B2 reads on every new browser cache with 15 requests.
-    const microPreviewUrl=item=>item.previewMicro||'';
     const items=window.SOURCE_LIBRARY||[];
     // Do not couple hover playback to asynchronously fetched metadata: if one
     // metadata request fails, valid preview mappings must still be available.
     const previewById=new Map((window.SOURCE_ARCHIVE_PREVIEWS||[]).map(entry=>[entry.id,entry]));
-    items.forEach(item=>{const entry=previewById.get(item.id);if(entry){item.preview=entry.file;item.previewMedia=entry.media;item.previewMicro=entry.micro;item.previewMicroMedia=entry.microMedia}});
+    items.forEach(item=>{const entry=previewById.get(item.id);if(entry){item.preview=entry.file;item.previewMedia=entry.media}});
     const params=new URLSearchParams(location.search);
     const selected=params.get('clip');
     const gallery=document.querySelector('#gallery');
@@ -91,9 +86,8 @@
     let searchResultIds=null,searchRequestId=0,searchReady=false,resultKey='';
     const thumbnailState=new Map(),thumbnailQueue=[];
     let thumbnailActive=0,thumbnailObserver=null,thumbnailPauseUntil=0,thumbnailResumeTimer=0;
-    const previewState=new Map(),previewQueue=[],microObjectUrls=new Map(),microPackLoads=new Map();
+    const previewState=new Map(),previewQueue=[];
     let previewActive=0,previewObserver=null;
-    const microCacheName=`source-archive-micro-packs-${window.SOURCE_ARCHIVE_BUILD?.version||'dev'}`;
     const thumbnailConcurrency=matchMedia('(max-width:700px)').matches?3:4;
     const metric=(group,values)=>dispatchEvent(new CustomEvent('source-archive:metric',{detail:{group,values}}));
     function seededShuffle(list,seed=20260829){
@@ -206,9 +200,9 @@
     }
     function bindTilePreviews(root){
       let active=null;
-      const stop=tile=>{if(!tile)return;const preview=tile.querySelector('.tile-preview'),standard=tile.querySelector('.tile-preview-standard');if(!preview)return;delete tile.dataset.previewWanted;preview.pause();standard?.pause();tile.classList.remove('previewing','standard-previewing');try{preview.currentTime=0;standard.currentTime=0}catch{}if(active===tile)active=null};
-      root.querySelectorAll('.tile[data-preview]:not([data-bound])').forEach(tile=>{
-        tile.dataset.bound='1';const preview=tile.querySelector('.tile-preview'),standard=tile.querySelector('.tile-preview-standard');if(!preview||!standard)return;
+      const stop=tile=>{if(!tile)return;const preview=tile.querySelector('.tile-preview');if(!preview)return;delete tile.dataset.previewWanted;preview.pause();tile._hlsPreview?.destroy();tile._hlsPreview=null;preview.removeAttribute('src');preview.load();tile.classList.remove('previewing');if(active===tile)active=null};
+      root.querySelectorAll('.tile[data-hls]:not([data-bound])').forEach(tile=>{
+        tile.dataset.bound='1';const preview=tile.querySelector('.tile-preview');if(!preview)return;
         const wanted=()=>active===tile&&tile.dataset.previewWanted==='1';
         const reveal=()=>{if(wanted())tile.classList.add('previewing')};
         const play=()=>{if(wanted())preview.play().catch(()=>{})};
@@ -216,97 +210,50 @@
         // Some browsers resolve muted autoplay slightly later than canplay.
         preview.addEventListener('loadeddata',reveal);
         preview.addEventListener('canplay',()=>{reveal();play()});
+        preview.addEventListener('ended',()=>{if(wanted()){try{preview.currentTime=0}catch{}play()}});
         preview.addEventListener('playing',()=>{
           reveal();metric('media',{firstFrame:performance.now()-Number(tile.dataset.hoverAt||performance.now())});
-          // The 180px micro preview owns the first frame.  Do not let a 10-second
-          // preview download compete until that frame is already on screen.
-          if(!tile.dataset.microStarted){tile.dataset.microStarted='1';setTimeout(()=>{if(wanted())warmStandardPreview(tile)},700)}
         });
-        const start=()=>{if(!tile.dataset.micro||active===tile)return;if(active&&active!==tile)stop(active);pauseThumbnailWarmup();active=tile;tile.dataset.previewWanted='1';tile.dataset.hoverAt=performance.now();tile.dataset.microStarted='';queuePreview(tile.dataset.micro,4);preview.muted=true;preview.defaultMuted=true;preview.autoplay=true;preview.playsInline=true;preview.preload='auto';const cached=microObjectUrls.get(tile.dataset.micro);if(!preview.src&&cached){preview.src=cached;preview.load()}else if(!preview.src){cacheMicroPreview(tile.dataset.micro).then(()=>{if(wanted()&&!preview.src){preview.src=microObjectUrls.get(tile.dataset.micro);preview.load();play()}}).catch(()=>{})}else{try{preview.currentTime=0}catch{}};play()};
+        const start=()=>{if(active===tile)return;if(active&&active!==tile)stop(active);pauseThumbnailWarmup();active=tile;tile.dataset.previewWanted='1';tile.dataset.hoverAt=performance.now();preview.muted=true;preview.defaultMuted=true;preview.autoplay=true;preview.playsInline=true;preview.preload='auto';startHlsPreview(tile)};
         tile.addEventListener('pointerenter',start);
         tile.addEventListener('mouseenter',start);
         tile.addEventListener('mouseleave',()=>stop(tile));
         tile.addEventListener('pointerleave',()=>stop(tile));
       });
     }
-    function unpackStoredZip(buffer){
-      const bytes=new Uint8Array(buffer),view=new DataView(buffer);let end=-1;
-      for(let index=bytes.length-22;index>=Math.max(0,bytes.length-65558);index-=1){if(view.getUint32(index,true)===0x06054b50){end=index;break}}
-      if(end<0)throw new Error('Invalid micro preview pack');
-      const entries=view.getUint16(end+10,true),directory=view.getUint32(end+16,true),decoder=new TextDecoder();const files=new Map();let cursor=directory;
-      for(let index=0;index<entries;index+=1){
-        if(view.getUint32(cursor,true)!==0x02014b50)throw new Error('Invalid micro preview directory');
-        const method=view.getUint16(cursor+10,true),size=view.getUint32(cursor+24,true),nameLength=view.getUint16(cursor+28,true),extraLength=view.getUint16(cursor+30,true),commentLength=view.getUint16(cursor+32,true),offset=view.getUint32(cursor+42,true),name=decoder.decode(bytes.slice(cursor+46,cursor+46+nameLength));
-        if(method!==0)throw new Error('Compressed micro preview pack');
-        const localNameLength=view.getUint16(offset+26,true),localExtraLength=view.getUint16(offset+28,true),start=offset+30+localNameLength+localExtraLength;
-        files.set(name,new Blob([bytes.slice(start,start+size)],{type:'video/mp4'}));cursor+=46+nameLength+extraLength+commentLength;
-      }
-      return files;
-    }
-    async function loadMicroPack(pack){
-      if(microPackLoads.has(pack))return microPackLoads.get(pack);
-      const task=(async()=>{
-        const cache=await caches.open(microCacheName),url=`assets/micro-packs/${pack}`;let response=await cache.match(url);
-        if(!response){response=await fetch(url,{cache:'force-cache'});if(!response.ok)throw new Error(`micro preview pack ${response.status}`);cache.put(url,response.clone()).catch(()=>{})}
-        for(const [name,blob] of unpackStoredZip(await response.arrayBuffer())){if(!microObjectUrls.has(name))microObjectUrls.set(name,URL.createObjectURL(blob))}
-      })();
-      microPackLoads.set(pack,task);return task;
-    }
-    async function cacheMicroPreview(file){
-      if(microObjectUrls.has(file))return;
-      const pack=window.SOURCE_ARCHIVE_MICRO_PACKS?.[file];if(!pack)throw new Error('Unknown micro preview');
-      await loadMicroPack(pack);if(!microObjectUrls.has(file))throw new Error('Missing packed micro preview');
-    }
     function pumpPreviewQueue(){
       while(previewActive<8&&previewQueue.length){
         const url=previewQueue.shift();if(previewState.get(url)!=='queued')continue;
         previewActive+=1;previewState.set(url,'warming');
-        cacheMicroPreview(url).then(()=>previewState.set(url,'ready')).catch(()=>previewState.set(url,'error')).finally(()=>{previewActive-=1;pumpPreviewQueue()});
+        warmHlsStart(url).then(()=>previewState.set(url,'ready')).catch(()=>previewState.set(url,'error')).finally(()=>{previewActive-=1;pumpPreviewQueue()});
       }
     }
     function queuePreview(url,priority=0){
       if(!url)return;const state=previewState.get(url);if(state==='ready'||state==='warming'||state==='queued')return;
       previewState.set(url,'queued');if(priority)previewQueue.unshift(url);else previewQueue.push(url);pumpPreviewQueue();
     }
-    function attachPreview(tile){
-      const url=tile.dataset.micro,preview=tile.querySelector('.tile-preview');if(!url||!preview||preview.src)return;
-      const cached=microObjectUrls.get(url);if(cached){preview.preload='auto';preview.src=cached;preview.load()}else queuePreview(url,2);
+    async function warmHlsStart(master){
+      // Cache the only assets needed to paint a 180p first frame. HLS playback
+      // later reads these from the browser HTTP cache, with no second source.
+      const base=master.slice(0,master.lastIndexOf('/')+1),low=`${base}vlow/index.m3u8`;
+      await fetch(master,{cache:'force-cache'});await fetch(low,{cache:'force-cache'});await fetch(`${base}vlow/seg_000.ts`,{cache:'force-cache'});
     }
-    function warmStandardPreview(tile){
-      const url=tile.dataset.preview,hlsUrl=tile.dataset.hls,micro=tile.querySelector('.tile-preview'),standard=tile.querySelector('.tile-preview-standard');if(!url||!micro||!standard||tile.dataset.standardWarm)return;tile.dataset.standardWarm='1';
-      standard.muted=true;standard.defaultMuted=true;standard.playsInline=true;standard.preload='auto';
-      let alignmentAttempts=0;
-      const targetTime=()=>{const duration=Number.isFinite(standard.duration)&&standard.duration>0?standard.duration:0;return duration?Math.min(Math.max(.04,micro.currentTime%duration),Math.max(.04,duration-.04)):0};
-      const revealStandard=()=>{
-        if(tile.dataset.previewWanted!=='1')return;
-        const correct=()=>{
-          if(tile.dataset.previewWanted!=='1')return;
-          // `seeked` is asynchronous: measure again on the decoded frame, not
-          // at metadata time. Hidden re-seeks keep the visible micro continuous.
-          if(alignmentAttempts<3&&Math.abs(targetTime()-standard.currentTime)>.055){alignmentAttempts+=1;standard.pause();standard.addEventListener('seeked',revealStandard,{once:true});standard.currentTime=targetTime();return}
-          tile.classList.add('standard-previewing');micro.pause();
-        };
-        standard.play().then(()=>{if('requestVideoFrameCallback'in standard)standard.requestVideoFrameCallback(correct);else requestAnimationFrame(correct)}).catch(()=>{});
-      };
-      standard.addEventListener('loadedmetadata',()=>{
-        // Both encodes start on the same source frame. Seek before exposing the
-        // second layer, so quality changes at the current playback position.
-        standard.addEventListener('seeked',revealStandard,{once:true});standard.currentTime=targetTime();
-      },{once:true});
-      if(hlsUrl&&window.Hls?.isSupported()){
+    function startHlsPreview(tile){
+      const hlsUrl=tile.dataset.hls,preview=tile.querySelector('.tile-preview');if(!hlsUrl||!preview)return;
+      if(window.Hls?.isSupported()){
         const player=new window.Hls({autoStartLoad:true,startLevel:0,capLevelToPlayerSize:true,maxBufferLength:8,maxMaxBufferLength:12});tile._hlsPreview=player;
-        player.on(window.Hls.Events.ERROR,(_,data)=>{if(data.fatal){player.destroy();tile._hlsPreview=null;standard.src=url;standard.load()}});
-        player.loadSource(hlsUrl);player.attachMedia(standard);
-      }else if(hlsUrl&&standard.canPlayType('application/vnd.apple.mpegurl')){standard.src=hlsUrl;standard.load()}else{standard.src=url;standard.load()}
+        player.on(window.Hls.Events.ERROR,(_,data)=>{if(data.fatal){player.destroy();tile._hlsPreview=null;preview.src=tile.dataset.preview;preview.load()}});
+        player.loadSource(hlsUrl);player.attachMedia(preview);
+      }else if(preview.canPlayType('application/vnd.apple.mpegurl')){preview.src=hlsUrl;preview.load()}else{preview.src=tile.dataset.preview;preview.load()}
     }
     function preparePreviews(root){
-      previewObserver?.disconnect();const tiles=[...root.querySelectorAll('.tile[data-micro]')];
-      tiles.slice(0,48).forEach(tile=>queuePreview(tile.dataset.micro,2));
-      previewObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){queuePreview(entry.target.dataset.micro,3);attachPreview(entry.target)}}),{rootMargin:'2500px 0px'});
+      previewObserver?.disconnect();const tiles=[...root.querySelectorAll('.tile[data-hls]')];
+      tiles.slice(0,48).forEach(tile=>queuePreview(tile.dataset.hls,2));
+      previewObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting)queuePreview(entry.target.dataset.hls,3)}),{rootMargin:'2500px 0px'});
       tiles.forEach(tile=>previewObserver.observe(tile));
-      // 731 micro clips are bundled into only 15 same-origin packs. Fetching all
-      // packs keeps any-hover playback immediate without exhausting B2 reads.
-      setTimeout(()=>tiles.forEach(tile=>queuePreview(tile.dataset.micro)),0);
+      // Warm every 180p first segment after rendering. This is deliberately
+      // independent of scrolling so a jump to any tile is equally responsive.
+      setTimeout(()=>tiles.forEach(tile=>queuePreview(tile.dataset.hls)),0);
     }
     function bindImageRecovery(root){
       root.querySelectorAll('.tile img:not([data-recovery-bound])').forEach(img=>{
@@ -380,7 +327,7 @@
       }else visible=activeFilter==='ALL'||searchMode?orderedItems:orderedItems.filter(item=>categoryFor(item)===activeFilter);
       const contextQuery=searchMode?`&q=${encodeURIComponent(searchQuery)}`:activeFilter==='ALL'?'':`&filter=${encodeURIComponent(activeFilter)}`;
       const key=`${activeFilter}|${searchQuery}|${visible.map(item=>item.id).join(',')}`;resultKey=key;
-      gallery.innerHTML=visible.length?visible.map(item=>{const preview=previewUrl(item),hls=hlsPreviewUrl(item),micro=microPreviewUrl(item),thumb=`${thumbRoot}${item.thumb}`,lowThumb=`assets/thumbs-low/${item.thumb}`;return `<a class="tile thumbnail-loading" href="?clip=${item.publicId}${contextQuery}" aria-label="${item.publicId} ${item.title}"${preview?` data-preview="${preview}"`:''}${hls?` data-hls="${hls}"`:''}${micro?` data-micro="${micro}"`:''}><img src="${lowThumb}" data-low="${lowThumb}" data-thumb="${thumb}" alt="" decoding="async" fetchpriority="low" width="240" height="135">${micro?'<video class="tile-preview" muted autoplay playsinline loop preload="none"></video><video class="tile-preview tile-preview-standard" muted autoplay playsinline loop preload="none"></video>':''}<span class="n">${item.publicId}</span><span class="tile-title">${item.title}</span></a>`}).join(''):'<div class="search-empty">NO MATCHES</div>';
+      gallery.innerHTML=visible.length?visible.map(item=>{const preview=previewUrl(item),hls=hlsPreviewUrl(item),thumb=`${thumbRoot}${item.thumb}`,lowThumb=`assets/thumbs-low/${item.thumb}`;return `<a class="tile thumbnail-loading" href="?clip=${item.publicId}${contextQuery}" aria-label="${item.publicId} ${item.title}"${preview?` data-preview="${preview}"`:''}${hls?` data-hls="${hls}"`:''}><img src="${lowThumb}" data-low="${lowThumb}" data-thumb="${thumb}" alt="" decoding="async" fetchpriority="low" width="240" height="135">${hls?'<video class="tile-preview" muted autoplay playsinline loop preload="none"></video>':''}<span class="n">${item.publicId}</span><span class="tile-title">${item.title}</span></a>`}).join(''):'<div class="search-empty">NO MATCHES</div>';
       bindImageRecovery(gallery);bindTilePreviews(gallery);preparePreviews(gallery);prepareThumbnails(gallery);
     }
     async function prepareGallery(){
