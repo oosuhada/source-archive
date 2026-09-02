@@ -50,7 +50,7 @@ self.addEventListener('fetch',event=>{
   });
   const isMetadata=url.pathname.includes('/data/')||url.pathname.endsWith('/index.html')||url.pathname.endsWith('/');
   if(isMetadata){event.respondWith(retry(event.request).then(async response=>{if(response.ok){const copy=response.clone();await caches.open(VERSION).then(cache=>cache.put(event.request,copy))}else{const cached=await caches.match(event.request);if(cached)return cached}return response}).catch(()=>caches.match(event.request)));return}
-  if(url.pathname.includes('/assets/thumbs/')){event.respondWith(caches.open(VERSION).then(async cache=>{
+  if(url.pathname.includes('/assets/thumbs/')||url.pathname.includes('/assets/thumbs-low/')){event.respondWith(caches.open(VERSION).then(async cache=>{
     const hit=await cache.match(event.request);
     if(hit&&hit.ok&&String(hit.headers.get('content-type')||'').startsWith('image/'))return hit;
     if(hit)await cache.delete(event.request);

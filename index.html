@@ -217,7 +217,12 @@
     function bindImageRecovery(root){
       root.querySelectorAll('.tile img:not([data-recovery-bound])').forEach(img=>{
         img.dataset.recoveryBound='1';img.dataset.retryCount='0';
-        img.addEventListener('load',()=>{img.closest('.tile')?.classList.remove('thumbnail-error')});
+        const markLoaded=()=>{
+          const tile=img.closest('.tile');if(!tile)return;
+          tile.classList.remove('thumbnail-error','thumbnail-loading');
+          tile.classList.add(img.getAttribute('src')===img.dataset.low?'thumbnail-lowready':'thumbnail-ready');
+        };
+        img.addEventListener('load',markLoaded);if(img.complete&&img.naturalWidth)markLoaded();
         img.addEventListener('error',()=>{
           const attempt=Number(img.dataset.retryCount||0)+1;img.dataset.retryCount=String(attempt);
           if(attempt<=2){setTimeout(()=>{const url=new URL(img.src,location.href);url.searchParams.set('retry',`${window.SOURCE_ARCHIVE_BUILD?.version||'dev'}-${attempt}`);img.src=url.href},attempt*350);return}
@@ -258,14 +263,15 @@
     function prepareThumbnails(root){
       thumbnailObserver?.disconnect();
       const images=[...root.querySelectorAll('img[data-thumb]')];
-      // The first screen is requested immediately. The observer reaches over
-      // 5,000px ahead, while the background queue warms the entire archive.
+      // All cards receive a tiny 240px image immediately. The first screen's
+      // full-size images are requested next; the observer reaches 5,000px
+      // ahead and the complete high-resolution set warms in the background.
       images.slice(0,72).forEach(img=>queueThumbnail(img.dataset.thumb,2));
       thumbnailObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{
         if(entry.isIntersecting)queueThumbnail(entry.target.dataset.thumb,3);
       }),{rootMargin:'5000px 0px'});
       images.forEach(img=>thumbnailObserver.observe(img));
-      setTimeout(()=>images.forEach(img=>queueThumbnail(img.dataset.thumb)),0);
+      setTimeout(()=>images.forEach(img=>queueThumbnail(img.dataset.thumb)),1200);
     }
     function renderGallery(){
       let visible;
@@ -275,7 +281,7 @@
       }else visible=activeFilter==='ALL'||searchMode?orderedItems:orderedItems.filter(item=>categoryFor(item)===activeFilter);
       const contextQuery=searchMode?`&q=${encodeURIComponent(searchQuery)}`:activeFilter==='ALL'?'':`&filter=${encodeURIComponent(activeFilter)}`;
       const key=`${activeFilter}|${searchQuery}|${visible.map(item=>item.id).join(',')}`;resultKey=key;
-      gallery.innerHTML=visible.length?visible.map(item=>{const preview=previewUrl(item),thumb=`${thumbRoot}${item.thumb}`;return `<a class="tile thumbnail-loading" href="?clip=${item.publicId}${contextQuery}" aria-label="${item.publicId} ${item.title}"${preview?` data-preview="${preview}"`:''}><img data-thumb="${thumb}" alt="" decoding="async" width="960" height="540">${preview?'<video class="tile-preview" muted autoplay playsinline loop preload="none"></video>':''}<span class="n">${item.publicId}</span><span class="tile-title">${item.title}</span></a>`}).join(''):'<div class="search-empty">NO MATCHES</div>';
+      gallery.innerHTML=visible.length?visible.map(item=>{const preview=previewUrl(item),thumb=`${thumbRoot}${item.thumb}`,lowThumb=`assets/thumbs-low/${item.thumb}`;return `<a class="tile thumbnail-loading" href="?clip=${item.publicId}${contextQuery}" aria-label="${item.publicId} ${item.title}"${preview?` data-preview="${preview}"`:''}><img src="${lowThumb}" data-low="${lowThumb}" data-thumb="${thumb}" alt="" decoding="async" fetchpriority="low" width="240" height="135">${preview?'<video class="tile-preview" muted autoplay playsinline loop preload="none"></video>':''}<span class="n">${item.publicId}</span><span class="tile-title">${item.title}</span></a>`}).join(''):'<div class="search-empty">NO MATCHES</div>';
       bindImageRecovery(gallery);bindTilePreviews(gallery);prepareThumbnails(gallery);
     }
     async function prepareGallery(){
