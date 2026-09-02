@@ -87,7 +87,7 @@
     const thumbnailState=new Map(),thumbnailQueue=[];
     let thumbnailActive=0,thumbnailObserver=null,thumbnailPauseUntil=0,thumbnailResumeTimer=0;
     const previewState=new Map(),previewQueue=[];
-    let previewActive=0,previewObserver=null;
+    let previewActive=0,previewObserver=null,previewAbort=new AbortController(),previewEpoch=0,previewSettleTimer=0,previewRoot=null,previewScrollBound=false;
     const thumbnailConcurrency=matchMedia('(max-width:700px)').matches?3:4;
     const metric=(group,values)=>dispatchEvent(new CustomEvent('source-archive:metric',{detail:{group,values}}));
     function seededShuffle(list,seed=20260829){
@@ -214,7 +214,7 @@
         preview.addEventListener('playing',()=>{
           reveal();metric('media',{firstFrame:performance.now()-Number(tile.dataset.hoverAt||performance.now())});
         });
-        const start=()=>{if(active===tile)return;if(active&&active!==tile)stop(active);pauseThumbnailWarmup();active=tile;tile.dataset.previewWanted='1';tile.dataset.hoverAt=performance.now();preview.muted=true;preview.defaultMuted=true;preview.autoplay=true;preview.playsInline=true;preview.preload='auto';startHlsPreview(tile)};
+        const start=()=>{if(active===tile)return;if(active&&active!==tile)stop(active);pauseThumbnailWarmup();active=tile;tile.dataset.previewWanted='1';tile.dataset.hoverAt=performance.now();preview.muted=true;preview.defaultMuted=true;preview.autoplay=true;preview.playsInline=true;prioritizeHls([]);startHlsPreview(tile)};
         tile.addEventListener('pointerenter',start);
         tile.addEventListener('mouseenter',start);
         tile.addEventListener('mouseleave',()=>stop(tile));
@@ -223,20 +223,38 @@
     }
     function pumpPreviewQueue(){
       while(previewActive<8&&previewQueue.length){
-        const url=previewQueue.shift();if(previewState.get(url)!=='queued')continue;
+        const task=previewQueue.shift(),{url,epoch}=task;if(epoch!==previewEpoch||previewState.get(url)!=='queued')continue;
         previewActive+=1;previewState.set(url,'warming');
-        warmHlsStart(url).then(()=>previewState.set(url,'ready')).catch(()=>previewState.set(url,'error')).finally(()=>{previewActive-=1;pumpPreviewQueue()});
+        warmHlsStart(url,previewAbort.signal).then(()=>{if(epoch===previewEpoch)previewState.set(url,'ready')}).catch(()=>{if(epoch===previewEpoch)previewState.set(url,'error')}).finally(()=>{previewActive-=1;pumpPreviewQueue()});
       }
     }
     function queuePreview(url,priority=0){
       if(!url)return;const state=previewState.get(url);if(state==='ready'||state==='warming'||state==='queued')return;
-      previewState.set(url,'queued');if(priority)previewQueue.unshift(url);else previewQueue.push(url);pumpPreviewQueue();
+      previewState.set(url,'queued');const task={url,epoch:previewEpoch};if(priority)previewQueue.unshift(task);else previewQueue.push(task);pumpPreviewQueue();
     }
-    async function warmHlsStart(master){
+    function prioritizeHls(urls){
+      // Stop obsolete downloads immediately. New viewport/hover assets always
+      // get a fresh network lane rather than waiting behind old scroll work.
+      previewAbort.abort();previewAbort=new AbortController();previewEpoch+=1;previewQueue.length=0;previewState.clear();
+      urls.filter(Boolean).forEach(url=>queuePreview(url));
+    }
+    function prioritizeViewport(root){
+      const center=innerHeight/2,tiles=[...root.querySelectorAll('.tile[data-hls]')]
+        .map(tile=>({tile,distance:Math.abs((tile.getBoundingClientRect().top+tile.getBoundingClientRect().bottom)/2-center)}))
+        .filter(entry=>entry.tile.getBoundingClientRect().bottom>-innerHeight&&entry.tile.getBoundingClientRect().top<innerHeight*2)
+        .sort((a,b)=>a.distance-b.distance)
+        .slice(0,36);
+      prioritizeHls(tiles.map(entry=>entry.tile.dataset.hls));
+    }
+    function scheduleViewportPriority(){
+      clearTimeout(previewSettleTimer);previewSettleTimer=setTimeout(()=>{if(previewRoot)prioritizeViewport(previewRoot)},110);
+    }
+    async function warmHlsStart(master,signal){
       // Cache the only assets needed to paint a 180p first frame. HLS playback
       // later reads these from the browser HTTP cache, with no second source.
       const base=master.slice(0,master.lastIndexOf('/')+1),low=`${base}vlow/index.m3u8`;
-      await fetch(master,{cache:'force-cache'});await fetch(low,{cache:'force-cache'});await fetch(`${base}vlow/seg_000.ts`,{cache:'force-cache'});
+      const request=url=>fetch(url,{cache:'force-cache',signal}).then(response=>{if(!response.ok)throw new Error(`HLS warmup ${response.status}`);return response});
+      await request(master);await request(low);await request(`${base}vlow/seg_000.ts`);
     }
     function startHlsPreview(tile){
       const hlsUrl=tile.dataset.hls,preview=tile.querySelector('.tile-preview');if(!hlsUrl||!preview)return;
@@ -247,13 +265,11 @@
       }else if(preview.canPlayType('application/vnd.apple.mpegurl')){preview.src=hlsUrl;preview.load()}else{preview.src=tile.dataset.preview;preview.load()}
     }
     function preparePreviews(root){
-      previewObserver?.disconnect();const tiles=[...root.querySelectorAll('.tile[data-hls]')];
-      tiles.slice(0,48).forEach(tile=>queuePreview(tile.dataset.hls,2));
-      previewObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting)queuePreview(entry.target.dataset.hls,3)}),{rootMargin:'2500px 0px'});
+      previewObserver?.disconnect();previewRoot=root;const tiles=[...root.querySelectorAll('.tile[data-hls]')];
+      prioritizeViewport(root);
+      previewObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting)queuePreview(entry.target.dataset.hls,3)}),{rootMargin:'900px 0px'});
       tiles.forEach(tile=>previewObserver.observe(tile));
-      // Warm every 180p first segment after rendering. This is deliberately
-      // independent of scrolling so a jump to any tile is equally responsive.
-      setTimeout(()=>tiles.forEach(tile=>queuePreview(tile.dataset.hls)),0);
+      if(!previewScrollBound){previewScrollBound=true;addEventListener('scroll',scheduleViewportPriority,{passive:true})}
     }
     function bindImageRecovery(root){
       root.querySelectorAll('.tile img:not([data-recovery-bound])').forEach(img=>{
