@@ -53,7 +53,9 @@
     };
     const videoUrl=item=>`${videoRoots[item.media]||videoRoots.r2}${item.clip}`;
     const previewUrl=item=>item.preview?`${previewRoots[item.previewMedia||item.media]||previewRoots.r2}${item.preview}`:'';
-    const hlsPreviewUrl=item=>item.preview?`https://source-media.oosu.dev/hls/${item.preview.replace(/-preview\.mp4$/, '')}/master.m3u8`:'';
+    // The viewport-aware scheduler keeps the active window small enough that
+    // every hover can start at the archive's full 360p preview quality.
+    const hlsPreviewUrl=item=>item.preview?`https://source-media.oosu.dev/hls/${item.preview.replace(/-preview\.mp4$/, '')}/vhigh/index.m3u8`:'';
     const items=window.SOURCE_LIBRARY||[];
     // Do not couple hover playback to asynchronously fetched metadata: if one
     // metadata request fails, valid preview mappings must still be available.
@@ -250,11 +252,11 @@
       clearTimeout(previewSettleTimer);previewSettleTimer=setTimeout(()=>{if(previewRoot)prioritizeViewport(previewRoot)},110);
     }
     async function warmHlsStart(master,signal){
-      // Cache the only assets needed to paint a 180p first frame. HLS playback
-      // later reads these from the browser HTTP cache, with no second source.
-      const base=master.slice(0,master.lastIndexOf('/')+1),low=`${base}vlow/index.m3u8`;
+      // Cache the 360p playlist and its first segment. Playback later reads
+      // these from the browser HTTP cache, with no quality/source switch.
+      const base=master.slice(0,master.lastIndexOf('/')+1);
       const request=url=>fetch(url,{cache:'force-cache',signal}).then(response=>{if(!response.ok)throw new Error(`HLS warmup ${response.status}`);return response});
-      await request(master);await request(low);await request(`${base}vlow/seg_000.ts`);
+      await request(master);await request(`${base}seg_000.ts`);
     }
     function startHlsPreview(tile){
       const hlsUrl=tile.dataset.hls,preview=tile.querySelector('.tile-preview');if(!hlsUrl||!preview)return;
