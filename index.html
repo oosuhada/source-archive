@@ -473,7 +473,7 @@
       const requestBootStatus=()=>navigator.serviceWorker.controller?.postMessage({type:'hls-boot-status'});
       navigator.serviceWorker.addEventListener('message',event=>{if(event.data?.type==='hls-boot-ready')enableBootHls()});
       navigator.serviceWorker.addEventListener('controllerchange',requestBootStatus);
-      navigator.serviceWorker.register(`sw.js?v=${encodeURIComponent(window.SOURCE_ARCHIVE_BUILD?.version||'dev')}`).then(registration=>registration.update()).then(requestBootStatus).catch(()=>{});
+      navigator.serviceWorker.register('sw.js?boot=hls-pack-v1',{updateViaCache:'none'}).then(registration=>registration.update()).then(requestBootStatus).catch(()=>{});
     }
   </script>
 </body>
