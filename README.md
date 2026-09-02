@@ -191,8 +191,8 @@ The `archive quality` workflow runs on every pull request. It validates 731 meta
 
 `archive quality` workflow는 모든 pull request에서 실행됩니다. 731개 메타데이터와 썸네일을 검사하고, 폐기한 visual theme의 재사용을 차단하며, import 영상 속성과 실제 `206 Partial Content` 응답을 확인합니다. 일시적인 네트워크 오류에는 재시도를 적용하며 저장소 변경이 병합된 후 GitHub Pages가 배포됩니다.
 
-## Remaining Work / 남은 과제
+## Optional Detail-Page Rendition / 선택적 상세 페이지 Rendition
 
-The next major optimization is a complete 540p or low-bitrate 720p review set for detail pages. The preview path should continue to be tested with cold caches, fast long-distance scrolling, and Safari/iOS native HLS as the catalog grows. These are documented as future work rather than claimed as completed features.
+Hover preview delivery is complete: all 731 gallery items use the adaptive 180p/360p HLS path described above. A separate 540p or low-bitrate 720p review rendition for the full-screen detail page is an optional future enhancement, not a missing requirement for gallery preview performance. It would require re-encoding and storing a second full-detail set, so it should be pursued only when faster detail-page scrubbing is worth the additional storage and transfer cost.
 
-다음 주요 과제는 상세 페이지 전체에 사용할 540p 또는 저비트레이트 720p review 세트를 만드는 것입니다. Preview 경로는 카탈로그가 늘어날수록 cold cache, 장거리 빠른 스크롤, Safari/iOS native HLS 환경에서 계속 검증합니다. 아직 구현하지 않은 기능은 완료된 것처럼 표현하지 않고 후속 과제로 명시합니다.
+Hover preview 전송 경로는 완료된 상태입니다. 731개 갤러리 항목 전체가 위에서 설명한 적응형 180p/360p HLS 경로를 사용합니다. 전체 화면 상세 페이지용 540p 또는 저비트레이트 720p review rendition은 갤러리 preview 성능에 남은 필수 작업이 아니라 선택적인 후속 개선입니다. 별도의 전체 detail 세트를 재인코딩·저장해야 하므로, 상세 페이지 스크럽 속도를 더 높일 필요가 저장 공간과 전송량 증가보다 클 때 진행합니다.
