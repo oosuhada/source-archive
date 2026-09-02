@@ -90,7 +90,8 @@
     const thumbnailState=new Map(),thumbnailQueue=[];
     let thumbnailActive=0,thumbnailObserver=null,thumbnailPauseUntil=0,thumbnailResumeTimer=0;
     const previewState=new Map(),previewQueue=[];
-    let previewActive=0,previewObserver=null,previewAbort=new AbortController(),previewEpoch=0,previewSettleTimer=0,previewRoot=null,previewScrollBound=false;
+    let previewActive=0,previewObserver=null,previewSettleTimer=0,previewRoot=null,previewScrollBound=false;
+    const previewControllers=new Map();
     const thumbnailConcurrency=matchMedia('(max-width:700px)').matches?3:4;
     const metric=(group,values)=>dispatchEvent(new CustomEvent('source-archive:metric',{detail:{group,values}}));
     function seededShuffle(list,seed=20260829){
@@ -217,7 +218,7 @@
         preview.addEventListener('playing',()=>{
           reveal();metric('media',{firstFrame:performance.now()-Number(tile.dataset.hoverAt||performance.now())});
         });
-        const start=()=>{if(active===tile)return;if(active&&active!==tile)stop(active);pauseThumbnailWarmup();active=tile;tile.dataset.previewWanted='1';tile.dataset.hoverAt=performance.now();tile.classList.add('preview-pending');preview.muted=true;preview.defaultMuted=true;preview.autoplay=true;preview.playsInline=true;prioritizeHls([]);startHlsPreview(tile)};
+        const start=()=>{if(active===tile)return;if(active&&active!==tile)stop(active);pauseThumbnailWarmup();active=tile;tile.dataset.previewWanted='1';tile.dataset.hoverAt=performance.now();tile.classList.add('preview-pending');preview.muted=true;preview.defaultMuted=true;preview.autoplay=true;preview.playsInline=true;prioritizeHls([tile.dataset.hls]);startHlsPreview(tile)};
         tile.addEventListener('pointerenter',start);
         tile.addEventListener('mouseenter',start);
         tile.addEventListener('mouseleave',()=>stop(tile));
@@ -226,20 +227,23 @@
     }
     function pumpPreviewQueue(){
       while(previewActive<8&&previewQueue.length){
-        const task=previewQueue.shift(),{url,epoch}=task;if(epoch!==previewEpoch||previewState.get(url)!=='queued')continue;
+        const task=previewQueue.shift(),{url}=task;if(previewState.get(url)!=='queued')continue;
         previewActive+=1;previewState.set(url,'warming');
-        warmHlsStart(url,previewAbort.signal).then(()=>{if(epoch===previewEpoch)previewState.set(url,'ready')}).catch(()=>{if(epoch===previewEpoch)previewState.set(url,'error')}).finally(()=>{previewActive-=1;pumpPreviewQueue()});
+        const controller=new AbortController();previewControllers.set(url,controller);
+        warmHlsStart(url,controller.signal).then(()=>{if(previewControllers.get(url)===controller)previewState.set(url,'ready')}).catch(()=>{if(previewControllers.get(url)===controller)previewState.set(url,'error')}).finally(()=>{if(previewControllers.get(url)===controller)previewControllers.delete(url);previewActive-=1;pumpPreviewQueue()});
       }
     }
     function queuePreview(url,priority=0){
       if(!url)return;const state=previewState.get(url);if(state==='ready'||state==='warming'||state==='queued')return;
-      previewState.set(url,'queued');const task={url,epoch:previewEpoch};if(priority)previewQueue.unshift(task);else previewQueue.push(task);pumpPreviewQueue();
+      previewState.set(url,'queued');const task={url};if(priority)previewQueue.unshift(task);else previewQueue.push(task);pumpPreviewQueue();
     }
     function prioritizeHls(urls){
-      // Stop obsolete downloads immediately. New viewport/hover assets always
-      // get a fresh network lane rather than waiting behind old scroll work.
-      previewAbort.abort();previewAbort=new AbortController();previewEpoch+=1;previewQueue.length=0;previewState.clear();
-      urls.filter(Boolean).forEach(url=>queuePreview(url));
+      // Stop obsolete downloads immediately, but preserve an in-flight warmup
+      // for a hovered tile so its first segment is never downloaded twice.
+      const wanted=new Set(urls.filter(Boolean));
+      for(const [url,controller] of previewControllers){if(!wanted.has(url)){controller.abort();previewControllers.delete(url);previewState.set(url,'error')}}
+      const retained=previewQueue.filter(task=>wanted.has(task.url));previewQueue.length=0;previewQueue.push(...retained);
+      wanted.forEach(url=>queuePreview(url));pumpPreviewQueue();
     }
     function prioritizeViewport(root){
       const center=innerHeight/2,tiles=[...root.querySelectorAll('.tile[data-hls]')]
@@ -346,7 +350,7 @@
       }else visible=activeFilter==='ALL'||searchMode?orderedItems:orderedItems.filter(item=>categoryFor(item)===activeFilter);
       const contextQuery=searchMode?`&q=${encodeURIComponent(searchQuery)}`:activeFilter==='ALL'?'':`&filter=${encodeURIComponent(activeFilter)}`;
       const key=`${activeFilter}|${searchQuery}|${visible.map(item=>item.id).join(',')}`;resultKey=key;
-      gallery.innerHTML=visible.length?visible.map(item=>{const preview=previewUrl(item),hls=hlsPreviewUrl(item),thumb=`${thumbRoot}${item.thumb}`,lowThumb=`assets/thumbs-low/${item.thumb}`;return `<a class="tile thumbnail-loading" href="?clip=${item.publicId}${contextQuery}" aria-label="${item.publicId} ${item.title}"${preview?` data-preview="${preview}"`:''}${hls?` data-hls="${hls}"`:''}><img src="${lowThumb}" data-low="${lowThumb}" data-thumb="${thumb}" alt="" decoding="async" fetchpriority="low" width="240" height="135">${hls?'<video class="tile-preview" muted autoplay playsinline loop preload="none"></video><span class="preview-status" aria-hidden="true">LOADING PREVIEW</span>':''}<span class="n">${item.publicId}</span><span class="tile-title">${item.title}</span></a>`}).join(''):'<div class="search-empty">NO MATCHES</div>';
+      gallery.innerHTML=visible.length?visible.map(item=>{const preview=previewUrl(item),hls=hlsPreviewUrl(item),thumb=`${thumbRoot}${item.thumb}`,lowThumb=`assets/thumbs-low/${item.thumb}`;return `<a class="tile thumbnail-loading" href="?clip=${item.publicId}${contextQuery}" aria-label="${item.publicId} ${item.title}"${preview?` data-preview="${preview}"`:''}${hls?` data-hls="${hls}"`:''}><img src="${lowThumb}" data-low="${lowThumb}" data-thumb="${thumb}" alt="" decoding="async" fetchpriority="low" width="240" height="135">${hls?'<video class="tile-preview" muted autoplay playsinline loop preload="none"></video><span class="preview-status" aria-hidden="true">LOADING</span>':''}<span class="n">${item.publicId}</span><span class="tile-title">${item.title}</span></a>`}).join(''):'<div class="search-empty">NO MATCHES</div>';
       bindImageRecovery(gallery);bindTilePreviews(gallery);preparePreviews(gallery);prepareThumbnails(gallery);
     }
     async function prepareGallery(){
