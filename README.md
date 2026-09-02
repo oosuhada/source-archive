@@ -117,16 +117,16 @@ Mac mini를 자체 Range server로 활용하는 방안도 검토했습니다. Ng
 
 ## Current Architecture / 현재 구성
 
-- 690 searchable video items
+- 731 searchable video items
 - 427 MP4 files in Cloudflare R2
-- 263 MP4 files in Backblaze B2
-- 690 indexed JPEG thumbnails
+- 304 MP4 files in Backblaze B2
+- 731 indexed JPEG thumbnails
 - 178 dedicated hover previews
 
-- 검색 가능한 영상 690개
+- 검색 가능한 영상 731개
 - Cloudflare R2의 MP4 427개
-- Backblaze B2의 MP4 263개
-- 인덱싱된 JPEG 썸네일 690개
+- Backblaze B2의 MP4 304개
+- 인덱싱된 JPEG 썸네일 731개
 - 전용 hover preview 178개
 
 ```txt
@@ -166,9 +166,9 @@ npm run validate
 npm run validate:network
 ```
 
-The `archive quality` workflow runs on every pull request. It validates 690 metadata records and thumbnails, rejects retired visual themes, checks imported video properties, and samples live `206 Partial Content` responses with retry logic for transient network failures. GitHub Pages deploys only after repository changes are merged.
+The `archive quality` workflow runs on every pull request. It validates 731 metadata records and thumbnails, rejects retired visual themes, checks imported video properties, and samples live `206 Partial Content` responses with retry logic for transient network failures. GitHub Pages deploys only after repository changes are merged.
 
-`archive quality` workflow는 모든 pull request에서 실행됩니다. 690개 메타데이터와 썸네일을 검사하고, 폐기한 visual theme의 재사용을 차단하며, import 영상 속성과 실제 `206 Partial Content` 응답을 확인합니다. 일시적인 네트워크 오류에는 재시도를 적용하며 저장소 변경이 병합된 후 GitHub Pages가 배포됩니다.
+`archive quality` workflow는 모든 pull request에서 실행됩니다. 731개 메타데이터와 썸네일을 검사하고, 폐기한 visual theme의 재사용을 차단하며, import 영상 속성과 실제 `206 Partial Content` 응답을 확인합니다. 일시적인 네트워크 오류에는 재시도를 적용하며 저장소 변경이 병합된 후 GitHub Pages가 배포됩니다.
 
 ## Remaining Work / 남은 과제
 
