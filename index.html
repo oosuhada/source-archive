@@ -211,8 +211,13 @@
         // Some browsers resolve muted autoplay slightly later than canplay.
         preview.addEventListener('loadeddata',reveal);
         preview.addEventListener('canplay',()=>{reveal();play()});
-        preview.addEventListener('playing',()=>{reveal();metric('media',{firstFrame:performance.now()-Number(tile.dataset.hoverAt||performance.now())})});
-        const start=()=>{if(!tile.dataset.micro||active===tile)return;if(active&&active!==tile)stop(active);pauseThumbnailWarmup();active=tile;tile.dataset.previewWanted='1';tile.dataset.hoverAt=performance.now();preview.muted=true;preview.defaultMuted=true;preview.autoplay=true;preview.playsInline=true;preview.preload='auto';if(!preview.src){preview.src=microObjectUrls.get(tile.dataset.micro)||tile.dataset.micro;preview.load()}else{try{preview.currentTime=0}catch{}};play();warmStandardPreview(tile)};
+        preview.addEventListener('playing',()=>{
+          reveal();metric('media',{firstFrame:performance.now()-Number(tile.dataset.hoverAt||performance.now())});
+          // The 180px micro preview owns the first frame.  Do not let a 10-second
+          // preview download compete until that frame is already on screen.
+          if(!tile.dataset.microStarted){tile.dataset.microStarted='1';setTimeout(()=>{if(wanted())warmStandardPreview(tile)},700)}
+        });
+        const start=()=>{if(!tile.dataset.micro||active===tile)return;if(active&&active!==tile)stop(active);pauseThumbnailWarmup();active=tile;tile.dataset.previewWanted='1';tile.dataset.hoverAt=performance.now();tile.dataset.microStarted='';queuePreview(tile.dataset.micro,4);preview.muted=true;preview.defaultMuted=true;preview.autoplay=true;preview.playsInline=true;preview.preload='auto';if(!preview.src){preview.src=microObjectUrls.get(tile.dataset.micro)||tile.dataset.micro;preview.load()}else{try{preview.currentTime=0}catch{}};play()};
         tile.addEventListener('pointerenter',start);
         tile.addEventListener('mouseenter',start);
         tile.addEventListener('mouseleave',()=>stop(tile));
@@ -221,11 +226,11 @@
     }
     async function cacheMicroPreview(url){
       const cache=await caches.open(microCacheName);let response=await cache.match(url);
-      if(!response){const network=await fetch(url,{mode:'cors',cache:'force-cache'});if(!network.ok)throw new Error(`micro preview ${network.status}`);await cache.put(url,network.clone());response=network}
+      if(!response){const network=await fetch(url,{mode:'cors',cache:'force-cache'});if(!network.ok)throw new Error(`micro preview ${network.status}`);cache.put(url,network.clone()).catch(()=>{});response=network}
       const blob=await response.blob();const previous=microObjectUrls.get(url);if(previous)URL.revokeObjectURL(previous);microObjectUrls.set(url,URL.createObjectURL(blob));
     }
     function pumpPreviewQueue(){
-      while(previewActive<4&&previewQueue.length){
+      while(previewActive<8&&previewQueue.length){
         const url=previewQueue.shift();if(previewState.get(url)!=='queued')continue;
         previewActive+=1;previewState.set(url,'warming');
         cacheMicroPreview(url).then(()=>previewState.set(url,'ready')).catch(()=>previewState.set(url,'error')).finally(()=>{previewActive-=1;pumpPreviewQueue()});
