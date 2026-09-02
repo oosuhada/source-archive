@@ -90,7 +90,7 @@
     const thumbnailState=new Map(),thumbnailQueue=[];
     let thumbnailActive=0,thumbnailObserver=null,thumbnailPauseUntil=0,thumbnailResumeTimer=0;
     const previewState=new Map(),previewQueue=[];
-    let previewActive=0,previewObserver=null,previewSettleTimer=0,previewRoot=null,previewScrollBound=false;
+    let previewActive=0,previewObserver=null,previewSettleTimer=0,previewRoot=null,previewScrollBound=false,previewInputArmed=false;
     const previewControllers=new Map();
     const thumbnailConcurrency=matchMedia('(max-width:700px)').matches?3:4;
     const metric=(group,values)=>dispatchEvent(new CustomEvent('source-archive:metric',{detail:{group,values}}));
@@ -218,13 +218,22 @@
         preview.addEventListener('playing',()=>{
           reveal();metric('media',{firstFrame:performance.now()-Number(tile.dataset.hoverAt||performance.now())});
         });
-        const start=()=>{if(active===tile)return;if(active&&active!==tile)stop(active);pauseThumbnailWarmup();active=tile;tile.dataset.previewWanted='1';tile.dataset.hoverAt=performance.now();tile.classList.add('preview-pending');preview.muted=true;preview.defaultMuted=true;preview.autoplay=true;preview.playsInline=true;prioritizeHls([tile.dataset.hls]);startHlsPreview(tile)};
+        const start=()=>{if(!previewInputArmed||active===tile)return;if(active&&active!==tile)stop(active);pauseThumbnailWarmup();active=tile;tile.dataset.previewWanted='1';tile.dataset.hoverAt=performance.now();tile.classList.add('preview-pending');preview.muted=true;preview.defaultMuted=true;preview.autoplay=true;preview.playsInline=true;prioritizeHls([tile.dataset.hls]);startHlsPreview(tile)};
+        tile._startPreview=start;
         tile.addEventListener('pointerenter',start);
         tile.addEventListener('mouseenter',start);
         tile.addEventListener('mouseleave',()=>stop(tile));
         tile.addEventListener('pointerleave',()=>stop(tile));
       });
     }
+    addEventListener('pointermove',event=>{
+      if(previewInputArmed)return;
+      previewInputArmed=true;
+      // A tile can have appeared below a stationary pointer during rendering.
+      // Start it only after the user's first real movement, never on that
+      // synthetic enter event.
+      document.elementFromPoint(event.clientX,event.clientY)?.closest('.tile[data-hls]')?._startPreview?.();
+    },{passive:true});
     function pumpPreviewQueue(){
       while(previewActive<8&&previewQueue.length){
         const task=previewQueue.shift(),{url}=task;if(previewState.get(url)!=='queued')continue;
