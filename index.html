@@ -12,6 +12,7 @@
     .search-toggle,.search-close{flex:0 0 auto;width:34px;height:28px;display:grid;place-items:center;border:0;background:#0b0b0b;color:rgba(255,255,255,.62);cursor:pointer;padding:0}.search-toggle{margin-left:12px;position:relative;z-index:2;box-shadow:-14px 0 18px #0b0b0b}.search-toggle:hover,.search-toggle:focus-visible,.search-close:hover,.search-close:focus-visible{color:#fff;outline:none}.search-toggle svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.5}.search-shell{display:flex;align-items:center;width:100%;gap:10px}.search-mark{flex:0 0 auto;width:15px;height:15px;fill:none;stroke:rgba(255,255,255,.48);stroke-width:1.5}.archive-search{min-width:0;flex:1;border:0;outline:0;background:transparent;color:#fff;font:500 11px/1.2 ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;letter-spacing:.08em}.archive-search::placeholder{color:rgba(255,255,255,.28)}.search-empty{grid-column:1/-1;min-height:35vh;display:grid;place-items:center;color:rgba(255,255,255,.34);font:500 11px/1 ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;letter-spacing:.12em;text-transform:uppercase}
     .gallery-sentinel{grid-column:1/-1;height:1px}.tile.thumbnail-error{background:linear-gradient(135deg,#151515,#202020)}.tile.thumbnail-error::before{content:"THUMBNAIL UNAVAILABLE";position:absolute;inset:0;display:grid;place-items:center;color:rgba(255,255,255,.28);font:9px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.12em}.tile.thumbnail-error img{visibility:hidden}.performance-dashboard{position:fixed;z-index:99;right:12px;bottom:12px;white-space:pre;padding:10px 12px;border:1px solid rgba(255,255,255,.18);background:rgba(0,0,0,.82);color:#a8ffbd;font:10px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace;pointer-events:none;backdrop-filter:blur(10px)}
   </style>
+  <style>.tile.previewing.standard-previewing .tile-preview{opacity:0}.tile.previewing.standard-previewing .tile-preview-standard{opacity:1}</style>
 </head>
 <body>
   <nav id="filters" class="filters" aria-label="Archive filters"></nav>
@@ -203,9 +204,9 @@
     }
     function bindTilePreviews(root){
       let active=null;
-      const stop=tile=>{if(!tile)return;const preview=tile.querySelector('.tile-preview');if(!preview)return;delete tile.dataset.previewWanted;preview.pause();tile.classList.remove('previewing');try{preview.currentTime=0}catch{}if(active===tile)active=null};
+      const stop=tile=>{if(!tile)return;const preview=tile.querySelector('.tile-preview'),standard=tile.querySelector('.tile-preview-standard');if(!preview)return;delete tile.dataset.previewWanted;preview.pause();standard?.pause();tile.classList.remove('previewing','standard-previewing');try{preview.currentTime=0;standard.currentTime=0}catch{}if(active===tile)active=null};
       root.querySelectorAll('.tile[data-preview]:not([data-bound])').forEach(tile=>{
-        tile.dataset.bound='1';const preview=tile.querySelector('.tile-preview');if(!preview)return;
+        tile.dataset.bound='1';const preview=tile.querySelector('.tile-preview'),standard=tile.querySelector('.tile-preview-standard');if(!preview||!standard)return;
         const wanted=()=>active===tile&&tile.dataset.previewWanted==='1';
         const reveal=()=>{if(wanted())tile.classList.add('previewing')};
         const play=()=>{if(wanted())preview.play().catch(()=>{})};
@@ -270,10 +271,17 @@
       const cached=microObjectUrls.get(url);if(cached){preview.preload='auto';preview.src=cached;preview.load()}else queuePreview(url,2);
     }
     function warmStandardPreview(tile){
-      const url=tile.dataset.preview,preview=tile.querySelector('.tile-preview');if(!url||!preview||tile.dataset.standardWarm)return;tile.dataset.standardWarm='1';
-      const warmer=document.createElement('video');warmer.muted=true;warmer.playsInline=true;warmer.preload='auto';
-      warmer.addEventListener('canplay',()=>{if(tile.dataset.previewWanted==='1'){preview.src=url;preview.load();preview.play().catch(()=>{})}warmer.removeAttribute('src');warmer.load()},{once:true});
-      warmer.src=url;warmer.load();
+      const url=tile.dataset.preview,micro=tile.querySelector('.tile-preview'),standard=tile.querySelector('.tile-preview-standard');if(!url||!micro||!standard||tile.dataset.standardWarm)return;tile.dataset.standardWarm='1';
+      standard.muted=true;standard.defaultMuted=true;standard.playsInline=true;standard.preload='auto';
+      const revealStandard=()=>{if(tile.dataset.previewWanted!=='1')return;standard.play().then(()=>{if(tile.dataset.previewWanted==='1'){tile.classList.add('standard-previewing');micro.pause()}}).catch(()=>{})};
+      standard.addEventListener('loadedmetadata',()=>{
+        // Both encodes start on the same source frame. Seek before exposing the
+        // second layer, so quality changes at the current playback position.
+        const duration=Number.isFinite(standard.duration)&&standard.duration>0?standard.duration:0;
+        const target=duration?Math.min(Math.max(.04,micro.currentTime%duration),Math.max(.04,duration-.04)):0;
+        standard.addEventListener('seeked',revealStandard,{once:true});standard.currentTime=target;
+      },{once:true});
+      standard.src=url;standard.load();
     }
     function preparePreviews(root){
       previewObserver?.disconnect();const tiles=[...root.querySelectorAll('.tile[data-micro]')];
@@ -356,7 +364,7 @@
       }else visible=activeFilter==='ALL'||searchMode?orderedItems:orderedItems.filter(item=>categoryFor(item)===activeFilter);
       const contextQuery=searchMode?`&q=${encodeURIComponent(searchQuery)}`:activeFilter==='ALL'?'':`&filter=${encodeURIComponent(activeFilter)}`;
       const key=`${activeFilter}|${searchQuery}|${visible.map(item=>item.id).join(',')}`;resultKey=key;
-      gallery.innerHTML=visible.length?visible.map(item=>{const preview=previewUrl(item),micro=microPreviewUrl(item),thumb=`${thumbRoot}${item.thumb}`,lowThumb=`assets/thumbs-low/${item.thumb}`;return `<a class="tile thumbnail-loading" href="?clip=${item.publicId}${contextQuery}" aria-label="${item.publicId} ${item.title}"${preview?` data-preview="${preview}"`:''}${micro?` data-micro="${micro}"`:''}><img src="${lowThumb}" data-low="${lowThumb}" data-thumb="${thumb}" alt="" decoding="async" fetchpriority="low" width="240" height="135">${micro?'<video class="tile-preview" muted autoplay playsinline loop preload="none"></video>':''}<span class="n">${item.publicId}</span><span class="tile-title">${item.title}</span></a>`}).join(''):'<div class="search-empty">NO MATCHES</div>';
+      gallery.innerHTML=visible.length?visible.map(item=>{const preview=previewUrl(item),micro=microPreviewUrl(item),thumb=`${thumbRoot}${item.thumb}`,lowThumb=`assets/thumbs-low/${item.thumb}`;return `<a class="tile thumbnail-loading" href="?clip=${item.publicId}${contextQuery}" aria-label="${item.publicId} ${item.title}"${preview?` data-preview="${preview}"`:''}${micro?` data-micro="${micro}"`:''}><img src="${lowThumb}" data-low="${lowThumb}" data-thumb="${thumb}" alt="" decoding="async" fetchpriority="low" width="240" height="135">${micro?'<video class="tile-preview" muted autoplay playsinline loop preload="none"></video><video class="tile-preview tile-preview-standard" muted autoplay playsinline loop preload="none"></video>':''}<span class="n">${item.publicId}</span><span class="tile-title">${item.title}</span></a>`}).join(''):'<div class="search-empty">NO MATCHES</div>';
       bindImageRecovery(gallery);bindTilePreviews(gallery);preparePreviews(gallery);prepareThumbnails(gallery);
     }
     async function prepareGallery(){
