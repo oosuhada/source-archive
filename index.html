@@ -470,8 +470,10 @@
         navigator.serviceWorker.controller.postMessage({type:'preload-hls-boot'});
         if(!localHlsReady&&!selected){localHlsReady=true;renderGallery()}
       };
-      navigator.serviceWorker.addEventListener('controllerchange',enableBootHls);
-      navigator.serviceWorker.register(`sw.js?v=${encodeURIComponent(window.SOURCE_ARCHIVE_BUILD?.version||'dev')}`).then(()=>navigator.serviceWorker.ready).then(enableBootHls).catch(()=>{});
+      const requestBootStatus=()=>navigator.serviceWorker.controller?.postMessage({type:'hls-boot-status'});
+      navigator.serviceWorker.addEventListener('message',event=>{if(event.data?.type==='hls-boot-ready')enableBootHls()});
+      navigator.serviceWorker.addEventListener('controllerchange',requestBootStatus);
+      navigator.serviceWorker.register(`sw.js?v=${encodeURIComponent(window.SOURCE_ARCHIVE_BUILD?.version||'dev')}`).then(registration=>registration.update()).then(requestBootStatus).catch(()=>{});
     }
   </script>
 </body>
