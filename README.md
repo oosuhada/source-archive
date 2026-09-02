@@ -34,7 +34,7 @@ Short display titles keep the interface quiet, while richer hidden metadata make
 
 화면에 보이는 제목은 짧게 유지하고, 풍부한 비표시 메타데이터를 활용해 관련 개념까지 검색되도록 설계했습니다.
 
-## The First Performance Problem / 첫 번째 성능 문제
+## The First Performance Problem: Detail-Page Scrubbing / 첫 번째 성능 문제: 상세 페이지 스크럽
 
 The initial implementation stored MP4 files in Cloudflare R2 and exposed them directly through an `r2.dev` public URL. This was inexpensive and convenient, but it was not an adequate delivery architecture for scroll-driven random seeking. A 1 MB byte-range test from a MacBook Air produced the following results:
 
@@ -50,6 +50,16 @@ The initial implementation stored MP4 files in Cloudflare R2 and exposed them di
 A normal player can hide some latency through sequential buffering. This interface maps scroll position directly to `video.currentTime`, so it repeatedly asks for small, non-sequential ranges. When one range takes one to four seconds, a moving image feels like a still image.
 
 일반적인 영상 플레이어는 순차 버퍼링으로 지연을 어느 정도 감출 수 있습니다. 하지만 이 인터페이스는 스크롤 위치를 `video.currentTime`에 직접 연결하므로 작고 비연속적인 Range 요청을 반복합니다. Range 요청 하나가 1~4초 걸리면 영상은 움직이는 화면이 아니라 정지 이미지처럼 느껴집니다.
+
+## The Second Performance Problem: Preview Discoverability / 두 번째 성능 문제: Preview의 발견 가능성
+
+As the archive became a dense one-page gallery, the more important interaction problem shifted from detail playback to discovery. After a long, fast scroll, a user could hover any tile before its preview request had started. If the first frame took too long, the tile looked like an ordinary still image and the user had no reason to wait or even know that hover playback existed.
+
+아카이브가 한 페이지에 밀도 높게 배치된 갤러리로 커지면서, 더 중요한 문제는 상세 재생보다 preview의 발견 가능성으로 옮겨갔습니다. 사용자가 길고 빠르게 스크롤한 뒤 임의의 타일에 hover하면 preview 요청이 아직 시작되지 않은 상태일 수 있었습니다. 첫 프레임이 늦게 나오면 타일은 일반 정지 이미지처럼 보이고, 사용자는 기다릴 이유도 hover 재생 기능이 있다는 사실을 알 방법도 없습니다.
+
+The naïve fixes were harmful in different ways. Warming every preview created hundreds of competing playlist and segment requests; waiting until hover made the first interaction feel broken; and eagerly starting a preview under the stationary pointer spent bandwidth before the user had intentionally interacted. The resulting requirement was precise: after an arbitrary fast jump, a deliberate hover must immediately communicate that playback is loading and reach a moving frame without allowing old viewport work to compete.
+
+단순한 해결책은 각각 다른 문제를 만들었습니다. 모든 preview를 warmup하면 수백 개의 playlist·segment 요청이 서로 경쟁했고, hover 뒤에만 요청하면 첫 상호작용이 고장 난 것처럼 느껴졌으며, 정지해 있는 커서 아래 타일을 즉시 재생하면 사용자가 의도적으로 상호작용하기 전부터 대역폭을 낭비했습니다. 그래서 요구사항을 명확히 정의했습니다. 임의의 빠른 이동 뒤에도 의도적인 hover는 즉시 로딩 상태를 알려야 하며, 이전 viewport의 요청과 경쟁하지 않고 곧바로 움직이는 첫 프레임에 도달해야 합니다.
 
 ## Architecture Evolution / 아키텍처 개선 과정
 
