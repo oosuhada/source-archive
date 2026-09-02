@@ -273,13 +273,23 @@
     function warmStandardPreview(tile){
       const url=tile.dataset.preview,micro=tile.querySelector('.tile-preview'),standard=tile.querySelector('.tile-preview-standard');if(!url||!micro||!standard||tile.dataset.standardWarm)return;tile.dataset.standardWarm='1';
       standard.muted=true;standard.defaultMuted=true;standard.playsInline=true;standard.preload='auto';
-      const revealStandard=()=>{if(tile.dataset.previewWanted!=='1')return;standard.play().then(()=>{if(tile.dataset.previewWanted==='1'){tile.classList.add('standard-previewing');micro.pause()}}).catch(()=>{})};
+      let alignmentAttempts=0;
+      const targetTime=()=>{const duration=Number.isFinite(standard.duration)&&standard.duration>0?standard.duration:0;return duration?Math.min(Math.max(.04,micro.currentTime%duration),Math.max(.04,duration-.04)):0};
+      const revealStandard=()=>{
+        if(tile.dataset.previewWanted!=='1')return;
+        const correct=()=>{
+          if(tile.dataset.previewWanted!=='1')return;
+          // `seeked` is asynchronous: measure again on the decoded frame, not
+          // at metadata time. Hidden re-seeks keep the visible micro continuous.
+          if(alignmentAttempts<3&&Math.abs(targetTime()-standard.currentTime)>.055){alignmentAttempts+=1;standard.pause();standard.addEventListener('seeked',revealStandard,{once:true});standard.currentTime=targetTime();return}
+          tile.classList.add('standard-previewing');micro.pause();
+        };
+        standard.play().then(()=>{if('requestVideoFrameCallback'in standard)standard.requestVideoFrameCallback(correct);else requestAnimationFrame(correct)}).catch(()=>{});
+      };
       standard.addEventListener('loadedmetadata',()=>{
         // Both encodes start on the same source frame. Seek before exposing the
         // second layer, so quality changes at the current playback position.
-        const duration=Number.isFinite(standard.duration)&&standard.duration>0?standard.duration:0;
-        const target=duration?Math.min(Math.max(.04,micro.currentTime%duration),Math.max(.04,duration-.04)):0;
-        standard.addEventListener('seeked',revealStandard,{once:true});standard.currentTime=target;
+        standard.addEventListener('seeked',revealStandard,{once:true});standard.currentTime=targetTime();
       },{once:true});
       standard.src=url;standard.load();
     }
