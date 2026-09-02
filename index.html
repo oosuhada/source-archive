@@ -54,9 +54,10 @@
     };
     const videoUrl=item=>`${videoRoots[item.media]||videoRoots.r2}${item.clip}`;
     const previewUrl=item=>item.preview?`${previewRoots[item.previewMedia||item.media]||previewRoots.r2}${item.preview}`:'';
-    // Begin at 180p for an immediate first frame, then let the aligned HLS
-    // ladder adapt to 360p without changing the playback timeline.
-    const hlsPreviewUrl=item=>item.preview?`https://source-media.oosu.dev/hls/${item.preview.replace(/-preview\.mp4$/, '')}/master.m3u8`:'';
+    // Once the boot cache is controlled, the same HLS ladder is served through
+    // our Service Worker: its first 180p segment comes from a local pack.
+    let localHlsReady=false;
+    const hlsPreviewUrl=item=>{if(!item.preview)return '';const stem=item.preview.replace(/-preview\.mp4$/,'');return localHlsReady?`hls-preview/${stem}/master.m3u8`:`https://source-media.oosu.dev/hls/${stem}/master.m3u8`};
     const items=window.SOURCE_LIBRARY||[];
     // Do not couple hover playback to asynchronously fetched metadata: if one
     // metadata request fails, valid preview mappings must still be available.
@@ -463,7 +464,15 @@
         video.load();
       }
     }
-    if('serviceWorker' in navigator&&location.protocol==='https:')navigator.serviceWorker.register(`sw.js?v=${encodeURIComponent(window.SOURCE_ARCHIVE_BUILD?.version||'dev')}`).catch(()=>{});
+    if('serviceWorker' in navigator&&location.protocol==='https:'){
+      const enableBootHls=()=>{
+        if(!navigator.serviceWorker.controller)return;
+        navigator.serviceWorker.controller.postMessage({type:'preload-hls-boot'});
+        if(!localHlsReady&&!selected){localHlsReady=true;renderGallery()}
+      };
+      navigator.serviceWorker.addEventListener('controllerchange',enableBootHls);
+      navigator.serviceWorker.register(`sw.js?v=${encodeURIComponent(window.SOURCE_ARCHIVE_BUILD?.version||'dev')}`).then(()=>navigator.serviceWorker.ready).then(enableBootHls).catch(()=>{});
+    }
   </script>
 </body>
 </html>
