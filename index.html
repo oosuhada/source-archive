@@ -42,6 +42,7 @@
   <script src="data/source-library-youtube-data.js"></script>
   <script src="data/preview-manifest.js"></script>
   <script src="data/micro-pack-manifest.js"></script>
+  <script src="assets/vendor/hls.min.js"></script>
   <script>
     const thumbRoot='assets/thumbs-360/';
     const videoRoots={
@@ -54,6 +55,7 @@
     };
     const videoUrl=item=>`${videoRoots[item.media]||videoRoots.r2}${item.clip}`;
     const previewUrl=item=>item.preview?`${previewRoots[item.previewMedia||item.media]||previewRoots.r2}${item.preview}`:'';
+    const hlsPreviewUrl=item=>item.preview?`https://source-media.oosu.dev/hls/${item.preview.replace(/-preview\.mp4$/, '')}/master.m3u8`:'';
     // 5-second / 180px previews live in 15 same-origin packs on GitHub Pages.
     // This replaces 731 B2 reads on every new browser cache with 15 requests.
     const microPreviewUrl=item=>item.previewMicro||'';
@@ -271,7 +273,7 @@
       const cached=microObjectUrls.get(url);if(cached){preview.preload='auto';preview.src=cached;preview.load()}else queuePreview(url,2);
     }
     function warmStandardPreview(tile){
-      const url=tile.dataset.preview,micro=tile.querySelector('.tile-preview'),standard=tile.querySelector('.tile-preview-standard');if(!url||!micro||!standard||tile.dataset.standardWarm)return;tile.dataset.standardWarm='1';
+      const url=tile.dataset.preview,hlsUrl=tile.dataset.hls,micro=tile.querySelector('.tile-preview'),standard=tile.querySelector('.tile-preview-standard');if(!url||!micro||!standard||tile.dataset.standardWarm)return;tile.dataset.standardWarm='1';
       standard.muted=true;standard.defaultMuted=true;standard.playsInline=true;standard.preload='auto';
       let alignmentAttempts=0;
       const targetTime=()=>{const duration=Number.isFinite(standard.duration)&&standard.duration>0?standard.duration:0;return duration?Math.min(Math.max(.04,micro.currentTime%duration),Math.max(.04,duration-.04)):0};
@@ -291,7 +293,11 @@
         // second layer, so quality changes at the current playback position.
         standard.addEventListener('seeked',revealStandard,{once:true});standard.currentTime=targetTime();
       },{once:true});
-      standard.src=url;standard.load();
+      if(hlsUrl&&window.Hls?.isSupported()){
+        const player=new window.Hls({autoStartLoad:true,startLevel:0,capLevelToPlayerSize:true,maxBufferLength:8,maxMaxBufferLength:12});tile._hlsPreview=player;
+        player.on(window.Hls.Events.ERROR,(_,data)=>{if(data.fatal){player.destroy();tile._hlsPreview=null;standard.src=url;standard.load()}});
+        player.loadSource(hlsUrl);player.attachMedia(standard);
+      }else if(hlsUrl&&standard.canPlayType('application/vnd.apple.mpegurl')){standard.src=hlsUrl;standard.load()}else{standard.src=url;standard.load()}
     }
     function preparePreviews(root){
       previewObserver?.disconnect();const tiles=[...root.querySelectorAll('.tile[data-micro]')];
@@ -374,7 +380,7 @@
       }else visible=activeFilter==='ALL'||searchMode?orderedItems:orderedItems.filter(item=>categoryFor(item)===activeFilter);
       const contextQuery=searchMode?`&q=${encodeURIComponent(searchQuery)}`:activeFilter==='ALL'?'':`&filter=${encodeURIComponent(activeFilter)}`;
       const key=`${activeFilter}|${searchQuery}|${visible.map(item=>item.id).join(',')}`;resultKey=key;
-      gallery.innerHTML=visible.length?visible.map(item=>{const preview=previewUrl(item),micro=microPreviewUrl(item),thumb=`${thumbRoot}${item.thumb}`,lowThumb=`assets/thumbs-low/${item.thumb}`;return `<a class="tile thumbnail-loading" href="?clip=${item.publicId}${contextQuery}" aria-label="${item.publicId} ${item.title}"${preview?` data-preview="${preview}"`:''}${micro?` data-micro="${micro}"`:''}><img src="${lowThumb}" data-low="${lowThumb}" data-thumb="${thumb}" alt="" decoding="async" fetchpriority="low" width="240" height="135">${micro?'<video class="tile-preview" muted autoplay playsinline loop preload="none"></video><video class="tile-preview tile-preview-standard" muted autoplay playsinline loop preload="none"></video>':''}<span class="n">${item.publicId}</span><span class="tile-title">${item.title}</span></a>`}).join(''):'<div class="search-empty">NO MATCHES</div>';
+      gallery.innerHTML=visible.length?visible.map(item=>{const preview=previewUrl(item),hls=hlsPreviewUrl(item),micro=microPreviewUrl(item),thumb=`${thumbRoot}${item.thumb}`,lowThumb=`assets/thumbs-low/${item.thumb}`;return `<a class="tile thumbnail-loading" href="?clip=${item.publicId}${contextQuery}" aria-label="${item.publicId} ${item.title}"${preview?` data-preview="${preview}"`:''}${hls?` data-hls="${hls}"`:''}${micro?` data-micro="${micro}"`:''}><img src="${lowThumb}" data-low="${lowThumb}" data-thumb="${thumb}" alt="" decoding="async" fetchpriority="low" width="240" height="135">${micro?'<video class="tile-preview" muted autoplay playsinline loop preload="none"></video><video class="tile-preview tile-preview-standard" muted autoplay playsinline loop preload="none"></video>':''}<span class="n">${item.publicId}</span><span class="tile-title">${item.title}</span></a>`}).join(''):'<div class="search-empty">NO MATCHES</div>';
       bindImageRecovery(gallery);bindTilePreviews(gallery);preparePreviews(gallery);prepareThumbnails(gallery);
     }
     async function prepareGallery(){
