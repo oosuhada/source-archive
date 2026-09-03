@@ -27,11 +27,11 @@
   </style>
   <style>
     .detail-progress{position:fixed;z-index:7;left:0;right:0;bottom:0;height:3px;background:transparent;overflow:visible;transform:translateZ(0);pointer-events:none}
-    .detail-progress span{position:absolute;left:0;bottom:0;height:2px;width:0;transform-origin:left center;will-change:width;transition:width .16s linear}
-    .detail-progress-load{z-index:1;background:rgba(12,12,12,.72);box-shadow:0 -1px 8px rgba(255,255,255,.5),0 0 1px rgba(255,255,255,.34)}
-    .detail-progress-scroll{z-index:2;background:rgba(255,255,255,.95);box-shadow:0 -1px 7px rgba(0,0,0,.46),0 0 4px rgba(255,255,255,.26)}
-    .detail-progress.is-complete .detail-progress-load{background:rgba(12,12,12,.62);box-shadow:0 -1px 6px rgba(255,255,255,.38)}
-    .detail-progress.is-error .detail-progress-load{background:rgba(12,12,12,.5);box-shadow:0 -1px 5px rgba(255,255,255,.26)}
+    .detail-progress span{position:absolute;left:0;bottom:0;height:2px;width:0;transform-origin:left center;will-change:width;transition:width .18s linear}
+    .detail-progress-load{z-index:1;background:rgba(255,255,255,.34);box-shadow:0 -1px 7px rgba(0,0,0,.52),0 0 4px rgba(255,255,255,.16)}
+    .detail-progress-scroll{z-index:2;background:rgba(255,255,255,.88);box-shadow:0 -1px 6px rgba(0,0,0,.5),0 0 3px rgba(255,255,255,.16)}
+    .detail-progress.is-complete .detail-progress-load{background:rgba(255,255,255,.38)}
+    .detail-progress.is-error .detail-progress-load{background:rgba(255,255,255,.24)}
   </style>
   <style>.tile.preview-pending:hover .tile-title,.tile.preview-pending:focus-visible .tile-title{opacity:0}</style>
 </head>
@@ -432,21 +432,39 @@
         video.preload='metadata';
         const mediaSource=videoUrl(item);
         video.src=mediaSource;
-        let duration=1,target=0,ready=false,primed=false,seekTimer=0,seekRaf=0,lastSeekAt=0,pendingSeek=false,seekStartedAt=0,mediaStartedAt=performance.now(),metadataSeen=false,loadProgress=0,blobUrl='',scrollLocking=false;
+        let duration=1,target=0,ready=false,primed=false,seekTimer=0,seekRaf=0,lastSeekAt=0,pendingSeek=false,seekStartedAt=0,mediaStartedAt=performance.now(),metadataSeen=false,loadProgress=0,settledLoadProgress=0,blobUrl='',scrollLocking=false;
         const clamp=v=>Math.max(0,Math.min(1,v));
         const seekInterval=95;
-        const setLoadProgress=value=>{
-          loadProgress=Math.max(loadProgress,clamp(value));
-          loadBar.style.width=`${(loadProgress*100).toFixed(2)}%`;
+        const isAppleDetail=itemCategory==='Apple';
+        const filmStartProgress=isAppleDetail?.13:0;
+        const filmEndProgress=.9;
+        const seekSafety=.075;
+        const mediaLoadToPageProgress=value=>{
+          const loaded=clamp(value);
+          if(loaded>=.999)return 1;
+          return filmStartProgress+(filmEndProgress-filmStartProgress)*loaded;
+        };
+        const paintLoadProgress=()=>{
+          loadBar.style.width=`${(mediaLoadToPageProgress(loadProgress)*100).toFixed(2)}%`;
           detailProgress.classList.toggle('is-complete',loadProgress>=.999);
         };
-        const unlockedProgress=()=>loadProgress>=.999?1:loadProgress;
+        const setLoadProgress=value=>{
+          const next=Math.max(loadProgress,clamp(value));
+          if(next<.999&&next<=loadProgress+.0005)return;
+          loadProgress=next;paintLoadProgress();
+          setTimeout(()=>{settledLoadProgress=Math.max(settledLoadProgress,next);update()},next>=.999?320:700);
+        };
+        const unlockedProgress=()=>loadProgress>=.999&&settledLoadProgress>=.999?1:mediaLoadToPageProgress(Math.max(0,settledLoadProgress-seekSafety));
         const setScrollProgress=value=>{scrollBar.style.width=`${(Math.min(clamp(value),unlockedProgress())*100).toFixed(2)}%`};
         const updateBufferedProgress=()=>{
           if(!duration||!Number.isFinite(duration)||!video.buffered?.length)return;
           let bufferedEnd=0;
-          for(let index=0;index<video.buffered.length;index++)bufferedEnd=Math.max(bufferedEnd,video.buffered.end(index));
-          setLoadProgress(Math.min(.98,bufferedEnd/duration));
+          for(let index=0;index<video.buffered.length;index++){
+            const start=video.buffered.start(index),end=video.buffered.end(index);
+            if(start<=bufferedEnd+.25)bufferedEnd=Math.max(bufferedEnd,end);
+          }
+          const ratio=bufferedEnd/duration;
+          setLoadProgress(ratio>=.995?1:Math.min(.995,ratio));
         };
         async function cacheWholeVideo(){
           if(!window.ReadableStream||!window.URL?.createObjectURL)return;
@@ -495,10 +513,9 @@
             scrollTo(0,Math.round(max*allowedP));
             requestAnimationFrame(()=>{scrollLocking=false});
           }
-          const isApple=itemCategory==='Apple';
           const intro=clamp(p/.11),introOut=clamp((p-.075)/.075);
-          const filmP=isApple?clamp((p-.13)/.77):clamp(p/.9);
-          const appleFilm=isApple?clamp((p-.13)/.045):1;
+          const filmP=isAppleDetail?clamp((p-.13)/.77):clamp(p/.9);
+          const appleFilm=isAppleDetail?clamp((p-.13)/.045):1;
           const outro=clamp((p-.925)/.055);
           const outroText=clamp((p-.955)/.035);
           target=filmP*Math.max(.01,duration-.04);
