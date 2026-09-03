@@ -27,12 +27,11 @@
   </style>
   <style>
     .detail-progress{position:fixed;z-index:7;left:0;right:0;bottom:0;height:3px;background:transparent;overflow:visible;transform:translateZ(0);pointer-events:none}
-    .detail-progress span{position:absolute;left:0;bottom:0;height:2px;width:0;transform-origin:left center;will-change:width;transition:width .16s linear;box-shadow:0 0 0 1px rgba(0,0,0,.72),0 -1px 7px rgba(0,0,0,.78)}
-    .detail-progress span::before{content:"";position:absolute;left:0;right:0;bottom:0;height:100%;background:rgba(0,0,0,.58);transform:translateY(-1px);z-index:-1;box-shadow:0 -1px 8px rgba(0,0,0,.62)}
-    .detail-progress-load{z-index:1;background:rgba(255,255,255,.34)}
-    .detail-progress-scroll{z-index:2;background:rgba(255,255,255,.94)}
-    .detail-progress.is-complete .detail-progress-load{background:rgba(255,255,255,.36)}
-    .detail-progress.is-error .detail-progress-load{background:rgba(255,255,255,.22)}
+    .detail-progress span{position:absolute;left:0;bottom:0;height:2px;width:0;transform-origin:left center;will-change:width;transition:width .16s linear}
+    .detail-progress-load{z-index:1;background:rgba(12,12,12,.72);box-shadow:0 -1px 8px rgba(255,255,255,.5),0 0 1px rgba(255,255,255,.34)}
+    .detail-progress-scroll{z-index:2;background:rgba(255,255,255,.95);box-shadow:0 -1px 7px rgba(0,0,0,.46),0 0 4px rgba(255,255,255,.26)}
+    .detail-progress.is-complete .detail-progress-load{background:rgba(12,12,12,.62);box-shadow:0 -1px 6px rgba(255,255,255,.38)}
+    .detail-progress.is-error .detail-progress-load{background:rgba(12,12,12,.5);box-shadow:0 -1px 5px rgba(255,255,255,.26)}
   </style>
   <style>.tile.preview-pending:hover .tile-title,.tile.preview-pending:focus-visible .tile-title{opacity:0}</style>
 </head>
