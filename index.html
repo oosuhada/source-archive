@@ -26,12 +26,13 @@
     .gallery-sentinel{grid-column:1/-1;height:1px}.tile.thumbnail-error{background:linear-gradient(135deg,#151515,#202020)}.tile.thumbnail-error::before{content:"THUMBNAIL UNAVAILABLE";position:absolute;inset:0;display:grid;place-items:center;color:rgba(255,255,255,.28);font:9px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.12em}.tile.thumbnail-error img{visibility:hidden}.performance-dashboard{position:fixed;z-index:99;right:12px;bottom:12px;white-space:pre;padding:10px 12px;border:1px solid rgba(255,255,255,.18);background:rgba(0,0,0,.82);color:#a8ffbd;font:10px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace;pointer-events:none;backdrop-filter:blur(10px)}
   </style>
   <style>
-    .detail-progress{position:fixed;z-index:7;left:0;right:0;bottom:0;height:2px;background:transparent;overflow:hidden;transform:translateZ(0)}
-    .detail-progress span{position:absolute;left:0;top:0;height:100%;width:0;transform-origin:left center;will-change:width;transition:width .16s linear}
-    .detail-progress-load{background:rgba(255,255,255,.32)}
-    .detail-progress-scroll{background:rgba(255,255,255,.92)}
-    .detail-progress.is-complete .detail-progress-load{background:rgba(255,255,255,.34)}
-    .detail-progress.is-error .detail-progress-load{background:rgba(255,255,255,.2)}
+    .detail-progress{position:fixed;z-index:7;left:0;right:0;bottom:0;height:3px;background:transparent;overflow:visible;transform:translateZ(0);pointer-events:none}
+    .detail-progress span{position:absolute;left:0;bottom:0;height:2px;width:0;transform-origin:left center;will-change:width;transition:width .16s linear;box-shadow:0 0 0 1px rgba(0,0,0,.72),0 -1px 7px rgba(0,0,0,.78)}
+    .detail-progress span::before{content:"";position:absolute;left:0;right:0;bottom:0;height:100%;background:rgba(0,0,0,.58);transform:translateY(-1px);z-index:-1;box-shadow:0 -1px 8px rgba(0,0,0,.62)}
+    .detail-progress-load{z-index:1;background:rgba(255,255,255,.34)}
+    .detail-progress-scroll{z-index:2;background:rgba(255,255,255,.94)}
+    .detail-progress.is-complete .detail-progress-load{background:rgba(255,255,255,.36)}
+    .detail-progress.is-error .detail-progress-load{background:rgba(255,255,255,.22)}
   </style>
   <style>.tile.preview-pending:hover .tile-title,.tile.preview-pending:focus-visible .tile-title{opacity:0}</style>
 </head>
