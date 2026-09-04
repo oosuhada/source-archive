@@ -62,7 +62,6 @@
   <script src="data/source-library-data.js"></script>
   <script src="data/source-library-youtube-data.js"></script>
   <script src="data/preview-manifest.js"></script>
-  <script src="assets/vendor/hls.min.js"></script>
   <script>
     const thumbRoot='assets/thumbs-360/';
     const videoRoots={
@@ -83,7 +82,7 @@
     // Do not couple hover playback to asynchronously fetched metadata: if one
     // metadata request fails, valid preview mappings must still be available.
     const previewById=new Map((window.SOURCE_ARCHIVE_PREVIEWS||[]).map(entry=>[entry.id,entry]));
-    items.forEach(item=>{const entry=previewById.get(item.id);if(entry){item.preview=entry.file;item.previewMedia=entry.media}});
+    items.forEach(item=>{const entry=previewById.get(item.id);if(entry){item.preview=entry.file;item.previewMedia=entry.media;item.micro=entry.micro;item.microMedia=entry.microMedia}});
     const params=new URLSearchParams(location.search);
     const selected=params.get('clip');
     const gallery=document.querySelector('#gallery');
@@ -212,7 +211,7 @@
     function closeSearch(){
       searchMode=false;searchQuery='';const url=new URL(location.href);url.searchParams.delete('q');if(activeFilter!=='ALL')url.searchParams.set('filter',activeFilter);history.replaceState(null,'',url);renderTopbar();renderGallery();
     }
-    const searchWorker='Worker' in window?new Worker(`search-worker.js?v=${encodeURIComponent(window.SOURCE_ARCHIVE_BUILD?.version||'dev')}`):null;
+    const searchWorker=!selected&&'Worker' in window?new Worker(`search-worker.js?v=${encodeURIComponent(window.SOURCE_ARCHIVE_BUILD?.version||'dev')}`):null;
     function requestSearch(){
       if(!searchQuery.trim()){searchResultIds=[];renderGallery();return}
       searchResultIds=null;renderGallery();
@@ -225,6 +224,18 @@
         if(data.type==='results'&&data.requestId===searchRequestId){searchResultIds=data.ids;metric('search',{last:data.duration,results:data.ids.length});renderGallery()}
         if(data.type==='error'){console.warn('Search worker:',data.message)}
       });
+    }
+    let hlsLoader=null;
+    function ensureHlsLoaded(){
+      if(window.Hls)return Promise.resolve(window.Hls);
+      if(hlsLoader)return hlsLoader;
+      hlsLoader=new Promise((resolve,reject)=>{
+        const script=document.createElement('script');
+        script.src='assets/vendor/hls.min.js';script.async=true;
+        script.onload=()=>resolve(window.Hls);script.onerror=reject;
+        document.head.appendChild(script);
+      });
+      return hlsLoader;
     }
     function bindTilePreviews(root){
       let active=null;
@@ -242,7 +253,7 @@
         preview.addEventListener('playing',()=>{
           reveal();metric('media',{firstFrame:performance.now()-Number(tile.dataset.hoverAt||performance.now())});
         });
-        const start=()=>{if(!previewInputArmed||active===tile)return;if(active&&active!==tile)stop(active);pauseThumbnailWarmup();active=tile;tile.dataset.previewWanted='1';tile.dataset.hoverAt=performance.now();tile.classList.add('preview-pending');preview.muted=true;preview.defaultMuted=true;preview.autoplay=true;preview.playsInline=true;prioritizeHls([tile.dataset.hls]);startHlsPreview(tile)};
+        const start=()=>{if(!previewInputArmed||active===tile)return;if(active&&active!==tile)stop(active);pauseThumbnailWarmup();active=tile;tile.dataset.previewWanted='1';tile.dataset.hoverAt=performance.now();tile.classList.add('preview-pending');preview.muted=true;preview.defaultMuted=true;preview.autoplay=true;preview.playsInline=true;ensureHlsLoaded().catch(()=>{});prioritizeHls([tile.dataset.hls]);startHlsPreview(tile)};
         tile._startPreview=start;
         tile.addEventListener('pointerenter',start);
         tile.addEventListener('mouseenter',start);
@@ -431,7 +442,19 @@
         video.setAttribute('webkit-playsinline','');
         video.preload='metadata';
         const mediaSource=videoUrl(item);
-        video.src=mediaSource;
+        const lowSource=previewUrl(item)||mediaSource;
+        video.preload=lowSource===mediaSource?'metadata':'auto';
+        const detailPreconnect=new Set();
+        const addDetailPreconnect=url=>{
+          try{
+            const origin=new URL(url).origin;if(detailPreconnect.has(origin))return;detailPreconnect.add(origin);
+            const link=document.createElement('link');link.rel='preconnect';link.href=origin;link.crossOrigin='anonymous';document.head.appendChild(link);
+          }catch{}
+        };
+        addDetailPreconnect(lowSource);addDetailPreconnect(mediaSource);
+        video.fetchPriority='high';
+        video.dataset.quality=lowSource===mediaSource?'high':'preview';
+        video.src=lowSource;
         let duration=1,target=0,ready=false,primed=false,seekTimer=0,seekRaf=0,lastSeekAt=0,pendingSeek=false,seekStartedAt=0,mediaStartedAt=performance.now(),metadataSeen=false,loadProgress=0,settledLoadProgress=0,blobUrl='',scrollLocking=false;
         const clamp=v=>Math.max(0,Math.min(1,v));
         const seekInterval=95;
@@ -450,7 +473,7 @@
         };
         const setLoadProgress=value=>{
           const next=Math.max(loadProgress,clamp(value));
-          if(next<.999&&next<=loadProgress+.0005)return;
+          if(next<=loadProgress+.0005)return;
           loadProgress=next;paintLoadProgress();
           setTimeout(()=>{settledLoadProgress=Math.max(settledLoadProgress,next);update()},next>=.999?320:700);
         };
@@ -469,7 +492,7 @@
         async function cacheWholeVideo(){
           if(!window.ReadableStream||!window.URL?.createObjectURL)return;
           try{
-            const response=await fetch(mediaSource,{cache:'force-cache'});
+            const response=await fetch(mediaSource,{cache:'force-cache',priority:'high'});
             if(!response.ok||!response.body)throw new Error(`media fetch ${response.status}`);
             const total=Number(response.headers.get('content-length'))||0;
             const reader=response.body.getReader(),chunks=[];let loaded=0;
@@ -480,7 +503,11 @@
               if(total)setLoadProgress(loaded/total);
             }
             const blob=new Blob(chunks,{type:response.headers.get('content-type')||'video/mp4'});
-            blobUrl=URL.createObjectURL(blob);setLoadProgress(1);ready=false;pendingSeek=true;video.pause();video.src=blobUrl;video.load();metric('media',{blobBytes:blob.size});
+            const resumeAt=target||video.currentTime||0;
+            blobUrl=URL.createObjectURL(blob);setLoadProgress(1);ready=false;pendingSeek=true;video.pause();video.dataset.quality='high';
+            video.addEventListener('loadedmetadata',()=>{try{video.currentTime=Math.max(0,Math.min(resumeAt,(video.duration||duration)-.04))}catch{}},{once:true});
+            video.src=blobUrl;video.load();
+            metric('media',{blobBytes:blob.size});
           }catch{
             detailProgress.classList.add('is-error');
           }
@@ -532,7 +559,7 @@
           duration=video.duration||1;
           const scrollHeight=item.scrollHeightVh ?? Math.round(Math.max(720,Math.min(3600,duration*30)));
           detail.style.minHeight=`${scrollHeight}vh`;
-          video.pause();ready=true;if(!metadataSeen){metadataSeen=true;scrollTo(0,0);cacheWholeVideo()}update();
+          video.pause();ready=true;if(!metadataSeen){metadataSeen=true;scrollTo(0,0)}update();
         });
         video.addEventListener('seeked',()=>{if(seekStartedAt)metric('media',{seek:performance.now()-seekStartedAt});if(pendingSeek||Math.abs(video.currentTime-target)>.08)scheduleSeek()});
         video.addEventListener('canplay',()=>{metric('media',{firstFrame:performance.now()-mediaStartedAt});scheduleSeek()},{once:true});
@@ -542,10 +569,11 @@
         addEventListener('pagehide',()=>{if(blobUrl)URL.revokeObjectURL(blobUrl)},{once:true});
         addEventListener('scroll',update,{passive:true});addEventListener('resize',update);
         ['touchstart','pointerdown','wheel'].forEach(type=>addEventListener(type,primeVideo,{once:true,passive:true}));
+        cacheWholeVideo();
         video.load();
       }
     }
-    if('serviceWorker' in navigator&&location.protocol==='https:'){
+    if(!selected&&'serviceWorker' in navigator&&location.protocol==='https:'){
       const enableBootHls=()=>{
         if(!navigator.serviceWorker.controller)return;
         navigator.serviceWorker.controller.postMessage({type:'preload-hls-boot'});
