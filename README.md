@@ -199,6 +199,14 @@ npm run validate:network
 
 The `archive quality` workflow runs on every pull request. It validates 731 metadata records and thumbnails, rejects retired visual themes, checks imported video properties, and samples live `206 Partial Content` responses with retry logic for transient network failures. GitHub Pages deploys only after repository changes are merged.
 
+### Media failure-recovery evidence
+
+The Service Worker now shares one bounded retry primitive for metadata, thumbnails, and remote HLS segments. It retries network rejections plus HTTP **429/5xx** up to 2 times, then preserves the terminal response instead of looping indefinitely. The same reliability module also parses normal and suffix byte ranges, returning `416` with `Content-Range: bytes */<size>` for invalid ranges instead of slicing an invalid segment.
+
+Deterministic failure injection covers `429 → 200`, `503 → 200`, `network failure ×2 → 200`, and persistent `503`. All **3/3 recoverable scenarios recover**, while persistent `503` stops after the retry budget. The repository still validates **731/731** archive records, and two consecutive asset builds produced identical `sw.js` and build-meta hashes.
+
+These fixtures validate Service Worker policy, not real CDN/ISP availability or playback buffering. The benchmark explicitly does not claim production R2/B2 uptime or browser decoder behavior; machine-readable evidence lives under `benchmarks/results/`.
+
 `archive quality` workflow는 모든 pull request에서 실행됩니다. 731개 메타데이터와 썸네일을 검사하고, 폐기한 visual theme의 재사용을 차단하며, import 영상 속성과 실제 `206 Partial Content` 응답을 확인합니다. 일시적인 네트워크 오류에는 재시도를 적용하며 저장소 변경이 병합된 후 GitHub Pages가 배포됩니다.
 
 ## Optional Detail-Page Rendition / 선택적 상세 페이지 Rendition
