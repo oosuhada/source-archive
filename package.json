@@ -6,6 +6,8 @@
     "build": "node scripts/build-web-assets.mjs",
     "validate": "node scripts/validate-archive.mjs",
     "validate:network": "node scripts/validate-archive.mjs --network",
-    "check": "npm run build && git diff --exit-code -- data/search-index.json data/build-meta.js sw.js && npm run validate"
+    "test": "node --test tests/*.test.mjs",
+    "benchmark:reliability": "node scripts/benchmark-reliability.mjs",
+    "check": "npm run test && npm run benchmark:reliability && npm run build && git diff --exit-code -- data/search-index.json data/build-meta.js sw.js && npm run validate"
   }
 }

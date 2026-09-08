@@ -1,0 +1,44 @@
+{
+  "experiment": "source-archive-media-recovery-v1",
+  "git_sha": "a89d000d5e74398f151cf75065c798b4bea4ada6",
+  "generated_at": "2026-09-08T13:21:09.285Z",
+  "policy": {
+    "max_retries": 2,
+    "backoff": "250ms exponential; sleep removed in deterministic benchmark"
+  },
+  "recoverable_scenario_success_rate": 1,
+  "scenarios": [
+    {
+      "name": "429-then-ok",
+      "calls": 2,
+      "retries": 1,
+      "terminal_status": 200,
+      "recovered": true
+    },
+    {
+      "name": "503-then-ok",
+      "calls": 2,
+      "retries": 1,
+      "terminal_status": 200,
+      "recovered": true
+    },
+    {
+      "name": "network-twice-then-ok",
+      "calls": 3,
+      "retries": 2,
+      "terminal_status": 200,
+      "recovered": true
+    },
+    {
+      "name": "persistent-503",
+      "calls": 3,
+      "retries": 2,
+      "terminal_status": 503,
+      "recovered": false
+    }
+  ],
+  "limitations": [
+    "Failure injection validates retry/range policy without live CDN traffic.",
+    "It does not measure real buffering, ISP loss, R2/B2 availability, or browser decoder failures."
+  ]
+}

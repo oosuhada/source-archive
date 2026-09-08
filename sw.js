@@ -1,7 +1,7 @@
-importScripts('data/hls-boot-pack-manifest.js');
+importScripts('sw-reliability.js','data/hls-boot-pack-manifest.js');
 const VERSION="source-archive-hlsboot-v1";
 const BOOT_CACHE="source-archive-hlsboot-packs-v1";
-const PRECACHE=["./","./index.html","./search-worker.js","./performance-dashboard.js","./data/source-library-data.js","./data/source-library-youtube-data.js","./data/search-index.json","./data/build-meta.js","./data/preview-manifest.js","./data/hls-boot-pack-manifest.js"];
+const PRECACHE=["./","./index.html","./sw-reliability.js","./search-worker.js","./performance-dashboard.js","./data/source-library-data.js","./data/source-library-youtube-data.js","./data/search-index.json","./data/build-meta.js","./data/preview-manifest.js","./data/hls-boot-pack-manifest.js"];
 const ROOT=new URL('./',self.location).pathname;
 const REMOTE_HLS='https://source-media.oosu.dev/hls/';
 const bootMemory=new Map();
@@ -11,7 +11,7 @@ async function loadBootPack(pack){if(bootMemory.has(pack))return bootMemory.get(
 async function preloadBootPacks(){const packs=[...new Set(Object.values(self.SOURCE_ARCHIVE_HLS_BOOT_PACKS||{}))];let next=0;await Promise.all(Array.from({length:4},async()=>{while(next<packs.length){const pack=packs[next++];try{await loadBootPack(pack)}catch{}}}))}
 function hlsMaster(){return '#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-INDEPENDENT-SEGMENTS\n#EXT-X-STREAM-INF:BANDWIDTH=275000,RESOLUTION=180x102,CODECS="avc1.64000c"\nvlow/index.m3u8\n#EXT-X-STREAM-INF:BANDWIDTH=550000,RESOLUTION=360x202,CODECS="avc1.64000d"\nvhigh/index.m3u8\n'}
 function hlsPlaylist(){const segments=Array.from({length:5},(_,index)=>`#EXTINF:2.000000,\nseg_${String(index).padStart(3,'0')}.ts`).join('\n');return `#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-PLAYLIST-TYPE:VOD\n#EXT-X-TARGETDURATION:2\n#EXT-X-MEDIA-SEQUENCE:0\n${segments}\n#EXT-X-ENDLIST\n`}
-function bootResponse(bytes,request){const range=request.headers.get('range');if(!range)return new Response(bytes,{headers:{'Content-Type':'video/mp2t','Content-Length':String(bytes.byteLength),'Cache-Control':'public, max-age=31536000, immutable'}});const match=/bytes=(\d*)-(\d*)/.exec(range);if(!match)return new Response(null,{status:416});const start=match[1]?Number(match[1]):0,end=match[2]?Math.min(Number(match[2]),bytes.byteLength-1):bytes.byteLength-1;return new Response(bytes.slice(start,end+1),{status:206,headers:{'Content-Type':'video/mp2t','Content-Range':`bytes ${start}-${end}/${bytes.byteLength}`,'Accept-Ranges':'bytes','Content-Length':String(end-start+1)}})}
+function bootResponse(bytes,request){const range=request.headers.get('range');if(!range)return new Response(bytes,{headers:{'Content-Type':'video/mp2t','Content-Length':String(bytes.byteLength),'Cache-Control':'public, max-age=31536000, immutable'}});const parsed=self.SourceArchiveReliability.parseByteRange(range,bytes.byteLength);if(!parsed)return new Response(null,{status:416,headers:{'Content-Range':`bytes */${bytes.byteLength}`}});const {start,end}=parsed;return new Response(bytes.slice(start,end+1),{status:206,headers:{'Content-Type':'video/mp2t','Content-Range':`bytes ${start}-${end}/${bytes.byteLength}`,'Accept-Ranges':'bytes','Content-Length':String(end-start+1)}})}
 self.addEventListener('message',event=>{if(event.data==='SKIP_WAITING')self.skipWaiting();if(event.data?.type==='preload-hls-boot')event.waitUntil(preloadBootPacks());if(event.data?.type==='hls-boot-status')event.source?.postMessage({type:'hls-boot-ready'})});
 self.addEventListener('install',event=>event.waitUntil(caches.open(VERSION).then(cache=>cache.addAll(PRECACHE)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==VERSION&&key!==BOOT_CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim()).then(()=>self.clients.matchAll({type:'window'})).then(clients=>clients.forEach(client=>client.postMessage({type:'hls-boot-ready'})))));
@@ -25,13 +25,10 @@ self.addEventListener('fetch',event=>{
       if(rest==='master.m3u8')return new Response(hlsMaster(),{headers:{'Content-Type':'application/vnd.apple.mpegurl'}});
       if(rest==='vlow/index.m3u8'||rest==='vhigh/index.m3u8')return new Response(hlsPlaylist(),{headers:{'Content-Type':'application/vnd.apple.mpegurl'}});
       if(rest==='vlow/seg_000.ts'){const pack=self.SOURCE_ARCHIVE_HLS_BOOT_PACKS?.[clip],bytes=pack&&(await loadBootPack(pack)).get(`${clip}.ts`);if(bytes)return bootResponse(bytes,event.request)}
-      return fetch(`${REMOTE_HLS}${clip}/${rest}`,{headers:event.request.headers});
+      return self.SourceArchiveReliability.fetchWithRetry(`${REMOTE_HLS}${clip}/${rest}`,{fetchImpl:(request)=>fetch(request,{headers:event.request.headers})}).then(result=>result.response);
     })());return;
   }
-  const retry=(request,attempt=0)=>fetch(request).then(response=>{
-    if((response.status===429||response.status>=500)&&attempt<2)return new Promise(resolve=>setTimeout(resolve,250*(attempt+1))).then(()=>retry(request,attempt+1));
-    return response;
-  });
+  const retry=request=>self.SourceArchiveReliability.fetchWithRetry(request).then(result=>result.response);
   const isMetadata=url.pathname.includes('/data/')||url.pathname.endsWith('/index.html')||url.pathname.endsWith('/');
   if(isMetadata){event.respondWith(retry(event.request).then(async response=>{if(response.ok){const copy=response.clone();await caches.open(VERSION).then(cache=>cache.put(event.request,copy))}else{const cached=await caches.match(event.request);if(cached)return cached}return response}).catch(()=>caches.match(event.request)));return}
   if(url.pathname.includes('/assets/thumbs/')||url.pathname.includes('/assets/thumbs-low/')||url.pathname.includes('/assets/thumbs-medium/')||url.pathname.includes('/assets/thumbs-360/')){event.respondWith(caches.open(VERSION).then(async cache=>{
